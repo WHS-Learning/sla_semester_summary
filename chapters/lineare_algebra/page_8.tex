@@ -1,0 +1,129 @@
+\chapter{Übungsblatt 8}
+
+\section{Aufgabe 1}
+
+\subsection{a}
+Bestimmen Sie Skalarprodukt und Kreuzprodukt der Einheitsvektoren $e_1 = \begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}$ und $e_2 = \begin{pmatrix}0 \\ 1 \\ 0\end{pmatrix}$.
+
+\subsubsection*{Skalarprodukt}
+\begin{align*}
+    \left\langle e_1, e_2\right\rangle \\
+    = 1 \cdot 0 + 0 \cdot 1 + 0 \cdot 0 \\
+    = 0 + 0 + 0 \\
+    = 0
+\end{align*}
+
+\subsubsection*{Kreuzprodukt}
+\begin{align*}
+    e_1 \times e_2 \\
+    =\begin{pmatrix}
+        0 \cdot 0 - 0 \cdot 1 \\
+        0 \cdot 0 - 1 \cdot 0 \\
+        1 \cdot 1 - 0 \cdot 0
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        0 \\ 0 \\ 1
+    \end{pmatrix}
+\end{align*}
+
+\subsection{b}
+Sei $v \in \mathbb{R}^n$ beliebig. Sei $e_i \in \mathbb{R}^n (i \in \{1, \dots, n\})$ der i-te Einheitsvektor in $\mathbb{R}^n$. Bestimmen Sie $\langle v, e_i \rangle$ und (für den Fall $n = 3$) $v \times e_i$.
+
+\subsection*{Skalarprodukt}
+
+\begin{align*}
+    \left\langle v, e_1 \right\rangle \\
+    = v_1 \cdot 1 + v_2 \cdot 0 + v_3 \cdot 0\\
+    = v_1
+\end{align*}
+
+allgemein
+
+\begin{align*}
+    \left\langle v, e_i \right\rangle \\
+    = v_1 \cdot e_1 + v_2 \cdot e_2 + \dots + v_n \cdot e_i\\
+    = v_i
+\end{align*}
+
+\subsubsection*{Kreuzprodukt}
+\begin{align*}
+    v \times e_1 \\
+    = \begin{pmatrix}
+        v_2 \cdot 0 - v_3 \cdot 0 \\
+        v_3 \cdot 1 - v_1 \cdot 0 \\
+        v_1 \cdot 0 - v_2 \cdot 1
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        0 \\ v_3 \\ -v_2
+    \end{pmatrix}
+\end{align*}
+
+\begin{align*}
+    v \times e_2 \\
+    = \begin{pmatrix}
+        v_2 \cdot 0 - v_3 \cdot 1 \\
+        v_3 \cdot 0 - v_1 \cdot 0 \\
+        v_1 \cdot 1 - v_2 \cdot 0
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        -v_3 \\ 0 \\ v_1
+    \end{pmatrix}
+\end{align*}
+
+\begin{align*}
+    v \times e_3 \\
+    = \begin{pmatrix}
+        v_2 \cdot 1 - v_3 \cdot 0 \\
+        v_3 \cdot 0 - v_1 \cdot 1 \\
+        v_1 \cdot 0 - v_2 \cdot 0
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        v_2 \\ -v_1 \\ 0
+    \end{pmatrix}
+\end{align*}
+
+\subsection{c}
+Bestimmen Sie einen Vektor, der auf der von $\begin{pmatrix}5 \\ 1 \\ 9\end{pmatrix}$ und $\begin{pmatrix}1 \\ 2 \\ 10\end{pmatrix}$ aufgespannten Ebene senkrecht steht.
+
+\begin{align*}
+    span\left\{\begin{pmatrix}
+        5 \\ 1 \\ 9
+    \end{pmatrix}, \begin{pmatrix}
+        1 \\ 2 \\ 10
+    \end{pmatrix}\right\} \\
+    cos(\theta) = \frac{\left\langle a, b\right\rangle}{\left|a\right| \cdot \left|b\right|}
+\end{align*}
+
+\section{Aufgabe 2}
+
+\subsection{a}
+Sei $A = \begin{pmatrix}6 & 17 & 24 \\ 9 & 32 & 6 \\ -5 & -1 & 47\end{pmatrix}$.
+
+Bestimmen Sie $det(A)$
+
+\begin{enumerate}
+    \item mittels der Saurrus-Regel
+    \item mittels der Leibniz-Formel
+    \item mittels der Kästchenregel
+\end{enumerate}
+
+\subsection{b}
+Sei $B = \begin{pmatrix}
+    1 & 0 & 2 & 0 \\ 1 & 2 & 9 & 0 \\ 2 & 0 & 1 & 5 \\ 1 & 1 & 1 & 1
+\end{pmatrix}$. 
+
+Bestimmen Sie $det(B)$
+
+\subsection{c}
+Sei $C = \begin{pmatrix}
+    1 & 0 & 2 & 0 \\ 1 & 2 & 9 & 0 \\ 2 & 0 & 1 & 5 \\ 1 & 2 & 9 & 0
+\end{pmatrix}$. Bestimmen Sie ohne Rechung $det(C)$.
+
+\section{Aufgabe 3}
+
+\subsection{a}
+Prüfen Sie die Vektoren $\begin{pmatrix}5 \\ 1 \\ 9\end{pmatrix}, \begin{pmatrix}1 \\2 \\ 3\end{pmatrix}$ und $\begin{pmatrix}4 \\ 4 \\ 1\end{pmatrix}$ auf lineare Unabhängigkeit.
+
+\subsection{b}
+Ist das lineare Gleichungssystem $Ax = b$ mit $b = \begin{pmatrix}5 \\ 10 \\ 1\end{pmatrix}$ und $A = \begin{pmatrix}1 & 0 & 2 \\ 1 & 2 & 0 \\ 2 & 0 & 1\end{pmatrix}$ eindeutig lösbar?
+

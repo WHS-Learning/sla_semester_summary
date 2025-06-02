@@ -1,0 +1,541 @@
+\allowdisplaybreaks 
+
+\chapter{Übungsblatt 7}
+
+\section{Aufgabe 1}
+
+\subsection{a}
+\begin{align*}
+    A = \begin{pmatrix}
+        1 & 2 & 3 \\ 1 & 5 & 0 \\ -1 & -1 & 7
+    \end{pmatrix} \cdot \begin{pmatrix}
+        4 & 2 & 1 \\ 1 & 6 & 1 \\ 0 & 1 & 7
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        1 \cdot 4 + 2 \cdot 1 + 3 \cdot 0 & 1 \cdot 2 + 2 \cdot 6 + 3 \cdot 1 & 1 \cdot 1 + 2 \cdot 1 + 3 \cdot 7 \\
+        1 \cdot 4 + 5 \cdot 1 + 0 \cdot 0 & 1 \cdot 2 + 5 \cdot 6 + 0 \cdot 1 & 1 \cdot 1 + 5 \cdot 1 + 0 \cdot 7 \\
+        -1 \cdot 4 -1 \cdot 1 + 7 \cdot 4 & -1 \cdot 2 - 1 \cdot 6 + 7 \cdot 1 & -1 \cdot 1 - 1 \cdot 1 + 7 \cdot 7
+    \end{pmatrix} \\
+    \begin{pmatrix}
+        6 & 17 & 24 \\ 9 & 32 & 6 \\ -5 & -1 & 47
+    \end{pmatrix}
+\end{align*}
+
+\subsection{b}
+\begin{align*}
+    w = \begin{pmatrix}
+        0 & 4 & 3 \\ 5 & 5 & 9 \\ 1 & 0 & 7
+    \end{pmatrix} \cdot \begin{pmatrix}
+        1 \\ 0 \\ 5
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        0 \cdot 1 + 4 \cdot 0 + 3 \cdot 5 \\ 5 \cdot 1 + 5 \cdot 0 + 9 \cdot 5 \\ 1 \cdot 1 + 0 \cdot 0 + 7 \cdot 5
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        15 \\ 50 \\ 36
+    \end{pmatrix}
+\end{align*}
+
+
+\subsection{c}
+\begin{align*}
+    A \cdot w \\
+    = \begin{pmatrix}
+        6 \cdot 15 + 17 \cdot 50 + 24 \cdot 36 \\ 
+        9 \cdot 15 + 32 \cdot 50 + 6 \cdot 36 \\ 
+        -5 \cdot 15 - 1 \cdot 50 + 47 \cdot 36
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        1804 \\ 1951 \\ 1567
+    \end{pmatrix}
+\end{align*}
+
+\section{Aufgabe 2}
+
+Gegeben seien die Vektoren 
+\[
+u_1 = \begin{pmatrix}
+    1 \\ 2 \\ 0
+\end{pmatrix}, u_2 = \begin{pmatrix}
+    1 \\ -1 \\ 0
+\end{pmatrix}, u_3 = \begin{pmatrix}
+    0 \\ 0 \\ 1
+\end{pmatrix}, u_4 = \begin{pmatrix}
+    4 \\ 2 \\ 2
+\end{pmatrix}, w = \begin{pmatrix}
+    2 \\ 3 \\ 5
+\end{pmatrix}
+\]
+sowie die lineare Abbildung $\varphi: \mathbb{R}^3 \rightarrow \mathbb{R}^3$ mit:
+\[
+\varphi(u_1) = \begin{pmatrix}
+    0 \\ 1 \\ 0
+\end{pmatrix},
+\varphi(u_2) = \begin{pmatrix}
+    1 \\ 2 \\ 3
+\end{pmatrix},
+\varphi(u_3) = \begin{pmatrix}
+    2 \\ -1 \\ 7
+\end{pmatrix}
+\]
+
+\subsection{a}
+Zeigen Sie, dass die Vektoren $\{u_1, u_2, u_3\}$ eine Basis des $\mathbb{R}^3$ bilden.
+
+Prüfen auf lineare Unabhängigkeit
+
+\begin{align*}
+    x_1u_1 + x_2u_2 + x_3u_3 = 0 \\
+    \Leftrightarrow x_1\begin{pmatrix}
+        1 \\ 2 \\ 0
+    \end{pmatrix} + x_2\begin{pmatrix}
+        1 \\ -1 \\ 0
+    \end{pmatrix} + x_3\begin{pmatrix}
+        0  \\ 0 \\ 1
+    \end{pmatrix} = \begin{pmatrix}
+        0 \\ 0 \\ 0
+    \end{pmatrix} \\
+    \Leftrightarrow \begin{pmatrix}
+        x_1 \\ 2x_1 \\ 0
+    \end{pmatrix} + \begin{pmatrix}
+        x_2 \\ -x_2 \\ 0
+    \end{pmatrix} + \begin{pmatrix}
+        0  \\ 0 \\ x_3
+    \end{pmatrix} = \begin{pmatrix}
+        0 \\ 0 \\ 0
+    \end{pmatrix} \\
+    \begin{cases}
+        \text{I:\@} & x_1 + x_2 = 0 \\
+        \text{II:\@} & 2x_1 - x_2 = 0 \\
+        \text{III:\@} & x_3 = 0 \\
+    \end{cases} \\
+    \text{I = II} \\
+    x_1 + x_2 = 2x_1 - x_2 \quad | -x_1 \quad | +x_2 \\
+    \Leftrightarrow  2x_2 = x_1 \\
+    \Leftrightarrow x_1 = 2x_2 \\
+    \text{in I einsetzen} \\
+    2x_2 + x_2 = 0 \\
+    \Leftrightarrow 3x_2 = 0 \quad | : 3 \\
+    \Leftrightarrow x_2 = 0 \\
+    x_1 = 2 \cdot 0 \\
+    \Leftrightarrow x_1 = 0
+\end{align*}
+
+Die einzige Lösung des linearen Gleichungssystems ist $x_1 = x_2 = x_3 = 0$. Das bedeutet, 
+dass die Vektoren $\left\{u_1, u_2, u_3\right\}$ linear unabhängig sind. Dementsprechend bilden sie 
+eine Basis des $\mathbb{R}^3$
+
+\subsection{b}
+Berechnen Sie $\varphi(u_4)$
+
+\begin{align*}
+    \begin{pmatrix}
+        1 & 1 & 0 \\ 2 & -1 & 0 \\ 0 & 0 & 1
+    \end{pmatrix} \cdot \begin{pmatrix}
+        x_1 \\ x_2 \\ x_3
+    \end{pmatrix} = \begin{pmatrix}
+        4 \\ 2 \\ 2
+    \end{pmatrix} \\
+    \begin{cases}
+        \text{I:\@} & x_1 + x_2 = 4\\
+        \text{II:\@} & 2x_1 - x_2 = 2\\
+        \text{III:\@} & x_3 = 2
+    \end{cases} \\
+    \text{I + II}
+    \begin{cases}
+        \text{I:\@} & 3x_1 = 6 \quad | :3 \Leftrightarrow x_1 = 2 \\
+        \text{II:\@} & 2x_1 - x_2 = 2\\
+        \text{III:\@} & x_3 = 2
+    \end{cases} \\
+    \text{in II einsetzen} \\
+    2 \cdot 2 - x_2 = 2 \\
+    \Leftrightarrow 4 - x_2 = 2 \quad | -4 \quad | \cdot(-1) \\
+    \Leftrightarrow x_2 = 2
+\end{align*}
+
+$u_4$ ist linear abhängig zu den Vektoren $\left\{u_1, u_2, u_3\right\}$ mit den Faktor 2.
+
+\begin{align*}
+    u_1, u_2, u_3 = u_4 \\
+    \varphi(u_1), \varphi(u_2), \varphi(u_3) = \varphi(u_4) \\
+    \begin{pmatrix}
+        0 & 1 & 2 \\ 1 & 2 & -1 \\ 0 & 3 & 7
+    \end{pmatrix} \cdot \begin{pmatrix}
+        2 \\ 2 \\ 2
+    \end{pmatrix} = \varphi(u_4) \\
+    2 \cdot \begin{pmatrix}
+        0 \\ 1 \\ 0
+    \end{pmatrix} + 2 \cdot \begin{pmatrix}
+        1 \\ 2 \\ 3
+    \end{pmatrix} + 2 \cdot \begin{pmatrix}
+        2 \\ -1 \\ 7
+    \end{pmatrix} = \varphi(u_4) \\
+    = \begin{pmatrix}
+        0 \\ 2 \\ 0
+    \end{pmatrix} + \begin{pmatrix}
+        2 \\ 4 \\ 6
+    \end{pmatrix} + \begin{pmatrix}
+        4 \\ -2 \\ 14
+    \end{pmatrix} = \varphi(u_4) \\
+    = \begin{pmatrix}
+        6 \\ 4 \\ 20
+    \end{pmatrix} = \varphi(u_4)
+\end{align*}
+
+\subsection{c}
+Geben Sie einen Vektor $u_5$ an, mit $\varphi(u_5) = w$.
+
+\begin{align*}
+    \varphi(u_5) = x_1 \cdot \varphi(u_1) + x_2 \cdot \varphi(u_2) + x_3 \cdot \varphi(u_3) \\
+    \varphi(u_5) = x_1 \cdot \begin{pmatrix}
+        0 \\ 1 \\ 0
+    \end{pmatrix} + x_2 \cdot \begin{pmatrix}
+        1 \\ 2 \\ 3
+    \end{pmatrix} + x_3 \cdot \begin{pmatrix}
+        2 \\ -1 \\ 7
+    \end{pmatrix} = \begin{pmatrix}
+        2 \\ 3 \\ 5
+    \end{pmatrix} \\
+    \begin{cases}
+        \text{I:\@} & x_2 + 2x_3 = 2\\
+        \text{II:\@} & x_1 + 2x_2 - x_3 = 3\\
+        \text{III:\@} & 3x_2 + 7x_3 = 5 
+    \end{cases}
+\end{align*}
+
+\begin{longtable}{p{4cm}|p{3cm}}
+
+    \hline
+    \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
+    \hline
+    \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    $\displaystyle\begin{matrix}
+        0 & 1 & 2 \\
+        1 & 2 & -1 \\
+        0 & 3 & 7
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        2 \\ 3 \\ 5
+    \end{matrix}$\\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I und II tauschen} \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+        1 & 2 & -1 \\
+        0 & 1 & 2 \\
+        0 & 3 & 7
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        3 \\ 2 \\ 5
+    \end{matrix}$\\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III - 3II} \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+        1 & 2 & -1 \\
+        0 & 1 & 2 \\
+        0 & 0 & 1
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        3 \\ 2 \\ -1
+    \end{matrix}$\\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II - 2III} \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+        1 & 2 & -1 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        3 \\ 4 \\ -1
+    \end{matrix}$\\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I + III} \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+        1 & 2 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        2 \\ 4 \\ -1
+    \end{matrix}$\\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I - 2II} \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        -6 \\ 4 \\ -1
+    \end{matrix}$\\\hline
+\end{longtable}
+
+\begin{align*}
+    x_1 = -6, \quad x_2 = 4, \quad x_3 = -1 \\
+    u_5 = -6 \cdot \begin{pmatrix}
+        1 \\ 2 \\ 0
+    \end{pmatrix} + 4 \cdot \begin{pmatrix}
+        1 \\ -1 \\ 0
+    \end{pmatrix} - 1 \cdot \begin{pmatrix}
+        0 \\ 0 \\ 1
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        -6 \\ -12 \\ 0
+    \end{pmatrix} + \begin{pmatrix}
+        4 \\-4 \\ 0
+    \end{pmatrix} + \begin{pmatrix}
+        0 \\ 0 \\ -1
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        -2 \\ -16 \\ -1
+    \end{pmatrix} = u_5
+\end{align*}
+
+\subsection{d}
+Geben Sie die lineare Abbildung $\varphi$ in der Form $\varphi(x) = Ax$ an.
+
+\begin{align*}
+    c_{1,1} \cdot \begin{pmatrix}
+        1 \\ 2 \\ 0
+    \end{pmatrix} + c_{2, 1} \cdot \begin{pmatrix}
+        1 \\ -1 \\ 0
+    \end{pmatrix} + c_{3, 1} \cdot \begin{pmatrix}
+        0 \\ 0 \\ 1
+    \end{pmatrix} = \begin{pmatrix}
+        1 \\ 0 \\ 0
+    \end{pmatrix} \\
+    \begin{cases}
+        \text{I:\@} & c_{1,1} + c_{2,1} = 1 \\
+        \text{II:\@} & 2c_{1,1} - c_{2,1} = 0 \\
+        \text{III:\@} & c_{3,1} = 0
+    \end{cases} \\
+    \text{I + II} \\ 
+    \begin{cases}
+        \text{I:\@} & 3c_{1,1}  = 1 \quad | : 3 \Leftrightarrow c_{1,1} = \frac{1}{3}\\
+        \text{II:\@} & 2c_{1,1} - c_{2,1} = 0 \\
+        \text{III:\@} & c_{3,1} = 0
+    \end{cases} \\
+    \text{in II einsetzen} \\
+    \begin{cases}
+        \text{I:\@} & c_{1,1} = \frac{1}{3}\\
+        \text{II:\@} & 2 \cdot \frac{1}{3} - c_{2, 1} = 0 \quad | +c_{2, 1} \Leftrightarrow \frac{2}{3} = c_{2, 1}  \\
+        \text{III:\@} & c_{3,1} = 0
+    \end{cases} \\
+\end{align*}
+
+\begin{align*}
+    c_{1,2} \cdot \begin{pmatrix}
+        1 \\ 2 \\ 0
+    \end{pmatrix} + c_{2, 2} \cdot \begin{pmatrix}
+        1 \\ -1 \\ 0
+    \end{pmatrix} + c_{3, 2} \cdot \begin{pmatrix}
+        0 \\ 0 \\ 1
+    \end{pmatrix} = \begin{pmatrix}
+        0 \\ 1 \\ 0
+    \end{pmatrix} \\
+    \begin{cases}
+        \text{I:\@} & c_{1,2} + c_{2,2} = 0 \\
+        \text{II:\@} & 2c_{1,2} - c_{2,2} = 1 \\
+        \text{III:\@} & c_{3,2} = 0
+    \end{cases} \\
+    \text{I + II} \\
+    \begin{cases}
+        \text{I:\@} & 3c_{1,2}  = 1 \quad | : 3 \Leftrightarrow c_{1,2} = \frac{1}{3}\\
+        \text{II:\@} & 2c_{1,2} - c_{2,2} = 1 \\
+        \text{III:\@} & c_{3,2} = 0
+    \end{cases} \\
+    \text{in II einsetzen} \\
+    \begin{cases}
+        \text{I:\@} & c_{1,2} = \frac{1}{3}\\
+        \text{II:\@} & 2 \cdot \frac{1}{3} - c_{2, 2} = 1 \quad | + c_{2, 2}  \quad | -1 \Leftrightarrow -\frac{1}{3} = c_{2, 2}\\
+        \text{III:\@} & c_{3,2} = 0
+    \end{cases} \\
+\end{align*}
+
+\begin{align*}
+    c_{1,3} \cdot \begin{pmatrix}
+        1 \\ 2 \\ 0
+    \end{pmatrix} + c_{2, 3} \cdot \begin{pmatrix}
+        1 \\ -1 \\ 0
+    \end{pmatrix} + c_{3, 3} \cdot \begin{pmatrix}
+        0 \\ 0 \\ 1
+    \end{pmatrix} = \begin{pmatrix}
+        0 \\ 0 \\ 1
+    \end{pmatrix} \\
+    \begin{cases}
+        \text{I:\@} & c_{1,3} + c_{2,3} = 0 \\
+        \text{II:\@} & 2c_{1,3} - c_{2,3} = 0 \\
+        \text{III:\@} & c_{3,3} = 1
+    \end{cases} \\
+    \text{I + II} \\
+    \begin{cases}
+        \text{I:\@} & 3c_{1,3}  = 0 \quad | : 3 \Leftrightarrow c_{1,3} = 0\\
+        \text{II:\@} & 2c_{1,3} - c_{2,3} = 0 \\
+        \text{III:\@} & c_{3,3} = 1
+    \end{cases} \\
+    \text{in II einsetzen} \\
+    \begin{cases}
+        \text{I:\@} & c_{1,3} = 0\\
+        \text{II:\@} & 2 \cdot 0 - c_{2, 3} = 0 \quad | \cdot (-1) \Leftrightarrow c_{2, 3} = 0\\
+        \text{III:\@} & c_{3,3} = 1
+    \end{cases} \\
+\end{align*}
+
+\begin{align*}
+    \varphi(e_1) = \frac{1}{3} \cdot \varphi(u_1) + \frac{2}{3} \varphi(u_2) \\
+    \varphi(e_1) = \frac{1}{3} \cdot \begin{pmatrix}
+        0 \\ 1 \\ 0
+    \end{pmatrix} + \frac{2}{3} \cdot \begin{pmatrix}
+        1 \\ 2 \\ 3
+    \end{pmatrix} \\
+    \varphi(e_1) = \begin{pmatrix}
+        0 \\ \frac{1}{3} \\ 0
+    \end{pmatrix} + \begin{pmatrix}
+        \frac{2}{3} \\ \frac{4}{3} \\ 2
+    \end{pmatrix} \\
+    \varphi(e_1) = \begin{pmatrix}
+        \frac{2}{3} \\ \frac{5}{3} \\ 2 
+    \end{pmatrix}\\
+    \varphi(e_2) = \frac{1}{3} \cdot \varphi(u_1) - \frac{1}{3} \cdot \varphi(u_2) \\
+    \varphi(e_2) = \frac{1}{3} \cdot \begin{pmatrix}
+        0 \\ 1 \\ 0
+    \end{pmatrix} -\frac{1}{3} \cdot \begin{pmatrix}
+        1 \\ 2 \\ 3
+    \end{pmatrix} \\
+    \varphi(e_2) = \begin{pmatrix}
+        0 \\ \frac{1}{3} \\ 0
+    \end{pmatrix} + \begin{pmatrix}
+        -\frac{1}{3} \\ -\frac{2}{3} \\ -1
+    \end{pmatrix} \\
+    \varphi(e_2) = \begin{pmatrix}
+        -\frac{1}{3} \\ -\frac{1}{3} \\ -1
+    \end{pmatrix}\\
+    \varphi(e_3) = \varphi(u_3) \\
+    \varphi(e_3) = \begin{pmatrix}
+        2 \\ -1 \\ 7
+    \end{pmatrix} \\
+    A = \begin{pmatrix}
+        \frac{2}{3} & -\frac{1}{3} & 2 \\
+        \frac{5}{3} & -\frac{2}{3} & -1 \\
+        2 & -1 & 7
+    \end{pmatrix}\\
+    \varphi(x) = \begin{pmatrix}
+        \frac{2}{3} & -\frac{1}{3} & 2 \\
+        \frac{5}{3} & -\frac{2}{3} & -1 \\
+        2 & -1 & 7
+    \end{pmatrix} \cdot \begin{pmatrix}
+        x_1 \\ x_2 \\ x_3
+    \end{pmatrix}
+\end{align*}
+
+\section{Aufgabe 3}
+
+\subsection{a}
+Bestimmen Sie eine lineare Abbildung $T: \mathbb{R}^3 \rightarrow \mathbb{R}^3$, deren Kern nur den Nullvektor enthält. Bestimmen Sie weiterhin eine lineare Abbildung $S: \mathbb{R}^3 \rightarrow \mathbb{R}^3$, deren Kern der gesamte Raum $\mathbb{R}^3$ ist.
+
+\[
+T = \begin{pmatrix}
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & 1
+\end{pmatrix}
+\]
+
+\[
+S = \begin{pmatrix}
+    0 & 0 & 0 \\
+    0 & 0 & 0 \\ 
+    0 & 0 & 0
+\end{pmatrix}
+\]
+
+\subsection{b}
+Bestimmen Sie Bild und Kern der Matrix
+\[
+A=\begin{pmatrix}
+    2 & 2 & 3 \\ 1 & 1 & 0 \\ -1 & -1 & 1
+\end{pmatrix}
+\]
+
+\subsection*{Bild}
+
+\begin{align*}
+    n = \dim(Bild(A)) + \dim(Kern(A)) \\
+    3 = \dim(Bild(A)) + 1 \quad |-1 \\
+    \Leftrightarrow  2 = \dim(Bild(A))
+\end{align*}
+
+\subsection*{Kern}
+\begin{align*}
+    \begin{pmatrix}
+    2 & 2 & 3 \\ 1 & 1 & 0 \\ -1 & -1 & 1
+\end{pmatrix} \cdot \begin{pmatrix}
+    x_1 \\ x_2 \\ x_3
+\end{pmatrix} = \begin{pmatrix}
+    0 \\ 0 \\ 0
+\end{pmatrix} \\\pagebreak[0]
+\begin{cases}
+    \text{I:\@} & 2x_1 + 2x_2 + 3x_3 = 0 \\
+    \text{II:\@} & x_1 + x_2 = 0 \\
+    \text{III:\@} & -x_1 - x_2 + x_3 = 0
+\end{cases} \\\pagebreak[0]
+\text{III + II} \\\pagebreak[0]
+\begin{cases}
+    \text{I:\@} & 2x_1 + 2x_2 + 3x_3 = 0 \\
+    \text{II:\@} & x_1 + x_2 = 0 \\
+    \text{III:\@} & x_3 = 0
+\end{cases} \\
+\text{in I einsetzen} \\\pagebreak[0]
+\begin{cases}
+    \text{I:\@} & 2x_1 + 2x_2 + 3 \cdot 0 = 0 \Leftrightarrow 2x_1 + 2x_2 = 0 \\
+    \text{II:\@} & x_1 + x_2 = 0 \quad | -x_2 \Leftrightarrow x_1 = -x_2\\
+    \text{III:\@} & x_3 = 0
+\end{cases} \\\pagebreak[0]
+\text{in I einsetzen} \\\pagebreak[0]
+\begin{cases}
+    \text{I:\@} & 2 \cdot -x_2 + 2x_2 = 0 \Leftrightarrow 0 = 0 \\
+    \text{II:\@} & x_1 = -x_2\\
+    \text{III:\@} & x_3 = 0
+\end{cases} \\\pagebreak[0]
+\begin{pmatrix}
+    x_1 \\ x_2 \\ x_3
+\end{pmatrix} = \begin{pmatrix}
+    -x_2 \\ x_2 \\ 0
+\end{pmatrix} \text{, wobei } x_2 \in \mathbb{R} \\
+span\left\{\begin{pmatrix}
+    -1 \\ 1 \\ 0
+\end{pmatrix}\right\}
+\end{align*}
+
+\section{Aufgabe 4}
+
+\subsection{a}
+Es sei $T: \mathbb{R}^3 \rightarrow \mathbb{R}^3$ gegeben durch: $T \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix}2x \\ 4x-y \\ 2x+3y\end{pmatrix}$. Zeigen Sie, dass $T$ invertierbar ist, und geben Sie eine Formel für $T^{-1}$ an.
+
+\subsection{b}
+Bestimmen Sie die inverse Matrix für
+
+\[
+A = \begin{pmatrix}
+    2 & 2 & 3 \\ 1 & -1 & 0 \\ -1 & 2 & 1
+\end{pmatrix}
+\]

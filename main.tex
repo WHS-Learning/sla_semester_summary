@@ -1,0 +1,38 @@
+\documentclass[11pt, oneside]{report}
+
+\usepackage{config/style}
+\usepackage{config/code}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\addbibresource{references.bib}
+
+\begin{document}
+\include{config/globals}
+
+	\include{titlepage}
+
+	\clearpage
+
+	\thispagestyle{empty}
+	\pagenumbering{gobble}
+
+	\include{copyright}
+	\include{abstract}
+
+	\tableofcontents
+
+	\clearpage
+
+	\pagenumbering{arabic}
+
+	\part{Bonusteste}
+	\include{chapters/bonus_tests/test_1}
+
+	\part{Lineare Algebra}
+	\include{chapters/lineare_algebra/page_5}
+	\include{chapters/lineare_algebra/page_6}
+	\include{chapters/lineare_algebra/page_7}
+	\include{chapters/lineare_algebra/page_8}
+	\include{chapters/lineare_algebra/page_9}
+
+\end{document}

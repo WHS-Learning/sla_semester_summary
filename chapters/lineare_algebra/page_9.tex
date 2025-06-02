@@ -1,0 +1,72 @@
+\chapter{Übungsblatt 9}
+
+\section{Aufgabe 1}
+
+\subsection{a}
+Seien die Geraden $G_1$ und $G_2$ definiert durch:
+\begin{align*}
+G_1 &:= \left\{\begin{pmatrix}
+1 \\ 2 \\ 3
+\end{pmatrix} + \lambda\begin{pmatrix}
+1 \\ 1 \\ 1
+\end{pmatrix}: \lambda \in \mathbb{R}\right\} \\
+G_2 &:= \left\{\begin{pmatrix}
+3 \\ 3 \\ 3
+\end{pmatrix} + \mu \begin{pmatrix}
+1 \\ 1 \\ 1
+\end{pmatrix}: \mu \in \mathbb{R}\right\}
+\end{align*}
+Wie liegen $G_1$ und $G_2$ zueinander im Raum? Bestimmen Sie, je nach Lage, Schnittpunkt oder Abstand der beiden Geraden.
+
+\subsection{b}
+
+Es sei $E$ definiert durch:
+\begin{align*}
+    E := \left\{\begin{pmatrix}
+    1 \\ 0 \\1
+    \end{pmatrix} + \lambda \begin{pmatrix}
+        1 \\ 1 \\ 1
+    \end{pmatrix} + \mu \begin{pmatrix}
+        2 \\ 3 \\ 4
+    \end{pmatrix}: \lambda, \mu \in \mathbb{R}\right\}
+\end{align*}
+Geben Sie $E$ in Normalenform an.
+
+\section{Aufgabe 2}
+
+\subsection{a}
+Sei $v = \begin{pmatrix}
+    1 \\ 1 \\ 0
+\end{pmatrix}$ und $w = \begin{pmatrix}
+    1 \\ 1 \\ 0
+\end{pmatrix}$ und $G := \left\{\lambda w: \lambda \in \mathbb{R}\right\}$. Bestimmen Sie die Projektion $v_w$ von 
+$v$ auf die von $w$ aufgespannte Gerade $G$.
+Bestimmen Sie weiterhin die Matrix, die die lineare Abbildung $P: \mathbb{R}^3 \rightarrow G, a \mapsto aw$ dastellt. 
+Was ist der Rang dieser Matrix? Was ist ihr Kern? Was ihr Bild?
+
+\subsection{b}
+(Transferfrage) Sei $E := \left\{\lambda\begin{pmatrix}
+    1 \\ 0 \\ 1
+\end{pmatrix} + \mu \begin{pmatrix}
+    1 \\ 1 \\ 0
+\end{pmatrix}: \lambda \in \mathbb{R}\right\}$. Sei $v := \begin{pmatrix}
+    1 \\ 1 \\ 2
+\end{pmatrix}$. Wie kann man die orthogonale Projektion von $v$ auf $E$ bestimmen? Welcher Vektor kommt dabei heraus?
+
+\section{Aufgabe 3}
+
+\subsection{a}
+Sei $D_\pi: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ die lineare Abbildung, die jeden Vektor aus $\mathbb{R}^2$ um 
+$\pi$ dreht. Sei $v := \begin{pmatrix}1 \\2\end{pmatrix}$. Sellen Sie die Matrix zu $D_\pi$ auf und bestimmen Sie 
+$D_\pi(v)$. Bestimmen Sie $\langle v, D_\pi(v)\rangle$.
+
+\subsection{b}
+Sei $D : \mathbb{R}^3 \rightarrow \mathbb{R}^3$ die Drehung, die den Vektor $(1, 0, 0)^t$ auf den Vektor 
+$\frac{1}{\sqrt{3}}(1, 1, 1)$ abbildet. Bestimmen Sie die Drehmatrix, die D darstellt.
+
+\subsection{c}
+
+Sei $\varphi \in [0, 2\pi)$. Bestimmen Sie für die Drehmatrix $A_\varphi \in \mathbb{R}^{2 \times 2}$ und 
+$A_{3, \varphi} \in \mathbb{R}^{3 \times 3}$ (Drehung um die $x_3$-Achse) die Determinante. Bestimmen Sie 
+weiterhin das Produkt $A^t_\varphi A^t_\varphi$ bzw. $A^t_{3, \varphi} A_{3, \varphi}$. Was ist also die Inverse
+$A^{-1}_{\varphi}$ bzw. $A^{-1}_{3, \varphi}$
