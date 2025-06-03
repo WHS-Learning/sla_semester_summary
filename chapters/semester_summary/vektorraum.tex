@@ -1,0 +1,30 @@
+\chapter{Vektorraum}
+
+\section{Definition}
+
+Ein Vektorraum über einem Körper $\mathbb{K}$ (Hier inden Vorlesungen immer $\mathbb{R}$) ist eine Menge $V$, deren Elemente Vektoren genannt werden, zusammen mit zwei Operationen:
+\begin{itemize}
+    \item der Vektoraddition $+ : V \times V \to V$, $(v, w) \mapsto v+w$,
+    \item der Skalarmultiplikation $\cdot : \mathbb{K} \times V \to V$, $(s, v) \mapsto s \cdot v$.
+\end{itemize}
+
+Damit $(V, +, \cdot)$ als Vektorraum über $\mathbb{K}$ bezeichnet werden kann, müssen die folgenden Axiome für alle Vektoren $u, v, w \in V$ und alle Skalare $s, t \in \mathbb{K}$ erfüllt sein:
+
+\textbf{Axiome der Vektoraddition} (d.h. $(V,+)$ ist eine abelsche Gruppe):
+\begin{itemize}
+    \item $v + w = w + v$ (Kommutativgesetz der Addition)
+    \item $u + (v + w) = (u + v) + w$ (Assoziativgesetz der Addition)
+    \item Es existiert ein Nullelement $\vec{0} \in V$, sodass für alle $v \in V$ gilt: $\vec{0} + v = v$ (Existenz des neutralen Elements der Addition)
+    \item Zu jedem $v \in V$ existiert ein inverses Element $-v \in V$, sodass gilt: $v + (-v) = \vec{0}$ (Existenz des inversen Elements der Addition)
+\end{itemize}
+
+\textbf{Axiome der Skalarmultiplikation} (und Kompatibilität mit der Vektoraddition):
+\begin{itemize}
+    \item $s \cdot (v + w) = s \cdot v + s \cdot w$ (Distributivgesetz bezüglich der Vektoraddition)
+    \item $(s + t) \cdot v = s \cdot v + t \cdot v$ (Distributivgesetz bezüglich der Skalaraddition)
+    \item $(s \cdot t) \cdot v = s \cdot (t \cdot v)$ (Assoziativgesetz der Skalarmultiplikation)
+    \item $1 \cdot v = v$, wobei $1$ das Einselement des Körpers $\mathbb{K}$ ist (Neutralität des Einselements des Körpers)
+\end{itemize}
+
+\paragraph{Erläuterung}
+Die Vektorraumaxiome stellen sicher, dass die Addition von Vektoren und die Multiplikation von Vektoren mit Skalaren sich in einer Weise verhalten, die konsistent und "vernünftig" ist. Die ersten vier Axiome definieren die Eigenschaften der Vektoraddition (die Vektoren bilden eine abelsche Gruppe), während die übrigen Axiome die Wechselwirkung mit der Skalarmultiplikation regeln. Obwohl die Liste der Axiome zunächst umfangreich erscheinen mag, fassen sie im Kern zusammen, dass sich das Rechnen mit Vektoren und Skalaren in vielerlei Hinsicht analog zum Rechnen mit "normalen" Zahlen (wie den reellen Zahlen $\mathbb{R}$) und deren bekannten Rechengesetzen verhält. Es sind also genau die Eigenschaften, die man intuitiv von Operationen erwarten würde, die man "Addition" und "skalare Multiplikation" nennt.

@@ -1,0 +1,34 @@
+\chapter{Linearkombinationen}
+
+Eine Linearkombination beschreibt eine Summe aus Vektoren. Das Ergebnis aus einer Linearkombination von Vektoren ist selbst ein Vektor. Ein Vektor ist eine Linearkombinationen von Vektoren, wenn es $a, b \in \mathbb{R}$ gibt, sodass $u = a \cdot v + b \cdot w$ gilt. Dies berechnet man durch ein Lineares Gleichungssystem
+
+\section{Beispiel}
+
+\begin{align*}
+    u = \begin{pmatrix}
+        2 \\ 4 \\ 1
+    \end{pmatrix}, \quad v = \begin{pmatrix}
+        0 \\ 0 \\ 1
+    \end{pmatrix}, \quad w = \begin{pmatrix}
+        1 \\ 2 \\ 0
+    \end{pmatrix} \\
+    au + bv = w \\
+    \begin{cases}
+        \text{I:\@} & a \cdot 2 + b \cdot 0 = 1 \\
+        \text{II:\@} & a \cdot 4 + b \cdot 0 = 2 \\
+        \text{III:\@} & a \cdot 1 + b \cdot 1 = 0
+    \end{cases} \\
+    \begin{cases}
+        \text{I:\@} & a \cdot 2 = 1 \quad | : 2 \Leftrightarrow a = \frac{1}{2}\\
+        \text{II:\@} & a \cdot 4 = 2 \quad | : 4 \Leftrightarrow a = \frac{1}{2}\\
+        \text{III:\@} & a \cdot 1 + b \cdot 1 = 0
+    \end{cases} \\
+    \text{in III einsetzen} \\
+    \begin{cases}
+        \text{I:\@} & a = \frac{1}{2}\\
+        \text{II:\@} & a = \frac{1}{2}\\
+        \text{III:\@} & \frac{1}{2} \cdot 1 + b \cdot 1 = 0 \Leftrightarrow \frac{1}{2} + b = 0 \quad |- \frac{1}{2} \Leftrightarrow b = -\frac{1}{2}
+    \end{cases} \\
+\end{align*}
+
+$a = \frac{1}{2}, b = -\frac{1}{2}$ ist also die Linearkombination für $u + v = w$
