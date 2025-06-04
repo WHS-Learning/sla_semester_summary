@@ -1,17 +1,111 @@
 \chapter{Lineare Abbildungen}
 
-Eine Lineare Abbildung ist eine Abbildung mit Konstanten Anteil 0
+Lineare Abbildungen sind ein fundamentales Konzept in der Mathematik, besonders in der linearen Algebra. Sie beschreiben auf eine sehr spezielle Weise, wie ein Vektor (oder eine Zahl) in einen anderen transformiert wird.
 
+\section{Was ist überhaupt eine lineare Abbildung? (Der einfache Fall)}
+
+\textit{Eine Lineare Abbildung ist eine Abbildung mit Konstanten Anteil 0.}
+
+Das bedeutet, wenn man sich den Graphen der Funktion vorstellt, muss er \textbf{immer durch den Ursprung gehen} (also durch den Punkt $(0,0)$).
+
+\textbf{Beispiele:}
 \begin{itemize}
-    \item $f(x) = 3x$ ist eine Lineare Abbildung
-    \item $f(x) = 3x + 3$ ist \textbf{keine} Lineare Abbildung
+    \item $f(x) = 3x$
+    \begin{itemize}
+        \item Hier wird jede Zahl $x$ einfach mit 3 multipliziert.
+        \item Wenn $x=0$ eingesetzt wird, kommt $f(0) = 3 \cdot 0 = 0$ raus. Der konstante Anteil ist 0.
+        \item Grafisch ist das eine Gerade, die durch den Ursprung geht.
+        \item \textbf{Das ist eine lineare Abbildung.}
+    \end{itemize}
+
+    \item $f(x) = 3x + 3$
+    \begin{itemize}
+        \item Hier wird $x$ mit 3 multipliziert, und dann wird noch 3 addiert.
+        \item Wenn $x=0$ eingesetzt wird, kommt $f(0) = 3 \cdot 0 + 3 = 3$ raus.
+        \item Dieser "$+3$"-Teil ist der "konstante Anteil", der eben nicht Null ist.
+        \item Grafisch ist das eine Gerade, die die y-Achse bei 3 schneidet, nicht im Ursprung.
+        \item \textbf{Das ist KEINE lineare Abbildung.}
+    \end{itemize}
 \end{itemize}
 
-\section{Lineare Abbildung zwischen zwei Vektorräumen}
+\section{Lineare Abbildungen zwischen zwei Vektorräumen}
 
-Wenn zwei Vektorräume eine Lineare Abbildung bilden, muss Homogenität gelten
+Nun wird es etwas allgemeiner. Man stelle sich vor, man hat nicht nur einzelne Zahlen, sondern ganze Räume voller Vektoren. Eine lineare Abbildung kann nun Vektoren aus einem Vektorraum in Vektoren eines anderen Vektorraums überführen. Damit das "linear" im Sinne der linearen Algebra ist, müssen zwei ganz wichtige Eigenschaften erfüllt sein: \textbf{Additivität} und \textbf{Homogenität}.
 
+\subsection{Homogenität ("Skalierungstreue")}
+
+Die Homogenität besagt:
+$$f(\lambda \cdot v) = \lambda \cdot f(v)$$
+
+Bedeutung:
 \begin{itemize}
-    \item $f(4) = 3 \cdot 4 = 2 \cdot f(2) = f(2 \cdot 2)$, wobei $f(x) = 3x$
-    \item $f(v + w) = f(v) + f(w)$
+    \item $\lambda$ (Lambda) ist ein Skalar.
+    \item $v$ ist ein Vektor.
+    \item $\lambda \cdot v$ bedeutet: Man nimmt den Vektor $v$ und streckt oder staucht ihn um den Faktor $\lambda$.
+    \item $f(v)$ ist das Ergebnis, wenn die Abbildung $f$ auf den Vektor $v$ angewendet wird.
 \end{itemize}
+Die Regel besagt: Es ist egal, ob ein Vektor \textbf{zuerst skaliert} und \textbf{dann die Abbildung angewendet wird}, ODER ob \textbf{zuerst die Abbildung auf den Vektor angewendet wird} und \textbf{das Ergebnis dann skaliert wird}. Es muss dasselbe Ergebnis resultieren.
+
+\textbf{Beispiel $f(x) = 3x$ (hier ist $x$ ein eindimensionaler Vektor):}
+
+Sei $\lambda = 2$ und der "Vektor" $x=2$.
+\begin{itemize}
+    \item \textbf{Linke Seite der Gleichung: $f(\lambda \cdot x)$}
+    \begin{enumerate}
+        \item Zuerst skalieren: $\lambda \cdot x = 2 \cdot 2 = 4$.
+        \item Dann $f$ anwenden: $f(4) = 3 \cdot 4 = 12$.
+    \end{enumerate}
+    \item \textbf{Rechte Seite der Gleichung: $\lambda \cdot f(x)$}
+    \begin{enumerate}
+        \item Zuerst $f$ anwenden: $f(x) = f(2) = 3 \cdot 2 = 6$.
+        \item Dann das Ergebnis skalieren: $\lambda \cdot f(2) = 2 \cdot 6 = 12$.
+    \end{enumerate}
+\end{itemize}
+Es gilt $12 = 12$. Die Homogenität ist erfüllt.
+
+\textit{Der Ausdruck $f(4) = 3 \cdot 4 = 2 \cdot f(2) = f(2 \cdot 2)$ zeigt genau das:}
+\begin{itemize}
+    \item $f(2 \cdot 2)$ ist die linke Seite (erst skalieren, dann abbilden).
+    \item $2 \cdot f(2)$ ist die rechte Seite (erst abbilden, dann skalieren).
+\end{itemize}
+
+\subsection{Additivität ("Summentreue")}
+
+Die Additivität besagt:
+$$f(v + w) = f(v) + f(w)$$
+
+Bedeutung:
+\begin{itemize}
+    \item $v$ und $w$ sind zwei Vektoren (aus demselben Vektorraum).
+    \item $v+w$ ist die Summe der beiden Vektoren.
+\end{itemize}
+Die Regel besagt: Es ist egal, ob zwei Vektoren \textbf{zuerst addiert} und \textbf{dann die Abbildung auf die Summe angewendet wird}, ODER ob \textbf{zuerst die Abbildung auf jeden Vektor einzeln angewendet wird} und \textbf{dann die Ergebnisse addiert werden}. Es muss dasselbe Ergebnis resultieren.
+
+\textbf{Beispiel mit $f(x) = 3x$:}
+
+Seien $v=1$ und $w=5$.
+\begin{itemize}
+    \item \textbf{Linke Seite der Gleichung: $f(v+w)$}
+    \begin{enumerate}
+        \item Zuerst addieren: $v+w = 1+5 = 6$.
+        \item Dann $f$ anwenden: $f(6) = 3 \cdot 6 = 18$.
+    \end{enumerate}
+    \item \textbf{Rechte Seite der Gleichung: $f(v) + f(w)$}
+    \begin{enumerate}
+        \item $f$ auf $v$ anwenden: $f(v) = f(1) = 3 \cdot 1 = 3$.
+        \item $f$ auf $w$ anwenden: $f(w) = f(5) = 3 \cdot 5 = 15$.
+        \item Die Ergebnisse addieren: $3 + 15 = 18$.
+    \end{enumerate}
+\end{itemize}
+Es gilt $18 = 18$. Die Additivität ist erfüllt.
+
+\textbf{Zusammenfassend für Vektorräume:}
+Eine Abbildung $f$ zwischen zwei Vektorräumen ist linear, wenn sie
+\begin{enumerate}
+    \item \textbf{homogen} ist: $f(\lambda \cdot v) = \lambda \cdot f(v)$
+    \item \textbf{additiv} ist: $f(v + w) = f(v) + f(w)$
+\end{enumerate}
+Diese beiden Bedingungen sind der Kern dessen, was eine lineare Abbildung ausmacht. Sie sorgen dafür, dass die Struktur des Vektorraums durch die Abbildung "respektiert" wird.
+
+\textbf{Warum ist das wichtig?}
+Lineare Abbildungen sind grundlegend für viele Transformationen und haben Eigenschaften, die in Bereichen wie Computergrafik, Physik und Ingenieurwesen nützlich sind.

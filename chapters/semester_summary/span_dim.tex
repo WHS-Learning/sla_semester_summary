@@ -1,0 +1,49 @@
+\chapter{Spannraum, Dimension und Kern von Untervektorräumen}
+
+\section{Untervektorraum}
+Ganz einfach gesagt ist ein Untervektorraum ein Teil eines größeren Vektorraums, der selbst alle Eigenschaften eines Vektorraums erfüllt. Betrachtet man den \(\mathbb{R}^3\) (den normalen 3D-Raum) als gesamten Raum, so ist ein Untervektorraum ein bestimmter Bereich darin, zum Beispiel:
+\begin{itemize}
+    \item Eine Ebene, die genau durch den Ursprung (den Nullpunkt \(\begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}\)) geht. Wenn zwei Vektoren in dieser Ebene addiert werden, so liegt das Ergebnis wieder in dieser Ebene. Wenn ein Vektor in dieser Ebene gestreckt oder gestaucht wird, verbleibt man ebenfalls in der Ebene.
+    \item Eine Gerade, die genau durch den Ursprung geht, ist auch ein Untervektorraum.
+\end{itemize}
+Wichtig ist: Ein Untervektorraum darf nicht leer sein; er muss mindestens den Nullvektor enthalten (der Ursprung muss Teil davon sein). Eine Ebene, die den Ursprung nicht enthält, ist \textbf{kein} Untervektorraum des \(\mathbb{R}^3\).
+
+Ein Beispiel im \(\mathbb{R}^3\): Die Menge aller Vektoren der Form \(\begin{pmatrix} x \\ y \\ 0 \end{pmatrix}\) (also die xy-Ebene) ist ein Untervektorraum von \(\mathbb{R}^3\).
+Die Menge aller Vektoren der Form \(\begin{pmatrix} x \\ y \\ 1 \end{pmatrix}\) ist \textbf{kein} Untervektorraum, da sie den Nullvektor nicht enthält und die Addition zweier solcher Vektoren \(\begin{pmatrix} x_1 \\ y_1 \\ 1 \end{pmatrix} + \begin{pmatrix} x_2 \\ y_2 \\ 1 \end{pmatrix} = \begin{pmatrix} x_1+x_2 \\ y_1+y_2 \\ 2 \end{pmatrix}\) nicht wieder in der Menge liegt.
+
+\section{Spannraum}
+Der Spannraum (auch lineare Hülle genannt) umfasst alles, was mit einer gegebenen Menge von Vektoren "erreicht" oder "aufgespannt" werden kann, indem diese beliebig verlängert, verkürzt und addiert werden.
+Man kann sich das anhand von Vektoren als Pfeile vorstellen:
+\begin{itemize}
+    \item Mit einem einzigen Vektor (der nicht der Nullvektor ist), z.B. \(\vec{v} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}\), kann eine Gerade aufgespannt werden. Der Spannraum \(span\{\vec{v}\}\) besteht aus allen Vielfachen dieses Vektors (z.B. \(2\vec{v}\), \(-0.5\vec{v}\), etc.), was eben diese Gerade durch den Ursprung ergibt.
+    \item Mit zwei Vektoren, die in unterschiedliche Richtungen zeigen, z.B. \(\vec{a} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}\) und \(\vec{b} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}\) im \(\mathbb{R}^3\), kann eine ganze Ebene aufgespannt werden (hier die xy-Ebene). Der Spannraum ist dann \(span\{\vec{a}, \vec{b}\} = \{ \lambda_1 \vec{a} + \lambda_2 \vec{b} \}\).
+\end{itemize}
+Der gesamte \(\mathbb{R}^3\) wird zum Beispiel von den drei Einheitsvektoren aufgespannt:
+\[ \mathbb{R}^3 = span \left\{\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}\right\} \]
+Man sagt, diese Vektoren sind ein Erzeugendensystem für den \(\mathbb{R}^3\).
+
+Wenn die Vektoren, die den Raum aufspannen, linear unabhängig sind (also keiner der Vektoren durch die anderen ausgedrückt werden kann), dann bilden sie eine Basis für diesen Spannraum. Sind sie linear abhängig, gibt es "überflüssige" Vektoren, die man weglassen könnte, ohne den Spannraum zu verkleinern. Zum Beispiel spannen \(\begin{pmatrix} 1 \\ 0 \end{pmatrix}\), \(\begin{pmatrix} 0 \\ 1 \end{pmatrix}\) und \(\begin{pmatrix} 1 \\ 1 \end{pmatrix}\) immer noch die \(\mathbb{R}^2\)-Ebene auf, aber \(\begin{pmatrix} 1 \\ 1 \end{pmatrix}\) ist nicht nötig, da er eine Kombination der ersten beiden ist.
+
+\section{Dimension}
+Die Dimension eines Vektorraums (oder Untervektorraums) ist einfach die Anzahl der Vektoren, die mindestens benötigt werden, um diesen Raum aufzuspannen. Diese "minimal notwendigen" Vektoren müssen linear unabhängig sein und bilden eine sogenannte Basis.
+\begin{itemize}
+    \item Eine Gerade hat die Dimension 1 (es wird ein Vektor benötigt, um sie aufzuspannen).
+    \item Eine Ebene hat die Dimension 2 (es werden zwei linear unabhängige Vektoren benötigt, um sie aufzuspannen).
+    \item Der Raum \(\mathbb{R}^3\) hat die Dimension 3 (es werden drei linear unabhängige Vektoren benötigt, z.B. die Einheitsvektoren).
+    \item Der \(\mathbb{R}^n\) hat die Dimension \(n\).
+    \item Ein Punkt (nur der Nullvektor) hat die Dimension 0.
+\end{itemize}
+Die Dimension gibt also an, wie viele "Freiheitsgrade" oder "unabhängige Richtungen" es in dem Raum gibt.
+
+\section{Kern}
+Der Kern bezieht sich nicht auf einen Vektorraum allein, sondern auf eine lineare Abbildung (oft dargestellt durch eine Matrix \(A\)).
+Ganz einfach gesagt: Der Kern einer Matrix \(A\) ist die Menge aller Vektoren \(\vec{x}\), die von der Matrix \(A\) auf den Nullvektor \(\vec{0}\) abgebildet werden. Also alle \(\vec{x}\), für die gilt: \(A\vec{x} = \vec{0}\).
+
+Man kann sich eine Maschine (die Matrix) vorstellen, in die Vektoren hineingegeben werden. Der Kern sind all die Vektoren, die nach der Verarbeitung durch die Maschine "verschwinden" (also zum Nullvektor werden).
+
+Beispiel:
+Gegeben sei die Matrix \(A = \begin{pmatrix} 1 & 2 \\ 2 & 4 \end{pmatrix}\). Es werden Vektoren \(\vec{x} = \begin{pmatrix} x_1 \\ x_2 \end{pmatrix}\) gesucht, sodass \(A\vec{x} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\).
+\[ \begin{pmatrix} 1 & 2 \\ 2 & 4 \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \begin{pmatrix} x_1 + 2x_2 \\ 2x_1 + 4x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \]
+Das führt zu der Gleichung \(x_1 + 2x_2 = 0\), also \(x_1 = -2x_2\).
+Alle Vektoren im Kern haben also die Form \(\begin{pmatrix} -2x_2 \\ x_2 \end{pmatrix} = x_2 \begin{pmatrix} -2 \\ 1 \end{pmatrix}\).
+Der Kern ist also der Spannraum des Vektors \(\begin{pmatrix} -2 \\ 1 \end{pmatrix}\), was einer Geraden im \(\mathbb{R}^2\) entspricht. Alle Vektoren auf dieser Geraden werden von der Matrix \(A\) auf den Nullvektor abgebildet.

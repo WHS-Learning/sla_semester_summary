@@ -1,0 +1,93 @@
+\chapter{Gauß-Jordan Verfahren}
+\label{gauss_jordan_verfahren}
+
+\section{Grundlagen des Gauß-Jordan-Verfahrens}
+Das Gauß-Jordan-Verfahren ist ein Rechenverfahren (Algorithmus) aus der linearen Algebra. Man nutzt es hauptsächlich, um lineare Gleichungssysteme (LGS) zu lösen oder um die Inverse einer Matrix zu finden. Es ist eine Erweiterung des Gaußschen Eliminationsverfahrens.
+
+\subsection{Was ist das Ziel?}
+Das Hauptziel des Gauß-Jordan-Verfahrens ist es, eine Matrix durch bestimmte Umformungen in eine spezielle, sehr einfache Form zu bringen: die \textbf{reduzierte Zeilenstufenform}. Aus dieser Form kann man die Lösung eines Gleichungssystems oder die Inverse einer Matrix direkt ablesen.
+Die Matrix ist in reduzierter Zeilenstufenform, wenn:
+\begin{itemize}
+    \item Das erste Element ungleich Null in jeder Zeile (das sogenannte Pivot-Element) eine 1 ist.
+    \item Alle anderen Elemente in der Spalte eines Pivot-Elements Null sind.
+    \item Nulzeilen (falls vorhanden) ganz unten stehen.
+\end{itemize}
+
+\subsection{Erlaubte Umformungen: Elementare Zeilenumformungen}
+Um die Matrix umzuformen, sind nur drei Arten von Operationen erlaubt. Diese ändern die Lösungsmenge eines Gleichungssystems nicht:
+\begin{itemize}
+    \item \textbf{Zeilen vertauschen ($Z_i \leftrightarrow Z_j$):} Zwei komplette Zeilen der Matrix werden miteinander getauscht.
+    \item \textbf{Zeile mit Zahl multiplizieren ($Z_i \rightarrow c \cdot Z_i$):} Jedes Element einer Zeile wird mit derselben Zahl $c$ multipliziert. Wichtig: $c$ darf nicht Null sein.
+    \item \textbf{Vielfaches einer Zeile zu einer anderen addieren ($Z_i \rightarrow Z_i + k \cdot Z_j$):} Ein Vielfaches einer Zeile wird zu den entsprechenden Elementen einer anderen Zeile addiert (oder subtrahiert).
+\end{itemize}
+
+\section{Die Schritte des Verfahrens}
+Das Verfahren läuft in zwei Hauptphasen ab:
+
+\subsection{Phase 1: Vorwärtselimination (Zeilenstufenform erreichen)}
+In dieser Phase, ähnlich dem Gaußschen Eliminationsverfahren, erzeugt man Nullen unterhalb der Pivot-Elemente. Ein Pivot-Element ist das erste von links gesehene Element einer Zeile, das nicht Null ist.
+\begin{enumerate}
+    \item \textbf{Pivot finden:} Man beginnt mit der obersten Zeile. Das erste Element ungleich Null (von links) ist das Pivot-Element dieser Zeile. Wenn dieses Element an der Position $(i,j)$ ist, dann werden alle Elemente unterhalb in der Spalte $j$ zu Null gemacht.
+    \item \textbf{Nullen erzeugen:} Mit Hilfe der Zeile, die das aktuelle Pivot-Element enthält (Pivot-Zeile), werden alle Zahlen direkt unter diesem Pivot zu Null. Dies geschieht, indem man passende Vielfache der Pivot-Zeile von den darunterliegenden Zeilen subtrahiert (oder addiert).
+    \item \textbf{Wiederholen:} Man geht zur nächsten Zeile und zum nächsten Pivot-Element und wiederholt den Vorgang, bis unter allen Pivot-Elementen nur noch Nullen stehen. Das Ergebnis nennt man Zeilenstufenform.
+\end{enumerate}
+
+\subsection{Phase 2: Rückwärtselimination (Reduzierte Zeilenstufenform erreichen)}
+Nun wird die Zeilenstufenform zur einfacheren reduzierten Zeilenstufenform umgewandelt:
+\begin{enumerate}
+    \item \textbf{Pivots zu 1 machen:} Man beginnt mit dem untersten Pivot-Element (also in der untersten Zeile, die nicht nur Nullen enthält). Dieses Pivot-Element wird zu 1 gemacht, indem man seine gesamte Zeile durch den Wert des Pivot-Elements teilt. (Dieser Schritt kann auch schon während der Vorwärtselimination für jedes Pivot gemacht werden.)
+    \item \textbf{Nullen oberhalb der Pivots erzeugen:} Mit der Zeile, deren Pivot-Element nun 1 ist, werden alle Zahlen in derselben Spalte direkt \textit{über} diesem Pivot zu Null gemacht. Dazu addiert/subtrahiert man Vielfache dieser Pivot-Zeile von den oberen Zeilen.
+    \item \textbf{Wiederholen:} Diese Schritte (Pivot zu 1 machen, Nullen darüber erzeugen) wiederholt man für die darüberliegenden Pivot-Zeilen, von unten nach oben.
+\end{enumerate}
+Am Ende dieses Prozesses ist die Matrix in reduzierter Zeilenstufenform.
+
+\section{Beispiel: Lösen eines Linearen Gleichungssystems (LGS)}
+Gegeben sei folgendes LGS:
+\begin{align*}
+x + 2y &= 5 \\
+3x - y &= 1
+\end{align*}
+Wir schreiben dies als erweiterte Matrix $[A|b]$:
+$$ \left[ \begin{array}{cc|c}
+1 & 2 & 5 \\
+3 & -1 & 1
+\end{array} \right] $$
+
+\textbf{Phase 1: Vorwärtselimination}
+\begin{enumerate}
+    \item Das erste Pivot-Element ist die 1 in der ersten Zeile, ersten Spalte ($a_{11}=1$).
+    \item Wir wollen die 3 unter diesem Pivot zu Null machen. Dazu rechnen wir: $R_2 \rightarrow R_2 - 3R_1$.
+    Die zweite Zeile wird: $(3 - 3 \cdot 1, -1 - 3 \cdot 2 \quad | \quad 1 - 3 \cdot 5) = (0, -7 \quad | \quad -14)$.
+    Die Matrix ist jetzt:
+    $$ \left[ \begin{array}{cc|c}
+    1 & 2 & 5 \\
+    0 & -7 & -14
+    \end{array} \right] $$
+\end{enumerate}
+Die Vorwärtselimination ist für dieses kleine Beispiel schon fertig (Zeilenstufenform erreicht).
+
+\textbf{Phase 2: Rückwärtselimination}
+\begin{enumerate}
+    \item Wir beginnen mit dem untersten Pivot, hier die -7 in der zweiten Zeile ($a_{22}=-7$). Wir machen es zu 1 durch $R_2 \rightarrow -\frac{1}{7}R_2$.
+    Die zweite Zeile wird: $(0 \cdot (-\frac{1}{7}), -7 \cdot (-\frac{1}{7}) \quad | \quad -14 \cdot (-\frac{1}{7})) = (0, 1 \quad | \quad 2)$.
+    Die Matrix ist jetzt:
+    $$ \left[ \begin{array}{cc|c}
+    1 & 2 & 5 \\
+    0 & 1 & 2
+    \end{array} \right] $$
+    \item Jetzt erzeugen wir eine Null über dem Pivot der zweiten Zeile (also über der $a_{22}=1$). Das ist die 2 in der ersten Zeile ($a_{12}=2$). Dazu rechnen wir: $R_1 \rightarrow R_1 - 2R_2$.
+    Die erste Zeile wird: $(1 - 2 \cdot 0, 2 - 2 \cdot 1 \quad | \quad 5 - 2 \cdot 2) = (1, 0 \quad | \quad 1)$.
+    Die Matrix ist jetzt in reduzierter Zeilenstufenform:
+    $$ \left[ \begin{array}{cc|c}
+    1 & 0 & 1 \\
+    0 & 1 & 2
+    \end{array} \right] $$
+\end{enumerate}
+
+\textbf{Lösung ablesen:}
+Die Matrix entspricht den Gleichungen:
+\begin{align*}
+1x + 0y &= 1 \quad \Rightarrow \quad x = 1 \\
+0x + 1y &= 2 \quad \Rightarrow \quad y = 2
+\end{align*}
+Die Lösung des LGS ist also $x=1$ und $y=2$.

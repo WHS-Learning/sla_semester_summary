@@ -1,0 +1,184 @@
+\chapter{Matrizen Invertieren}
+
+Die Inverse einer quadratischen Matrix \(A\) ist eine Matrix \(A^{-1}\), sodass das Produkt von \(A\) und \(A^{-1}\) die Einheitsmatrix \(I\) ergibt:
+\[ AA^{-1} = A^{-1}A = I \]
+Eine Methode zur Berechnung der Inversen einer Matrix ist das \nameref{gauss_jordan_verfahren}. Bei diesem Verfahren wird die zu invertierende Matrix \(A\) um die Einheitsmatrix \(I\) derselben Dimension erweitert, sodass eine Matrix \([A|I]\) entsteht. Durch elementare Zeilenumformungen wird der linke Teil \(A\) in die reduzierte Zeilenstufenform überführt. Wenn \(A\) in die Einheitsmatrix \(I\) transformiert werden kann, ist die resultierende rechte Seite die Inverse \(A^{-1}\), also \([I|A^{-1}]\).
+
+Eine notwendige und hinreichende Bedingung für die Invertierbarkeit einer quadratischen Matrix ist, dass ihre \nameref{determinante} ungleich Null ist. Ist \(\det(A) = 0\), so ist die Matrix singulär und besitzt keine Inverse.
+
+\section{Beispiel}
+
+Es soll die Inverse der Matrix \(A\) bestimmt werden:
+\[ A = \begin{pmatrix}
+1 & 2 & 3 \\
+0 & 1 & 4 \\
+5 & 6 & 0
+\end{pmatrix} \]
+Zuerst wird die Determinante von \(A\) berechnet, um die Invertierbarkeit zu prüfen. Nach der Regel von Sarrus (für 3x3-Matrizen):
+\begin{align*}
+\det(A) &= (1 \cdot 1 \cdot 0) + (2 \cdot 4 \cdot 5) + (3 \cdot 0 \cdot 6) \\
+&\quad - (5 \cdot 1 \cdot 3) - (6 \cdot 4 \cdot 1) - (0 \cdot 0 \cdot 2) \\
+&= 0 + 40 + 0 - 15 - 24 - 0 \\
+&= 1
+\end{align*}
+Da \(\det(A) = 1 \neq 0\), ist die Matrix \(A\) invertierbar.
+
+Nun wird das Gauß-Jordan-Verfahren angewendet. Die erweiterte Matrix ist:
+\[ \left[ A | I \right] = \left[ \begin{array}{ccc|ccc}
+1 & 2 & 3 & 1 & 0 & 0 \\
+0 & 1 & 4 & 0 & 1 & 0 \\
+5 & 6 & 0 & 0 & 0 & 1
+\end{array} \right] \]
+
+\begin{longtable}{p{4cm}|p{3cm}}
+
+    \hline
+    \multicolumn{1}{c|}{\textbf{Matrix}} & \multicolumn{1}{c}{\textbf{Inverse}} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
+    \hline
+    \multicolumn{1}{c|}{\textbf{Matrix}} & \multicolumn{1}{c}{\textbf{Inverse}} \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    $\displaystyle\begin{matrix}
+        1 & 2 & 3 \\
+        0 & 1 & 4 \\
+        5 & 6 & 0
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1 \\
+    \end{matrix}$\\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III - 5I} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        1 & 2 & 3 \\
+        0 & 1 & 4 \\
+        0 & -4 & -15
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        -5 & 0 & 1 \\
+    \end{matrix}$\\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III + 4II} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        1 & 2 & 3 \\
+        0 & 1 & 4 \\
+        0 & 0 & 1
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        -5 & 4 & 1 \\
+    \end{matrix}$\\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I - 2II} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        1 & 0 & -5 \\
+        0 & 1 & 4 \\
+        0 & 0 & 1
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & -2 & 0 \\
+        0 & 1 & 0 \\
+        -5 & 4 & 1 \\
+    \end{matrix}$\\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II - 4III} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        1 & 0 & -5 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & -2 & 0 \\
+        20 & -15 & -4 \\
+        -5 & 4 & 1 \\
+    \end{matrix}$\\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I + 5III} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        -24 & 18 & 5 \\
+        20 & -15 & -4 \\
+        -5 & 4 & 1 \\
+    \end{matrix}$\\\hline
+\end{longtable}
+
+Die linke Seite ist nun die Einheitsmatrix. Die rechte Seite ist die Inverse \(A^{-1}\).
+\[ A^{-1} = \begin{pmatrix}
+-24 & 18 & 5 \\
+20 & -15 & -4 \\
+-5 & 4 & 1
+\end{pmatrix} \]
+
+\section{Umkehrabbildung}
+
+Eine Matrix \(A \in \mathbb{R}^{n \times n}\) kann als eine lineare Abbildung von \(\mathbb{R}^n\) nach \(\mathbb{R}^n\) interpretiert werden. Ein Vektor \(\vec{x} \in \mathbb{R}^n\) wird durch die Matrix \(A\) auf einen Vektor \(\vec{y} \in \mathbb{R}^n\) abgebildet:
+\[ \vec{y} = A\vec{x} \]
+Diese Abbildung \(f: \mathbb{R}^n \rightarrow \mathbb{R}^n\), \(\vec{x} \mapsto A\vec{x}\) ist bijektiv (also sowohl injektiv als auch surjektiv) genau dann, wenn die Matrix \(A\) invertierbar ist.
+
+Wenn die Matrix \(A\) invertierbar ist, existiert eine Umkehrabbildung \(f^{-1}: \mathbb{R}^n \rightarrow \mathbb{R}^n\). Diese Umkehrabbildung bildet den Vektor \(\vec{y}\) zurück auf den ursprünglichen Vektor \(\vec{x}\) ab. Die Abbildungsmatrix dieser Umkehrabbildung ist die Inverse \(A^{-1}\):
+\[ \vec{x} = A^{-1}\vec{y} \]
+Somit macht die Umkehrabbildung die ursprüngliche Abbildung rückgängig. Wendet man beide Abbildungen nacheinander an, erhält man die identische Abbildung, bei der jeder Vektor auf sich selbst abgebildet wird:
+\[ A^{-1}(A\vec{x}) = (A^{-1}A)\vec{x} = I\vec{x} = \vec{x} \]
+\[ A(A^{-1}\vec{y}) = (AA^{-1})\vec{y} = I\vec{y} = \vec{y} \]
+Die Existenz einer Umkehrabbildung ist also direkt an die Invertierbarkeit der Abbildungsmatrix \(A\) geknüpft, was wiederum bedeutet, dass \(\det(A) \neq 0\) sein muss.
+
+\subsection{Beispiel zur Umkehrabbildung}
+Betrachten wir die Matrix \(A\) aus dem vorherigen Beispiel und ihre Inverse \(A^{-1}\):
+\[ A = \begin{pmatrix}
+1 & 2 & 3 \\
+0 & 1 & 4 \\
+5 & 6 & 0
+\end{pmatrix}, \quad
+A^{-1} = \begin{pmatrix}
+-24 & 18 & 5 \\
+20 & -15 & -4 \\
+-5 & 4 & 1
+\end{pmatrix} \]
+Sei \(\vec{x} = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}\). Die Abbildung mit \(A\) ergibt:
+\[ \vec{y} = A\vec{x} = \begin{pmatrix}
+1 & 2 & 3 \\
+0 & 1 & 4 \\
+5 & 6 & 0
+\end{pmatrix}
+\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} =
+\begin{pmatrix}
+1 \cdot 1 + 2 \cdot 1 + 3 \cdot 1 \\
+0 \cdot 1 + 1 \cdot 1 + 4 \cdot 1 \\
+5 \cdot 1 + 6 \cdot 1 + 0 \cdot 1
+\end{pmatrix} =
+\begin{pmatrix} 6 \\ 5 \\ 11 \end{pmatrix} \]
+Nun wird die Umkehrabbildung mit \(A^{-1}\) auf \(\vec{y}\) angewendet, um \(\vec{x}\) zurückzuerhalten:
+\[ A^{-1}\vec{y} = \begin{pmatrix}
+-24 & 18 & 5 \\
+20 & -15 & -4 \\
+-5 & 4 & 1
+\end{pmatrix}
+\begin{pmatrix} 6 \\ 5 \\ 11 \end{pmatrix} =
+\begin{pmatrix}
+-24 \cdot 6 + 18 \cdot 5 + 5 \cdot 11 \\
+20 \cdot 6 - 15 \cdot 5 - 4 \cdot 11 \\
+-5 \cdot 6 + 4 \cdot 5 + 1 \cdot 11
+\end{pmatrix} \]
+\[ = \begin{pmatrix}
+-144 + 90 + 55 \\
+120 - 75 - 44 \\
+-30 + 20 + 11
+\end{pmatrix} =
+\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} = \vec{x} \]
+Dies demonstriert, wie die durch \(A^{-1}\) repräsentierte Umkehrabbildung den Vektor \(\vec{y}\) auf den ursprünglichen Vektor \(\vec{x}\) zurückführt.
