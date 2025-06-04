@@ -14,6 +14,57 @@ Bestimmen Sie sämtliche Eigenwerte der folgenden Matrizen:
     \end{pmatrix}
 \end{align*}
 
+\begin{align*}
+    A - \lambda \cdot I \\
+    = \begin{pmatrix}
+        1 & 2 & 3 \\ 
+        4 & 5 & 6 \\ 
+        0 & 0 & 0
+    \end{pmatrix} - \lambda \cdot \begin{pmatrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        1 & 2 & 3 \\ 
+        4 & 5 & 6 \\ 
+        0 & 0 & 0
+    \end{pmatrix}\begin{pmatrix}
+        \lambda & 0 & 0 \\
+        0 & \lambda & 0 \\
+        0 & 0 & \lambda
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        1 - \lambda & 2 & 3 \\
+        4 & 5 - \lambda & 6 \\
+        0 & 0 & -\lambda
+    \end{pmatrix} =: A_\lambda \\
+    \det(A_\lambda) = (1 - \lambda) \cdot (5 - \lambda) \cdot (-\lambda) \\
+        + 2 \cdot 6 \cdot 0  + 3 \cdot 4 \cdot 0 - 0 \cdot (5 - \lambda) \cdot 3\\
+        - 0 \cdot 6 \cdot (1 - \lambda) - (-\lambda) \cdot 4 \cdot 2 \\
+    = (5 - \lambda - 5\lambda + \lambda^2) \cdot (-\lambda) + 0 \\
+        + 0 - 0 - 0 + 4\lambda \cdot 2 \\
+    = -5\lambda +\lambda^2 +5\lambda^2 -\lambda^3 + 8\lambda \\
+    = -\lambda^3 + 6\lambda^2 + 3\lambda \\
+    \text{$\lambda$ Ausklammern} \\
+    \lambda (-\lambda^2 + 6\lambda + 3) \\\\
+    \lambda (-\lambda^2 + 6\lambda + 3) = 0\\
+    \text{Ein Produkt ist null, wenn ein Faktor gleich null ist} \\
+    \begin{cases}
+        \lambda = 0 & \text{Oder} \\
+        -\lambda^2 + 6\lambda + 3 = 0
+    \end{cases} \\
+    \lambda_1 = 0 \\
+    -\lambda^2 + 6 \lambda + 3 = 0 \quad |\cdot (-1) \\
+    \Leftrightarrow \lambda^2 - 6 \lambda - 3 = 0 \quad | \text{PQ-Formel} \\
+    p = 6 \quad q = -3 \\
+    \lambda_{2,3} = \frac{-6}{2} \pm \sqrt{\left(\frac{6}{2}\right)^2 + 3} \\
+    \lambda_{2,3}= -3 \pm \sqrt{\left(3\right)^2 + 3} \\
+    \lambda_{2,3}= -3 \pm \sqrt{9 + 3} \\
+    \lambda_{2,3}= -3 \pm \sqrt{12} \\\\
+    \lambda_1 = 0, \quad \lambda_2 = -3 + \sqrt{12}, \quad \lambda_3 = -3 - \sqrt{12}
+\end{align*}
+
 \subsection{b}
 
 \begin{align*}
@@ -22,6 +73,61 @@ Bestimmen Sie sämtliche Eigenwerte der folgenden Matrizen:
         1 & 1 & 1 \\
         1 & 1 & 1
     \end{pmatrix}
+\end{align*}
+
+\begin{align*}
+    B - \lambda \cdot I \\
+    \begin{pmatrix}
+        1 & 1 & 1 \\
+        1 & 1 & 1 \\
+        1 & 1 & 1
+    \end{pmatrix} - \lambda \cdot \begin{pmatrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{pmatrix} \\
+        \begin{pmatrix}
+        1 & 1 & 1 \\
+        1 & 1 & 1 \\
+        1 & 1 & 1
+    \end{pmatrix} - \begin{pmatrix}
+        \lambda & 0 & 0 \\
+        0 & \lambda & 0 \\
+        0 & 0 & \lambda
+    \end{pmatrix} \\
+    \begin{pmatrix}
+        1 - \lambda & 1 & 1 \\
+        1 & 1 - \lambda & 1 \\
+        1 & 1 & 1 - \lambda
+    \end{pmatrix} =: B_\lambda \\
+    \det(B_\lambda) = (1 - \lambda) \cdot (1 - \lambda) \cdot (1 - \lambda) \\
+                    + 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 - 1 \cdot (1 - \lambda) \cdot 1 \\
+                    - 1 \cdot 1 \cdot (1 - \lambda) - (1 - \lambda) \cdot 1 \cdot 1 \\
+    = (1 -\lambda - \lambda + \lambda^2) \cdot (1 - \lambda) + 1 \\
+        + 1 - (1 - \lambda) - (1 - \lambda) - (1 - \lambda) \\
+    = (1 - 2\lambda + \lambda^2) \cdot (1 - \lambda) + 2 - 3(1 - \lambda) \\
+    = 1 - 2\lambda + \lambda^2 - \lambda + 2\lambda^2 - \lambda^3 + 2 - 3 + 3\lambda \\
+    = -\lambda^3 + 3\lambda^2 \\\\
+    -\lambda^3 + 3\lambda^2 = 0 \\
+    \text{$\lambda$ Ausklammern} \\
+    \lambda (-\lambda^2 + 3\lambda) = 0 \\
+    \text{Ein Produkt ist null, wenn mindestens ein Faktor gleich null ist.} \\
+    \begin{cases}
+        \lambda = 0 & \text{Oder} \\
+        -\lambda^2 + 3 \lambda = 0
+    \end{cases} \\
+    \lambda_1 = 0 \\
+    \text{$\lambda$ Ausklammern} \\
+    \lambda(\lambda + 3) = 0 \\
+    \text{Ein Produkt ist null, wenn mindestens ein Faktor gleich null ist.} \\
+    \begin{cases}
+        \lambda = 0 & \text{Oder} \\
+        \lambda + 3 = 0
+    \end{cases} \\
+    \lambda_2 = 0 \\
+    \lambda_3 + 3 = 0 \quad | -3 \\
+    \lambda_3 = -3 \\\\
+    \lambda_1 = 0, \quad \lambda_2 = 0, \quad \lambda_3 = -3
 \end{align*}
 
 \subsection{c}
@@ -34,18 +140,81 @@ Bestimmen Sie sämtliche Eigenwerte der folgenden Matrizen:
     \end{pmatrix}
 \end{align*}
 
+\begin{align*}
+    C - \lambda \cdot I \\
+    \begin{pmatrix}
+        0 & 0 & 0 \\
+        0 & 0 & 0 \\
+        0 & 0 & 0
+    \end{pmatrix} - \lambda \cdot \begin{pmatrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{pmatrix} \\
+    \begin{pmatrix}
+        0 & 0 & 0 \\
+        0 & 0 & 0 \\
+        0 & 0 & 0
+    \end{pmatrix} - \begin{pmatrix}
+        \lambda & 0 & 0 \\
+        0 & \lambda & 0 \\
+        0 & 0 & \lambda
+    \end{pmatrix} \\
+    \begin{pmatrix}
+        -\lambda & 0 & 0 \\
+        0 & -\lambda & 0 \\
+        0 & 0 & -\lambda
+    \end{pmatrix} =: C_\lambda \\
+    \det(C_\lambda) = -\lambda \cdot -\lambda \cdot -\lambda \\
+    = -\lambda^3 \\\\
+    -\lambda^3 = 0 \quad |\cdot (-1) \\
+    \Leftrightarrow \lambda^3 = 0 \quad | \sqrt[3]{0} \\
+    \Leftrightarrow \lambda_{1, 2, 3} = 0
+\end{align*}
+
 \subsection{d}
 
 \begin{align*}
-    B = \begin{pmatrix}
+    D := \begin{pmatrix}
         0 & 1 \\
         2 & 3
     \end{pmatrix}
 \end{align*}
 
-\section{b}
+\begin{align*}
+    D - \lambda \cdot I \\
+        \begin{pmatrix}
+        0 & 1 \\
+        2 & 3
+    \end{pmatrix} - \lambda \cdot \begin{pmatrix}
+        1 & 0 \\
+        0 & 1
+    \end{pmatrix} \\
+    \begin{pmatrix}
+        0 & 1 \\
+        2 & 3
+    \end{pmatrix} - \begin{pmatrix}
+        \lambda & 0 \\
+        0 & \lambda
+    \end{pmatrix} \\
+    \begin{pmatrix}
+        -\lambda & 1 \\
+        2 & 3 - \lambda
+    \end{pmatrix} =: D_\lambda\\\\
+    \det(D_\lambda) = -\lambda \cdot (3 - \lambda) - 2 \cdot 1 \\
+    = \lambda^2 - 3 \lambda - 2 \\\\
+    \lambda^2 - 3 \lambda - 2 = 0 \quad | PQ\\
+    p = -3 \quad q = -2 \\
+    -\frac{-3}{2} \pm \sqrt{\left(\frac{-3}{2}\right)^2 + 2} \\
+    \frac{3}{2} \pm \sqrt{\left(\frac{9}{4}\right) + 2} \\
+    \frac{3}{2} \pm \sqrt{\frac{17}{4}} \\
+    \lambda_1 = \frac{3}{2} + \sqrt{\frac{17}{4}}, \quad \lambda_2 = \frac{3}{2} - \sqrt{\frac{17}{4}}
+\end{align*}
+
+\section{Aufgabe 2}
 
 \subsection{a}
+
 Ist die Matrix $A := \begin{pmatrix}
     1 & 2 & 3 \\
     4 & 5 & 6 \\
