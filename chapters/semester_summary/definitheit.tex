@@ -1,0 +1,80 @@
+\chapter{Definitheit}
+
+Eine quadratische Matrix \(A \in \mathbb{R}^{n \times n}\) kann eine der folgenden Eigenschaften haben:
+\begin{itemize}
+    \item Positiv definit
+    \item Positiv semidefinit
+    \item Negativ definit
+    \item Negativ semidefinit
+    \item Indefinit
+\end{itemize}
+
+\section{Bestimmung über Eigenwerte}
+Die Definitheit lässt sich anhand der Vorzeichen der Eigenwerte \(\lambda_i\) einer Matrix bestimmen.
+\begin{itemize}
+    \item \textbf{Positiv definit}, wenn alle \(\lambda_i > 0\).
+    \item \textbf{Positiv semidefinit}, wenn alle \(\lambda_i \geq 0\).
+    \item \textbf{Negativ definit}, wenn alle \(\lambda_i < 0\).
+    \item \textbf{Negativ semidefinit}, wenn alle \(\lambda_i \leq 0\).
+    \item \textbf{Indefinit}, wenn es sowohl positive als auch negative Eigenwerte gibt.
+\end{itemize}
+
+\subsection{Beispiel}
+Bei einer Dreiecksmatrix stehen die Eigenwerte auf der Hauptdiagonalen. Die Matrix
+\[ A = \begin{pmatrix}
+    1 & 4 & 2 \\
+    0 & 2 & 4 \\
+    0 & 0 & 3
+\end{pmatrix} \]
+hat die Eigenwerte \(\lambda_1 = 1, \lambda_2 = 2, \lambda_3 = 3\). Da alle Eigenwerte größer als Null sind, ist die Matrix \textbf{positiv definit}.
+
+\section{Hurwitz-Kriterium}
+Um die aufwändige Berechnung der Eigenwerte zu umgehen, kann das Hurwitz-Kriterium (auch Kriterium der Hauptminoren) genutzt werden. Dabei werden die Determinanten der führenden Hauptminoren \(\Delta_k\) betrachtet.
+\begin{center}
+    \begin{tikzpicture}[
+        coeff/.style={draw, minimum width=1.2cm, minimum height=0.75cm, anchor=center, font=\footnotesize},
+        zerocoeff/.style={minimum width=1.2cm, minimum height=0.75cm, anchor=center, font=\footnotesize}
+    ]
+        \matrix[matrix of nodes, 
+                nodes={coeff}, 
+                ampersand replacement=\&, 
+                column sep=-\pgflinewidth,
+                row sep=-\pgflinewidth
+            ] (H) {
+        $a_{1,1}$ \& $a_{1,2}$ \& $a_{1,3}$ \& $\dots$ \& $a_{1,n}$ \\
+        $a_{2,1}$ \& $a_{2,2}$ \& $a_{2,3}$ \& $\dots$ \& $a_{2,n}$ \\
+        $a_{3,1}$ \& $a_{3,2}$ \& $a_{3,3}$ \& $\dots$ \& $a_{3,n}$ \\
+        $\vdots$  \& $\vdots$  \& $\vdots$  \& $\ddots$ \& $\vdots$  \\
+        $a_{n,1}$ \& $a_{n,2}$ \& $a_{n,3}$ \& $\dots$ \& $a_{n,n}$ \\
+        };
+
+        \draw[blue, thick, rounded corners=1pt] (H-1-1.north west) rectangle (H-1-1.south east);
+        \node at (H-1-1.north east) [above left, blue, scale=0.7, xshift=-2mm, yshift=1mm] {$\Delta_1$};
+        \node at (H-1-1.north east) [above left, red, scale=0.7, xshift=12mm, yshift=1mm] {$\Delta_2$};
+        \node at (H-1-1.north east) [above left, green!60!black, scale=0.7, xshift=30mm, yshift=1mm] {$\Delta_3$};
+        \node at (H-1-1.north east) [above left, purple!80!black, scale=0.7, xshift=65mm, yshift=1mm] {$\Delta_n$};
+
+        \draw[red, thick, rounded corners=1pt] (H-1-1.north west) rectangle (H-2-2.south east);
+        \draw[green!60!black, thick, rounded corners=1pt] (H-1-1.north west) rectangle (H-3-3.south east);
+        \draw[purple!80!black, thick, rounded corners=1pt] (H-1-1.north west) rectangle (H-5-5.south east);
+
+    \end{tikzpicture}
+    \captionof{figure}{Schematische Darstellung der Hauptminoren \(\Delta_k\).}
+\end{center}
+Die Vorzeichenfolge der Determinanten \(\det(\Delta_k)\) ist entscheidend:
+\begin{itemize}
+    \item \textbf{Positiv definit}: Alle Vorzeichen sind positiv. (\texttt{+, +, +, \dots})
+    \item \textbf{Negativ definit}: Die Vorzeichen alternieren, beginnend mit negativ. (\texttt{-, +, -, +, \dots}) \newline
+            \textbf{Achtung}: Die Vorzeichenfolgen \texttt{+, -, +, -, \dots} und \texttt{-, -, -, -, \dots} sind kontraintuitiv \textbf{NICHT} Negativ definit.
+    \item \textbf{Indefinit}: Alle anderen Vorzeichenfolgen.
+\end{itemize}
+\textbf{Anmerkung:} Treten Nullen bei den Determinanten auf, kann dieses vereinfachte Kriterium nicht zuverlässig zwischen semidefinit und indefinit unterscheiden.
+
+\subsection{Beispiel}
+Untersuchung der Matrix \[ A = \begin{pmatrix} -2 & 1 & 0 \\ 1 & -2 & 1 \\ 0 & 1 & -2 \end{pmatrix} \]
+\begin{itemize}
+    \item \(\det(\Delta_1) = -2\)
+    \item \(\det(\Delta_2) = \begin{vmatrix} -2 & 1 \\ 1 & -2 \end{vmatrix} = 3\)
+    \item \(\det(\Delta_3) = \det(A) = -4\)
+\end{itemize}
+Die Vorzeichenfolge ist \texttt{-, +, -}. Die Matrix ist somit \textbf{negativ definit}.
