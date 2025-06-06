@@ -58,11 +58,11 @@ Bestimmen Sie sämtliche Eigenwerte der folgenden Matrizen:
     -\lambda^2 + 6 \lambda + 3 = 0 \quad |\cdot (-1) \\
     \Leftrightarrow \lambda^2 - 6 \lambda - 3 = 0 \quad | \text{PQ-Formel} \\
     p = 6 \quad q = -3 \\
-    \lambda_{2,3} = \frac{-6}{2} \pm \sqrt{\left(\frac{6}{2}\right)^2 + 3} \\
-    \lambda_{2,3}= -3 \pm \sqrt{\left(3\right)^2 + 3} \\
-    \lambda_{2,3}= -3 \pm \sqrt{9 + 3} \\
-    \lambda_{2,3}= -3 \pm \sqrt{12} \\\\
-    \lambda_1 = 0, \quad \lambda_2 = -3 + \sqrt{12}, \quad \lambda_3 = -3 - \sqrt{12}
+    \lambda_{2,3} = -\frac{-6}{2} \pm \sqrt{\left(\frac{6}{2}\right)^2 + 3} \\
+    \lambda_{2,3}= 3 \pm \sqrt{\left(3\right)^2 + 3} \\
+    \lambda_{2,3}= 3 \pm \sqrt{9 + 3} \\
+    \lambda_{2,3}= 3 \pm \sqrt{12} \\\\
+    \lambda_1 = 0, \quad \lambda_2 = 3 + \sqrt{12}, \quad \lambda_3 = 3 - \sqrt{12}
 \end{align*}
 
 \subsection{b}
@@ -221,11 +221,25 @@ Ist die Matrix $A := \begin{pmatrix}
     7 & 8 & 9
 \end{pmatrix}$ positiv definit?
 
+\begin{align*}
+    \det(\Delta_1) = 1 \\
+    \det(\Delta_2) = 1 \cdot 5 - 2 \cdot 4 = -3 \\
+\end{align*}
+
+Die Determinante des dritten Hauptminoren ist hier uninteressant, da die Vorzeichenfolge für positive definitheit durch den zweiten Hauptminoren bereits verletzt wurde. Die Matrix ist \textit{nicht} positiv definit, sondern Indefinit.
+
 \subsection{b}
 Wie kann man das Hauptminorenkriterium nutzen, um zu zeigen, dass eine Matrix negativ definit ist? Nutzen Sie Ihr Ergebnis, um zu zeigen, dass die Matrix $B := \begin{pmatrix}
     -1 & 1 \\
     -2 & 1
-\end{pmatrix}$
+\end{pmatrix}$ (negativ definit ist??)
+
+\begin{align*}
+    \det(\Delta_1) = -1 \\
+    \det(\Delta_2) = -1 \cdot 1 - (-2) \cdot 1 = 1
+\end{align*}
+
+Die Matrix ist negativ definit.
 
 \section{Aufgabe 3}
 
@@ -233,6 +247,48 @@ Wie kann man das Hauptminorenkriterium nutzen, um zu zeigen, dass eine Matrix ne
 
 Für welche Winkel $\varphi \in [0, 2\pi)$ hat eine Drehmatrix $A_\varphi \in \mathbb{R}^{2 \times 2}$ reele Eigenwerte? Lösen Sie diese Aufgabe einerseits durch geometrische Argumentation, andererseits rechnerisch.
 
+\subsubsection*{Geometrische Argumentation}
+
+Drehmatritzen mit gerader Dimension haben keine reellen Eigenwerte. Aus diesem Grund hat nur die Drehmatrix, welche um den Winkel 0 dreht (also gar nicht dreht) reele Eigenwerte.
+
+\subsubsection*{Rechnerisch}
+
+\begin{align*}
+    A_0 = \begin{pmatrix}
+        1 & 0 \\
+        0 & 1
+    \end{pmatrix} \rightarrow \lambda_{1,2} = 1 \\
+    \det\left(\begin{pmatrix}
+        \cos(\varphi) & -\sin(\varphi) \\
+        \sin(\varphi) & \cos(\varphi)
+    \end{pmatrix} - \begin{pmatrix}
+        \lambda & 0 \\
+        0 & \lambda
+    \end{pmatrix}\right) = 0 \\
+    (\cos(\varphi) - \lambda) \cdot (\cos(\varphi) - \lambda) - \sin(\varphi) \cdot -\sin(\varphi) = 0 \\
+    {\cos(\varphi)}^2 - \cos(\varphi) \cdot \lambda - \cos(\varphi) \cdot \lambda  + \lambda^2 + {\sin(\varphi)}^2 = 0\\
+    {\cos(\varphi)}^2 + {\sin(\varphi)}^2 - 2 \cdot \cos(\varphi) \cdot \lambda + \lambda^2 = 0 \\
+    1 - 2 \cdot \cos(\varphi) \cdot \lambda + \lambda^2 = 0 \quad | PQ\\
+    p = - 2 \cdot \cos(\varphi), \quad q = 1 \\
+    -\frac{- 2 \cdot \cos(\varphi)}{2} \pm \sqrt{\left(\frac{- 2 \cdot \cos(\varphi)}{2}\right)^2 - 1} \\
+    \cos(\varphi)\pm \sqrt{(-\cos(\varphi))^2 - 1} \\
+    \cos(\varphi)\pm \sqrt{\cos(\varphi)^2 - 1} \\
+    \cos(\varphi)\pm \sqrt{-\sin(\varphi)^2} \\
+    \text{Aus negativen Zahlen kann die Wurzel nicht gezogen werden.} \\
+    \text{Für alle } \varphi \neq 0 \text{ Gibt es keine reellen lösungen.}
+\end{align*}
+
 \subsection{b}
 
 Bestimmen Sie mindestens eine Matrix, die in $O(n) \backslash SO(n)$ enthalten ist.
+
+\begin{align*}
+    \begin{pmatrix}
+        0 & 1 \\
+        1 & 0
+    \end{pmatrix} \\
+    \det\left(    \begin{pmatrix}
+        0 & 1 \\
+        1 & 0
+    \end{pmatrix}\right) = -1 \\
+\end{align*}

@@ -67,8 +67,9 @@ Die Vorzeichenfolge der Determinanten \(\det(\Delta_k)\) ist entscheidend:
     \item \textbf{Negativ definit}: Die Vorzeichen alternieren, beginnend mit negativ. (\texttt{-, +, -, +, \dots}) \newline
             \textbf{Achtung}: Die Vorzeichenfolgen \texttt{+, -, +, -, \dots} und \texttt{-, -, -, -, \dots} sind kontraintuitiv \textbf{NICHT} Negativ definit.
     \item \textbf{Indefinit}: Alle anderen Vorzeichenfolgen.
+    \item \textbf{Negativ bzw Positiv semidefinit}: Wenn durch auftauchende Nullen die Zeichenkette unterbrochen wird (z.B. \texttt{-, +, 0, +, 0, 0, -, \dots}), \textit{kann} die Matrix Positiv bzw Negativ semidefinit sein. \textbf{Sie kann aber auch Indefinit sein!} Hier müssen die Eigenwerte ausgerechnet werden, um die Definitheit sicher bestimmen zu können.
 \end{itemize}
-\textbf{Anmerkung:} Treten Nullen bei den Determinanten auf, kann dieses vereinfachte Kriterium nicht zuverlässig zwischen semidefinit und indefinit unterscheiden.
+\textbf{Wichtig:} Noch einmal; treten Nullen bei den Determinanten auf, kann dieses vereinfachte Kriterium nicht zuverlässig zwischen semidefinit und indefinit unterscheiden.
 
 \subsection{Beispiel}
 Untersuchung der Matrix \[ A = \begin{pmatrix} -2 & 1 & 0 \\ 1 & -2 & 1 \\ 0 & 1 & -2 \end{pmatrix} \]

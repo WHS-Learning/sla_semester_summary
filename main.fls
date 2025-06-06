@@ -529,6 +529,9 @@ INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\courier\pcrr7t.vf
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
+INPUT .\chapters\semester_summary\eigenwerte_eigenvektoren.tex
+INPUT .\chapters\semester_summary\eigenwerte_eigenvektoren.tex
+INPUT chapters\semester_summary\eigenwerte_eigenvektoren.tex
 INPUT .\chapters\bonus_tests\test_1.tex
 INPUT .\chapters\bonus_tests\test_1.tex
 INPUT chapters\bonus_tests\test_1.tex

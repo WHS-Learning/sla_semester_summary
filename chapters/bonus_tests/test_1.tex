@@ -252,3 +252,45 @@ Betrachten wir das Vorzeichen von $\cos(\theta)$ für die möglichen Werte des W
 Das Skalarprodukt $\left\langle \vec{a}, \vec{b} \right\rangle$ ist \textbf{genau dann negativ}, wenn der 
 Kosinus des von den Vektoren eingeschlossenen Winkels $\theta$ negativ ist. Dies ist der Fall, wenn der 
 Winkel $\theta$ ein stumpfer Winkel ist, also $90^\circ < \theta \le 180^\circ$.
+
+\section{Aufgabe 5}
+
+Gegeben sind zwei $\mathbb{R}^3$-Vektoren
+
+\[
+\vec{a} = \begin{pmatrix}
+    -\frac{3}{2} \\
+    \frac{8}{3} \\
+    1
+\end{pmatrix} \quad \vec{b} = \begin{pmatrix}
+    1 \\ 0 \\ \frac{8}{3}
+\end{pmatrix}
+\]
+
+Bestimmen Sie den Winkel zwischen $a$ und $b$ und runden diesen auf zwei Dezimalstellen genau in Grad und Bogenmaß.
+
+\subsection{a}
+
+Der Winkel zwischen zwei Vektoren kann berechnet werden, über $\cos(\theta) = \frac{\left\langle \vec{a}, \vec{b} \right\rangle}{\left|\vec{a}\right| \cdot \left|\vec{b}\right|}$. Hier müssen ganz einfach die Vektoren eingesetzt werden
+
+\begin{align*}
+    \cos(\theta) = \frac{\left\langle \vec{a}, \vec{b} \right\rangle}{\left|\vec{a}\right| \cdot \left|\vec{b}\right|} \\\\
+    \left\langle \vec{a}, \vec{b} \right\rangle = -\frac{3}{2} \cdot 1 + \frac{8}{3} \cdot 0 + 1 \cdot \frac{8}{3} \\
+    = -\frac{3}{2} + \frac{8}{3} \\
+    = \frac{7}{6} \\\\
+    \left|a\right| = \sqrt{{(-\frac{3}{2})}^2 + \frac{8}{3}^2 + 1^2} \\
+    = \sqrt{{\frac{9}{4}} + \frac{64}{9} + 1}
+    = \sqrt{\frac{373}{36}} \\\\
+    \left|b\right| = \sqrt{1^2 + 0^2 + \frac{8}{3}^2} \\
+    = \sqrt{1 + 0 + \frac{64}{9}}
+    = \sqrt{\frac{73}{9}} \\\\
+    \cos(\theta) = \frac{\frac{7}{6}}{\sqrt{\frac{373}{36}} \cdot \sqrt{\frac{73}{9}}} = \frac{21 \sqrt{27229}}{27229} \\
+    \arccos\left(\frac{21 \sqrt{27229}}{27229}\right) \approx 1.44 rad \\
+    \arccos\left(\frac{21 \sqrt{27229}}{27229}\right) \cdot \frac{180}{\pi} \approx 82.71^\circ
+\end{align*}
+
+Der Winekl zwischen den gegebenen Vektoren beträgt in Gradmaß $\theta_{grad}$ = $82.71$.
+
+\subsection{b}
+
+Der Winkel zwischen den gegebenen Vektoren beträgt in Bogenmaß $\theta_{Bogen}$ = $1.44$.
