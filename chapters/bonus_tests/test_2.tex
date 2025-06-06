@@ -1,0 +1,213 @@
+\chapter{Bonustest 2 - Skalarprodukt, Kreuzprodukt, lineare Gleichungssystem, Matzitzen und lineare Abbildungen}
+
+\section{Aufgabe 1}
+
+Bilden die Vektoren 
+
+\[
+\vec{a} = \begin{pmatrix}
+    6 \\ 0 \\ 7 \\ -7
+\end{pmatrix}, \vec{b} = \begin{pmatrix}
+    1 \\3 \\ -1 \\ 0
+\end{pmatrix}, \vec{c} = \begin{pmatrix}
+    -2 \\ 3 \\ 0 \\ 5
+\end{pmatrix} \text{ und } \vec{d} = \begin{pmatrix}
+    1 \\ -1 \\ 0 \\ 1
+\end{pmatrix}
+\]
+
+Eine basis des $\mathbb{R}^4$?
+
+Hierfür müssen die Vektoren auf Lineare unabhängigkeit geprüft werden
+
+\begin{align*}
+    x_1 \begin{pmatrix}
+        6 \\ 0 \\ 7 \\ -7
+    \end{pmatrix} + x_2 \begin{pmatrix}
+        1 \\3 \\ -1 \\ 0
+    \end{pmatrix} + x_3 \begin{pmatrix}
+        -2 \\ 3 \\ 0 \\ 5
+    \end{pmatrix} + x_4 \begin{pmatrix}
+        1 \\ -1 \\ 0 \\ 1
+    \end{pmatrix} = \begin{pmatrix}
+        0 \\ 0 \\ 0 \\ 0
+    \end{pmatrix}
+\end{align*}
+
+\begin{longtable}{p{10cm}}
+    \hline
+    \multicolumn{1}{c}{\textbf{Linearkombination}} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{1}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
+    \hline
+    \multicolumn{1}{c}{\textbf{Linearkombination}} \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{1}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    $\displaystyle\begin{matrix}
+        6 & 1 & -2 & 1 \\
+        0 & 3 & 3 & -1 \\
+        7 & -1 & 0 & 0 \\
+        -7 & 0 & 5 & 1   
+    \end{matrix}$\\\hline
+    III + IV \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & -2 & 1 \\
+        0 & 3 & 3 & -1 \\
+        0 & -1 & -5 & -1 \\
+        -7 & 0 & 5 & 1   
+    \end{matrix}$\\\hline
+    6IV + 7I \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & -2 & 1 \\
+        0 & 3 & 3 & -1 \\
+        0 & -1 & -5 & -1 \\
+        0 & 7 & 16 & 13  
+    \end{matrix}$\\\hline
+    IV + 7III \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & -2 & 1 \\
+        0 & 3 & 3 & -1 \\
+        0 & -1 & -5 & -1 \\
+        0 & 0 & -19 & 6  
+    \end{matrix}$\\\hline
+    3III + II \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & -2 & 1 \\
+        0 & 3 & 3 & -1 \\
+        0 & 0 & -12 & -4 \\
+        0 & 0 & -19 & 6  
+    \end{matrix}$\\\hline
+    -12IV + 19III \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & -2 & 1 \\
+        0 & 3 & 3 & -1 \\
+        0 & 0 & -12 & -4 \\
+        0 & 0 & 0 & -148  
+    \end{matrix}$\\\hline
+    IV : -148 \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & -2 & 1 \\
+        0 & 3 & 3 & -1 \\
+        0 & 0 & -12 & -4 \\
+        0 & 0 & 0 & 1  
+    \end{matrix}$\\\hline
+    III + 4IV \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & -2 & 1 \\
+        0 & 3 & 3 & -1 \\
+        0 & 0 & -12 & 0 \\
+        0 & 0 & 0 & 1  
+    \end{matrix}$\\\hline
+    II + IV \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & -2 & 1 \\
+        0 & 3 & 3 & 0 \\
+        0 & 0 & -12 & 0 \\
+        0 & 0 & 0 & 1  
+    \end{matrix}$\\\hline
+    I - IV \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & -2 & 0 \\
+        0 & 3 & 3 & 0 \\
+        0 & 0 & -12 & 0 \\
+        0 & 0 & 0 & 1  
+    \end{matrix}$\\\hline
+    III : -12 \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & -2 & 0 \\
+        0 & 3 & 3 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1  
+    \end{matrix}$\\\hline
+    II - 3III \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & -2 & 0 \\
+        0 & 3 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1  
+    \end{matrix}$\\\hline
+    I + 2III \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & 0 & 0 \\
+        0 & 3 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1  
+    \end{matrix}$\\\hline
+    II : 3 \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 1 & 0 & 0 \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1  
+    \end{matrix}$\\\hline
+    I - II \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        6 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1  
+    \end{matrix}$\\\hline
+    I : 6 \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        1 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1  
+    \end{matrix}$\\\hline
+\end{longtable}
+
+Da das Gleichungssystem bestimmt und nicht unterbestimmt ist, bilden die Vektoren eine Basis des $\mathbb{R}^4$.
+
+\section{Aufgabe 2}
+
+Seien $a, b \in \mathbb{R}$ Parameter und 
+
+\[
+    \vec{u}= \begin{pmatrix}
+        -4 \\ a \\1
+    \end{pmatrix}, \vec{v} = \begin{pmatrix}
+        3 \\ 1 \\ b
+    \end{pmatrix}, \vec{w} = \begin{pmatrix}
+        2 \\ 2 \\ -4
+    \end{pmatrix}
+\]
+
+Vektoren im $\mathbb{R}^3$.
+
+Bestimmen Sie Werte der Parameter $a$ und $b$, sodass $\vec{u}, \vec{v}$ und $\vec{w}$ linear abhängig sind. Geben Sie bei mehreren Lösungen eine für $a$ und $b$ beispielhaft an.
+
+\begin{align*}
+    x_1 \vec{u}  + x_2 \vec{v} + x_3 \vec{w} = \vec{0} \\
+    x_1 \begin{pmatrix}
+        -4 \\ a \\ 1
+    \end{pmatrix} + x_2 \begin{pmatrix}
+        3 \\ 1 \\ b
+    \end{pmatrix} + x_3 \begin{pmatrix}
+        2 \\ 2 \\ -4
+    \end{pmatrix} = \begin{pmatrix}
+        0 \\ 0 \\0
+    \end{pmatrix} \\
+    \begin{pmatrix}
+        -4x_1 \\ ax_1 \\ x_1
+    \end{pmatrix} + \begin{pmatrix}
+        3x_2 \\ x_2 \\ bx_2
+    \end{pmatrix} + \begin{pmatrix}
+        2x_3 \\ 2x_3 \\ -4x_3
+    \end{pmatrix} \\
+    \begin{cases}
+        \text{I:\@} & -4x_1 + 3x_2 + 2x_3 = 0 \\
+        \text{II:\@} & ax_1 + x_2 + 2x_3 = 0 \\
+        \text{III:\@} & x_1 + bx_2 -4x_3 = 0
+    \end{cases} \\
+\end{align*}

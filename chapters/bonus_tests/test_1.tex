@@ -29,7 +29,7 @@ Hier befinden sich in der Abbildung die Vektoren [[1, 3], [0, 2], [2, -1], [-1, 
 Gegeben sind im $\mathbb{R}^3$ die beiden Vektoren $\vec{u}$ und $\vec{v}$ in Komponentendarstellung,
 wobei $B = (\vec{e_1}, \vec{e_2}, \vec{e_3})$ die Standardbasis des $\mathbb{R}^3$ ist.
 
-\subsection{a)}
+\subsection{a}
 Geben Sie die Vektoren $\vec{u}$ und $\vec{v}$ in Koordinatendarstellung an.
 
 \subsubsection{I}
@@ -102,8 +102,8 @@ Hier können wieder die Einheitsvektoren eingesetzt werden.
     \end{pmatrix}
 \end{align*}
 
-\subsection{b)}
-Berechnen Sie für die Vektoren $\vec{u}$ und $\vec{v}$ aus Teilaufgabe a) folgende Größen.
+\subsection{b}
+Berechnen Sie für die Vektoren $\vec{u}$ und $\vec{v}$ aus Teilaufgabe a folgende Größen.
 Geben Sie die Lösung exakt, also nicht näherungsweise an.
 
 \subsubsection{I}
@@ -399,4 +399,118 @@ Die gesuchten Linearkombinationen lauten somit:
 
 \section{Aufgabe 7}
 
-Auf einem Billardtisch befinden sich eine blaue und eine weiße Kugel. Die weiße Kugel und die blaue Kugel haben beide einen Durchmesser $d = 57.2mm$. In der folgenden Abbildung ist der Billardtisch dargestellt. Der Punkt $A$ bezeichnet den Mittelpunkt der weißen Kugel und der Punkt $B$ den Mittelpunkt der blauen Kugel. Die Punkte liegen jeweilts auf einem Gitterpunkt des quadratischen Rasters, wobei ein Kästchen eine skalierung von $1dm$ hat. Die obere rechte Tasche des Billarftisches wird mit $C$ und die untere rechte Tasche mit $D$ bezeichnet.
+Auf einem Billardtisch befinden sich eine blaue und eine weiße Kugel. Die weiße Kugel und die blaue Kugel haben beide einen Durchmesser \(d = 57.2\,\text{mm}\). In der folgenden Abbildung ist der Billardtisch dargestellt. Der Punkt \(A\) bezeichnet den Mittelpunkt der weißen Kugel und der Punkt \(B\) den Mittelpunkt der blauen Kugel. Die Punkte liegen jeweilts auf einem Gitterpunkt des quadratischen Rasters, wobei ein Kästchen eine skalierung von \(1\,\text{dm}\) hat. Die obere rechte Tasche des Billarftisches wird mit \(C\) und die untere rechte Tasche mit \(D\) bezeichnet.
+
+\includegraphics[width=\textwidth]{bonus_tests/pool.png}
+
+Hier ist die Kugel B bei \(\begin{pmatrix} 3 \\ 6 \end{pmatrix}\) und die Kugel A bei \(\begin{pmatrix} 2 \\ 2 \end{pmatrix}\).
+
+Die weiße Kugel wird so gespielt, dass die blaue Kugel danach direkt zu Punkt \(C\) rollt. Die folgende Abbildung zeigt die weiße und blaue Kugel beim Stoß. Dabei ist \(A'\) die Position der weißen Kugel, wenn diese auf die blaue Kugel trifft. Der Impuls wird hierbei entlang der Linie \(A'B\) übertragen.
+
+\includegraphics[width=\textwidth]{bonus_tests/pool2.png}
+
+\subsection{a}
+
+Berechnen Sie den Winkel \(\alpha\), unter dem die weiße Kugel die blaue Kugel treffen muss, damit die blaue Kugel direkt in Loch \(C\) trifft. Geben Sie den Winkel in Gradmaß und auf zwei Dezimalstellen genau ein.
+
+Der Richtungsvektor der blauen Kugel ist \(\vec{BC}\).
+\[
+\vec{BC} = \vec{C} - \vec{B} = \begin{pmatrix} 15 \\ 9 \end{pmatrix} - \begin{pmatrix} 3 \\ 6 \end{pmatrix} = \begin{pmatrix} 12 \\ 3 \end{pmatrix}
+\]
+Der Winkel \(\theta\) dieses Vektors zur x-Achse \(\begin{pmatrix} 1 \\ 0 \end{pmatrix}\) ist:
+\begin{align*}
+    \cos(\theta) &= \frac{\begin{pmatrix} 12 \\ 3 \end{pmatrix} \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix}}{|\begin{pmatrix} 12 \\ 3 \end{pmatrix}| \cdot |\begin{pmatrix} 1 \\ 0 \end{pmatrix}|} = \frac{12}{\sqrt{12^2 + 3^2} \cdot \sqrt{1^2}} = \frac{12}{\sqrt{153}} \\
+    \theta &= \arccos\left(\frac{12}{\sqrt{153}}\right) \approx 14.04^\circ
+\end{align*}
+
+\subsection{b}
+Berechnen Sie den Vektor \(\vec{A'B}\) in dm und auf zwei Dezimalstellen genau.
+
+Der Vektor \(\vec{A'B}\) verläuft vom Zentrum der weißen Kugel (\(A'\)) zum Zentrum der blauen Kugel (\(B\)) im Moment des Stoßes. Er hat die Richtung von \(\vec{BC}\) und die Länge des Kugeldurchmessers \(d = 0.572\,\text{dm}\).
+\begin{align*}
+    \vec{A'B} &= d \cdot \frac{\vec{BC}}{|\vec{BC}|} = 0.572 \cdot \frac{1}{\sqrt{153}}\begin{pmatrix} 12 \\ 3 \end{pmatrix} \\
+    &\approx 0.572 \cdot \begin{pmatrix} 0.9701 \\ 0.2425 \end{pmatrix} \approx \begin{pmatrix} 0.55 \\ 0.14 \end{pmatrix}
+\end{align*}
+
+\subsection{c}
+
+Bestimmen Sie den Vektor \(\vec{AA'}\), in dessen Richtung die weiße Kugel gespielt wird, in dm und auf zwei Dezimalstellen genau.
+
+Zuerst wird die Position von \(A'\) bestimmt: \(\vec{A'} = \vec{B} - \vec{A'B}\).
+\begin{align*}
+    \vec{A'} &\approx \begin{pmatrix} 3 \\ 6 \end{pmatrix} - \begin{pmatrix} 0.55 \\ 0.14 \end{pmatrix} = \begin{pmatrix} 2.45 \\ 5.86 \end{pmatrix}
+\end{align*}
+Der Vektor der Stoßrichtung \(\vec{AA'}\) ist dann \(\vec{A'} - \vec{A}\).
+\begin{align*}
+    \vec{AA'} &\approx \begin{pmatrix} 2.45 \\ 5.86 \end{pmatrix} - \begin{pmatrix} 2 \\ 2 \end{pmatrix} = \begin{pmatrix} 0.45 \\ 3.86 \end{pmatrix}
+\end{align*}
+
+\subsection{d}
+Berechnen Sie den Winkel \(\beta\) zwischen dem Stoßvektor \(\vec{AA'}\) und der Horizontalen.
+
+Der gesuchte Winkel \(\beta\) ist der Winkel zwischen dem Stoßvektor \(\vec{AA'}\) und der horizontalen Achse.
+\begin{align*}
+    \cos(\beta) &= \frac{\vec{AA'} \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix}}{|\vec{AA'}| \cdot |\begin{pmatrix} 1 \\ 0 \end{pmatrix}|} \\
+    \vec{AA'} \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} &\approx 0.45 \cdot 1 + 3.86 \cdot 0 = 0.45 \\
+    |\vec{AA'}| &\approx \sqrt{0.45^2 + 3.86^2} = \sqrt{0.2025 + 14.8996} = \sqrt{15.1021} \approx 3.886 \\
+    |\begin{pmatrix} 1 \\ 0 \end{pmatrix}| &= 1 \\
+    \cos(\beta) &\approx \frac{0.45}{3.886 \cdot 1} \approx 0.1158 \\
+    \beta &= \arccos(0.1158) \approx 83.35^\circ
+\end{align*}
+Der gesuchte Winkel beträgt also \(83.35^\circ\).
+
+\section{Aufgabe 8}
+
+Auf einem Körper, der den Punkt $O$ drehbar ist, wirkt eine am Punkt $R$ angreifende Kraft $\vec{F}$. Der vektor $\vec{r}$ ist der Ortsvektor von Punkt $O$ nach Punkt $R$. In der folgenden Abbildung ist der Körper dargestellt.
+
+\includegraphics[width=\textwidth]{bonus_tests/drehmoment.png}
+
+
+Das auf den Körper wirkende Drehmoment $\vec{M}$ ist das Kreuzprodukt $\vec{M} = \vec{r} \times \vec{F}$.
+
+Im folgenden sei $\vec{r} = \begin{pmatrix}
+        4 \\ 2 \\ -1
+    \end{pmatrix}$ und $\vec{F} = \begin{pmatrix}
+        2 \\ -3 \\ -6
+    \end{pmatrix}$.
+
+\subsection{a}
+Berechnen Sie das auf den Körper wirkende Drehmoment $\vec{M}$.
+
+\begin{align*}
+    \vec{M} = \vec{r} \times \vec{F} \\
+    = \begin{pmatrix}
+        4 \\ 2 \\ -1 
+    \end{pmatrix} \times \begin{pmatrix}
+        2 \\ -3 \\ -6
+    \end{pmatrix} \\
+    = \begin{pmatrix}
+        2 \cdot -6 - -1 \cdot -3 \\
+        -1 \cdot 2 - 4 \cdot -6 \\
+        4 \cdot -3 - 2 \cdot 2
+    \end{pmatrix} \\
+    \begin{pmatrix}
+        -12 - 3 \\
+        -2 - -24 \\
+        -12 -4
+    \end{pmatrix} \\
+    \begin{pmatrix}
+        -15 \\
+        22 \\
+        -16
+    \end{pmatrix}
+\end{align*}
+
+\subsection{b}
+
+Berechnen Sie den Betrag des Drehmoments und geben Sie das ergebnsi exakt an. 
+
+\begin{align*}
+    \left|\vec{M}\right| \\
+    = \left|\begin{pmatrix}
+        -15 \\ 22 \\ -16
+    \end{pmatrix}\right| \\
+    = \sqrt{-15^2 + 22^2 -16^2} \\
+    = \sqrt{225 + 484 + 256} \\
+    = \sqrt{965}
+\end{align*}
