@@ -294,3 +294,109 @@ Der Winekl zwischen den gegebenen Vektoren beträgt in Gradmaß $\theta_{grad}$ 
 \subsection{b}
 
 Der Winkel zwischen den gegebenen Vektoren beträgt in Bogenmaß $\theta_{Bogen}$ = $1.44$.
+
+\section{Aufgabe 6}
+
+Gegeben sind die zwei Ortsvektoren
+\[
+    \vec{u} = \begin{pmatrix}
+        5 \\ -1 \\ 4
+    \end{pmatrix}, \quad \vec{v} = \begin{pmatrix}
+        -1 \\ 0 \\ -2
+    \end{pmatrix} \text{ der beiden Punkte } U \text{ und } V\text{.}
+\]
+
+\subsection{a}
+
+Wie in der folgenden Abbildung dargestellt, unterteilen die Punkte $U$ und $V$ die Strecke von Punkt $X$ zu Punkt $Y$ in drei gleich lange Teile.
+
+\begin{center}
+\begin{tikzpicture}[
+    punkt/.style={circle, fill, inner sep=1.5pt},
+  ]
+
+  \coordinate (x) at (0, 0);
+  \coordinate (y) at (7, 1.5);
+
+  \draw[cyan, line width=1.2pt] (x) -- (y);
+
+  \node[punkt, cyan, label=below left:$X$] at (x) {};
+  \node[punkt, cyan, label=above right:$Y$] at (y) {};
+
+  \path (x) -- (y) coordinate[pos=1/3] (u) coordinate[pos=2/3] (v);
+
+  \draw[black, line width=1.2pt] (u) -- (v);
+
+  \node[punkt, black, label=above:$U$] at (u) {};
+  \node[punkt, black, label=above:$V$] at (v) {};
+\end{tikzpicture}
+\end{center}
+
+Bestimmen Sie die Ortsvektoren $\vec{x}$ und $\vec{y}$ der Punkte $X$ und $Y$.
+
+\subsubsection{Lösung}
+Der Verbindungsvektor von Punkt $U$ nach Punkt $V$ lässt sich aus den zugehörigen Ortsvektoren $\vec{u}$ und $\vec{v}$ berechnen:
+\begin{align*}
+    \vec{UV} &= \vec{v} - \vec{u} \\
+    &= \begin{pmatrix}
+        -1 \\ 0 \\ -2
+    \end{pmatrix} - \begin{pmatrix}
+        5 \\ -1 \\ 4
+    \end{pmatrix} \\
+    &= \begin{pmatrix}
+        -6 \\ 1 \\ -6
+    \end{pmatrix}
+\end{align*}
+Da die Strecke in drei gleich lange Teile unterteilt ist, gilt $\vec{XU} = \vec{UV} = \vec{VY}$.
+\newline
+\newline
+Der Ortsvektor $\vec{x}$ des Punktes $X$ kann somit durch Subtraktion des Vektors $\vec{UV}$ vom Ortsvektor $\vec{u}$ bestimmt werden:
+\begin{align*}
+    \vec{x} &= \vec{u} - \vec{UV} \\
+    &= \begin{pmatrix}
+        5 \\ -1 \\ 4
+    \end{pmatrix} - \begin{pmatrix}
+        -6 \\ 1 \\ -6
+    \end{pmatrix} \\
+    &= \begin{pmatrix}
+        11 \\ -2 \\ 10
+    \end{pmatrix}
+\end{align*}
+Analog ergibt sich der Ortsvektor $\vec{y}$ des Punktes $Y$ aus der Addition des Vektors $\vec{UV}$ zum Ortsvektor $\vec{v}$:
+\begin{align*}
+    \vec{y} &= \vec{v} + \vec{UV} \\
+    &= \begin{pmatrix}
+        -1 \\ 0 \\ -2
+    \end{pmatrix} + \begin{pmatrix}
+        -6 \\ 1 \\ -6
+    \end{pmatrix} \\
+    &= \begin{pmatrix}
+        -7 \\ 1 \\ -8
+    \end{pmatrix}
+\end{align*}
+
+\subsection{b}
+
+Bestimmen Sie die Ortsvektoren $\vec{x}$ und $\vec{y}$ als Linearkombination von $\vec{u}$ und $\vec{v}$.
+
+\subsubsection*{Lösung}
+Aus Teil a sind die Beziehungen $\vec{x} = \vec{u} - \vec{UV}$ und $\vec{y} = \vec{v} + \vec{UV}$ bekannt, sowie $\vec{UV} = \vec{v} - \vec{u}$. Durch Einsetzen von $\vec{UV}$ lässt sich $\vec{x}$ als Linearkombination von $\vec{u}$ und $\vec{v}$ darstellen:
+\begin{align*}
+    \vec{x} &= \vec{u} - (\vec{v} - \vec{u}) \\
+    &= \vec{u} - \vec{v} + \vec{u} \\
+    &= 2\vec{u} - \vec{v}
+\end{align*}
+Ebenso für $\vec{y}$:
+\begin{align*}
+    \vec{y} &= \vec{v} + (\vec{v} - \vec{u}) \\
+    &= \vec{v} + \vec{v} - \vec{u} \\
+    &= 2\vec{v} - \vec{u}
+\end{align*}
+Die gesuchten Linearkombinationen lauten somit:
+\[
+    \vec{x} = 2\vec{u} - \vec{v} \quad \text{und} \quad \vec{y} = - \vec{u} + 2\vec{v}
+\]
+
+\section{Aufgabe 7}
+
+Auf einem Billardtisch befinden sich eine blaue und eine weiße Kugel. Die weiße Kugel und die blaue Kugel haben beide einen Durchmesser $d = 57.2mm$. In der folgenden Abbildung ist der Billardtisch dargestellt. Der Punkt $A$ bezeichnet den Mittelpunkt der weißen Kugel und der Punkt $B$ den Mittelpunkt der blauen Kugel. Die Punkte liegen jeweilts auf einem Gitterpunkt des quadratischen Rasters, wobei ein Kästchen eine skalierung von $1dm$ hat. Die obere rechte Tasche des Billarftisches wird mit $C$ und die untere rechte Tasche mit $D$ bezeichnet.
