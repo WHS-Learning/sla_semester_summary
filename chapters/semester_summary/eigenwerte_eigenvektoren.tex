@@ -1,15 +1,16 @@
 \chapter{Eigenwerte und Eigenvektoren}
-
-Die Multiplikation einer Matrix mit einem Vektor ergibt einen Vektor. Für Quadratische Matritzen gibt es Vektoren, welche, wenn sie an eine Matrix multiplitziert werden, wieder den selben Vektor ergeben, sodass man diese nur mit einen Faktor multiplitzieren muss. Einen solchen Vektor nennt man Eigenvektor.
+Die Multiplikation einer quadratischen Matrix $A$ mit einem ihrer Eigenvektoren $\vec{v}$ resultiert in einem skalierten Vielfachen des selben Vektors. Der Skalierungsfaktor wird als Eigenwert $\lambda$ bezeichnet.
 
 \section{Eigenwerte Berechnen}
+Die Eigenwerte $\lambda$ einer Matrix $A$ werden durch das Nullsetzen der Determinante von $(A - \lambda I)$ ermittelt.
+\[
+    \det(A - \lambda I) = 0
+\]
+Die resultierenden Nullstellen für $\lambda$ sind die Eigenwerte der Matrix.
 
-Um die Eigenwerte zu berechnen, muss die Matrix $A$ mit der Einheitsmatrix mit $\lambda$ multiplitziert, subtrahiert werden $A - \lambda I$. Hiervon muss dann die Determinante gleich 0 gesetzt werden.
-
-Die Resultierenden Ergebnisse sind die Eigenwerte.
-
-\begin{align*}
-    A - \lambda \cdot I
-\end{align*}
-
-\section{Eigenvektoren}
+\section{Eigenvektoren Berechnen}
+Für jeden Eigenwert $\lambda_i$ wird der zugehörige Eigenvektor $\vec{x}$ durch das Lösen des folgenden linearen Gleichungssystems gefunden:
+\[
+    (A - \lambda_i I) \vec{x} = \vec{0}
+\]
+Der Lösungsraum (Spannraum) dieses Systems stellt die Menge der Eigenvektoren zum jeweiligen Eigenwert $\lambda_i$ dar.

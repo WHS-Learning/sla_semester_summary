@@ -1,208 +1,225 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {1}ToDo}{1}{chapter.1}%
-\contentsline {part}{I\hspace {1em}Semesterzusammenfassung}{2}{part.1}%
-\contentsline {chapter}{\numberline {2}Vektoren}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Definition eines Vektors}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Parallelität}{4}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Vektorraum}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Definition}{5}{section.3.1}%
-\contentsline {paragraph}{Erläuterung}{5}{paragraph*.2}%
-\contentsline {chapter}{\numberline {4}Lineare Abbildungen}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Was ist überhaupt eine lineare Abbildung? (Der einfache Fall)}{7}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Lineare Abbildungen zwischen zwei Vektorräumen}{7}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Homogenität ("Skalierungstreue")}{8}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Additivität ("Summentreue")}{8}{subsection.4.2.2}%
-\contentsline {chapter}{\numberline {5}Linearkombinationen}{10}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Beispiel}{10}{section.5.1}%
-\contentsline {chapter}{\numberline {6}Gauß-Jordan Verfahren}{12}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Grundlagen des Gauß-Jordan-Verfahrens}{12}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Was ist das Ziel?}{12}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Erlaubte Umformungen: Elementare Zeilenumformungen}{12}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Die Schritte des Verfahrens}{12}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Phase 1: Vorwärtselimination (Zeilenstufenform erreichen)}{13}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Phase 2: Rückwärtselimination (Reduzierte Zeilenstufenform erreichen)}{13}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Beispiel: Lösen eines Linearen Gleichungssystems (LGS)}{13}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Lineare Unabhängigkeit}{15}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Zwei Vektoren}{15}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Beliebig viele Vektoren}{16}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Basis von Vektorräumen}{18}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Bedingungen für eine Basis im $\mathbb {R}^n$}{18}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Beispiel: Überprüfung einer Basis im $\mathbb {R}^3$}{19}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Spannraum, Dimension und Kern von Untervektorräumen}{21}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Untervektorraum}{21}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Spannraum}{21}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Dimension}{22}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Kern}{23}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Dimensionssatz}{23}{subsection.9.4.1}%
-\contentsline {section}{\numberline {9.5}Injektive Lineare Abbildungen}{23}{section.9.5}%
-\contentsline {section}{\numberline {9.6}Surjektive Lineare Abbildungen}{23}{section.9.6}%
-\contentsline {section}{\numberline {9.7}Bijektive Lineare Abbildungen}{23}{section.9.7}%
-\contentsline {section}{\numberline {9.8}Projektion}{23}{section.9.8}%
-\contentsline {chapter}{\numberline {10}Skalar- und Kreuzprodukt}{24}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Skalarprodukt}{24}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Kreuzprodukt}{24}{section.10.2}%
-\contentsline {subsection}{\numberline {10.2.1}Berechnungsschema}{25}{subsection.10.2.1}%
-\contentsline {chapter}{\numberline {11}Matrizen}{27}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Matrix-Vektor-Produkt}{27}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Diagonalmatrix}{28}{section.11.2}%
-\contentsline {subsection}{\numberline {11.2.1}Einheitsmatrix}{28}{subsection.11.2.1}%
-\contentsline {section}{\numberline {11.3}Drehmatrizen}{28}{section.11.3}%
-\contentsline {subsection}{\numberline {11.3.1}Drehung um mehrere Achsen}{29}{subsection.11.3.1}%
-\contentsline {section}{\numberline {11.4}Spiegelungen}{30}{section.11.4}%
-\contentsline {chapter}{\numberline {12}Determinante}{31}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Determinante einer $2 \times 2$ Matrix}{31}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Determinanten von nicht $2 \times 2$ Matrizen}{31}{section.12.2}%
-\contentsline {subsection}{\numberline {12.2.1}Regel von Sarrus}{31}{subsection.12.2.1}%
-\contentsline {subsection}{\numberline {12.2.2}Leibniz-Formel (nicht prüfungsrelevant)}{32}{subsection.12.2.2}%
-\contentsline {subsection}{\numberline {12.2.3}Kästchenregel}{33}{subsection.12.2.3}%
-\contentsline {section}{\numberline {12.3}Transponiertheit}{35}{section.12.3}%
-\contentsline {chapter}{\numberline {13}Matritzen Multiplitzieren}{36}{chapter.13}%
-\contentsline {chapter}{\numberline {14}Matrizen Invertieren}{37}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Beispiel}{37}{section.14.1}%
-\contentsline {section}{\numberline {14.2}Umkehrabbildung}{38}{section.14.2}%
-\contentsline {subsection}{\numberline {14.2.1}Beispiel zur Umkehrabbildung}{39}{subsection.14.2.1}%
-\contentsline {chapter}{\numberline {15}Definitheit}{40}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Bestimmung über Eigenwerte}{40}{section.15.1}%
-\contentsline {subsection}{\numberline {15.1.1}Beispiel}{40}{subsection.15.1.1}%
-\contentsline {section}{\numberline {15.2}Hurwitz-Kriterium}{40}{section.15.2}%
-\contentsline {subsection}{\numberline {15.2.1}Beispiel}{41}{subsection.15.2.1}%
-\contentsline {chapter}{\numberline {16}Eigenwerte und Eigenvektoren}{42}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Eigenwerte Berechnen}{42}{section.16.1}%
-\contentsline {section}{\numberline {16.2}Eigenvektoren}{42}{section.16.2}%
-\contentsline {chapter}{\numberline {17}Arithmetisches Mittel, Median und Moduls}{43}{chapter.17}%
-\contentsline {section}{\numberline {17.1}Arithmetisches Mittel}{43}{section.17.1}%
-\contentsline {subsection}{\numberline {17.1.1}Beispiel}{43}{subsection.17.1.1}%
-\contentsline {section}{\numberline {17.2}Median}{43}{section.17.2}%
-\contentsline {subsection}{\numberline {17.2.1}Beispiel}{43}{subsection.17.2.1}%
-\contentsline {section}{\numberline {17.3}Modus}{43}{section.17.3}%
-\contentsline {part}{II\hspace {1em}Bonusteste}{44}{part.2}%
-\contentsline {chapter}{\numberline {18}Bonustest 1 - Rechnen mit Vektoren}{45}{chapter.18}%
-\contentsline {section}{\numberline {18.1}Frage 1}{45}{section.18.1}%
-\contentsline {section}{\numberline {18.2}Frage 2}{45}{section.18.2}%
-\contentsline {section}{\numberline {18.3}Frage 3}{46}{section.18.3}%
-\contentsline {subsection}{\numberline {18.3.1}a}{46}{subsection.18.3.1}%
-\contentsline {subsubsection}{I}{46}{subsubsection*.5}%
-\contentsline {subsubsection}{II}{47}{subsubsection*.6}%
-\contentsline {subsection}{\numberline {18.3.2}b}{47}{subsection.18.3.2}%
-\contentsline {subsubsection}{I}{47}{subsubsection*.7}%
-\contentsline {subsubsection}{II}{48}{subsubsection*.8}%
-\contentsline {subsubsection}{III}{48}{subsubsection*.9}%
-\contentsline {subsubsection}{IV}{49}{subsubsection*.10}%
-\contentsline {section}{\numberline {18.4}Frage 4}{49}{section.18.4}%
-\contentsline {section}{\numberline {18.5}Aufgabe 5}{50}{section.18.5}%
-\contentsline {subsection}{\numberline {18.5.1}a}{51}{subsection.18.5.1}%
-\contentsline {subsection}{\numberline {18.5.2}b}{51}{subsection.18.5.2}%
-\contentsline {section}{\numberline {18.6}Aufgabe 6}{52}{section.18.6}%
-\contentsline {subsection}{\numberline {18.6.1}a}{52}{subsection.18.6.1}%
-\contentsline {subsubsection}{Lösung}{52}{subsubsection*.11}%
-\contentsline {subsection}{\numberline {18.6.2}b}{53}{subsection.18.6.2}%
-\contentsline {section}{\numberline {18.7}Aufgabe 7}{53}{section.18.7}%
-\contentsline {subsection}{\numberline {18.7.1}a}{54}{subsection.18.7.1}%
-\contentsline {subsection}{\numberline {18.7.2}b}{55}{subsection.18.7.2}%
-\contentsline {subsection}{\numberline {18.7.3}c}{55}{subsection.18.7.3}%
-\contentsline {subsection}{\numberline {18.7.4}d}{55}{subsection.18.7.4}%
-\contentsline {section}{\numberline {18.8}Aufgabe 8}{56}{section.18.8}%
-\contentsline {subsection}{\numberline {18.8.1}a}{56}{subsection.18.8.1}%
-\contentsline {subsection}{\numberline {18.8.2}b}{57}{subsection.18.8.2}%
-\contentsline {chapter}{\numberline {19}Bonustest 2 - Skalarprodukt, Kreuzprodukt, lineare Gleichungssystem, Matzitzen und lineare Abbildungen}{58}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Aufgabe 1}{58}{section.19.1}%
-\contentsline {section}{\numberline {19.2}Aufgabe 2}{60}{section.19.2}%
-\contentsline {part}{III\hspace {1em}Übungsaufgaben Lineare Algebra}{62}{part.3}%
-\contentsline {chapter}{\numberline {20}Übungsblatt 5}{63}{chapter.20}%
-\contentsline {section}{\numberline {20.1}Aufgabe 1}{63}{section.20.1}%
-\contentsline {subsection}{\numberline {20.1.1}a}{63}{subsection.20.1.1}%
-\contentsline {subsection}{\numberline {20.1.2}b}{63}{subsection.20.1.2}%
-\contentsline {section}{\numberline {20.2}Aufgabe 2}{63}{section.20.2}%
-\contentsline {subsection}{\numberline {20.2.1}a}{64}{subsection.20.2.1}%
-\contentsline {subsubsection}{Prüfung für a über Linearkombination}{65}{subsubsection*.12}%
-\contentsline {subsection}{\numberline {20.2.2}b}{65}{subsection.20.2.2}%
-\contentsline {subsubsection}{Prüfung für b über Determinante}{65}{subsubsection*.13}%
-\contentsline {subsubsection}{Prüfung für b über Linearkombination}{66}{subsubsection*.14}%
-\contentsline {section}{\numberline {20.3}Aufgabe 3}{67}{section.20.3}%
-\contentsline {chapter}{\numberline {21}Übungsblatt 6}{68}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Aufgabe 1}{68}{section.21.1}%
-\contentsline {subsection}{\numberline {21.1.1}a}{68}{subsection.21.1.1}%
-\contentsline {subsection}{\numberline {21.1.2}b)}{68}{subsection.21.1.2}%
-\contentsline {subsection}{\numberline {21.1.3}c)}{69}{subsection.21.1.3}%
-\contentsline {section}{\numberline {21.2}Aufgabe 2}{70}{section.21.2}%
-\contentsline {subsection}{\numberline {21.2.1}a)}{70}{subsection.21.2.1}%
-\contentsline {subsection}{\numberline {21.2.2}b)}{71}{subsection.21.2.2}%
-\contentsline {section}{\numberline {21.3}Aufgabe 3}{80}{section.21.3}%
-\contentsline {chapter}{\numberline {22}Übungsblatt 7}{82}{chapter.22}%
-\contentsline {section}{\numberline {22.1}Aufgabe 1}{82}{section.22.1}%
-\contentsline {subsection}{\numberline {22.1.1}a}{82}{subsection.22.1.1}%
-\contentsline {subsection}{\numberline {22.1.2}b}{82}{subsection.22.1.2}%
-\contentsline {subsection}{\numberline {22.1.3}c}{82}{subsection.22.1.3}%
-\contentsline {section}{\numberline {22.2}Aufgabe 2}{83}{section.22.2}%
-\contentsline {subsection}{\numberline {22.2.1}a}{83}{subsection.22.2.1}%
-\contentsline {subsection}{\numberline {22.2.2}b}{84}{subsection.22.2.2}%
-\contentsline {subsection}{\numberline {22.2.3}c}{84}{subsection.22.2.3}%
-\contentsline {subsection}{\numberline {22.2.4}d}{85}{subsection.22.2.4}%
-\contentsline {section}{\numberline {22.3}Aufgabe 3}{88}{section.22.3}%
-\contentsline {subsection}{\numberline {22.3.1}a}{88}{subsection.22.3.1}%
-\contentsline {subsection}{\numberline {22.3.2}b}{88}{subsection.22.3.2}%
-\contentsline {section}{\numberline {22.4}Aufgabe 4}{89}{section.22.4}%
-\contentsline {subsection}{\numberline {22.4.1}a}{89}{subsection.22.4.1}%
-\contentsline {subsection}{\numberline {22.4.2}b}{89}{subsection.22.4.2}%
-\contentsline {chapter}{\numberline {23}Übungsblatt 8}{91}{chapter.23}%
-\contentsline {section}{\numberline {23.1}Aufgabe 1}{91}{section.23.1}%
-\contentsline {subsection}{\numberline {23.1.1}a}{91}{subsection.23.1.1}%
-\contentsline {subsection}{\numberline {23.1.2}b}{91}{subsection.23.1.2}%
-\contentsline {subsection}{\numberline {23.1.3}c}{92}{subsection.23.1.3}%
-\contentsline {section}{\numberline {23.2}Aufgabe 2}{93}{section.23.2}%
-\contentsline {subsection}{\numberline {23.2.1}a}{93}{subsection.23.2.1}%
-\contentsline {subsection}{\numberline {23.2.2}b}{94}{subsection.23.2.2}%
-\contentsline {subsection}{\numberline {23.2.3}c}{95}{subsection.23.2.3}%
-\contentsline {section}{\numberline {23.3}Aufgabe 3}{95}{section.23.3}%
-\contentsline {subsection}{\numberline {23.3.1}a}{95}{subsection.23.3.1}%
-\contentsline {subsection}{\numberline {23.3.2}b}{96}{subsection.23.3.2}%
-\contentsline {chapter}{\numberline {24}Übungsblatt 9}{97}{chapter.24}%
-\contentsline {section}{\numberline {24.1}Aufgabe 1}{97}{section.24.1}%
-\contentsline {subsection}{\numberline {24.1.1}a}{97}{subsection.24.1.1}%
-\contentsline {subsection}{\numberline {24.1.2}b}{98}{subsection.24.1.2}%
-\contentsline {section}{\numberline {24.2}Aufgabe 2 - nicht klausurrelevant?}{98}{section.24.2}%
-\contentsline {subsection}{\numberline {24.2.1}a}{98}{subsection.24.2.1}%
-\contentsline {subsection}{\numberline {24.2.2}b}{99}{subsection.24.2.2}%
-\contentsline {section}{\numberline {24.3}Aufgabe 3}{99}{section.24.3}%
-\contentsline {subsection}{\numberline {24.3.1}a}{99}{subsection.24.3.1}%
-\contentsline {subsection}{\numberline {24.3.2}b}{99}{subsection.24.3.2}%
-\contentsline {subsection}{\numberline {24.3.3}c}{101}{subsection.24.3.3}%
-\contentsline {chapter}{\numberline {25}Übungsblatt 10}{102}{chapter.25}%
-\contentsline {section}{\numberline {25.1}Aufgabe 1}{102}{section.25.1}%
-\contentsline {subsection}{\numberline {25.1.1}a}{102}{subsection.25.1.1}%
-\contentsline {subsection}{\numberline {25.1.2}b}{103}{subsection.25.1.2}%
-\contentsline {subsection}{\numberline {25.1.3}c}{104}{subsection.25.1.3}%
-\contentsline {subsection}{\numberline {25.1.4}d}{105}{subsection.25.1.4}%
-\contentsline {section}{\numberline {25.2}Aufgabe 2}{105}{section.25.2}%
-\contentsline {subsection}{\numberline {25.2.1}a}{105}{subsection.25.2.1}%
-\contentsline {subsection}{\numberline {25.2.2}b}{106}{subsection.25.2.2}%
-\contentsline {section}{\numberline {25.3}Aufgabe 3}{106}{section.25.3}%
-\contentsline {subsection}{\numberline {25.3.1}a}{106}{subsection.25.3.1}%
-\contentsline {subsection}{\numberline {25.3.2}b}{107}{subsection.25.3.2}%
-\contentsline {chapter}{\numberline {26}Übungsblatt 11}{108}{chapter.26}%
-\contentsline {section}{\numberline {26.1}Aufgabe 1}{108}{section.26.1}%
-\contentsline {subsection}{\numberline {26.1.1}a}{108}{subsection.26.1.1}%
-\contentsline {subsection}{\numberline {26.1.2}b}{112}{subsection.26.1.2}%
-\contentsline {subsection}{\numberline {26.1.3}c}{115}{subsection.26.1.3}%
-\contentsline {subsection}{\numberline {26.1.4}d}{116}{subsection.26.1.4}%
-\contentsline {part}{IV\hspace {1em}Übungsaufgaben Stochastik}{118}{part.4}%
-\contentsline {chapter}{\numberline {27}Übungsblatt 5}{119}{chapter.27}%
-\contentsline {section}{\numberline {27.1}Aufgabe 1}{119}{section.27.1}%
-\contentsline {subsection}{\numberline {27.1.1}a}{119}{subsection.27.1.1}%
-\contentsline {subsection}{\numberline {27.1.2}b}{119}{subsection.27.1.2}%
-\contentsline {section}{\numberline {27.2}Aufgabe 2}{119}{section.27.2}%
-\contentsline {section}{\numberline {27.3}Aufgabe 3}{119}{section.27.3}%
-\contentsline {subsection}{\numberline {27.3.1}a}{119}{subsection.27.3.1}%
-\contentsline {subsection}{\numberline {27.3.2}b}{119}{subsection.27.3.2}%
-\contentsline {subsection}{\numberline {27.3.3}c}{119}{subsection.27.3.3}%
-\contentsline {chapter}{\numberline {28}Übungsblatt 6}{120}{chapter.28}%
-\contentsline {section}{\numberline {28.1}Aufgabe 1}{120}{section.28.1}%
-\contentsline {subsection}{\numberline {28.1.1}a}{120}{subsection.28.1.1}%
-\contentsline {subsection}{\numberline {28.1.2}b}{120}{subsection.28.1.2}%
-\contentsline {section}{\numberline {28.2}Aufgabe 2}{120}{section.28.2}%
-\contentsline {subsection}{\numberline {28.2.1}a}{120}{subsection.28.2.1}%
-\contentsline {subsection}{\numberline {28.2.2}b}{120}{subsection.28.2.2}%
-\contentsline {subsection}{\numberline {28.2.3}c}{120}{subsection.28.2.3}%
-\contentsline {chapter}{\numberline {29}Übungsblatt 7}{121}{chapter.29}%
-\contentsline {section}{\numberline {29.1}Aufgabe 1}{121}{section.29.1}%
-\contentsline {section}{\numberline {29.2}Aufgabe 2}{121}{section.29.2}%
+\contentsline {part}{I\hspace {1em}Semesterzusammenfassung}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Vektoren}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Definition eines Vektors}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Parallelität}{3}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Vektorraum}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Definition}{4}{section.2.1}%
+\contentsline {paragraph}{Erläuterung}{4}{paragraph*.2}%
+\contentsline {chapter}{\numberline {3}Lineare Abbildungen}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Was ist überhaupt eine lineare Abbildung? (Der einfache Fall)}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Lineare Abbildungen zwischen zwei Vektorräumen}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Homogenität ("Skalierungstreue")}{7}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Additivität ("Summentreue")}{7}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}Linearkombinationen}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Beispiel}{9}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Gauß-Jordan Verfahren}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Grundlagen des Gauß-Jordan-Verfahrens}{11}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Was ist das Ziel?}{11}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Erlaubte Umformungen: Elementare Zeilenumformungen}{11}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Die Schritte des Verfahrens}{11}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Phase 1: Vorwärtselimination (Zeilenstufenform erreichen)}{12}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Phase 2: Rückwärtselimination (Reduzierte Zeilenstufenform erreichen)}{12}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Beispiel: Lösen eines Linearen Gleichungssystems (LGS)}{12}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Lineare Unabhängigkeit}{14}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Zwei Vektoren}{14}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Beliebig viele Vektoren}{15}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Basis von Vektorräumen}{17}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Bedingungen für eine Basis im $\mathbb {R}^n$}{17}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Beispiel: Überprüfung einer Basis im $\mathbb {R}^3$}{18}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Spannraum, Dimension und Kern von Untervektorräumen}{20}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Untervektorraum}{20}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Spannraum}{20}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Dimension}{21}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Kern}{22}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Dimensionssatz}{22}{subsection.8.4.1}%
+\contentsline {subsubsection}{Beispiel}{22}{subsubsection*.3}%
+\contentsline {section}{\numberline {8.5}Injektive lineare Abbildungen}{23}{section.8.5}%
+\contentsline {subsubsection}{Beispiel}{23}{subsubsection*.4}%
+\contentsline {section}{\numberline {8.6}Surjektive lineare Abbildungen}{23}{section.8.6}%
+\contentsline {subsubsection}{Beispiel}{23}{subsubsection*.5}%
+\contentsline {section}{\numberline {8.7}Bijektive lineare Abbildungen}{23}{section.8.7}%
+\contentsline {subsubsection}{Beispiel}{23}{subsubsection*.6}%
+\contentsline {section}{\numberline {8.8}Orthogonale Projektion}{24}{section.8.8}%
+\contentsline {subsubsection}{Beispiel}{24}{subsubsection*.7}%
+\contentsline {section}{\numberline {8.9}Orthogonale und Spezielle Orthogonale Gruppen}{24}{section.8.9}%
+\contentsline {subsection}{\numberline {8.9.1}Die Orthogonale Gruppe \(O(n)\)}{24}{subsection.8.9.1}%
+\contentsline {subsection}{\numberline {8.9.2}Die Spezielle Orthogonale Gruppe \(SO(n)\)}{24}{subsection.8.9.2}%
+\contentsline {subsection}{\numberline {8.9.3}Der Quotient \(O(n)/SO(n)\)}{25}{subsection.8.9.3}%
+\contentsline {chapter}{\numberline {9}Skalar- und Kreuzprodukt}{26}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Skalarprodukt}{26}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Kreuzprodukt}{26}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Berechnungsschema}{27}{subsection.9.2.1}%
+\contentsline {chapter}{\numberline {10}Matrizen}{29}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Matrix-Vektor-Produkt}{29}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Diagonalmatrix}{30}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Einheitsmatrix}{30}{subsection.10.2.1}%
+\contentsline {section}{\numberline {10.3}Drehmatrizen}{30}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Drehung um mehrere Achsen}{31}{subsection.10.3.1}%
+\contentsline {section}{\numberline {10.4}Spiegelungen}{32}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Anmerkung zur Spiegelung an der x-Achse}{32}{subsection.10.4.1}%
+\contentsline {section}{\numberline {10.5}Spiegelungen im 3-dimensionalen Raum}{32}{section.10.5}%
+\contentsline {subsection}{\numberline {10.5.1}Berechnung von Spiegelungsmatrizen (Householder-Transformation)}{32}{subsection.10.5.1}%
+\contentsline {subsection}{\numberline {10.5.2}Beispiel}{33}{subsection.10.5.2}%
+\contentsline {chapter}{\numberline {11}Determinante}{34}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Determinante einer $2 \times 2$ Matrix}{34}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Determinanten von nicht $2 \times 2$ Matrizen}{34}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Regel von Sarrus}{34}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Leibniz-Formel (nicht prüfungsrelevant)}{35}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}Kästchenregel}{36}{subsection.11.2.3}%
+\contentsline {section}{\numberline {11.3}Transponiertheit}{38}{section.11.3}%
+\contentsline {chapter}{\numberline {12}Matritzen Multiplitzieren}{39}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Matrizen Invertieren}{40}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Beispiel}{40}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Umkehrabbildung}{41}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Beispiel zur Umkehrabbildung}{42}{subsection.13.2.1}%
+\contentsline {chapter}{\numberline {14}Definitheit}{43}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Bestimmung über Eigenwerte}{43}{section.14.1}%
+\contentsline {subsection}{\numberline {14.1.1}Beispiel}{43}{subsection.14.1.1}%
+\contentsline {section}{\numberline {14.2}Hurwitz-Kriterium}{43}{section.14.2}%
+\contentsline {subsection}{\numberline {14.2.1}Beispiel}{44}{subsection.14.2.1}%
+\contentsline {chapter}{\numberline {15}Eigenwerte und Eigenvektoren}{45}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Eigenwerte Berechnen}{45}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Eigenvektoren Berechnen}{45}{section.15.2}%
+\contentsline {chapter}{\numberline {16}Arithmetisches Mittel, Median und Moduls}{46}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Arithmetisches Mittel}{46}{section.16.1}%
+\contentsline {subsection}{\numberline {16.1.1}Beispiel}{46}{subsection.16.1.1}%
+\contentsline {section}{\numberline {16.2}Median}{46}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Beispiel}{46}{subsection.16.2.1}%
+\contentsline {section}{\numberline {16.3}Modus}{46}{section.16.3}%
+\contentsline {part}{II\hspace {1em}Bonusteste}{47}{part.2}%
+\contentsline {chapter}{\numberline {17}Bonustest 1 - Rechnen mit Vektoren}{48}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Frage 1}{48}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Frage 2}{48}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Frage 3}{49}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}a}{49}{subsection.17.3.1}%
+\contentsline {subsubsection}{I}{49}{subsubsection*.10}%
+\contentsline {subsubsection}{II}{50}{subsubsection*.11}%
+\contentsline {subsection}{\numberline {17.3.2}b}{50}{subsection.17.3.2}%
+\contentsline {subsubsection}{I}{50}{subsubsection*.12}%
+\contentsline {subsubsection}{II}{51}{subsubsection*.13}%
+\contentsline {subsubsection}{III}{51}{subsubsection*.14}%
+\contentsline {subsubsection}{IV}{51}{subsubsection*.15}%
+\contentsline {section}{\numberline {17.4}Frage 4}{52}{section.17.4}%
+\contentsline {section}{\numberline {17.5}Frage 5}{53}{section.17.5}%
+\contentsline {subsection}{\numberline {17.5.1}a}{53}{subsection.17.5.1}%
+\contentsline {subsection}{\numberline {17.5.2}b}{54}{subsection.17.5.2}%
+\contentsline {section}{\numberline {17.6}Frage 6}{54}{section.17.6}%
+\contentsline {subsection}{\numberline {17.6.1}a}{54}{subsection.17.6.1}%
+\contentsline {subsubsection}{Lösung}{55}{subsubsection*.16}%
+\contentsline {subsection}{\numberline {17.6.2}b}{55}{subsection.17.6.2}%
+\contentsline {section}{\numberline {17.7}Frage 7}{56}{section.17.7}%
+\contentsline {subsection}{\numberline {17.7.1}a}{57}{subsection.17.7.1}%
+\contentsline {subsection}{\numberline {17.7.2}b}{57}{subsection.17.7.2}%
+\contentsline {subsection}{\numberline {17.7.3}c}{58}{subsection.17.7.3}%
+\contentsline {subsection}{\numberline {17.7.4}d}{58}{subsection.17.7.4}%
+\contentsline {section}{\numberline {17.8}Frage 8}{58}{section.17.8}%
+\contentsline {subsection}{\numberline {17.8.1}a}{59}{subsection.17.8.1}%
+\contentsline {subsection}{\numberline {17.8.2}b}{59}{subsection.17.8.2}%
+\contentsline {chapter}{\numberline {18}Bonustest 2 - Skalarprodukt, Kreuzprodukt, lineare Gleichungssystem, Matzitzen und lineare Abbildungen}{61}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Frage 1}{61}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Frage 2}{63}{section.18.2}%
+\contentsline {section}{\numberline {18.3}Frage 3}{64}{section.18.3}%
+\contentsline {section}{\numberline {18.4}Frage 4}{65}{section.18.4}%
+\contentsline {section}{\numberline {18.5}Frage 5}{65}{section.18.5}%
+\contentsline {section}{\numberline {18.6}Frage 6}{67}{section.18.6}%
+\contentsline {section}{\numberline {18.7}Frage 7}{68}{section.18.7}%
+\contentsline {part}{III\hspace {1em}Übungsaufgaben Lineare Algebra}{69}{part.3}%
+\contentsline {chapter}{\numberline {19}Übungsblatt 5}{70}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Aufgabe 1}{70}{section.19.1}%
+\contentsline {subsection}{\numberline {19.1.1}a}{70}{subsection.19.1.1}%
+\contentsline {subsection}{\numberline {19.1.2}b}{70}{subsection.19.1.2}%
+\contentsline {section}{\numberline {19.2}Aufgabe 2}{70}{section.19.2}%
+\contentsline {subsection}{\numberline {19.2.1}a}{71}{subsection.19.2.1}%
+\contentsline {subsubsection}{Prüfung für a über Linearkombination}{71}{subsubsection*.17}%
+\contentsline {subsection}{\numberline {19.2.2}b}{72}{subsection.19.2.2}%
+\contentsline {subsubsection}{Prüfung für b über Determinante}{72}{subsubsection*.18}%
+\contentsline {subsubsection}{Prüfung für b über Linearkombination}{73}{subsubsection*.19}%
+\contentsline {section}{\numberline {19.3}Aufgabe 3}{73}{section.19.3}%
+\contentsline {chapter}{\numberline {20}Übungsblatt 6}{75}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Aufgabe 1}{75}{section.20.1}%
+\contentsline {subsection}{\numberline {20.1.1}a}{75}{subsection.20.1.1}%
+\contentsline {subsection}{\numberline {20.1.2}b)}{75}{subsection.20.1.2}%
+\contentsline {subsection}{\numberline {20.1.3}c)}{76}{subsection.20.1.3}%
+\contentsline {section}{\numberline {20.2}Aufgabe 2}{77}{section.20.2}%
+\contentsline {subsection}{\numberline {20.2.1}a)}{77}{subsection.20.2.1}%
+\contentsline {subsection}{\numberline {20.2.2}b)}{78}{subsection.20.2.2}%
+\contentsline {section}{\numberline {20.3}Aufgabe 3}{87}{section.20.3}%
+\contentsline {chapter}{\numberline {21}Übungsblatt 7}{89}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Aufgabe 1}{89}{section.21.1}%
+\contentsline {subsection}{\numberline {21.1.1}a}{89}{subsection.21.1.1}%
+\contentsline {subsection}{\numberline {21.1.2}b}{89}{subsection.21.1.2}%
+\contentsline {subsection}{\numberline {21.1.3}c}{89}{subsection.21.1.3}%
+\contentsline {section}{\numberline {21.2}Aufgabe 2}{90}{section.21.2}%
+\contentsline {subsection}{\numberline {21.2.1}a}{90}{subsection.21.2.1}%
+\contentsline {subsection}{\numberline {21.2.2}b}{91}{subsection.21.2.2}%
+\contentsline {subsection}{\numberline {21.2.3}c}{91}{subsection.21.2.3}%
+\contentsline {subsection}{\numberline {21.2.4}d}{92}{subsection.21.2.4}%
+\contentsline {section}{\numberline {21.3}Aufgabe 3}{95}{section.21.3}%
+\contentsline {subsection}{\numberline {21.3.1}a}{95}{subsection.21.3.1}%
+\contentsline {subsection}{\numberline {21.3.2}b}{95}{subsection.21.3.2}%
+\contentsline {section}{\numberline {21.4}Aufgabe 4}{96}{section.21.4}%
+\contentsline {subsection}{\numberline {21.4.1}a}{96}{subsection.21.4.1}%
+\contentsline {subsection}{\numberline {21.4.2}b}{96}{subsection.21.4.2}%
+\contentsline {chapter}{\numberline {22}Übungsblatt 8}{98}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Aufgabe 1}{98}{section.22.1}%
+\contentsline {subsection}{\numberline {22.1.1}a}{98}{subsection.22.1.1}%
+\contentsline {subsection}{\numberline {22.1.2}b}{98}{subsection.22.1.2}%
+\contentsline {subsection}{\numberline {22.1.3}c}{99}{subsection.22.1.3}%
+\contentsline {section}{\numberline {22.2}Aufgabe 2}{100}{section.22.2}%
+\contentsline {subsection}{\numberline {22.2.1}a}{100}{subsection.22.2.1}%
+\contentsline {subsection}{\numberline {22.2.2}b}{101}{subsection.22.2.2}%
+\contentsline {subsection}{\numberline {22.2.3}c}{102}{subsection.22.2.3}%
+\contentsline {section}{\numberline {22.3}Aufgabe 3}{102}{section.22.3}%
+\contentsline {subsection}{\numberline {22.3.1}a}{102}{subsection.22.3.1}%
+\contentsline {subsection}{\numberline {22.3.2}b}{103}{subsection.22.3.2}%
+\contentsline {chapter}{\numberline {23}Übungsblatt 9}{104}{chapter.23}%
+\contentsline {section}{\numberline {23.1}Aufgabe 1}{104}{section.23.1}%
+\contentsline {subsection}{\numberline {23.1.1}a}{104}{subsection.23.1.1}%
+\contentsline {subsection}{\numberline {23.1.2}b}{105}{subsection.23.1.2}%
+\contentsline {section}{\numberline {23.2}Aufgabe 2 - nicht klausurrelevant?}{105}{section.23.2}%
+\contentsline {subsection}{\numberline {23.2.1}a}{105}{subsection.23.2.1}%
+\contentsline {subsection}{\numberline {23.2.2}b}{106}{subsection.23.2.2}%
+\contentsline {section}{\numberline {23.3}Aufgabe 3}{106}{section.23.3}%
+\contentsline {subsection}{\numberline {23.3.1}a}{106}{subsection.23.3.1}%
+\contentsline {subsection}{\numberline {23.3.2}b}{106}{subsection.23.3.2}%
+\contentsline {subsection}{\numberline {23.3.3}c}{108}{subsection.23.3.3}%
+\contentsline {chapter}{\numberline {24}Übungsblatt 10}{109}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Aufgabe 1}{109}{section.24.1}%
+\contentsline {subsection}{\numberline {24.1.1}a}{109}{subsection.24.1.1}%
+\contentsline {subsection}{\numberline {24.1.2}b}{110}{subsection.24.1.2}%
+\contentsline {subsection}{\numberline {24.1.3}c}{111}{subsection.24.1.3}%
+\contentsline {subsection}{\numberline {24.1.4}d}{112}{subsection.24.1.4}%
+\contentsline {section}{\numberline {24.2}Aufgabe 2}{112}{section.24.2}%
+\contentsline {subsection}{\numberline {24.2.1}a}{112}{subsection.24.2.1}%
+\contentsline {subsection}{\numberline {24.2.2}b}{113}{subsection.24.2.2}%
+\contentsline {section}{\numberline {24.3}Aufgabe 3}{113}{section.24.3}%
+\contentsline {subsection}{\numberline {24.3.1}a}{113}{subsection.24.3.1}%
+\contentsline {subsection}{\numberline {24.3.2}b}{114}{subsection.24.3.2}%
+\contentsline {chapter}{\numberline {25}Übungsblatt 11}{115}{chapter.25}%
+\contentsline {section}{\numberline {25.1}Aufgabe 1}{115}{section.25.1}%
+\contentsline {subsection}{\numberline {25.1.1}a}{115}{subsection.25.1.1}%
+\contentsline {subsection}{\numberline {25.1.2}b}{119}{subsection.25.1.2}%
+\contentsline {subsection}{\numberline {25.1.3}c}{122}{subsection.25.1.3}%
+\contentsline {subsection}{\numberline {25.1.4}d}{123}{subsection.25.1.4}%
+\contentsline {part}{IV\hspace {1em}Übungsaufgaben Stochastik}{125}{part.4}%
+\contentsline {chapter}{\numberline {26}Übungsblatt 5}{126}{chapter.26}%
+\contentsline {section}{\numberline {26.1}Aufgabe 1}{126}{section.26.1}%
+\contentsline {subsection}{\numberline {26.1.1}a}{126}{subsection.26.1.1}%
+\contentsline {subsection}{\numberline {26.1.2}b}{126}{subsection.26.1.2}%
+\contentsline {section}{\numberline {26.2}Aufgabe 2}{126}{section.26.2}%
+\contentsline {section}{\numberline {26.3}Aufgabe 3}{126}{section.26.3}%
+\contentsline {subsection}{\numberline {26.3.1}a}{126}{subsection.26.3.1}%
+\contentsline {subsection}{\numberline {26.3.2}b}{126}{subsection.26.3.2}%
+\contentsline {subsection}{\numberline {26.3.3}c}{126}{subsection.26.3.3}%
+\contentsline {chapter}{\numberline {27}Übungsblatt 6}{127}{chapter.27}%
+\contentsline {section}{\numberline {27.1}Aufgabe 1}{127}{section.27.1}%
+\contentsline {subsection}{\numberline {27.1.1}a}{127}{subsection.27.1.1}%
+\contentsline {subsection}{\numberline {27.1.2}b}{127}{subsection.27.1.2}%
+\contentsline {section}{\numberline {27.2}Aufgabe 2}{127}{section.27.2}%
+\contentsline {subsection}{\numberline {27.2.1}a}{127}{subsection.27.2.1}%
+\contentsline {subsection}{\numberline {27.2.2}b}{127}{subsection.27.2.2}%
+\contentsline {subsection}{\numberline {27.2.3}c}{127}{subsection.27.2.3}%
+\contentsline {chapter}{\numberline {28}Übungsblatt 7}{128}{chapter.28}%
+\contentsline {section}{\numberline {28.1}Aufgabe 1}{128}{section.28.1}%
+\contentsline {section}{\numberline {28.2}Aufgabe 2}{128}{section.28.2}%

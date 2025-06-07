@@ -49,13 +49,92 @@ Alle Vektoren im Kern haben also die Form \(\begin{pmatrix} -2x_2 \\ x_2 \end{pm
 Der Kern ist also der Spannraum des Vektors \(\begin{pmatrix} -2 \\ 1 \end{pmatrix}\), was einer Geraden im \(\mathbb{R}^2\) entspricht. Alle Vektoren auf dieser Geraden werden von der Matrix \(A\) auf den Nullvektor abgebildet.
 
 \subsection{Dimensionssatz}
+Für eine lineare Abbildung \(f: V \to W\), die durch eine Matrix \(A \in K^{m \times n}\) repräsentiert wird, setzt der Dimensionssatz die Dimension des Definitionsraums \(V\) in Beziehung zur Dimension des Kerns und des Bildes von \(f\).
+\[
+    n = \dim(\mathrm{Kern}(A)) + \mathrm{Rang}(A)
+\]
 
-$n = \dim(kern(A)) + \dim(bild(A))$
+\subsubsection{Beispiel}
+Gegeben sei die Matrix \(A \in \mathbb{R}^{2 \times 3}\):
+\[
+    A = \begin{pmatrix} 1 & 0 & -1 \\ 0 & 1 & -2 \end{pmatrix}
+\]
+Der Definitionsraum ist \(\mathbb{R}^3\), also ist \(n=3\).
+\begin{itemize}
+    \item \textbf{Kern:} Gesucht sind alle \(x \in \mathbb{R}^3\) mit \(Ax=0\). Dies führt zum Gleichungssystem \(x_1 - x_3 = 0\) und \(x_2 - 2x_3 = 0\). Daraus folgt \(x_1 = x_3\) und \(x_2 = 2x_3\). Der Kern wird also von Vektoren der Form \((t, 2t, t) = t \cdot (1, 2, 1)\) aufgespannt. Eine Basis des Kerns ist \(\{(1, 2, 1)\}\), somit ist \(\dim(\mathrm{Kern}(A)) = 1\).
+    \item \textbf{Rang:} Die ersten beiden Spaltenvektoren \((1,0)\) und \((0,1)\) sind linear unabhängig und spannen \(\mathbb{R}^2\) auf. Der Rang ist also \(\mathrm{Rang}(A) = 2\).
+\end{itemize}
+Die Dimensionsformel gilt: \(3 = 1 + 2\).
 
-\section{Injektive Lineare Abbildungen}
-\section{Surjektive Lineare Abbildungen}
-\section{Bijektive Lineare Abbildungen}
+\section{Injektive lineare Abbildungen}
+Eine lineare Abbildung \(f: V \to W\) ist genau dann injektiv, wenn \(\mathrm{Kern}(f) = \{0_V\}\), also \(\dim(\mathrm{Kern}(f)) = 0\).
 
-\section{Projektion}
+\subsubsection{Beispiel}
+Die Abbildung \(f: \mathbb{R}^2 \to \mathbb{R}^3\) mit \(f(x,y) = (x, y, x+y)\) wird durch die Matrix
+\[
+    A = \begin{pmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 1 \end{pmatrix}
+\]
+dargestellt. Aus \(Ax=0\) folgt \(x=0\) und \(y=0\). Der Kern ist \(\mathrm{Kern}(f) = \{(0,0)\}\), die Abbildung ist injektiv.
 
-$\frac{\left\langle a, b \right\rangle}{\left|a\right|^2} \cdot a$
+\section{Surjektive lineare Abbildungen}
+Eine lineare Abbildung \(f: V \to W\) ist surjektiv, wenn \(\mathrm{Bild}(f) = W\), also \(\dim(\mathrm{Bild}(f)) = \dim(W)\).
+
+\subsubsection{Beispiel}
+Die Abbildung \(f: \mathbb{R}^3 \to \mathbb{R}^2\) aus dem Beispiel zum Dimensionssatz ist surjektiv, da der Rang der Matrix \(A\) gleich 2 ist, was der Dimension des Zielraums \(\mathbb{R}^2\) entspricht. Jeder Vektor in \(\mathbb{R}^2\) kann als Bild eines Vektors aus \(\mathbb{R}^3\) dargestellt werden.
+
+\section{Bijektive lineare Abbildungen}
+Eine lineare Abbildung \(f: V \to W\) ist bijektiv, wenn sie injektiv und surjektiv ist. Dies ist nur möglich, wenn \(\dim(V) = \dim(W)\).
+
+\subsubsection{Beispiel}
+Die Drehung um 90 Grad in \(\mathbb{R}^2\) wird durch die Matrix
+\[
+    A = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}
+\]
+beschrieben. Die Determinante ist \(\det(A) = 1 \neq 0\), die Matrix ist also invertierbar. Daraus folgt, dass die Abbildung bijektiv ist. Der Kern ist \(\{(0,0)\}\) (injektiv) und der Rang ist 2 (surjektiv).
+
+\section{Orthogonale Projektion}
+Die orthogonale Projektion des Vektors \(b\) auf den Vektor \(a\).
+\[
+    \mathrm{proj}_{a}(b) = \frac{\langle b, a \rangle}{\|a\|^2} a
+\]
+
+\subsubsection{Beispiel}
+Seien die Vektoren \(b = (2, 3)\) und \(a = (4, 0)\) in \(\mathbb{R}^2\).
+\begin{itemize}
+    \item Skalarprodukt: \(\langle b, a \rangle = 2 \cdot 4 + 3 \cdot 0 = 8\).
+    \item Norm-Quadrat: \(\|a\|^2 = 4^2 + 0^2 = 16\).
+\end{itemize}
+Die Projektion ist:
+\[
+    \mathrm{proj}_{a}(b) = \frac{8}{16} \begin{pmatrix} 4 \\ 0 \end{pmatrix} = 0.5 \begin{pmatrix} 4 \\ 0 \end{pmatrix} = \begin{pmatrix} 2 \\ 0 \end{pmatrix}
+\]
+Der Vektor \((2,0)\) ist der Anteil von \(b\), der in Richtung von \(a\) zeigt.
+
+\section{Orthogonale und Spezielle Orthogonale Gruppen}
+Orthogonale Matrizen beschreiben Transformationen (Isometrien), die Längen und Winkel erhalten, wie Drehungen und Spiegelungen.
+
+\subsection{Die Orthogonale Gruppe \(O(n)\)}
+Die Menge aller reellen \(n \times n\)-Matrizen \(A\), deren Inverse ihre Transponierte ist.
+\[
+    O(n) = \{A \in \mathbb{R}^{n \times n} \mid A^T A = I_n\}
+\]
+Für jede Matrix \(A \in O(n)\) gilt \(\det(A)^2 = 1\), woraus folgt, dass \(\det(A) \in \{+1, -1\}\).
+
+\subsection{Die Spezielle Orthogonale Gruppe \(SO(n)\)}
+Dies ist die Untergruppe von \(O(n)\), die nur die Matrizen mit Determinante +1 enthält.
+\[
+    SO(n) = \{A \in O(n) \mid \det(A) = 1\}
+\]
+Matrizen in $SO(n)$ repräsentieren reine Drehungen und erhalten die Orientierung des Raumes. Die Matrix für die 90-Grad-Drehung im obigen Beispiel ist ein Element von $SO(2)$. Eine Spiegelung an der y-Achse in \(\mathbb{R}^2\) wird durch \(A = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}\) dargestellt. Hier ist \(\det(A) = -1\), also \(A \in O(2)\), aber \(A \notin SO(2)\).
+
+\subsection{Der Quotient \(O(n)/SO(n)\)}
+Da \(SO(n)\) ein Normalteiler von \(O(n)\) ist, kann die Quotientengruppe \(O(n)/SO(n)\) gebildet werden. Diese Gruppe beschreibt die "Orientierung".
+\[
+    O(n)/SO(n) \cong \mathbb{Z}_2 = \{+1, -1\}
+\]
+Es gibt zwei Elemente (Nebenklassen) in dieser Gruppe:
+\begin{enumerate}
+    \item Die Menge aller orientierungserhaltenden Transformationen (Drehungen), was \(SO(n)\) selbst ist.
+    \item Die Menge aller orientierungsumkehrenden Transformationen (Spiegelungen und Drehspiegelungen).
+\end{enumerate}
+Der Quotient fasst also alle Drehungen zu einem Element und alle Spiegelungen/orientierungsumkehrenden Abbildungen zum anderen Element zusammen.

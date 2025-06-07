@@ -138,3 +138,70 @@ Wird beispielsweise zuerst eine Drehung $R_1$ und danach eine Drehung $R_2$ auf 
 Es ist wichtig zu beachten, dass die Matrizenmultiplikation im Allgemeinen nicht kommutativ ist, d.h. die Reihenfolge der Multiplikation (und somit der Drehungen) ist entscheidend ($R_2 R_1 \neq R_1 R_2$ im Allgemeinen). Die Matrix, die der zuerst auszuführenden Drehung entspricht, steht im Produkt rechts.
 
 \section{Spiegelungen}
+
+Eine Spiegelungsmatrix ist eine orthogonale Matrix, welche Vektoren an einer Hyperebene spiegelt. Im $\mathbb{R}^2$ ist dies eine Gerade.
+
+Die Matrix \[ A = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \] spiegelt Vektoren an der Winkelhalbierenden $y=x$.
+Der Vektor \begin{math}\begin{pmatrix} 2 \\ 1 \end{pmatrix}\end{math} wird durch die Multiplikation mit der Matrix $A$ auf den Vektor \begin{math}\begin{pmatrix} 1 \\ 2 \end{pmatrix}\end{math} abgebildet:
+\[ \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 0 \cdot 2 + 1 \cdot 1 \\ 1 \cdot 2 + 0 \cdot 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 2 \end{pmatrix} \]
+
+\subsection{Anmerkung zur Spiegelung an der x-Achse}
+Die Spiegelung an der x-Achse wird durch die folgende Matrix realisiert:
+\[ S_x = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \]
+Die Anwendung auf den Vektor \begin{math}\begin{pmatrix} 2 \\ 1 \end{pmatrix}\end{math} ergibt:
+\[ \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 2 \\ -1 \end{pmatrix} \]
+
+\section{Spiegelungen im 3-dimensionalen Raum}
+Im dreidimensionalen Raum erfolgt die Spiegelung eines Vektors an einer Ebene. Eine Spiegelung an einer Achse oder einem Punkt ist ebenfalls möglich, kann aber als eine Kombination von Drehungen und einer Ebenenspiegelung verstanden werden.
+
+\subsection{Berechnung von Spiegelungsmatrizen (Householder-Transformation)}
+Eine Spiegelungsmatrix $H$ für die Spiegelung an einer Ebene durch den Ursprung kann mit Hilfe des Normalenvektors $\vec{n}$ dieser Ebene berechnet werden. Der Normalenvektor ist ein Vektor, der senkrecht auf der Ebene steht. Für die Berechnung wird ein auf die Länge 1 normierter Normalenvektor $\vec{v}$ benötigt.
+
+Sei $\vec{v}$ der normierte Normalenvektor der Ebene, an der gespiegelt werden soll. Die Spiegelungsmatrix $H$ (oft auch als Householder-Matrix bezeichnet) wird wie folgt berechnet:
+\[ H = I - 2 \vec{v} \vec{v}^T \]
+Hierbei ist:
+\begin{itemize}
+    \item $I$ die 3x3-Einheitsmatrix.
+    \item $\vec{v}$ der normierte Normalenvektor als Spaltenvektor.
+    \item $\vec{v}^T$ der transponierte Normalenvektor (ein Zeilenvektor).
+    \item Das Produkt $\vec{v} \vec{v}^T$ ist das äußere Produkt, das eine 3x3-Matrix ergibt.
+\end{itemize}
+
+\subsection{Beispiel}
+Gesucht ist die Spiegelungsmatrix für die Spiegelung an der $xy$-Ebene.
+
+\begin{enumerate}
+    \item \textbf{Normalenvektor bestimmen:} Der Normalenvektor der $xy$-Ebene ist der z-Vektor, da er senkrecht auf dieser Ebene steht.
+    \[ \vec{n} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \]
+
+    \item \textbf{Normalenvektor normieren:} Der Vektor hat bereits die Länge 1, also ist $\vec{v} = \vec{n}$.
+    \[ \|\vec{n}\| = \sqrt{0^2 + 0^2 + 1^2} = 1 \]
+    Somit ist \[ \vec{v} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \]
+
+    \item \textbf{Äußeres Produkt $\vec{v}\vec{v}^T$ berechnen:}
+    \[ \vec{v}\vec{v}^T = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \begin{pmatrix} 0 & 0 & 1 \end{pmatrix} = \begin{pmatrix}
+    0 \cdot 0 & 0 \cdot 0 & 0 \cdot 1 \\
+    0 \cdot 0 & 0 \cdot 0 & 0 \cdot 1 \\
+    1 \cdot 0 & 1 \cdot 0 & 1 \cdot 1
+    \end{pmatrix} = \begin{pmatrix}
+    0 & 0 & 0 \\
+    0 & 0 & 0 \\
+    0 & 0 & 1
+    \end{pmatrix} \]
+
+    \item \textbf{Spiegelungsmatrix H berechnen:}
+    \[ H = I - 2(\vec{v}\vec{v}^T) = \begin{pmatrix}
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & 1
+    \end{pmatrix} - 2 \begin{pmatrix}
+    0 & 0 & 0 \\
+    0 & 0 & 0 \\
+    0 & 0 & 1
+    \end{pmatrix} = \begin{pmatrix}
+    1 & 0 & 0 \\
+    0 & 1 & 0 \\
+    0 & 0 & -1
+    \end{pmatrix} \]
+\end{enumerate}
+Diese Matrix spiegelt jeden Vektor $\begin{pmatrix} x \\ y \\ z \end{pmatrix}$ auf $\begin{pmatrix} x \\ y \\ -z \end{pmatrix}$, was der Spiegelung an der $xy$-Ebene entspricht.

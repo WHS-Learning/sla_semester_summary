@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.1)  6 JUN 2025 23:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.1)  7 JUN 2025 14:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -919,24 +919,24 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1022,9 +1022,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 13.
-Package biblatex Info: Reference segment=0 on input line 13.
-Package hyperref Info: Link coloring ON on input line 13.
+Package biblatex Info: Reference section=0 on input line 14.
+Package biblatex Info: Reference segment=0 on input line 14.
+Package hyperref Info: Link coloring ON on input line 14.
  (main.out) (main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
@@ -1032,7 +1032,7 @@ Package hyperref Info: Link coloring ON on input line 13.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (config/globals.tex) (titlepage.tex
-<assets/frontpage.png, id=790, 803.0pt x 334.24875pt>
+<assets/frontpage.png, id=838, 803.0pt x 334.24875pt>
 File: assets/frontpage.png Graphic file (type png)
 <use assets/frontpage.png>
 Package pdftex.def Info: assets/frontpage.png  used on input line 24.
@@ -1073,12 +1073,12 @@ l.36 \end{abstract}
 
 
 ]) (main.toc
-Overfull \hbox (1.88638pt too wide) in paragraph at lines 20--20
+Overfull \hbox (1.88638pt too wide) in paragraph at lines 19--19
  [][] [][][]\OT1/cmr/m/n/10.95 Erlaubte Um-for-mungen: El-e-mentare Zeilenum-for-mungen[][] [][]  
  []
 
 
-Overfull \hbox (12.50186pt too wide) in paragraph at lines 23--23
+Overfull \hbox (12.50186pt too wide) in paragraph at lines 22--22
  [][] [][][]\OT1/cmr/m/n/10.95 Phase 2: R^^?uckw^^?art-se-lim-i-na-tion (Re-duzierte Zeilen-stufen- 
  []
 
@@ -1088,32 +1088,44 @@ Overfull \hbox (12.50186pt too wide) in paragraph at lines 23--23
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 ...ern von Untervektorräumen}{21}{chapter.9}
+l.33 ...umberline {8.3}Dimension}{21}{section.8.3}
                                                   % [1
 
 
 ]
+Overfull \hbox (54.56813pt too wide) in paragraph at lines 62--62
+ [][] [][][]\OT1/cmr/m/n/10.95 Berechnung von Spiegelungs-ma-trizen (Householder-Transformation)[][] [][]  
+ []
+
+
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.74 ...e {17.1.1}Beispiel}{43}{subsection.17.1.1}
+l.81 ...enwerte und Eigenvektoren}{45}{chapter.15}
                                                   % [2]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125 ...erline {21.1.2}b)}{68}{subsection.21.1.2}
+l.130 ...berline {19.1.1}a}{70}{subsection.19.1.1}
                                                   % [3]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.170 ...ine {25}Übungsblatt 10}{102}{chapter.25}
-                                                  % [4])
+l.178 ...erline {23.1.1}a}{104}{subsection.23.1.1}
+                                                  % [4]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.221 ...erline {27.2.2}b}{127}{subsection.27.2.2}
+                                                  % [5])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
@@ -1123,27 +1135,19 @@ l.170 ...ine {25}Übungsblatt 10}{102}{chapter.25}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 	\clearpage
-                 [5] (todo.tex
-Chapter 1.
-)
+l.29 	\clearpage
+                 [6]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 
-      [1
-
-
-
-]
-
-[2
+l.33 	\part{Semesterzusammenfassung}
+                                     [1
 
 
 ] (chapters/semester_summary/vektoren.tex
-Chapter 2.
+Chapter 1.
 
 Overfull \hbox (3.86333pt too wide) in paragraph at lines 5--6
 \OT1/cmr/m/n/10.95 Sollen nicht nur einzelne Zahlen fest-ge-hal-ten wer-den, son-dern mehrere Zahlen,
@@ -1151,7 +1155,7 @@ Overfull \hbox (3.86333pt too wide) in paragraph at lines 5--6
 
 
 
-[3
+[2
 
 
 ]
@@ -1166,18 +1170,18 @@ Overfull \hbox (8.47655pt too wide) in paragraph at lines 52--53
 
 )
 
-[4] (chapters/semester_summary/vektorraum.tex
-Chapter 3.
+[3] (chapters/semester_summary/vektorraum.tex
+Chapter 2.
 )
 
-[5
+[4
 
 
 
 ]
 
-[6] (chapters/semester_summary/lineare_abbildungen.tex
-Chapter 4.
+[5] (chapters/semester_summary/lineare_abbildungen.tex
+Chapter 3.
 
 Overfull \hbox (10.88795pt too wide) in paragraph at lines 5--5
 |[]\OT1/cmr/bx/n/14.4 Was ist ^^?uberhaupt eine lin-eare Ab-bil-dung? (Der
@@ -1190,16 +1194,16 @@ Overfull \hbox (26.68123pt too wide) in paragraph at lines 31--31
 
 
 
-[7
+[6
 
 
 
 ]
 
-[8])
+[7])
 
-[9] (chapters/semester_summary/linearkombination.tex
-Chapter 5.
+[8] (chapters/semester_summary/linearkombination.tex
+Chapter 4.
 
 Overfull \hbox (0.27672pt too wide) in paragraph at lines 21--22
 []\OT1/cmr/m/n/10.95 Es soll gepr^^?uft wer-den, ob $[]$ eine Lin-ear-kom-bi-na-tion von $[]$ und $[]$ ist. Gesucht
@@ -1207,14 +1211,14 @@ Overfull \hbox (0.27672pt too wide) in paragraph at lines 21--22
 
 
 
-[10
+[9
 
 
 
 ])
 
-[11] (chapters/semester_summary/gauss_jordan_verfahren.tex
-Chapter 6.
+[10] (chapters/semester_summary/gauss_jordan_verfahren.tex
+Chapter 5.
 
 Overfull \hbox (13.70557pt too wide) in paragraph at lines 16--16
 |[]\OT1/cmr/bx/n/12 Erlaubte Um-for-mungen: El-e-mentare Zeilenum-for-mungen| 
@@ -1222,7 +1226,7 @@ Overfull \hbox (13.70557pt too wide) in paragraph at lines 16--16
 
 
 
-[12
+[11
 
 
 
@@ -1238,13 +1242,13 @@ Overfull \hbox (1.02448pt too wide) in paragraph at lines 39--40
 
 
 
-[13])
+[12])
 
-[14] (chapters/semester_summary/lineare_unabhaengigkeit.tex
-Chapter 7.
+[13] (chapters/semester_summary/lineare_unabhaengigkeit.tex
+Chapter 6.
 
 
-[15
+[14
 
 
 
@@ -1255,10 +1259,10 @@ Overfull \hbox (32.78972pt too wide) in paragraph at lines 62--64
 
 
 
-[16])
+[15])
 
-[17] (chapters/semester_summary/basis_vektorraum.tex
-Chapter 8.
+[16] (chapters/semester_summary/basis_vektorraum.tex
+Chapter 7.
 
 Overfull \hbox (20.75134pt too wide) in paragraph at lines 3--4
 \OT1/cmr/m/n/10.95 Eine Ba-sis eines Vek-tor-raums $\OML/cmm/m/it/10.95 V$ \OT1/cmr/m/n/10.95 ist eine Menge von Vek-toren $\OMS/cmsy/m/n/10.95 B \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 v[]; v[]; [] ; v[]\OMS/cmsy/m/n/10.95 g$\OT1/cmr/m/n/10.95 ,
@@ -1278,7 +1282,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[18
+[17
 
 
 
@@ -1295,10 +1299,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 28.
 
-[19])
+[18])
 
-[20] (chapters/semester_summary/span_dim.tex
-Chapter 9.
+[19] (chapters/semester_summary/span_dim.tex
+Chapter 8.
 
 Overfull \hbox (13.2391pt too wide) in paragraph at lines 1--1
 |[]\OT1/cmr/bx/n/24.88 Spannraum, Di-men-sion und
@@ -1311,43 +1315,76 @@ Overfull \hbox (35.90178pt too wide) in paragraph at lines 1--1
 
 
 
-[21
+[20
 
 
 
 ]
 
-[22]
+[21]
 Overfull \hbox (28.8051pt too wide) in paragraph at lines 42--43
 []\OT1/cmr/m/n/10.95 Man kann sich eine Mas-chine (die Ma-trix) vorstellen, in die Vek-toren hineingegeben
  []
 
-)
 
-[23] (chapters/semester_summary/skalar_kreuz_produkt.tex
-Chapter 10.
 
-Overfull \hbox (4.69032pt too wide) in paragraph at lines 1--1
-|[]\OT1/cmr/bx/n/24.88 Skalar- und Kreuzpro-dukt| 
+[22]
+
+[23]
+Overfull \hbox (6.54007pt too wide) in paragraph at lines 114--115
+\OT1/cmr/m/n/10.95 Orthogonale Ma-trizen beschreiben Trans-for-ma-tio-nen (Isome-trien), die L^^?angen
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 116.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 123.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 130.
+
+
+Overfull \hbox (21.10155pt too wide) in paragraph at lines 131--132
+\OT1/cmr/m/n/10.95 Da $\OML/cmm/m/it/10.95 SO\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n\OT1/cmr/m/n/10.95 )$ ein Nor-mal-teiler von $\OML/cmm/m/it/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n\OT1/cmr/m/n/10.95 )$ ist, kann die Quo-tien-ten-gruppe $\OML/cmm/m/it/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 =SO\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n\OT1/cmr/m/n/10.95 )$
  []
 
 
 
-[24
+[24]
+Overfull \hbox (10.49423pt too wide) in paragraph at lines 138--139
+[]\OT1/cmr/m/n/10.95 Die Menge aller ori-en-tierung-sumkehren-den Trans-for-ma-tio-nen (Spiegelun-
+ []
+
+)
+
+[25] (chapters/semester_summary/skalar_kreuz_produkt.tex
+Chapter 9.
+
+
+[26
 
 
 
 ]
+Overfull \hbox (1.719pt too wide) in paragraph at lines 71--72
+\OT1/cmr/m/n/10.95 Die oben dargestellte Grafik (siehe Ab-bil-dung [][]9.1[][]) ve-r-an-schaulicht eine Meth-
+ []
+
+
 Overfull \hbox (17.00192pt too wide) in paragraph at lines 78--83
 []\OT1/cmr/bx/n/10.95 F^^?ur $\OML/cmm/m/it/10.95 c[]$\OT1/cmr/bx/n/10.95 : \OT1/cmr/m/n/10.95 Man be-tra-chtet die zweite und dritte Zeile der ur-spr^^?unglichen
  []
 
 
 
-[25])
+[27])
 
-[26] (chapters/semester_summary/matritzen.tex
-Chapter 11.
+[28] (chapters/semester_summary/matritzen.tex
+Chapter 10.
 
 Overfull \hbox (1.06506pt too wide) in paragraph at lines 13--15
 \OT1/cmr/m/n/10.95 Eine Ma-trix kann auch als eine Zusam-men-fas-sung von Spal-tenvek-toren (wenn
@@ -1355,18 +1392,20 @@ Overfull \hbox (1.06506pt too wide) in paragraph at lines 13--15
 
 
 
-[27
+[29
 
 
 
 ]
 
-[28]
+[30]
 
-[29])
+[31]
 
-[30] (chapters/semester_summary/determinante.tex
-Chapter 12.
+[32])
+
+[33] (chapters/semester_summary/determinante.tex
+Chapter 11.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 6.
@@ -1398,45 +1437,45 @@ Overfull \hbox (4.24864pt too wide) in paragraph at lines 64--65
 
 
 
-[31
+[34
 
 
 
 ]
 
-[32]
+[35]
 
-[33]
+[36]
 
-[34]
+[37]
 Overfull \hbox (4.33682pt too wide) in paragraph at lines 244--245
 [][] 
  []
 
 )
 
-[35] (chapters/semester_summary/matrix_multiplitzieren.tex
-Chapter 13.
+[38] (chapters/semester_summary/matrix_multiplitzieren.tex
+Chapter 12.
 )
 
-[36
+[39
 
 
 
 ] (chapters/semester_summary/matrix_invertieren.tex
-Chapter 14.
+Chapter 13.
 
 
-[37
+[40
 
 
 
 ]
 
-[38])
+[41])
 
-[39] (chapters/semester_summary/definitheit.tex
-Chapter 15.
+[42] (chapters/semester_summary/definitheit.tex
+Chapter 14.
 
 Overfull \hbox (9.55124pt too wide) in paragraph at lines 32--33
 \OT1/cmr/m/n/10.95 Um die aufw^^?andige Berech-nung der Eigen-werte zu umge-hen, kann das Hurwitz-
@@ -1449,7 +1488,7 @@ See the caption package documentation for explanation.
 
 
 
-[40
+[43
 
 
 
@@ -1464,8 +1503,8 @@ Overfull \hbox (0.8082pt too wide) in paragraph at lines 70--71
 
 )
 
-[41{C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] (chapters/semester_summary/eigenwerte_eigenvektoren.tex
-Chapter 16.
+[44{C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] (chapters/semester_summary/eigenwerte_eigenvektoren.tex
+Chapter 15.
 
 Overfull \hbox (1.09071pt too wide) in paragraph at lines 1--1
 |[]\OT1/cmr/bx/n/24.88 Eigenwerte und Eigen-vek-
@@ -1473,12 +1512,12 @@ Overfull \hbox (1.09071pt too wide) in paragraph at lines 1--1
 
 )
 
-[42
+[45
 
 
 
 ] (chapters/semester_summary/arithmetisches_mittel_median_modus.tex
-Chapter 17.
+Chapter 16.
 
 Overfull \hbox (18.193pt too wide) in paragraph at lines 1--1
 |[]\OT1/cmr/bx/n/24.88 Arithmetisches Mit-tel, Me-
@@ -1500,35 +1539,35 @@ LaTeX Warning: Command \texteuro invalid in math mode on input line 29.
 Missing character: There is no � in font cmr10!
 )
 
-[43
+[46
 
 
 
 ]
 
-[44
+[47
 
 
 ] (chapters/bonus_tests/test_1.tex
-Chapter 18.
+Chapter 17.
 
 Overfull \hbox (4.22386pt too wide) in paragraph at lines 1--1
 |[]\OT1/cmr/bx/n/24.88 Bonustest 1 - Rech-nen mit
  []
 
-<assets/bonus_tests/unique_vectors.png, id=1274, 367.87437pt x 367.87437pt>
+<assets/bonus_tests/unique_vectors.png, id=1362, 367.87437pt x 367.87437pt>
 File: assets/bonus_tests/unique_vectors.png Graphic file (type png)
 <use assets/bonus_tests/unique_vectors.png>
 Package pdftex.def Info: assets/bonus_tests/unique_vectors.png  used on input line 10.
 (pdftex.def)             Requested size: 180.67499pt x 180.681pt.
-<assets/bonus_tests/vector_lengths.png, id=1275, 545.03625pt x 543.53062pt>
+<assets/bonus_tests/vector_lengths.png, id=1363, 545.03625pt x 543.53062pt>
 File: assets/bonus_tests/vector_lengths.png Graphic file (type png)
 <use assets/bonus_tests/vector_lengths.png>
 Package pdftex.def Info: assets/bonus_tests/vector_lengths.png  used on input line 24.
 (pdftex.def)             Requested size: 180.67499pt x 180.17014pt.
 
 
-[45
+[48
 
 
  <./assets/bonus_tests/unique_vectors.png>]
@@ -1538,22 +1577,22 @@ Overfull \hbox (21.5161pt too wide) in paragraph at lines 38--46
 
 
 
-[46 <./assets/bonus_tests/vector_lengths.png>]
+[49 <./assets/bonus_tests/vector_lengths.png>]
 
-[47]
+[50]
 
-[48]
-
-[49]
+[51]
 Overfull \hbox (3.25493pt too wide) in paragraph at lines 224--225
 \OT1/cmr/m/n/10.95 Betrachten wir das Vorze-ichen von $[](\OML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 )$ f^^?ur die m^^?oglichen Werte des Winkels
  []
 
 
 
-[50]
+[52]
 
-[51]
+[53]
+
+[54]
 Overfull \hbox (20.19861pt too wide) in paragraph at lines 338--339
 \OT1/cmr/m/n/10.95 Der Verbindungsvek-tor von Punkt $\OML/cmm/m/it/10.95 U$ \OT1/cmr/m/n/10.95 nach Punkt $\OML/cmm/m/it/10.95 V$ \OT1/cmr/m/n/10.95 l^^?asst sich aus den zugeh^^?origen
  []
@@ -1565,40 +1604,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 349--354
 
 
 
-[52]
+[55]
 Overfull \hbox (5.73006pt too wide) in paragraph at lines 402--403
 \OT1/cmr/m/n/10.95 wei^^Ye Kugel und die blaue Kugel haben beide einen Durchmesser $\OML/cmm/m/it/10.95 d \OT1/cmr/m/n/10.95 = 57\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 2 []$.
  []
 
-<assets/bonus_tests/pool.png, id=1318, 666.23906pt x 408.77719pt>
+<assets/bonus_tests/pool.png, id=1406, 666.23906pt x 408.77719pt>
 File: assets/bonus_tests/pool.png Graphic file (type png)
 <use assets/bonus_tests/pool.png>
 Package pdftex.def Info: assets/bonus_tests/pool.png  used on input line 404.
 (pdftex.def)             Requested size: 361.34999pt x 221.71567pt.
 
 
-[53]
-<assets/bonus_tests/pool2.png, id=1324, 3383.64125pt x 2392.94pt>
+[56 <./assets/bonus_tests/pool.png>]
+<assets/bonus_tests/pool2.png, id=1412, 3383.64125pt x 2392.94pt>
 File: assets/bonus_tests/pool2.png Graphic file (type png)
 <use assets/bonus_tests/pool2.png>
 Package pdftex.def Info: assets/bonus_tests/pool2.png  used on input line 410.
 (pdftex.def)             Requested size: 361.34999pt x 255.51991pt.
 
 
-[54 <./assets/bonus_tests/pool.png> <./assets/bonus_tests/pool2.png>]
-
-[55]
-<assets/bonus_tests/drehmoment.png, id=1335, 929.4725pt x 331.2375pt>
+[57 <./assets/bonus_tests/pool2.png>]
+<assets/bonus_tests/drehmoment.png, id=1418, 929.4725pt x 331.2375pt>
 File: assets/bonus_tests/drehmoment.png Graphic file (type png)
 <use assets/bonus_tests/drehmoment.png>
 Package pdftex.def Info: assets/bonus_tests/drehmoment.png  used on input line 466.
 (pdftex.def)             Requested size: 361.34999pt x 128.7727pt.
 
 
-[56 <./assets/bonus_tests/drehmoment.png>])
+[58]
 
-[57] (chapters/bonus_tests/test_2.tex
-Chapter 19.
+[59 <./assets/bonus_tests/drehmoment.png>])
+
+[60] (chapters/bonus_tests/test_2.tex
+Chapter 18.
 
 Overfull \hbox (49.41966pt too wide) in paragraph at lines 1--1
 \OT1/cmr/bx/n/24.88 eare Gle-ichungssys-tem, Matz-
@@ -1609,52 +1648,72 @@ Overfull \hbox (18.64214pt too wide) in paragraph at lines 1--1
 \OT1/cmr/bx/n/24.88 itzen und lin-eare Ab-bil-dun-
  []
 
-[58
+[61
 
 
 
-] [59]
-
-[60])
-
-[61]
-
-[62
+] [62]
+Overfull \hbox (29.04842pt too wide) in paragraph at lines 190--191
+[]\OT1/cmr/m/n/10.95 Ein m^^?oglicher L^^?osungsansatz besteht darin, die Be-din-gung f^^?ur lin-eare Abh^^?angigkeit
+ []
 
 
-] (chapters/lineare_algebra/page_5.tex
-Chapter 20.
+
+[63]
+Overfull \hbox (29.7947pt too wide) detected at line 205
+[]
+ []
 
 
-[63
-
-
-]
 
 [64]
+Overfull \hbox (111.54576pt too wide) in paragraph at lines 290--291
+[]\OT1/cmr/m/n/10.95 Die Wasser-stoffatome befinden sich im Tetraeder an den Eckpnk-ten $\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95 (2\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 0)\OML/cmm/m/it/10.95 ; H[]\OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 0)\OML/cmm/m/it/10.95 ; H[]\OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 2)$
+ []
+
+
 
 [65]
 
-[66])
+[66]
 
-[67] (chapters/lineare_algebra/page_6.tex
-Chapter 21.
+[67])
+
+[68]
+
+[69
 
 
-[68
+] (chapters/lineare_algebra/page_5.tex
+Chapter 19.
+
+
+[70
+
+
+]
+
+[71]
+
+[72]
+
+[73])
+
+[74] (chapters/lineare_algebra/page_6.tex
+Chapter 20.
+
+
+[75
 
 
 
 ]
 
-[69] [70] [71] [72] [73] [74] [75] [76] [77]
+[76] [77] [78] [79] [80] [81] [82] [83] [84]
 
-[78]
+[85]
 
-[79]
-
-Package xcolor Warning: Incompatible color definition on input line 913.
-
+[86]
 
 Package xcolor Warning: Incompatible color definition on input line 913.
 
@@ -1662,6 +1721,9 @@ Package xcolor Warning: Incompatible color definition on input line 913.
 Package xcolor Warning: Incompatible color definition on input line 913.
 
 
+Package xcolor Warning: Incompatible color definition on input line 913.
+
+
 Package xcolor Warning: Incompatible color definition on input line 914.
 
 
@@ -3682,7 +3744,7 @@ Package xcolor Warning: Incompatible color definition on input line 947.
 
 
 
-[80]
+[87]
 
 Package xcolor Warning: Incompatible color definition on input line 948.
 
@@ -4549,106 +4611,86 @@ Package xcolor Warning: Incompatible color definition on input line 964.
 
 )
 
-[81] (chapters/lineare_algebra/page_7.tex
-Chapter 22.
+[88] (chapters/lineare_algebra/page_7.tex
+Chapter 21.
 
 
-[82
+[89
 
 
 
 ]
 
-[83]
+[90]
 
-[84]
+[91]
 
-[85]
+[92]
 
-[86]
+[93]
 
-[87]
+[94]
 
-[88]
+[95]
 Overfull \hbox (6.35873pt too wide) in paragraph at lines 535--536
 \OT1/cmr/m/n/10.95 Dass eine Ma-trix in-vertier-bar ist, muss sie lin-ear un-abh^^?angig sein. $\OMS/cmsy/m/n/10.95 ! []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 T\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 =
  []
 
 
 
-[89])
+[96])
 
-[90] (chapters/lineare_algebra/page_8.tex
-Chapter 23.
+[97] (chapters/lineare_algebra/page_8.tex
+Chapter 22.
 
 
-[91
+[98
 
 
 
 ]
 
-[92]
+[99]
 Overfull \hbox (5.46533pt too wide) in paragraph at lines 166--167
 []\OT1/cmr/m/n/10.95 Die Zahlen an den Lin-ien wer-den Mul-ti-pliziert. Blaue Lin-ien wer-den miteinan-
  []
 
-[93]
+[100]
 
-[94]
+[101]
 Underfull \hbox (badness 10000) in paragraph at lines 352--354
 [][]$[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 B\OT1/cmr/m/n/10.95 ) = 
  []
 
 
 
-[95])
+[102])
 
-[96] (chapters/lineare_algebra/page_9.tex
-Chapter 24.
-
-
-[97
+[103] (chapters/lineare_algebra/page_9.tex
+Chapter 23.
 
 
-
-]
-
-[98]
-
-[99]
-
-[100])
-
-[101] (chapters/lineare_algebra/page_10.tex
-Chapter 25.
-
-
-[102
+[104
 
 
 
 ]
-
-[103]
-
-[104]
 
 [105]
 
-[106])
+[106]
 
-[107] (chapters/lineare_algebra/page_11.tex
-Chapter 26.
+[107])
+
+[108] (chapters/lineare_algebra/page_10.tex
+Chapter 24.
 
 
-[108
+[109
 
 
 
 ]
-
-[109]
 
 [110]
 
@@ -4656,21 +4698,41 @@ Chapter 26.
 
 [112]
 
-[113]
+[113])
 
-[114]
+[114] (chapters/lineare_algebra/page_11.tex
+Chapter 25.
 
-[115]
 
-[116])
+[115
+
+
+
+]
+
+[116]
 
 [117]
 
-[118
+[118]
+
+[119]
+
+[120]
+
+[121]
+
+[122]
+
+[123])
+
+[124]
+
+[125
 
 
 ] (chapters/statistik/paper_5.tex
-Chapter 27.
+Chapter 26.
 
 Overfull \hbox (8.3549pt too wide) in paragraph at lines 6--7
 \OT1/cmr/m/n/10.95 (also zwei Fin-ger aus-gestreckt, die an-dere eingeklappt zu lassen)? (Anatomisch
@@ -4678,19 +4740,19 @@ Overfull \hbox (8.3549pt too wide) in paragraph at lines 6--7
 
 )
 
-[119
+[126
 
 
 ] (chapters/statistik/paper_6.tex
-Chapter 28.
+Chapter 27.
 )
 
-[120
+[127
 
 
 
 ] (chapters/statistik/paper_7.tex
-Chapter 29.
+Chapter 28.
 
 Overfull \hbox (24.25035pt too wide) in paragraph at lines 5--6
 \OT1/cmr/m/n/10.95 Wahrschein-lichkeiten mit Worten: $\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 E\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 E\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 EC\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 E\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 AC\OT1/cmr/m/n/10.95 )$. Welche
@@ -4698,7 +4760,7 @@ Overfull \hbox (24.25035pt too wide) in paragraph at lines 5--6
 
 )
 
-[121
+[128
 
 
 
@@ -4708,23 +4770,23 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C095DDF59CB7338E68B1FF40E317D401;24246.
+(rerunfilecheck)             Checksum: B750D1B0A59EC081A9590D04F01D5812;26705.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37770 strings out of 469923
- 725860 string characters out of 5466267
- 2054785 words of memory out of 5000000
- 63470 multiletter control sequences out of 15000+600000
+ 37814 strings out of 469923
+ 726404 string characters out of 5466267
+ 2053182 words of memory out of 5000000
+ 63481 multiletter control sequences out of 15000+600000
  644803 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,20n,91p,1511b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (129 pages, 1752837 bytes).
+ <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on main.pdf (137 pages, 1797917 bytes).
 PDF statistics:
- 1870 PDF objects out of 2073 (max. 8388607)
- 443 named destinations out of 1000 (max. 500000)
- 1611 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1991 PDF objects out of 2073 (max. 8388607)
+ 479 named destinations out of 1000 (max. 500000)
+ 1707 words of extra memory for PDF output out of 10000 (max. 10000000)
 
