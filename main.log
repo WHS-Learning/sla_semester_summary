@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.1)  7 JUN 2025 14:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.1)  8 JUN 2025 17:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -878,39 +878,175 @@ Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
  (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarymatrix.code.tex
-File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
+)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks48
+\t@pgfplots@tokb=\toks49
+\t@pgfplots@tokc=\toks50
+\pgfplots@tmpa=\dimen303
+\c@pgfplots@coordindex=\count498
+\c@pgfplots@scanlineindex=\count499
+ (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks51
+\t@pgf@tokb=\toks52
+\t@pgf@tokc=\toks53
+(C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count500
+) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count501
+\t@pgfplotstable@a=\toks54
+) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count502
+ (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen304
+\pgfdecoratedremainingdistance=\dimen305
+\pgfdecoratedinputsegmentcompleteddistance=\dimen306
+\pgfdecoratedinputsegmentremainingdistance=\dimen307
+\pgf@decorate@distancetomove=\dimen308
+\pgf@decorate@repeatstate=\count503
+\pgfdecorationsegmentamplitude=\dimen309
+\pgfdecorationsegmentlength=\dimen310
+)
+\tikz@lib@dec@box=\box77
+) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count504
+\pgfplots@xmin@reg=\dimen311
+\pgfplots@xmax@reg=\dimen312
+\pgfplots@ymin@reg=\dimen313
+\pgfplots@ymax@reg=\dimen314
+\pgfplots@zmin@reg=\dimen315
+\pgfplots@zmax@reg=\dimen316
+) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/forest\forest.sty
+Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
+ (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit.code.tex
+)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.code.tex)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box78
+\pgfnodeparttwobox=\box79
+\pgfnodepartthreebox=\box80
+\pgfnodepartfourbox=\box81
+\pgfnodeparttwentybox=\box82
+\pgfnodepartnineteenbox=\box83
+\pgfnodeparteighteenbox=\box84
+\pgfnodepartseventeenbox=\box85
+\pgfnodepartsixteenbox=\box86
+\pgfnodepartfifteenbox=\box87
+\pgfnodepartfourteenbox=\box88
+\pgfnodepartthirteenbox=\box89
+\pgfnodeparttwelvebox=\box90
+\pgfnodepartelevenbox=\box91
+\pgfnodeparttenbox=\box92
+\pgfnodepartninebox=\box93
+\pgfnodeparteightbox=\box94
+\pgfnodepartsevenbox=\box95
+\pgfnodepartsixbox=\box96
+\pgfnodepartfivebox=\box97
+))) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit.code.tex
 File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen303
-\pgfdecoratedremainingdistance=\dimen304
-\pgfdecoratedinputsegmentcompleteddistance=\dimen305
-\pgfdecoratedinputsegmentremainingdistance=\dimen306
-\pgf@decorate@distancetomove=\dimen307
-\pgf@decorate@repeatstate=\count498
-\pgfdecorationsegmentamplitude=\dimen308
-\pgfdecorationsegmentlength=\dimen309
+) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryintersections.code.tex
+\pgf@intersect@solutions=\count505
+) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/pgfopts\pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks55
+\pgfopts@list@add@b@toks=\toks56
+) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/elocalloc\elocalloc.sty
+Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
+) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/inlinedef\inlinedef.sty
+Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
+\ID@toks=\toks57
+\ID@count=\count506
 )
-\tikz@lib@dec@box=\box77
-) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+\ID@usercommands=\toks58
+\safeloop@depth=\count507
+\safeRKloop@depth=\count508
+\forest@temp@dimen=\dimen317
+\forest@temp@count=\count509
+\forest@n=\count510
+\forest@temp@global@count=\count511
+\forest@temp@toks=\toks59
+\forest@temparray@M=\count512
+\forest@temparray@N=\count513
+\forest@global@temparray@M=\count514
+\forest@global@temparray@N=\count515
+\forest@isnum@count=\count516
+\forest@isdim@nonintpart=\count517
+\forest@isdim@dimen=\dimen318
+\forest@sort@m=\count518
+\forest@sort@k=\count519
+\forest@sort@p=\count520
+\bracket@content=\toks60
+\bracket@afterthought=\toks61
+\forest@node@maxid=\count521
+\forest@process@left@M=\count522
+\forest@process@left@N=\count523
+\forest@process@right@M=\count524
+\forest@process@right@N=\count525
+\forest@process@saved@M=\count526
+\forest@process@saved@N=\count527
+\forest@process@result@M=\count528
+\forest@process@result@N=\count529
+\forest@process@n=\count530
+\forest@nodewalk@branch@toks=\toks62
+\forest@nodewalk@shortsteps@resolution=\toks63
+\forest@do@dynamics=\toks64
+\forest@box=\box98
+\forest@xg=\dimen319
+\forest@yg=\dimen320
+\forest@xs=\dimen321
+\forest@ys=\dimen322
+\forest@pi@toks=\toks65
+\forest@segment@toks=\toks66
+\forest@PIi@toks=\toks67
+\forest@PIii@toks=\toks68
+\forest@copy@in=\read6
+\forest@copy@out=\write6
+\forest@externalize@max@outer@n=\count531
+\forest@externalize@inner@n=\count532
+) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen310
-\pgfarrowlength=\dimen311
-\pgfarrowwidth=\dimen312
-\pgfarrowlinewidth=\dimen313
+\pgfarrowinset=\dimen323
+\pgfarrowlength=\dimen324
+\pgfarrowwidth=\dimen325
+\pgfarrowlinewidth=\dimen326
 ) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@layerbox@background=\box78
-\pgf@layerboxsaved@background=\box79
+\pgf@layerbox@background=\box99
+\pgf@layerboxsaved@background=\box100
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -919,24 +1055,24 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -974,24 +1110,24 @@ LaTeX Font Info:    ... okay on input line 14.
 
 (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count499
-\scratchdimen=\dimen314
-\scratchbox=\box80
-\nofMPsegments=\count500
-\nofMParguments=\count501
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count502
-\MPscratchDim=\dimen315
-\MPnumerator=\count503
-\makeMPintoPDFobject=\count504
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count533
+\scratchdimen=\dimen327
+\scratchbox=\box101
+\nofMPsegments=\count534
+\nofMParguments=\count535
+\everyMPshowfont=\toks69
+\MPscratchCnt=\count536
+\MPscratchDim=\dimen328
+\MPnumerator=\count537
+\makeMPintoPDFobject=\count538
+\everyMPtoPDFconversion=\toks70
 ) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count505
+\c@lstlisting=\count539
 Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
 Package biblatex Info: ... file 'english-apa.lbx' found.
  (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\english-apa.lbx
@@ -1022,17 +1158,20 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 14.
-Package biblatex Info: Reference segment=0 on input line 14.
-Package hyperref Info: Link coloring ON on input line 14.
+Package biblatex Info: Reference section=0 on input line 17.
+Package biblatex Info: Reference segment=0 on input line 17.
+Package hyperref Info: Link coloring ON on input line 17.
  (main.out) (main.out)
-\@outlinefile=\write6
-\openout6 = `main.out'.
+\@outlinefile=\write7
+\openout7 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (config/globals.tex) (titlepage.tex
-<assets/frontpage.png, id=838, 803.0pt x 334.24875pt>
+
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+(config/globals.tex) (titlepage.tex
+<assets/frontpage.png, id=1002, 803.0pt x 334.24875pt>
 File: assets/frontpage.png Graphic file (type png)
 <use assets/frontpage.png>
 Package pdftex.def Info: assets/frontpage.png  used on input line 24.
@@ -1110,24 +1249,31 @@ l.81 ...enwerte und Eigenvektoren}{45}{chapter.15}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 ...berline {19.1.1}a}{70}{subsection.19.1.1}
+l.131 ...mberline {19.4}Frage 4}{71}{section.19.4}
                                                   % [3]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.178 ...erline {23.1.1}a}{104}{subsection.23.1.1}
+l.177 ...erline {23.2.2}b}{106}{subsection.23.2.2}
                                                   % [4]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.221 ...erline {27.2.2}b}{127}{subsection.27.2.2}
-                                                  % [5])
-\tf@toc=\write7
-\openout7 = `main.toc'.
+l.220 ...erline {27.3.3}c}{132}{subsection.27.3.3}
+                                                  % [5]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.264 ...erline {32.2.1}a}{144}{subsection.32.2.1}
+                                                  % [6])
+\tf@toc=\write8
+\openout8 = `main.toc'.
 
 
 
@@ -1135,14 +1281,14 @@ l.221 ...erline {27.2.2}b}{127}{subsection.27.2.2}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 	\clearpage
-                 [6]
+l.32 	\clearpage
+                 [7]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 	\part{Semesterzusammenfassung}
+l.36 	\part{Semesterzusammenfassung}
                                      [1
 
 
@@ -1555,12 +1701,12 @@ Overfull \hbox (4.22386pt too wide) in paragraph at lines 1--1
 |[]\OT1/cmr/bx/n/24.88 Bonustest 1 - Rech-nen mit
  []
 
-<assets/bonus_tests/unique_vectors.png, id=1362, 367.87437pt x 367.87437pt>
+<assets/bonus_tests/unique_vectors.png, id=1570, 367.87437pt x 367.87437pt>
 File: assets/bonus_tests/unique_vectors.png Graphic file (type png)
 <use assets/bonus_tests/unique_vectors.png>
 Package pdftex.def Info: assets/bonus_tests/unique_vectors.png  used on input line 10.
 (pdftex.def)             Requested size: 180.67499pt x 180.681pt.
-<assets/bonus_tests/vector_lengths.png, id=1363, 545.03625pt x 543.53062pt>
+<assets/bonus_tests/vector_lengths.png, id=1571, 545.03625pt x 543.53062pt>
 File: assets/bonus_tests/vector_lengths.png Graphic file (type png)
 <use assets/bonus_tests/vector_lengths.png>
 Package pdftex.def Info: assets/bonus_tests/vector_lengths.png  used on input line 24.
@@ -1609,7 +1755,7 @@ Overfull \hbox (5.73006pt too wide) in paragraph at lines 402--403
 \OT1/cmr/m/n/10.95 wei^^Ye Kugel und die blaue Kugel haben beide einen Durchmesser $\OML/cmm/m/it/10.95 d \OT1/cmr/m/n/10.95 = 57\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 2 []$.
  []
 
-<assets/bonus_tests/pool.png, id=1406, 666.23906pt x 408.77719pt>
+<assets/bonus_tests/pool.png, id=1614, 666.23906pt x 408.77719pt>
 File: assets/bonus_tests/pool.png Graphic file (type png)
 <use assets/bonus_tests/pool.png>
 Package pdftex.def Info: assets/bonus_tests/pool.png  used on input line 404.
@@ -1617,7 +1763,7 @@ Package pdftex.def Info: assets/bonus_tests/pool.png  used on input line 404.
 
 
 [56 <./assets/bonus_tests/pool.png>]
-<assets/bonus_tests/pool2.png, id=1412, 3383.64125pt x 2392.94pt>
+<assets/bonus_tests/pool2.png, id=1620, 3383.64125pt x 2392.94pt>
 File: assets/bonus_tests/pool2.png Graphic file (type png)
 <use assets/bonus_tests/pool2.png>
 Package pdftex.def Info: assets/bonus_tests/pool2.png  used on input line 410.
@@ -1625,7 +1771,7 @@ Package pdftex.def Info: assets/bonus_tests/pool2.png  used on input line 410.
 
 
 [57 <./assets/bonus_tests/pool2.png>]
-<assets/bonus_tests/drehmoment.png, id=1418, 929.4725pt x 331.2375pt>
+<assets/bonus_tests/drehmoment.png, id=1627, 929.4725pt x 331.2375pt>
 File: assets/bonus_tests/drehmoment.png Graphic file (type png)
 <use assets/bonus_tests/drehmoment.png>
 Package pdftex.def Info: assets/bonus_tests/drehmoment.png  used on input line 466.
@@ -1679,44 +1825,55 @@ Overfull \hbox (111.54576pt too wide) in paragraph at lines 290--291
 
 [67])
 
-[68]
-
+[68] (chapters/bonus_tests/test_3.tex
+Chapter 19.
 [69
 
-
-] (chapters/lineare_algebra/page_5.tex
-Chapter 19.
-
-
-[70
 
 
 ]
 
+[70]
+
 [71]
 
-[72]
+[72])
 
-[73])
+[73]
 
-[74] (chapters/lineare_algebra/page_6.tex
+[74
+
+
+] (chapters/lineare_algebra/page_5.tex
 Chapter 20.
 
 
 [75
 
 
+]
+
+[76]
+
+[77]
+
+[78])
+
+[79] (chapters/lineare_algebra/page_6.tex
+Chapter 21.
+
+
+[80
+
+
 
 ]
 
-[76] [77] [78] [79] [80] [81] [82] [83] [84]
+[81] [82] [83] [84] [85] [86] [87] [88] [89]
 
-[85]
+[90]
 
-[86]
-
-Package xcolor Warning: Incompatible color definition on input line 913.
-
+[91]
 
 Package xcolor Warning: Incompatible color definition on input line 913.
 
@@ -1724,6 +1881,9 @@ Package xcolor Warning: Incompatible color definition on input line 913.
 Package xcolor Warning: Incompatible color definition on input line 913.
 
 
+Package xcolor Warning: Incompatible color definition on input line 913.
+
+
 Package xcolor Warning: Incompatible color definition on input line 914.
 
 
@@ -3744,7 +3904,7 @@ Package xcolor Warning: Incompatible color definition on input line 947.
 
 
 
-[87]
+[92]
 
 Package xcolor Warning: Incompatible color definition on input line 948.
 
@@ -4611,78 +4771,62 @@ Package xcolor Warning: Incompatible color definition on input line 964.
 
 )
 
-[88] (chapters/lineare_algebra/page_7.tex
-Chapter 21.
+[93] (chapters/lineare_algebra/page_7.tex
+Chapter 22.
 
 
-[89
+[94
 
 
 
 ]
 
-[90]
-
-[91]
-
-[92]
-
-[93]
-
-[94]
-
 [95]
+
+[96]
+
+[97]
+
+[98]
+
+[99]
+
+[100]
 Overfull \hbox (6.35873pt too wide) in paragraph at lines 535--536
 \OT1/cmr/m/n/10.95 Dass eine Ma-trix in-vertier-bar ist, muss sie lin-ear un-abh^^?angig sein. $\OMS/cmsy/m/n/10.95 ! []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 T\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 =
  []
 
 
 
-[96])
+[101])
 
-[97] (chapters/lineare_algebra/page_8.tex
-Chapter 22.
+[102] (chapters/lineare_algebra/page_8.tex
+Chapter 23.
 
 
-[98
+[103
 
 
 
 ]
 
-[99]
+[104]
 Overfull \hbox (5.46533pt too wide) in paragraph at lines 166--167
 []\OT1/cmr/m/n/10.95 Die Zahlen an den Lin-ien wer-den Mul-ti-pliziert. Blaue Lin-ien wer-den miteinan-
  []
 
-[100]
+[105]
 
-[101]
+[106]
 Underfull \hbox (badness 10000) in paragraph at lines 352--354
 [][]$[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 B\OT1/cmr/m/n/10.95 ) = 
  []
 
 
 
-[102])
-
-[103] (chapters/lineare_algebra/page_9.tex
-Chapter 23.
-
-
-[104
-
-
-
-]
-
-[105]
-
-[106]
-
 [107])
 
-[108] (chapters/lineare_algebra/page_10.tex
+[108] (chapters/lineare_algebra/page_9.tex
 Chapter 24.
 
 
@@ -4696,71 +4840,235 @@ Chapter 24.
 
 [111]
 
-[112]
+[112])
 
-[113])
-
-[114] (chapters/lineare_algebra/page_11.tex
+[113] (chapters/lineare_algebra/page_10.tex
 Chapter 25.
 
 
-[115
+[114
 
 
 
 ]
 
+[115]
+
 [116]
 
 [117]
 
-[118]
+[118])
 
-[119]
+[119] (chapters/lineare_algebra/page_11.tex
+Chapter 26.
 
-[120]
+
+[120
+
+
+
+]
 
 [121]
 
 [122]
 
-[123])
+[123]
 
 [124]
 
-[125
+[125]
+
+[126]
+
+[127]
+
+[128])
+
+[129]
+
+[130
 
 
 ] (chapters/statistik/paper_5.tex
-Chapter 26.
+Chapter 27.
 
 Overfull \hbox (8.3549pt too wide) in paragraph at lines 6--7
 \OT1/cmr/m/n/10.95 (also zwei Fin-ger aus-gestreckt, die an-dere eingeklappt zu lassen)? (Anatomisch
  []
 
-)
-
-[126
 
 
-] (chapters/statistik/paper_6.tex
-Chapter 27.
-)
-
-[127
+[131
 
 
+])
 
-] (chapters/statistik/paper_7.tex
+[132] (chapters/statistik/paper_6.tex
 Chapter 28.
+Package pgfplots info on input line 23: Using 'lua backend=false' for axis: x coord trafo unsupported.
 
-Overfull \hbox (24.25035pt too wide) in paragraph at lines 5--6
-\OT1/cmr/m/n/10.95 Wahrschein-lichkeiten mit Worten: $\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 E\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 E\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 EC\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 E\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 AC\OT1/cmr/m/n/10.95 )$. Welche
+
+[133
+
+
+
+]
+
+[134])
+
+[135] (chapters/statistik/paper_7.tex
+Chapter 29.
+
+Overfull \hbox (21.27837pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/n/10.95 Wahrschein-lichkeiten mit Worten: $\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 E\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 E\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 E[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 E\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 A[]\OT1/cmr/m/n/10.95 )$. Welche
+ []
+
+
+Overfull \hbox (14.28416pt too wide) in paragraph at lines 8--9
+[]$\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 E\OT1/cmr/m/n/10.95 )$ \OT1/pcr/m/n/10.95 Die Alarmanlage springt an, unter der Bedingung
+ []
+
+
+Overfull \hbox (33.33644pt too wide) in paragraph at lines 8--9
+\OT1/pcr/m/n/10.95 dass jemand versucht, das Auto aufzubrechen\OT1/cmr/m/n/10.95 : Die Wahrschein-
+ []
+
+
+Overfull \hbox (20.85416pt too wide) in paragraph at lines 9--10
+[]$\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 E\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95 )$ \OT1/pcr/m/n/10.95 Jemand versucht, in das Auto einzubrechen, unter
+ []
+
+
+Overfull \hbox (26.76645pt too wide) in paragraph at lines 9--10
+\OT1/pcr/m/n/10.95 der Bedingung, dass die Alarmanlage angeht\OT1/cmr/m/n/10.95 : Die Wahrschein-
+ []
+
+
+Overfull \hbox (27.97757pt too wide) in paragraph at lines 10--11
+[]$\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 E[]\OT1/cmr/m/n/10.95 )$ \OT1/pcr/m/n/10.95 Die Alarmanlage springt an, unter der Bedingung,
+ []
+
+
+Overfull \hbox (43.55629pt too wide) in paragraph at lines 10--11
+\OT1/pcr/m/n/10.95 dass niemand versucht, das Auto aufzubrechen (Fehlarlarm)\OT1/cmr/m/n/10.95 :
+ []
+
+
+Overfull \hbox (27.97757pt too wide) in paragraph at lines 11--12
+[]$\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 E\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 A[]\OT1/cmr/m/n/10.95 )$ \OT1/pcr/m/n/10.95 Jemand versucht, in das Auto einzubrechen, unter
+ []
+
+
+Overfull \hbox (4.95763pt too wide) in paragraph at lines 11--12
+\OT1/pcr/m/n/10.95 der Bedingung, dass die Alarmanlage \OT1/pcr/b/n/10.95 nicht \OT1/pcr/m/n/10.95 angeht\OT1/cmr/m/n/10.95 : Die
+ []
+
+
+
+[136
+
+
+
+]
+Overfull \hbox (5.47548pt too wide) in paragraph at lines 45--46
+\OT1/cmr/m/n/10.95 Wie gro^^Y ist die Wahrschein-lichkeit daf^^?ur, dass ein Dop-ingtest pos-i-tiv ausf^^?allt? 
+ []
+
+
+
+[137]
+Overfull \hbox (3.04202pt too wide) in paragraph at lines 88--89
+\OT1/cmr/m/n/10.95 Was ist der Un-ter-schied zwis-chen vollst^^?andi-ger stochastis-cher Un-abh^^?angigkeit
  []
 
 )
 
-[128
+[138] (chapters/statistik/paper_8.tex
+Chapter 30.
+
+Overfull \hbox (14.43677pt too wide) in paragraph at lines 17--18
+$\OML/cmm/m/it/10.95 Var\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 Y\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 Var\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 ) + \OML/cmm/m/it/10.95 Var\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Y\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; []X[]Y[]:$ 
+ []
+
+
+
+[139
+
+
+
+])
+
+[140] (chapters/statistik/paper_9.tex
+Chapter 31.
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 11.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 11.
+
+Missing character: There is no ¿ in font cmr10!
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 11.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 11.
+
+Missing character: There is no ¿ in font cmr10!
+
+Overfull \hbox (2.60107pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/n/10.95 Gem^^?a^^Y einer Def-i-ni-tion von Ar-mut gilt als arm, wer ein monatliches Haushalt-
+ []
+
+
+Overfull \hbox (17.26697pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/n/10.95 wer-den Flugzeuge sys-tem-a-tisch ^^?uberbucht. F^^?ur eine Mas-chine mit 98 Sitzpl^^?atzen
+ []
+
+
+Overfull \hbox (22.66078pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/n/10.95 unter der An-nahme, dass das Er-scheinen der Tick-et-inhaber paar-weise stochastisch
+ []
+
+
+
+[141
+
+
+
+])
+
+[142] (chapters/statistik/paper_10.tex
+Chapter 32.
+
+Overfull \hbox (0.72028pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/n/10.95 Becher einen De-fek-ten Deckel be-sitzen. Nor-maler-weise kann dieser Qualit^^?ats-
+ []
+
+
+Overfull \hbox (20.8865pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/n/10.95 stan-dard le-icht einge-hal-ten wer-den. Eines Tages stellt sich bei einer Qualit^^?atskon-
+ []
+
+
+Overfull \hbox (12.94786pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/n/10.95 tien-ren-dite nor-malverteilt. Au^^Yer-dem gibt es eine von $\OML/cmm/m/it/10.95 A$ \OT1/cmr/m/n/10.95 un-abh^^?angige, risikolose
+ []
+
+
+
+[143
+
+
+
+])
+
+[144] (chapters/statistik/paper_11.tex
+Chapter 33.
+)
+
+[145
 
 
 
@@ -4770,23 +5078,23 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B750D1B0A59EC081A9590D04F01D5812;26705.
+(rerunfilecheck)             Checksum: 3CF6B70901B4B7AA078AD29648CB10A6;30479.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37814 strings out of 469923
- 726404 string characters out of 5466267
- 2053182 words of memory out of 5000000
- 63481 multiletter control sequences out of 15000+600000
- 644803 words of font info for 107 fonts, out of 8000000 for 9000
+ 58605 strings out of 469923
+ 1365221 string characters out of 5466267
+ 2787300 words of memory out of 5000000
+ 84012 multiletter control sequences out of 15000+600000
+ 645318 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,20n,91p,1511b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (137 pages, 1797917 bytes).
+ 130i,20n,130p,1753b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on main.pdf (155 pages, 1868461 bytes).
 PDF statistics:
- 1991 PDF objects out of 2073 (max. 8388607)
- 479 named destinations out of 1000 (max. 500000)
- 1707 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2291 PDF objects out of 2487 (max. 8388607)
+ 539 named destinations out of 1000 (max. 500000)
+ 2035 words of extra memory for PDF output out of 10000 (max. 10000000)
 

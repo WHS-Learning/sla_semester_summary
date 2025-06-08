@@ -2,8 +2,97 @@
 
 \section{Aufgabe 1}
 
-Herr Huber hat eine Alarmanlage in seinem Auto installiert. Es werden die Ereignisse A: "Alarmanlage springt an" und E: "Jemand versucht, das Auto aufzubrechen" betrachtet. Beschreiben Sie die folgenden bedingten Wahrscheinlichkeiten mit Worten: $P(A|E), P(E|A), P(A|EC), P(E|AC)$. Welche dieser bedingten Wahrscheinlichkeiten möglichst hoch bzw. niedrig sein?
+Herr Huber hat eine Alarmanlage in seinem Auto installiert. Es werden die Ereignisse A: "Alarmanlage springt an" und E: "Jemand versucht, das Auto aufzubrechen" betrachtet. Beschreiben Sie die folgenden bedingten Wahrscheinlichkeiten mit Worten: $P(A|E), P(E|A), P(A|E^C), P(E|A^C)$. Welche dieser bedingten Wahrscheinlichkeiten möglichst hoch bzw. niedrig seien?
+
+\begin{itemize}
+    \item $P(A|E)$ \texttt{Die Alarmanlage springt an, unter der Bedingung dass jemand versucht, das Auto aufzubrechen}: Die Wahrscheinlichkeit hierfür sollte möglichst hoch sein, da dies der sinn der Alarmanlage sein. Im idealfall sollte die Wahrscheinlichkeit hierfür gegen 100\% sein.
+    \item $P(E|A)$ \texttt{Jemand versucht, in das Auto einzubrechen, unter der Bedingung, dass die Alarmanlage angeht}: Die Wahrscheinlichkeit hierfür sollte hoch sein, aber nicht 100\%, da die Alarmanlage den Dieb verschrecken sollte.
+    \item $P(A|E^C)$ \texttt{Die Alarmanlage springt an, unter der Bedingung, dass niemand versucht, das Auto aufzubrechen (Fehlarlarm)}: Die Wahrscheinlichkeit hierfür sollte möglichst niedrig sein, da niemand versucht in das Auto einzubrechen.
+    \item $P(E|A^C)$ \texttt{Jemand versucht, in das Auto einzubrechen, unter der Bedingung, dass die Alarmanlage \textbf{nicht} angeht}: Die Wahrscheinlichkeit hierfür sollte sehr niedrig sein.
+\end{itemize}
 
 \section{Aufgabe 2}
 
 Bei einer Sportveranstaltung wird ein Dopingtest durchgeführt. Wenn ein Sportler gedopt hat, dann fällt der Test zu 99\% positiv aus. Hat ein Sportler aber nicht gedopt, zeigt der Test trotzdem zu 5\% ein positives Ergebnis an. Aus Erfahrung weiß man das 20\% der Sportler gedopt sind.
+
+\begin{center}    
+    \begin{forest}
+    prob/.style={
+        edge label={node[midway, auto, sloped, font=\small]{#1}}
+    },
+    for tree={
+        draw,
+        circle,
+        minimum size=1.8em,
+        l sep=1.5cm,
+        s sep=1.5cm,
+    }
+    [
+        [D, prob={$20\%$}
+            [P, prob={$99\%$}]
+            [$\overline{P}$, prob={$1\%$}]
+        ]
+        [$\overline{D}$, prob={$80\%$}
+            [P, prob={$5\%$}]
+            [$\overline{P}$, prob={$95\%$}]
+        ]
+    ]
+    \end{forest}
+\end{center}
+
+\subsection{a}
+
+Wie groß ist die Wahrscheinlichkeit dafür, dass ein Dopingtest positiv ausfällt?
+
+\begin{align*}
+    0.2 \cdot 0.99 + 0.8 \cdot 0.05 = 0.238 = 23.8\%
+\end{align*}
+
+\subsection{b}
+
+Wie groß ist die Wahrscheinlichkeit dafür, dass der Test negativ ausfällt, obwohl der Sportler gedopt hat?
+
+\begin{align*}
+    1\%??
+\end{align*}
+
+\subsection{c}
+
+Wie groß ist die Wahrscheinlichkeit dafür, dass ein Sportler gedopt hat, falls sein Dopingtest negativ ausgefallen ist?
+
+\begin{align*}
+    \frac{0.2 \cdot 0.01}{0.8 \cdot 0.95} = \frac{0.002}{0.76} = \frac{1}{380} \approx 0.0026 = 0.26\%
+\end{align*}
+
+\section{Aufgabe 3}
+
+Herr Mayer kommt im Durchschnitt an 10 von 100 Tagen zu spät für den Vorlesungsbeginn zur Hochschule. Er fährt manchmal mit dem eigenen Auto zur W-HS, an 60\% aller Vorlesungstage nimmt er jedoch öffentliche Verkehrsmittel. Er hat beobachtet, dass er durchschnittlich in 5\% aller Fälle mit dem Auto unterwegs ist und zu spät zur Hochschule kommt. Sind das Zu-Spät-Kommen und die Nutzung des eigenen Autos voneinander stochastisch unabhängig?
+
+Das Zuspät kommen ist stochastisch abhängig, da die Nutzung des Autos direkt in verbindung mit der Wahrscheinlichkeit, dass Herr Mayer zu spät kommt, steht.
+
+\section{Aufgabe 4}
+
+Seien $(\Omega, \mathcal{P}(\Omega), P)$ ein Wahrscheinlichkeitsraum und seinen $A, B, C \subset \Omega$ drei Ergebnisse. Man sagt, $A, B$ und $C$ seien \textit{Vollständig stochastisch unabhängig}, wenn gilt, dass
+
+\begin{itemize}
+    \item $P(A \cap B) = P(A) \cdot P(B)$
+    \item $P(A \cap C) = P(A) \cdot P(C)$
+    \item $P(B \cap C) = P(B) \cdot P(C)$
+    \item $P(A \cap B \cap C) = P(A) \cdot P(B) \cdot P(C)$
+\end{itemize}
+
+Beantworten Sie die folgenden Fragen:
+
+\subsection{a}
+
+Was ist der Unterschied zwischen vollständiger stochastischer Unabhängigkeit und paarweiser stochastischer Unabhängigkeit?
+
+Paarweise Stochastische unabhängigkeit ist gegeben, wenn die Bedingung $P(A \cap B \cap C) = P(A) \cdot P(B) \cdot P(C)$ \textit{nicht} gegeben ist, aber alle anderen Bedingungen gegeben sind.
+
+\subsection{b}
+
+Wie kann man diese Definition auf beliebig viele Ereignisse verallgemeinern?
+
+\subsection{c}
+
+Finden Sie ein Beispiel für drei Ereignisse, die paarweise stochastisch unabhängig sind, aber nicht vollständig stochastisch unabhängig.

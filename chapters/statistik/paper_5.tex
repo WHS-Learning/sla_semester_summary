@@ -5,11 +5,32 @@
 \subsection{a} 
 Wie viele Möglichkeiten gibt es, mit der rechten Hand eine zwei zu zeigen (also zwei Finger ausgestreckt, die andere eingeklappt zu lassen)? (Anatomisch schwierige Kombinationen und Verrenkungen werden mitgezählt!)
 
+\begin{align*}
+    \frac{5!}{2!(5-2)!} \\
+    = \frac{5!}{2!3!} \\
+    = \frac{120}{2*6} \\
+    = 10
+\end{align*}
+
+Es gibt 10 Möglichkeiten, eine zwei mit einer Hand zu zeigen.
+
 \subsection{b}
 Wie viele Möglichkeiten gibt es, irgendeine Zahl zwischen 0 und 5 mit einer Hand zu zeigen? (Auch hier: missverständliche Handzeichen und Verrenkungen werden mitgezählt)
 
+\begin{align*}
+    \frac{5!}{0!(5-0)!} + \frac{5!}{1!(5-1)!} + \frac{5!}{2!(2-5)!}\\
+     + \frac{5!}{3!(5-3)!} + \frac{5!}{4!(5-4)!} + \frac{5!}{5!(5-5)!} \\
+     = 32
+\end{align*}
+
 \section{Aufgabe 2}
 Eine Freundin hat Ihnen zum Geburtstag sämtliche Buchstaben Ihres Vor- und Nachnamens aus Beton gegossen. Wie (unterscheidbare) viele Wörter können Sie damit bilden, ohne Buchstaben wegzulassen? Wie viele davon enthalten Ihren Vornamen?
+
+Mit Vorname mit 4 unterschiedlichen und Nachname mit 6 unterschiedlichen Buchstaben (Alle sind unterschiedlich):
+
+\begin{align*}
+    (4 + 6)! = 3628800
+\end{align*}
 
 \section{Aufgabe 3}
 Sie werfen eine (faire) Münze dreimal.
@@ -17,8 +38,35 @@ Sie werfen eine (faire) Münze dreimal.
 \subsection{a}
 Was ist ein passender Ereignisraum $\Omega$?
 
+Ein passender Ereignisraum listet alle 8 möglichen, geordneten Ergebnisse auf. Wir kürzen Kopf mit K und Zahl mit Z ab.
+\begin{align*}
+    \Omega = \{ 
+        \text{KKK, } 
+        \text{KKZ, } 
+        \text{KZK, } 
+        \text{KZZ, } 
+        \text{ZKK, } 
+        \text{ZKZ, } 
+        \text{ZZK, } 
+        \text{ZZZ} 
+    \}
+\end{align*}
+
 \subsection{b}
-Wie viele Elemente hat die Potenzmente $\mathcal{P}(\Omega)$?
+Wie viele Elemente hat die Potenzmenge $\mathcal{P}(\Omega)$?
+
+Die Mächtigkeit (Anzahl der Elemente) des Ereignisraums beträgt $|\Omega| = 8$.
+Die Mächtigkeit der Potenzmenge $\mathcal{P}(\Omega)$ ist $2$ hoch die Mächtigkeit von $\Omega$.
+\begin{align*}
+    |\mathcal{P}(\Omega)| = 2^{|\Omega|} = 2^8 = 256
+\end{align*}
+Die Potenzmenge hat somit 256 Elemente.
 
 \subsection{c}
 Wie groß ist die Wahrscheinlichkeit dafür, dass Sie dreimal dasselbe Ergebnis erziehlen?
+
+\begin{align*}
+    \frac{1}{2}^3 + \frac{1}{2}^3 \\
+    = \frac{1}{8} + \frac{1}{8} \\
+    = \frac{2}{8} = \frac{1}{4} = 25\%
+\end{align*}

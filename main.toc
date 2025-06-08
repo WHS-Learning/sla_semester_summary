@@ -124,102 +124,143 @@
 \contentsline {section}{\numberline {18.5}Frage 5}{65}{section.18.5}%
 \contentsline {section}{\numberline {18.6}Frage 6}{67}{section.18.6}%
 \contentsline {section}{\numberline {18.7}Frage 7}{68}{section.18.7}%
-\contentsline {part}{III\hspace {1em}Übungsaufgaben Lineare Algebra}{69}{part.3}%
-\contentsline {chapter}{\numberline {19}Übungsblatt 5}{70}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Aufgabe 1}{70}{section.19.1}%
-\contentsline {subsection}{\numberline {19.1.1}a}{70}{subsection.19.1.1}%
-\contentsline {subsection}{\numberline {19.1.2}b}{70}{subsection.19.1.2}%
-\contentsline {section}{\numberline {19.2}Aufgabe 2}{70}{section.19.2}%
-\contentsline {subsection}{\numberline {19.2.1}a}{71}{subsection.19.2.1}%
-\contentsline {subsubsection}{Prüfung für a über Linearkombination}{71}{subsubsection*.17}%
-\contentsline {subsection}{\numberline {19.2.2}b}{72}{subsection.19.2.2}%
-\contentsline {subsubsection}{Prüfung für b über Determinante}{72}{subsubsection*.18}%
-\contentsline {subsubsection}{Prüfung für b über Linearkombination}{73}{subsubsection*.19}%
-\contentsline {section}{\numberline {19.3}Aufgabe 3}{73}{section.19.3}%
-\contentsline {chapter}{\numberline {20}Übungsblatt 6}{75}{chapter.20}%
+\contentsline {chapter}{\numberline {19}Bonustest 3 - Invertieren von Matzitzen}{69}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Frage 1}{69}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Frage 2}{70}{section.19.2}%
+\contentsline {section}{\numberline {19.3}Frage 3}{71}{section.19.3}%
+\contentsline {section}{\numberline {19.4}Frage 4}{71}{section.19.4}%
+\contentsline {section}{\numberline {19.5}Frage 5}{72}{section.19.5}%
+\contentsline {part}{III\hspace {1em}Übungsaufgaben Lineare Algebra}{74}{part.3}%
+\contentsline {chapter}{\numberline {20}Übungsblatt 5}{75}{chapter.20}%
 \contentsline {section}{\numberline {20.1}Aufgabe 1}{75}{section.20.1}%
 \contentsline {subsection}{\numberline {20.1.1}a}{75}{subsection.20.1.1}%
-\contentsline {subsection}{\numberline {20.1.2}b)}{75}{subsection.20.1.2}%
-\contentsline {subsection}{\numberline {20.1.3}c)}{76}{subsection.20.1.3}%
-\contentsline {section}{\numberline {20.2}Aufgabe 2}{77}{section.20.2}%
-\contentsline {subsection}{\numberline {20.2.1}a)}{77}{subsection.20.2.1}%
-\contentsline {subsection}{\numberline {20.2.2}b)}{78}{subsection.20.2.2}%
-\contentsline {section}{\numberline {20.3}Aufgabe 3}{87}{section.20.3}%
-\contentsline {chapter}{\numberline {21}Übungsblatt 7}{89}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Aufgabe 1}{89}{section.21.1}%
-\contentsline {subsection}{\numberline {21.1.1}a}{89}{subsection.21.1.1}%
-\contentsline {subsection}{\numberline {21.1.2}b}{89}{subsection.21.1.2}%
-\contentsline {subsection}{\numberline {21.1.3}c}{89}{subsection.21.1.3}%
-\contentsline {section}{\numberline {21.2}Aufgabe 2}{90}{section.21.2}%
-\contentsline {subsection}{\numberline {21.2.1}a}{90}{subsection.21.2.1}%
-\contentsline {subsection}{\numberline {21.2.2}b}{91}{subsection.21.2.2}%
-\contentsline {subsection}{\numberline {21.2.3}c}{91}{subsection.21.2.3}%
-\contentsline {subsection}{\numberline {21.2.4}d}{92}{subsection.21.2.4}%
-\contentsline {section}{\numberline {21.3}Aufgabe 3}{95}{section.21.3}%
-\contentsline {subsection}{\numberline {21.3.1}a}{95}{subsection.21.3.1}%
-\contentsline {subsection}{\numberline {21.3.2}b}{95}{subsection.21.3.2}%
-\contentsline {section}{\numberline {21.4}Aufgabe 4}{96}{section.21.4}%
-\contentsline {subsection}{\numberline {21.4.1}a}{96}{subsection.21.4.1}%
-\contentsline {subsection}{\numberline {21.4.2}b}{96}{subsection.21.4.2}%
-\contentsline {chapter}{\numberline {22}Übungsblatt 8}{98}{chapter.22}%
-\contentsline {section}{\numberline {22.1}Aufgabe 1}{98}{section.22.1}%
-\contentsline {subsection}{\numberline {22.1.1}a}{98}{subsection.22.1.1}%
-\contentsline {subsection}{\numberline {22.1.2}b}{98}{subsection.22.1.2}%
-\contentsline {subsection}{\numberline {22.1.3}c}{99}{subsection.22.1.3}%
-\contentsline {section}{\numberline {22.2}Aufgabe 2}{100}{section.22.2}%
-\contentsline {subsection}{\numberline {22.2.1}a}{100}{subsection.22.2.1}%
-\contentsline {subsection}{\numberline {22.2.2}b}{101}{subsection.22.2.2}%
-\contentsline {subsection}{\numberline {22.2.3}c}{102}{subsection.22.2.3}%
-\contentsline {section}{\numberline {22.3}Aufgabe 3}{102}{section.22.3}%
-\contentsline {subsection}{\numberline {22.3.1}a}{102}{subsection.22.3.1}%
-\contentsline {subsection}{\numberline {22.3.2}b}{103}{subsection.22.3.2}%
-\contentsline {chapter}{\numberline {23}Übungsblatt 9}{104}{chapter.23}%
-\contentsline {section}{\numberline {23.1}Aufgabe 1}{104}{section.23.1}%
-\contentsline {subsection}{\numberline {23.1.1}a}{104}{subsection.23.1.1}%
-\contentsline {subsection}{\numberline {23.1.2}b}{105}{subsection.23.1.2}%
-\contentsline {section}{\numberline {23.2}Aufgabe 2 - nicht klausurrelevant?}{105}{section.23.2}%
+\contentsline {subsection}{\numberline {20.1.2}b}{75}{subsection.20.1.2}%
+\contentsline {section}{\numberline {20.2}Aufgabe 2}{75}{section.20.2}%
+\contentsline {subsection}{\numberline {20.2.1}a}{76}{subsection.20.2.1}%
+\contentsline {subsubsection}{Prüfung für a über Linearkombination}{76}{subsubsection*.17}%
+\contentsline {subsection}{\numberline {20.2.2}b}{77}{subsection.20.2.2}%
+\contentsline {subsubsection}{Prüfung für b über Determinante}{77}{subsubsection*.18}%
+\contentsline {subsubsection}{Prüfung für b über Linearkombination}{78}{subsubsection*.19}%
+\contentsline {section}{\numberline {20.3}Aufgabe 3}{78}{section.20.3}%
+\contentsline {chapter}{\numberline {21}Übungsblatt 6}{80}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Aufgabe 1}{80}{section.21.1}%
+\contentsline {subsection}{\numberline {21.1.1}a}{80}{subsection.21.1.1}%
+\contentsline {subsection}{\numberline {21.1.2}b)}{80}{subsection.21.1.2}%
+\contentsline {subsection}{\numberline {21.1.3}c)}{81}{subsection.21.1.3}%
+\contentsline {section}{\numberline {21.2}Aufgabe 2}{82}{section.21.2}%
+\contentsline {subsection}{\numberline {21.2.1}a)}{82}{subsection.21.2.1}%
+\contentsline {subsection}{\numberline {21.2.2}b)}{83}{subsection.21.2.2}%
+\contentsline {section}{\numberline {21.3}Aufgabe 3}{92}{section.21.3}%
+\contentsline {chapter}{\numberline {22}Übungsblatt 7}{94}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Aufgabe 1}{94}{section.22.1}%
+\contentsline {subsection}{\numberline {22.1.1}a}{94}{subsection.22.1.1}%
+\contentsline {subsection}{\numberline {22.1.2}b}{94}{subsection.22.1.2}%
+\contentsline {subsection}{\numberline {22.1.3}c}{94}{subsection.22.1.3}%
+\contentsline {section}{\numberline {22.2}Aufgabe 2}{95}{section.22.2}%
+\contentsline {subsection}{\numberline {22.2.1}a}{95}{subsection.22.2.1}%
+\contentsline {subsection}{\numberline {22.2.2}b}{96}{subsection.22.2.2}%
+\contentsline {subsection}{\numberline {22.2.3}c}{96}{subsection.22.2.3}%
+\contentsline {subsection}{\numberline {22.2.4}d}{97}{subsection.22.2.4}%
+\contentsline {section}{\numberline {22.3}Aufgabe 3}{100}{section.22.3}%
+\contentsline {subsection}{\numberline {22.3.1}a}{100}{subsection.22.3.1}%
+\contentsline {subsection}{\numberline {22.3.2}b}{100}{subsection.22.3.2}%
+\contentsline {section}{\numberline {22.4}Aufgabe 4}{101}{section.22.4}%
+\contentsline {subsection}{\numberline {22.4.1}a}{101}{subsection.22.4.1}%
+\contentsline {subsection}{\numberline {22.4.2}b}{101}{subsection.22.4.2}%
+\contentsline {chapter}{\numberline {23}Übungsblatt 8}{103}{chapter.23}%
+\contentsline {section}{\numberline {23.1}Aufgabe 1}{103}{section.23.1}%
+\contentsline {subsection}{\numberline {23.1.1}a}{103}{subsection.23.1.1}%
+\contentsline {subsection}{\numberline {23.1.2}b}{103}{subsection.23.1.2}%
+\contentsline {subsection}{\numberline {23.1.3}c}{104}{subsection.23.1.3}%
+\contentsline {section}{\numberline {23.2}Aufgabe 2}{105}{section.23.2}%
 \contentsline {subsection}{\numberline {23.2.1}a}{105}{subsection.23.2.1}%
 \contentsline {subsection}{\numberline {23.2.2}b}{106}{subsection.23.2.2}%
-\contentsline {section}{\numberline {23.3}Aufgabe 3}{106}{section.23.3}%
-\contentsline {subsection}{\numberline {23.3.1}a}{106}{subsection.23.3.1}%
-\contentsline {subsection}{\numberline {23.3.2}b}{106}{subsection.23.3.2}%
-\contentsline {subsection}{\numberline {23.3.3}c}{108}{subsection.23.3.3}%
-\contentsline {chapter}{\numberline {24}Übungsblatt 10}{109}{chapter.24}%
+\contentsline {subsection}{\numberline {23.2.3}c}{107}{subsection.23.2.3}%
+\contentsline {section}{\numberline {23.3}Aufgabe 3}{107}{section.23.3}%
+\contentsline {subsection}{\numberline {23.3.1}a}{107}{subsection.23.3.1}%
+\contentsline {subsection}{\numberline {23.3.2}b}{108}{subsection.23.3.2}%
+\contentsline {chapter}{\numberline {24}Übungsblatt 9}{109}{chapter.24}%
 \contentsline {section}{\numberline {24.1}Aufgabe 1}{109}{section.24.1}%
 \contentsline {subsection}{\numberline {24.1.1}a}{109}{subsection.24.1.1}%
 \contentsline {subsection}{\numberline {24.1.2}b}{110}{subsection.24.1.2}%
-\contentsline {subsection}{\numberline {24.1.3}c}{111}{subsection.24.1.3}%
-\contentsline {subsection}{\numberline {24.1.4}d}{112}{subsection.24.1.4}%
-\contentsline {section}{\numberline {24.2}Aufgabe 2}{112}{section.24.2}%
-\contentsline {subsection}{\numberline {24.2.1}a}{112}{subsection.24.2.1}%
-\contentsline {subsection}{\numberline {24.2.2}b}{113}{subsection.24.2.2}%
-\contentsline {section}{\numberline {24.3}Aufgabe 3}{113}{section.24.3}%
-\contentsline {subsection}{\numberline {24.3.1}a}{113}{subsection.24.3.1}%
-\contentsline {subsection}{\numberline {24.3.2}b}{114}{subsection.24.3.2}%
-\contentsline {chapter}{\numberline {25}Übungsblatt 11}{115}{chapter.25}%
-\contentsline {section}{\numberline {25.1}Aufgabe 1}{115}{section.25.1}%
-\contentsline {subsection}{\numberline {25.1.1}a}{115}{subsection.25.1.1}%
-\contentsline {subsection}{\numberline {25.1.2}b}{119}{subsection.25.1.2}%
-\contentsline {subsection}{\numberline {25.1.3}c}{122}{subsection.25.1.3}%
-\contentsline {subsection}{\numberline {25.1.4}d}{123}{subsection.25.1.4}%
-\contentsline {part}{IV\hspace {1em}Übungsaufgaben Stochastik}{125}{part.4}%
-\contentsline {chapter}{\numberline {26}Übungsblatt 5}{126}{chapter.26}%
-\contentsline {section}{\numberline {26.1}Aufgabe 1}{126}{section.26.1}%
-\contentsline {subsection}{\numberline {26.1.1}a}{126}{subsection.26.1.1}%
-\contentsline {subsection}{\numberline {26.1.2}b}{126}{subsection.26.1.2}%
-\contentsline {section}{\numberline {26.2}Aufgabe 2}{126}{section.26.2}%
-\contentsline {section}{\numberline {26.3}Aufgabe 3}{126}{section.26.3}%
-\contentsline {subsection}{\numberline {26.3.1}a}{126}{subsection.26.3.1}%
-\contentsline {subsection}{\numberline {26.3.2}b}{126}{subsection.26.3.2}%
-\contentsline {subsection}{\numberline {26.3.3}c}{126}{subsection.26.3.3}%
-\contentsline {chapter}{\numberline {27}Übungsblatt 6}{127}{chapter.27}%
-\contentsline {section}{\numberline {27.1}Aufgabe 1}{127}{section.27.1}%
-\contentsline {subsection}{\numberline {27.1.1}a}{127}{subsection.27.1.1}%
-\contentsline {subsection}{\numberline {27.1.2}b}{127}{subsection.27.1.2}%
-\contentsline {section}{\numberline {27.2}Aufgabe 2}{127}{section.27.2}%
-\contentsline {subsection}{\numberline {27.2.1}a}{127}{subsection.27.2.1}%
-\contentsline {subsection}{\numberline {27.2.2}b}{127}{subsection.27.2.2}%
-\contentsline {subsection}{\numberline {27.2.3}c}{127}{subsection.27.2.3}%
-\contentsline {chapter}{\numberline {28}Übungsblatt 7}{128}{chapter.28}%
-\contentsline {section}{\numberline {28.1}Aufgabe 1}{128}{section.28.1}%
-\contentsline {section}{\numberline {28.2}Aufgabe 2}{128}{section.28.2}%
+\contentsline {section}{\numberline {24.2}Aufgabe 2 - nicht klausurrelevant?}{110}{section.24.2}%
+\contentsline {subsection}{\numberline {24.2.1}a}{110}{subsection.24.2.1}%
+\contentsline {subsection}{\numberline {24.2.2}b}{111}{subsection.24.2.2}%
+\contentsline {section}{\numberline {24.3}Aufgabe 3}{111}{section.24.3}%
+\contentsline {subsection}{\numberline {24.3.1}a}{111}{subsection.24.3.1}%
+\contentsline {subsection}{\numberline {24.3.2}b}{111}{subsection.24.3.2}%
+\contentsline {subsection}{\numberline {24.3.3}c}{113}{subsection.24.3.3}%
+\contentsline {chapter}{\numberline {25}Übungsblatt 10}{114}{chapter.25}%
+\contentsline {section}{\numberline {25.1}Aufgabe 1}{114}{section.25.1}%
+\contentsline {subsection}{\numberline {25.1.1}a}{114}{subsection.25.1.1}%
+\contentsline {subsection}{\numberline {25.1.2}b}{115}{subsection.25.1.2}%
+\contentsline {subsection}{\numberline {25.1.3}c}{116}{subsection.25.1.3}%
+\contentsline {subsection}{\numberline {25.1.4}d}{117}{subsection.25.1.4}%
+\contentsline {section}{\numberline {25.2}Aufgabe 2}{117}{section.25.2}%
+\contentsline {subsection}{\numberline {25.2.1}a}{117}{subsection.25.2.1}%
+\contentsline {subsection}{\numberline {25.2.2}b}{118}{subsection.25.2.2}%
+\contentsline {section}{\numberline {25.3}Aufgabe 3}{118}{section.25.3}%
+\contentsline {subsection}{\numberline {25.3.1}a}{118}{subsection.25.3.1}%
+\contentsline {subsection}{\numberline {25.3.2}b}{119}{subsection.25.3.2}%
+\contentsline {chapter}{\numberline {26}Übungsblatt 11}{120}{chapter.26}%
+\contentsline {section}{\numberline {26.1}Aufgabe 1}{120}{section.26.1}%
+\contentsline {subsection}{\numberline {26.1.1}a}{120}{subsection.26.1.1}%
+\contentsline {subsection}{\numberline {26.1.2}b}{124}{subsection.26.1.2}%
+\contentsline {subsection}{\numberline {26.1.3}c}{127}{subsection.26.1.3}%
+\contentsline {subsection}{\numberline {26.1.4}d}{128}{subsection.26.1.4}%
+\contentsline {part}{IV\hspace {1em}Übungsaufgaben Stochastik}{130}{part.4}%
+\contentsline {chapter}{\numberline {27}Übungsblatt 5}{131}{chapter.27}%
+\contentsline {section}{\numberline {27.1}Aufgabe 1}{131}{section.27.1}%
+\contentsline {subsection}{\numberline {27.1.1}a}{131}{subsection.27.1.1}%
+\contentsline {subsection}{\numberline {27.1.2}b}{131}{subsection.27.1.2}%
+\contentsline {section}{\numberline {27.2}Aufgabe 2}{131}{section.27.2}%
+\contentsline {section}{\numberline {27.3}Aufgabe 3}{132}{section.27.3}%
+\contentsline {subsection}{\numberline {27.3.1}a}{132}{subsection.27.3.1}%
+\contentsline {subsection}{\numberline {27.3.2}b}{132}{subsection.27.3.2}%
+\contentsline {subsection}{\numberline {27.3.3}c}{132}{subsection.27.3.3}%
+\contentsline {chapter}{\numberline {28}Übungsblatt 6}{133}{chapter.28}%
+\contentsline {section}{\numberline {28.1}Aufgabe 1}{133}{section.28.1}%
+\contentsline {subsection}{\numberline {28.1.1}a}{133}{subsection.28.1.1}%
+\contentsline {subsection}{\numberline {28.1.2}b}{133}{subsection.28.1.2}%
+\contentsline {section}{\numberline {28.2}Aufgabe 2}{133}{section.28.2}%
+\contentsline {subsection}{\numberline {28.2.1}a}{133}{subsection.28.2.1}%
+\contentsline {subsection}{\numberline {28.2.2}b}{134}{subsection.28.2.2}%
+\contentsline {subsection}{\numberline {28.2.3}c}{135}{subsection.28.2.3}%
+\contentsline {chapter}{\numberline {29}Übungsblatt 7}{136}{chapter.29}%
+\contentsline {section}{\numberline {29.1}Aufgabe 1}{136}{section.29.1}%
+\contentsline {section}{\numberline {29.2}Aufgabe 2}{136}{section.29.2}%
+\contentsline {subsection}{\numberline {29.2.1}a}{137}{subsection.29.2.1}%
+\contentsline {subsection}{\numberline {29.2.2}b}{137}{subsection.29.2.2}%
+\contentsline {subsection}{\numberline {29.2.3}c}{137}{subsection.29.2.3}%
+\contentsline {section}{\numberline {29.3}Aufgabe 3}{137}{section.29.3}%
+\contentsline {section}{\numberline {29.4}Aufgabe 4}{138}{section.29.4}%
+\contentsline {subsection}{\numberline {29.4.1}a}{138}{subsection.29.4.1}%
+\contentsline {subsection}{\numberline {29.4.2}b}{138}{subsection.29.4.2}%
+\contentsline {subsection}{\numberline {29.4.3}c}{138}{subsection.29.4.3}%
+\contentsline {chapter}{\numberline {30}Übungsblatt 8}{139}{chapter.30}%
+\contentsline {section}{\numberline {30.1}Aufgabe 1}{139}{section.30.1}%
+\contentsline {subsection}{\numberline {30.1.1}a}{139}{subsection.30.1.1}%
+\contentsline {subsection}{\numberline {30.1.2}b}{139}{subsection.30.1.2}%
+\contentsline {subsection}{\numberline {30.1.3}c}{139}{subsection.30.1.3}%
+\contentsline {section}{\numberline {30.2}Aufgabe 2}{139}{section.30.2}%
+\contentsline {subsection}{\numberline {30.2.1}a}{139}{subsection.30.2.1}%
+\contentsline {subsection}{\numberline {30.2.2}b}{139}{subsection.30.2.2}%
+\contentsline {section}{\numberline {30.3}Aufgabe 3}{139}{section.30.3}%
+\contentsline {chapter}{\numberline {31}Übungsblatt 9}{141}{chapter.31}%
+\contentsline {section}{\numberline {31.1}Aufgabe 1}{141}{section.31.1}%
+\contentsline {subsection}{\numberline {31.1.1}a}{141}{subsection.31.1.1}%
+\contentsline {subsection}{\numberline {31.1.2}b}{141}{subsection.31.1.2}%
+\contentsline {section}{\numberline {31.2}Aufgabe 2}{141}{section.31.2}%
+\contentsline {subsection}{\numberline {31.2.1}a}{141}{subsection.31.2.1}%
+\contentsline {subsection}{\numberline {31.2.2}b}{141}{subsection.31.2.2}%
+\contentsline {subsection}{\numberline {31.2.3}c}{141}{subsection.31.2.3}%
+\contentsline {section}{\numberline {31.3}Aufgabe 3}{142}{section.31.3}%
+\contentsline {chapter}{\numberline {32}Übungsblatt 10}{143}{chapter.32}%
+\contentsline {section}{\numberline {32.1}Aufgabe 1}{143}{section.32.1}%
+\contentsline {subsection}{\numberline {32.1.1}a}{143}{subsection.32.1.1}%
+\contentsline {subsection}{\numberline {32.1.2}b}{143}{subsection.32.1.2}%
+\contentsline {subsection}{\numberline {32.1.3}c}{143}{subsection.32.1.3}%
+\contentsline {section}{\numberline {32.2}Aufgabe 2}{144}{section.32.2}%
+\contentsline {subsection}{\numberline {32.2.1}a}{144}{subsection.32.2.1}%
+\contentsline {subsection}{\numberline {32.2.2}b}{144}{subsection.32.2.2}%
+\contentsline {chapter}{\numberline {33}Übungsblatt 11}{145}{chapter.33}%

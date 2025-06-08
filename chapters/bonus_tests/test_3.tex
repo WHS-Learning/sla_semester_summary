@@ -1,0 +1,417 @@
+\chapter{Bonustest 3 - Invertieren von Matzitzen}
+
+\section{Frage 1}
+
+Bestimmen Sie die Umkehrabbildung für
+
+\[
+    A = \begin{pmatrix}
+        3 & 4 & 3 \\
+        4 & 1 & 1 \\
+        2 & 1 & 2
+    \end{pmatrix}
+\]
+
+zunächst muss geprüft werden, ob die Matrx invertierbar ist. Eine Matrix, welche Invertierhar hat, besitzt eine $\det(A) \neq 0$.
+
+\begin{align*}
+    \det(A) = 3 \cdot 1 \cdot 2 + 4 \cdot 1 \cdot 2 + 3 \cdot 4 \cdot 1 \\
+    - 2 \cdot 1 \cdot 3 - 1 \cdot 1 \cdot 3 - 2 \cdot 4 \cdot 4 \\
+    = 6 + 8 + 12 - 6 - 3 - 32 \\
+    = -15
+\end{align*}
+
+Da $\det(A) \neq 0$, ist die Matrix invertierbar. Nun kann die Matrix invertiert werden. Hierfür wird das \nameref{gauss_jordan_verfahren} verwendet.
+
+\begin{longtable}{p{4cm}|p{3cm}}
+
+    \hline
+    \multicolumn{1}{c|}{\textbf{Matrix}} & \multicolumn{1}{c}{\textbf{Einheitsmatrix}} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
+    \hline
+    \multicolumn{1}{c|}{\textbf{Matrix}} & \multicolumn{1}{c}{\textbf{Einheitsmatrix}} \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    $\displaystyle\begin{matrix}
+        3 & 4 & 3 \\
+        4 & 1 & 1 \\
+        2 & 1 & 2
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{matrix}$\\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II - 2III} \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+        3 & 4 & 3 \\
+        0 & -1 & -3\\
+        2 & 1 & 2
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & 0 & 0 \\
+        0 & 1 & -2 \\
+        0 & 0 & 1
+    \end{matrix}$\\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 3III - 2I} \\\hline\pagebreak[0]
+    
+    $\displaystyle\begin{matrix}
+        3 & 4 & 3 \\
+        0 & -1 & -3\\
+        0 & -5 & 0
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & 0 & 0 \\
+        0 & 1 & -2 \\
+        -2 & 0 & 3
+    \end{matrix}$\\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I + 4II} \\\hline\pagebreak[0]
+    
+    $\displaystyle\begin{matrix}
+        3 & 0 & -9 \\
+        0 & -1 & -3\\
+        0 & -5 & 0
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & 4 & -8 \\
+        0 & 1 & -2 \\
+        -2 & 0 & 3
+    \end{matrix}$\\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III - 5II} \\\hline\pagebreak[0]
+    
+    $\displaystyle\begin{matrix}
+        3 & 0 & -9 \\
+        0 & -1 & -3\\
+        0 & 0 & 15
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & 4 & -8 \\
+        0 & 1 & -2 \\
+        -2 & -5 & 13
+    \end{matrix}$\\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 15II + 3III} \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+        3 & 0 & -9 \\
+        0 & -15 & 0\\
+        0 & 0 & 15
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & 4 & -8 \\
+        -6 & 0 & 9 \\
+        -2 & -5 & 13
+    \end{matrix}$\\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 15I + 9III} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        45 & 0 & 0 \\
+        0 & -15 & 0\\
+        0 & 0 & 15
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        -3 & 15 & -3 \\
+        -6 & 0 & 9 \\
+        -2 & -5 & 13
+    \end{matrix}$\\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I : 45} \\\hline\pagebreak[0]
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II : -15} \\\hline\pagebreak[0]
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III : 15} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        0 & 0 & 0 \\
+        0 & 0 & 0\\
+        0 & 0 & 0
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        -\frac{1}{15} & \frac{1}{3} & -\frac{1}{15} \\
+        \frac{2}{5} & 0 & -\frac{3}{5} \\
+        -\frac{2}{15} & -\frac{1}{3} & \frac{13}{15}
+    \end{matrix}$\\\hline
+\end{longtable}
+
+\[
+    A^{-1} = \begin{pmatrix}
+        -\frac{1}{15} & \frac{1}{3} & -\frac{1}{15} \\
+        \frac{2}{5} & 0 & -\frac{3}{5} \\
+        -\frac{2}{15} & -\frac{1}{3} & \frac{13}{15}
+    \end{pmatrix}
+\]
+
+\section{Frage 2}
+
+Bestimmen Sie die Inverse Matrix für:
+
+\[
+    A = \begin{pmatrix}
+        1 & 2 & 3 \\
+        1 & 2 & 3 \\
+        2 & 1 & 2
+    \end{pmatrix}
+\]
+
+zunächst muss geprüft werden, ob die Matrx invertierbar ist. Eine Matrix, welche Invertierhar hat, besitzt eine $\det(A) \neq 0$.
+
+\begin{align*}
+    \det(A) = 1 \cdot 2 \cdot 2 + 2 \cdot 3 \cdot 2 + 3 \cdot 1 \cdot 1 \\
+    - 2 \cdot 2 \cdot 3 - 1 \cdot 3 \cdot 1 - 2 \cdot 1 \cdot 2 \\
+    = 4 + 12 + 3 - 12 - 3 - 4 \\
+    = 0
+\end{align*}
+
+Die Matrix besitzt also \textit{keine inverse}.
+
+\section{Frage 3}
+
+Bestimmen Sie die inverse Matrix für:
+
+\[
+    A = \begin{pmatrix}
+        1 & 1 & 2 \\
+        2 & 1 & 3 \\
+        4 & 2 & 1
+    \end{pmatrix}
+\]
+
+\begin{align*}
+    \text{Die erweiterte Matrix:} \\
+    \begin{pmatrix}
+        1 & 1 & 2 & 1 & 0 & 0 \\
+        2 & 1 & 3 & 0 & 1 & 0 \\
+        4 & 2 & 1 & 0 & 0 & 1
+    \end{pmatrix} \\
+    II - 2I \\
+    III - 4I \\
+    \begin{pmatrix}
+        1 & 1 & 2 & 1 & 0 & 0 \\
+        0 & -1 & -1 & -2 & 1 & 0 \\
+        0 & -2 & -7 & -4 & 0 & 1
+    \end{pmatrix} \\
+    -II \\
+    III + 2II \\
+    \begin{pmatrix}
+        1 & 1 & 2 & 1 & 0 & 0 \\
+        0 & 1 & 1 & 2 & -1 & 0 \\
+        0 & 0 & -5 & 0 & -2 & 1
+    \end{pmatrix} \\
+    I - II \\
+    \begin{pmatrix}
+        1 & 0 & 1 & -1 & 1 & 0 \\
+        0 & 1 & 1 & 2 & -1 & 0 \\
+        0 & 0 & -5 & 0 & -2 & 1
+    \end{pmatrix} \\
+    \frac{-1}{5}III \\
+    \begin{pmatrix}
+        1 & 0 & 1 & -1 & 1 & 0 \\
+        0 & 1 & 1 & 2 & -1 & 0 \\
+        0 & 0 & 1 & 0 & \frac{2}{5} & \frac{1}{5}
+    \end{pmatrix} \\
+    I - III \text{und} II - III \\
+    \begin{pmatrix}
+        1 & 0 & 0 & -1 & \frac{3}{5} & \frac{1}{5} \\
+        0 & 1 & 0 & 2 & -\frac{7}{5} & \frac{1}{5} \\
+        0 & 0 & 1 & 0 & \frac{2}{5} & \frac{1}{5}
+    \end{pmatrix} \\
+    A^{-1} =     \begin{pmatrix}
+        -1 &\frac{3}{5} & \frac{1}{5} \\
+        2 & -\frac{7}{5} & \frac{1}{5} \\
+        0 & \frac{2}{5} & \frac{1}{5}
+    \end{pmatrix} \\
+\end{align*}
+
+\section{Frage 4}
+
+Bestimmen Sie die inverse Matrix für:
+
+\[
+    A = \begin{pmatrix}
+        1 & 1 & 2 \\
+        2 & 2 & 5 \\
+        1 & 4 & 1
+    \end{pmatrix}
+\]
+
+\begin{align*}
+    \text{Die erweiterte Matrix:} \\
+    \begin{pmatrix}
+        1 & 1 & 2 & 1 & 0 & 0 \\
+        2 & 2 & 5 & 0 & 1 & 0 \\
+        1 & 4 & 1 & 0 & 0 & 1
+    \end{pmatrix} \\
+    II - 2I \\
+    III - I \\
+    \begin{pmatrix}
+        1 & 1 & 2 & 1 & 0 & 0 \\
+        0 & 0 & 1 & -2 & 1 & 0 \\
+        0 & 3 & -1 & -1 & 0 & 1
+    \end{pmatrix} \\
+    \frac{1}{3}III \\
+    II \leftrightarrow III \\
+    \begin{pmatrix}
+        1 & 1 & 2 & 1 & 0 & 0 \\
+        0 & 1 & -\frac{1}{3} & -\frac{1}{3} & 0 & \frac{1}{3} \\
+        0 & 0 & 1 & -2 & 1 & 0
+    \end{pmatrix} \\
+    I - II \\
+    \begin{pmatrix}
+        1 & 1 & \frac{7}{3} & \frac{4}{3} & 0 & -\frac{1}{3} \\
+        0 & 1 & -\frac{1}{3} & -\frac{1}{3} & 0 & \frac{1}{3} \\
+        0 & 0 & 1 & -2 & 1 & 0
+    \end{pmatrix} \\
+    I - \frac{7}{3} \\
+    II + \frac{1}{3}III \\
+    \begin{pmatrix}
+        1 & 1 & 0 & 6 & -\frac{7}{3} & -\frac{1}{3} \\
+        0 & 1 & 0 & -1 & \frac{1}{3} & \frac{1}{3} \\
+        0 & 0 & 1 & -2 & 1 & 0 
+    \end{pmatrix} \\
+    A^{-1} = \begin{pmatrix}
+        6 & -\frac{7}{3} & -\frac{1}{3} \\
+        -1 & \frac{1}{3} & \frac{1}{3} \\
+        -2 & 1 & 0 
+    \end{pmatrix}
+\end{align*}
+
+\section{Frage 5}
+
+Bestimmen Sie die Inverse $A^{-1}$ der Matrix
+
+\[
+    A = \begin{pmatrix}
+        1 & 8 & -5 \\
+        0 & 2 & 16 \\
+        1 & -1 & 3
+    \end{pmatrix}
+\]
+
+zunächst muss geprüft werden, ob die Matrx invertierbar ist. Eine Matrix, welche Invertierhar hat, besitzt eine $\det(A) \neq 0$.
+
+\begin{align*}
+    \det(A) = 1 \cdot 2 \cdot 3 + 8 \cdot 16 \cdot 1 + (-5) \cdot 0 \cdot (-1) \\
+    - 1 \cdot 2 \cdot (-5) - (-1) \cdot 16 \cdot 1 - 3 \cdot 0 \cdot 8 \\
+    = 6 + 128 + 0 - (-10) - (-16) - 0 \\
+    = 160
+\end{align*}
+
+Da $\det(A) \neq 0$, ist die Matrix invertierbar. Nun kann die Matrix invertiert werden. Hierfür wird das \nameref{gauss_jordan_verfahren} verwendet.
+
+\begin{longtable}{p{4cm}|p{3cm}}
+
+    \hline
+    \multicolumn{1}{c|}{\textbf{Matrix}} & \multicolumn{1}{c}{\textbf{Einheitsmatrix}} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
+    \hline
+    \multicolumn{1}{c|}{\textbf{Matrix}} & \multicolumn{1}{c}{\textbf{Einheitsmatrix}} \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    $\displaystyle\begin{matrix}
+        1 & 8 & -5 \\
+        0 & 2 & 16 \\
+        1 & -1 & 3
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{matrix}$\\\hline
+    
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III - I} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        1 & 8 & -5 \\
+        0 & 2 & 16 \\
+        0 & -9 & 8
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        -1 & 0 & 1
+    \end{matrix}$\\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I - 4II} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        1 & 0 & -69 \\
+        0 & 2 & 16 \\
+        0 & -9 & 8
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & -4 & 0 \\
+        0 & 1 & 0 \\
+        -1 & 0 & 1
+    \end{matrix}$\\\hline
+    
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 2III + 9II} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        1 & 0 & -69 \\
+        0 & 2 & 16 \\
+        0 & 0 & 160
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & -4 & 0 \\
+        0 & 1 & 0 \\
+        -2 & 9 & 2
+    \end{matrix}$\\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 10II - III} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        1 & 0 & -69 \\
+        0 & 20 & 0 \\
+        0 & 0 & 160
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        1 & -4 & 0 \\
+        -2 & 1 & -2 \\
+        -2 & 9 & 2
+    \end{matrix}$\\\hline
+    
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 160I + 69III} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        160 & 0 & 0 \\
+        0 & 20 & 0 \\
+        0 & 0 & 160
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        22 & -19 & 138 \\
+        -2 & 1 & -2 \\
+        -2 & 9 & 2
+    \end{matrix}$\\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I : 160} \\\hline\pagebreak[0]
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II : 20} \\\hline\pagebreak[0]
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III : 160} \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1
+    \end{matrix}$&
+    $\displaystyle\begin{matrix}
+        \frac{11}{80} & -\frac{19}{160} & \frac{69}{180} \\
+        -\frac{1}{10} & \frac{1}{20} & -\frac{1}{10} \\
+        -\frac{1}{80} & \frac{9}{160} & \frac{1}{80}
+    \end{matrix}$\\\hline
+\end{longtable}
+
+Nun können die Elemente abgelesen werden: $A^{-1}_{12} = -\frac{19}{160}, A^{-1}_{22} = \frac{1}{20}, A^{-1}_{31} = -\frac{1}{80}$.
