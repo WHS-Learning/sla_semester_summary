@@ -1,86 +1,102 @@
 \chapter{Z-Test}
 
-Der Z-Test basiert auf den Satz von de Moivre-Laplace. 
+Der Z-Test basiert auf den Satz von de Moivre-Laplace.
 
-Wenn jemand eine Münze wirft und festgestellt werden soll, ob diese gezinkt ist, wie oft muss das selbe Ergebnis geworfen werden?
+Wenn jemand eine Münze wirft und festgestellt werden soll, ob diese gezinkt
+ist, wie oft muss das selbe Ergebnis geworfen werden?
 
-Ist die Münze nach den Münzwurf \textit{Kopf, Kopf, Kopf, Kopf, Kopf, Kopf, Kopf, Zahl, Kopf, Kopf, Kopf} gezinkt? Hundertprozentig sicher kann man sich hier nie sein, egal wie oft die Münze geworfen wird.
+Ist die Münze nach den Münzwurf \textit{Kopf, Kopf, Kopf, Kopf, Kopf, Kopf,
+    Kopf, Zahl, Kopf, Kopf, Kopf} gezinkt? Hundertprozentig sicher kann man sich
+hier nie sein, egal wie oft die Münze geworfen wird.
 
 \section{Hypothesentests}
 
 \subsection{Nullhypothese}
 
-Die Hypothese über ein Wahrscheinlichkeitsverteilung, die grprüft wird und gegebenenfalls abgelehnt werden soll. Bezeichnung: $H_0$.
+Die Hypothese über ein Wahrscheinlichkeitsverteilung, die grprüft wird und
+gegebenenfalls abgelehnt werden soll. Bezeichnung: $H_0$.
 
 Häufig: $H_0: E(X) = \mu$
 
 \subsection{Alternativhypothese}
 
-Die Hypothese über die entsprechende Wahrscheinlichkeit, die als Alternative zu $H_0$ angenommen wird. Bezeichnung: $H_1$.
+Die Hypothese über die entsprechende Wahrscheinlichkeit, die als Alternative zu
+$H_0$ angenommen wird. Bezeichnung: $H_1$.
 
 \subsection{Konfidenzniveau}
 
-Das Konfidenzniveau beschreibt die Wahrscheinlichkeit, mit der (gegebenenfalls) das Ablehnen der Nullhypothese $H_0$ mit Alternativhypothese $H_1$ zu Recht erfolgt. Ein häufiger Wert ist hier $95\%$.
+Das Konfidenzniveau beschreibt die Wahrscheinlichkeit, mit der (gegebenenfalls)
+das Ablehnen der Nullhypothese $H_0$ mit Alternativhypothese $H_1$ zu Recht
+erfolgt. Ein häufiger Wert ist hier $95\%$.
 
-Wird die Nullhypothese $H_0$ mit einem Konfidenzniveau von $95\%$ abgelehnt, so ist das Ergebnis unter der Nullhypothese unter $5\%$. Daher kann die Nullhypothese nicht verworfen werden.
+Wird die Nullhypothese $H_0$ mit einem Konfidenzniveau von $95\%$ abgelehnt, so
+ist das Ergebnis unter der Nullhypothese unter $5\%$. Daher kann die
+Nullhypothese nicht verworfen werden.
 
-Wenn die Wahrscheinlichkeit für das Eintreten des Testergebnisses oder eines noch extremeren Ergebnisses über $5\%$ beträgt, so kann die Nullhypothese nicht verworfen werden. Dies bedeutet nicht, dass diese wahr sein muss.
+Wenn die Wahrscheinlichkeit für das Eintreten des Testergebnisses oder eines
+noch extremeren Ergebnisses über $5\%$ beträgt, so kann die Nullhypothese nicht
+verworfen werden. Dies bedeutet nicht, dass diese wahr sein muss.
 
 \subsection{Beispiel: Münze}
 
-Um zu prüfen, ob eine Münze gezinkz ist, soll sie 100 mal geworfen werden. Zuvor soll ermittelt werden, ab wie vielen "Zahl"-Würfen die Münze als gezinkt angenommen wird.
+Um zu prüfen, ob eine Münze gezinkz ist, soll sie 100 mal geworfen werden.
+Zuvor soll ermittelt werden, ab wie vielen "Zahl"-Würfen die Münze als gezinkt
+angenommen wird.
 
 0 = Kopf; 1 = Zahl
 
-Einzelner Münzwurf: $X_1 ~ B\left(\frac{1}{2}\right), (i \in \left\{1, \dots, 100\right\})$
+Einzelner Münzwurf: $X_1 ~ B\left(\frac{1}{2}\right), (i \in \left\{1, \dots,
+    100\right\})$
 
 \begin{align*}
     S_n = \sum_{i=1}^{100} X_i ~ B\left(100, \frac{1}{2}\right) \\
-    E(S_n) = 100 \cdot \frac{1}{2} = 50 \\
-    Var(S_n) = 100 \cdot \frac{1}{2} \cdot \frac{1}{2} = 25 \\
-    \sigma (S_n) = \sqrt{25} = 5 \\
+    E(S_n) = 100 \cdot \frac{1}{2} = 50                         \\
+    Var(S_n) = 100 \cdot \frac{1}{2} \cdot \frac{1}{2} = 25     \\
+    \sigma (S_n) = \sqrt{25} = 5                                \\
     \frac{S_n - 50}{5} \approx N(0,1)
 \end{align*}
 
-Bestimme Annahne- und Ablehnungsbereich für eine $N(0,1)$-Verteilte Zuvallsfahl:
+Bestimme Annahne- und Ablehnungsbereich für eine $N(0,1)$-Verteilte
+Zuvallsfahl:
 
-Dafür: 
+Dafür:
 
 Nullhypothese:
 \begin{align*}
     H_0: E(X) = \mu_0 = 0
 \end{align*}
 
-Alternativhypothese: 
+Alternativhypothese:
 \begin{align*}
     H_1: \text{Münze zeigt Überproportional häufig Kopf} \\
-    \text{Überproportional viele Treffer} \\
-    E(X) < 0 \\
-    z_0 = 1.65 \text{ bzw } z_0 = -1.65 \\
+    \text{Überproportional viele Treffer}                \\
+    E(X) < 0                                             \\
+    z_0 = 1.65 \text{ bzw } z_0 = -1.65                  \\
 \end{align*}
 
-d.h. Entscheidungsregel: Falls $\frac{S_n - 50}{5} < -1.65$: $H_1$ wird abgelehnt.
+d.h. Entscheidungsregel: Falls $\frac{S_n - 50}{5} < -1.65$: $H_1$ wird
+abgelehnt.
 
 Falls $\frac{S_n - 50}{5} \geq -1.65$: $H_1$ wird nicht abgelehnt.
 
 Also:
 
 \begin{align*}
-    H_0 \text{ wird abgelehnt} \\
+    H_0 \text{ wird abgelehnt}               \\
     \Leftrightarrow S_n - 50 < -1.65 \cdot 5 \\
     \Leftrightarrow S_n < -1.65 \cdot 5 + 50 \\
     \Leftrightarrow S_n < 41.75
-    \text{d.h. } S_n \leq 41 \\
-    H_0 \text{ wird nicht abgelehnt} \\
-    S_n \geq -1.65 \cdot 5 + 50 \\
-    S_n \geq 41.75 \\
+    \text{d.h. } S_n \leq 41                 \\
+    H_0 \text{ wird nicht abgelehnt}         \\
+    S_n \geq -1.65 \cdot 5 + 50              \\
+    S_n \geq 41.75                           \\
     \text{d.h. } S_n \geq 42
 \end{align*}
 
-Ergebnis des Münzwurfs 80 mal Zahl 
+Ergebnis des Münzwurfs 80 mal Zahl
 
 \begin{align*}
-    S_n = 80 \\
+    S_n = 80    \\
     S_n \geq 42 \\
 \end{align*}
 
@@ -89,17 +105,21 @@ liegt im Annahmebereich, d.h. die Nullhypothese wird nicht abgelehnt.
 \subsection{Allgemeines Vorgehen beim appoximativen Binomialtest}
 
 \begin{itemize}
-    \item Nullhypothese: $H_0: S_n ~ B(n, p)$ 
-    \item Bestimme $\mu = E(S_n) = n \cdot p$ und $\sigma = \sqrt{Var(S_n)} = \sqrt{n \cdot p \cdot (1 - p)}$
-    \item  
+    \item Nullhypothese: $H_0: S_n ~ B(n, p)$
+    \item Bestimme $\mu = E(S_n) = n \cdot p$ und $\sigma = \sqrt{Var(S_n)} = \sqrt{n
+                  \cdot p \cdot (1 - p)}$
+    \item
 \end{itemize}
 
 \section{Vorgehen beim klassischen Z-Test}
 
 \begin{itemize}
     \item Vorraussetzung: $X ~ N(\mu, \sigma)$
-    \item Nullhypothese: $\mu = \mu_0$ oder $\mu \geq \mu_0$ oder $\mu \leq \mu_0$. Hierbei wird die Standardabweichung und die Normalverteilungsannahme als sicher erwartet und der Mittelwert in Frage gestellt.
-    \item Bestimme an Hnad der Standardnormalverteilungstabelle einen Wert, für den das Signifikanzniveau überschritten wird
+    \item Nullhypothese: $\mu = \mu_0$ oder $\mu \geq \mu_0$ oder $\mu \leq \mu_0$.
+          Hierbei wird die Standardabweichung und die Normalverteilungsannahme als sicher
+          erwartet und der Mittelwert in Frage gestellt.
+    \item Bestimme an Hnad der Standardnormalverteilungstabelle einen Wert, für den das
+          Signifikanzniveau überschritten wird
 \end{itemize}
 
 \subsection{Beispiel}
@@ -107,43 +127,43 @@ liegt im Annahmebereich, d.h. die Nullhypothese wird nicht abgelehnt.
 Schokoladdentafeln, 100g Gewicht laut Verpackung
 
 \begin{align*}
-    X: \text{Gewicht der Schokoladdentafeln in gramm} \\
-    X ~ N(\mu, \sigma) \\
-    \text{Normale PRoduktionsabweichung }\\
-    \sigma = 1g \\
-    \text{Nullhypothese: } H_0: \mu = 100g \\
-    \text{Alternativhypothese: } H_1: \mu < 100g \\
-    \text{Signifikanzniveau: } 95\% \\
-    \text{Da die Schokoladdentafeln} \\
-    \text{Normalverteilt sind, reicht} \\
-    \text{es eine Schokoladdentafel zu testen.} \\
-    \text{Eine Tafel wird zufällig} \\
-    \text{ausgewählt und gewogen} \\
-    \phi(1.96) \approx 97.5\% \\
-    \Rightarrow \phi(-1.96) \approx 2.5\% \\
-    \text{Annahmebereich: } -1.96 \leq z \leq 1.96 \\
+    X: \text{Gewicht der Schokoladdentafeln in gramm}  \\
+    X ~ N(\mu, \sigma)                                 \\
+    \text{Normale PRoduktionsabweichung }              \\
+    \sigma = 1g                                        \\
+    \text{Nullhypothese: } H_0: \mu = 100g             \\
+    \text{Alternativhypothese: } H_1: \mu < 100g       \\
+    \text{Signifikanzniveau: } 95\%                    \\
+    \text{Da die Schokoladdentafeln}                   \\
+    \text{Normalverteilt sind, reicht}                 \\
+    \text{es eine Schokoladdentafel zu testen.}        \\
+    \text{Eine Tafel wird zufällig}                    \\
+    \text{ausgewählt und gewogen}                      \\
+    \phi(1.96) \approx 97.5\%                          \\
+    \Rightarrow \phi(-1.96) \approx 2.5\%              \\
+    \text{Annahmebereich: } -1.96 \leq z \leq 1.96     \\
     \Leftrightarrow -1.96 + 100 \leq x \leq 1.96 + 100 \\
-    \Leftrightarrow 98.04 \leq x \leq 101.96 
+    \Leftrightarrow 98.04 \leq x \leq 101.96
 \end{align*}
 
 \subsection{Noch ein Beispiel}
 
 \begin{align*}
     X = \begin{cases}
-        1, & \text{falls eine Testperson die Riegel kennt} \\
-        0,& \text{sonst}
-    \end{cases} \\
-    S_n = \sum_{i = 1}^{500} X_i ~ B(500, p) \\
-    H_0: p \leq 0.5 \\
-    \rightarrow \text{Extremster Wert: } p = 0.5 \\
-    E(S_n) = 500 \cdot 0.5 = 250 \\
-    \sigma(S_n) = \sqrt{125} \\
-    \frac{S_n - 250}{\sqrt{125}} \approx N(0, 1) \\
-    \text{Nullhypothese wird nicht abgelehnt, falls} \\
-    \frac{S_n - 250}{\sqrt{125}} \leq 1.65 \\
-    \Leftrightarrow S_n \leq 165 \cdot \sqrt{125} + 250 \\
-    \Leftrightarrow S_n \leq 268.45 \\
-    \text{beobachtetes Ergebnis:} \\
-    S_n = 271 > 268 \\
+            1, & \text{falls eine Testperson die Riegel kennt} \\
+            0, & \text{sonst}
+        \end{cases} \\
+    S_n = \sum_{i = 1}^{500} X_i ~ B(500, p)               \\
+    H_0: p \leq 0.5                                        \\
+    \rightarrow \text{Extremster Wert: } p = 0.5           \\
+    E(S_n) = 500 \cdot 0.5 = 250                           \\
+    \sigma(S_n) = \sqrt{125}                               \\
+    \frac{S_n - 250}{\sqrt{125}} \approx N(0, 1)           \\
+    \text{Nullhypothese wird nicht abgelehnt, falls}       \\
+    \frac{S_n - 250}{\sqrt{125}} \leq 1.65                 \\
+    \Leftrightarrow S_n \leq 165 \cdot \sqrt{125} + 250    \\
+    \Leftrightarrow S_n \leq 268.45                        \\
+    \text{beobachtetes Ergebnis:}                          \\
+    S_n = 271 > 268                                        \\
     \text{Nullhypothese wird abgelehnt}
 \end{align*}

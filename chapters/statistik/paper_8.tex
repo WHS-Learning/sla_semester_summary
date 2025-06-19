@@ -2,11 +2,13 @@
 
 \section{Aufgabe 1}
 
-Zeigen Sie die folgenden Rechenregeln, die Sie in der Vorlesung kennen gelernt haben. Seien dabei jeweils $X : \Omega \rightarrow \mathbb{R}$ und $Y : \Omega \rightarrow \mathbb{R}$ Zufallsvariablen und $a, b \in \mathbb{R}$.
+Zeigen Sie die folgenden Rechenregeln, die Sie in der Vorlesung kennen gelernt
+haben. Seien dabei jeweils $X : \Omega \rightarrow \mathbb{R}$ und $Y : \Omega
+    \rightarrow \mathbb{R}$ Zufallsvariablen und $a, b \in \mathbb{R}$.
 
 \subsection{a}
 
-$E(aX + bX) = aE(X) + bE(Y)$
+$E(aX + bY) = aE(X) + bE(Y)$
 
 \subsection{b}
 
@@ -18,21 +20,58 @@ $Var(X + Y) = Var(X) + Var(Y), \text{ falls } X \text{ und } Y \text{ stochastis
 
 \section{Aufgabe 2}
 
-Sei $X$ die Anzahl der "Zahl"-Würfe beim zehnmaligen Münzwurf. Berechnen Sie $E(Y)$ und $Var(Y)$.
+Sei $X$ die Anzahl der 'Zahl'-Würfe beim zehnmaligen Münzwurf. Berechnen Sie
+$E(X)$ und $Var(X)$.
 
 \subsection{a}
 von Hand
 
 \subsection{b}
-mittels der Formel für Erwartungswwert und Varianz der Binomialverteilung
+mittels der Formel für Erwartungswert und Varianz der Binomialverteilung
 
-Sei Y die Wartezeit bis zum ersten "Zahl"-Wurf. Berechnen Sie $E(Y)$ und $Var(Y)$
+Sei Y die Wartezeit bis zum ersten 'Zahl'-Wurf. Berechnen Sie $E(Y)$ und
+$Var(Y)$
 
 \section{Aufgabe 3}
 
-Sie kaufen ein Paket mit 300 Schrauben. Laut Herstellerangaben sind $1\%$ der verkauften Schrauben Ausschluss und somit nicht verwendbar. Für ein Bauprojekt benötigen Sie $298$ Schrauben. Bestimmen Sie die Wahrscheinlichkeit dafür, dass die verwendbaren Schrauben ausreichen
+Sie kaufen ein Paket mit 300 Schrauben. Laut Herstellerangaben sind $1\%$ der
+verkauften Schrauben Ausschluss und somit nicht verwendbar. Für ein Bauprojekt
+benötigen Sie $298$ Schrauben. Bestimmen Sie die Wahrscheinlichkeit dafür, dass
+die verwendbaren Schrauben ausreichen
 
 \begin{itemize}
     \item exakt mit Hilfe der Binomialverteilung und
     \item näherungsweise an Hand des Satzes von de Moivere-Laplace.
 \end{itemize}
+
+\textbf{Binomialverteilung}
+
+\begin{align*}
+    \begin{pmatrix}
+        n \\ k
+    \end{pmatrix} \cdot p^k \cdot {(1 - p)}^{n - k}                                             \\
+    \sum_{i = 298}^{300} \left(\begin{pmatrix}
+                                   300 \\ i
+                               \end{pmatrix} \cdot 0.99^{i} \cdot {(1 - 0.99)}^{300 - i}\right) \\
+    \approx 0.4221                                                                              \\
+    = 42.21\%
+\end{align*}
+
+Die Schrauben reichen zu 42.21\% aus.
+
+\textbf{Satz von Moivere-Laplace}
+
+\begin{align*}
+    X = \text{Anzahl der funktionierenden Schrauben}                 \\
+    X \sim B(300, 0.99)                                              \\
+    E(X) = 300 \cdot 0.99 = 297                                      \\
+    Var(X) = 297 \cdot 0.01 = 2.97                                   \\
+    \sigma = \sqrt{2.97}                                             \\
+    P(X \geq 298) \overset{Stetigkeitskorrektur}{=} P(X \geq 297.5)  \\
+    1 - P(X < 297.5)                                                 \\
+    1 - P(\frac{X - E(X)}{\sigma} < \frac{297.5 - 297}{\sqrt{2.97}}) \\
+    1 - \phi(\frac{297.5 - 297}{\sqrt{2.97}})                        \\
+    1 - \phi(0.29)                                                   \\
+    \overset{Tabelle}{\approx} 1 - 0.61409                           \\
+    0.38501 = 38.50\%
+\end{align*}

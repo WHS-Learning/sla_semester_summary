@@ -1,0 +1,237 @@
+\chapter{Moodle Übungsaufgaben}
+
+\section{Aufgabe: Sterbewahrscheinlichkeit}
+
+Die Wahrscheinlichkeit einer zufällig gewählten 65-jährigen Person in der
+Bundesrepublik Deutschland, im Laufe der kommenden zwölf Monate zu sterben, ist
+$p = 0.01$. Eine kleine Pensionsversicherung hat $n = 400$ Verscicherte dieses
+Alters.
+
+Wie viele von ihnen werden in den kommenden zwölf Monaten sterben?
+
+\subsection{a}
+Geben Sie zunächst an, welche Verteilung diejenige Zufallsvariable $X$ haben
+könnte, die diese Anzahl beschreibt.
+
+Antwort: Binomialverteilung
+
+\subsection{b}
+
+Bitte geben Sie die Wahrscheinlichkeitsfunktion der Zufallsvariable $X$ an.
+
+$P(K) = \begin{pmatrix}
+        400 \\ k
+    \end{pmatrix}  \cdot 0.01^k \cdot 0.99^{400 - k}$
+
+\subsection{c}
+
+Bestimmen Sie den Erwartungswert von X. Bitte geben Sie einen exakten,
+ungerundeten Wert an.
+
+$E(X) = 400 \cdot 0.01$
+
+\subsection{d}
+
+Bestimmen Sie die Varianz von X. Bitte geben Sie einen exakten, ungerundeten
+Wert an.
+
+$Var(X) = 400 \cdot 0.01 \cdot 0.99$
+
+\subsection{e}
+
+Wie groß ist die Wahrscheinlichkeit, dass es mindestens 4 Todesfälle in dieser
+Altersgruppe gibt?
+
+\begin{align*}
+    1 - P(X \leq 3) =                                                                \\
+    1 - \sum_{i = 0}^{3}\left(\begin{pmatrix}
+                                  400 \\ i
+                              \end{pmatrix} \cdot 0.01^i \cdot 0.99^{400 - i}\right) \\
+    = 1 - 0.432487956                                                                \\
+    = 0.567512044
+\end{align*}
+
+\subsection{f}
+
+Wie groß ist die Wahrscheinlichkeit, dass es in der Altersgruppe keinen
+Todesfall gibt?
+
+\begin{align*}
+    P(X = 0) = \begin{pmatrix}
+                   400 \\ 0
+               \end{pmatrix} \cdot 0.01^0 \cdot 0.99^{400} \\
+    = 0.017950553
+\end{align*}
+
+\section{Aufgabe: Nachrichtenkanal}
+
+Über einen Nachrichtenkanal wird ein Zeichen mit einer Wahrscheinlichkeit von $0.96$ korrekt
+übertragen. Eine Nachricht besteht aus $75$ Zeichen. Wir bezeichnen die Zahl der falsch
+übertragenen Zeichen mit $X$.
+
+\subsection{a}
+
+Welche Wahrscheinlichkeitsverteilung eignet sich am besten zur Modelierung von
+$X$?
+
+$Bin(75, 0.04)$
+
+\subsection{b}
+
+Bestimmen Sie den Erwartungswert und die Varianz von $X$.
+
+\begin{align*}
+    E(X) = 75 \cdot 0.04 = 3 \\
+    Var(X) = 75 \cdot 0.04 \cdot 0.96 = 2.88
+\end{align*}
+
+\subsection{c}
+
+Berechnen Sie die Wahrscheinlichkeit $P(X \geq 3)$
+
+\begin{align*}
+    \sum_{i = 3}^{75} \left(\begin{pmatrix}
+                                75 \\ i
+                            \end{pmatrix} \cdot 0.04^i \cdot 0.96^{75 - i}\right) \\
+    = 0.581388125
+\end{align*}
+
+\section{Aufgabe: Brettspiel}
+
+Beim Brettspiel `Mensch ärgere dich nicht' darf man zu Beginn dreimal würfeln
+und kann starten, wenn man dabei mindestens eine 6 würfelt. Ansonsten muss man
+warten, bis man das nächste mal an der Reihe ist und dann wieder dreimal
+würfeln darf.
+
+\subsection{a}
+
+Wie groß ist die Wahrscheinlichkeit, bei den drei Versuchen zu Beginn
+mindestens eine 6 zu erhalten?
+
+\begin{align*}
+    P(X \geq 1)                                                 \\
+    = P(X = 1) + P(X = 2) + P(X = 3)                            \\
+    = 1 - P(X = 0)                                              \\
+    = 1 - \begin{pmatrix}
+              3 \\ 0
+          \end{pmatrix} \cdot \frac{1}{6}^0 \cdot \frac{5}{6}^3 \\
+    = 1 - 0.578703704                                           \\
+    = 0.421296
+\end{align*}
+
+\subsection{b}
+
+Wir bezeichnen mit $X$ Die Anzahl der Runden, die man warten muss, bevor man
+starten kann. Bestimmen Sie die Verteilung von $X$
+
+Geometrische Verteilung
+
+\subsection{c}
+
+Bitte geben Sie den Parameter der Verteilung an
+
+0.42??
+
+\subsection{d}
+
+Bestimmen Sie den Erwartungswert von X
+
+$E(X) = \frac{1 - \frac{91}{216}}{\frac{91}{216}} \approx 1.38$
+
+\subsection{e}
+
+Bestimmen Sie die Vaianz von X.
+
+$Var(X) = \frac{1 - \frac{91}{216}}{\frac{91}{216}^2} \approx 3.287981$
+
+\section{Aufgabe: Würfel konstruieren}
+
+Sei $X$ eine Zufallsvariable, die die gewürfelte Augenzahl beim Wurf mit einem
+(unfairen) sechsseitigen Würfel beschreibt. Der Erwartungswert dieser
+Zufallsvariable soll bei $E(X) = 2.6$ liegen. Geben Sie ein Beispiel für einen
+Würfel mit dieser Eigenschaft an, indem Sie die Verteilung von $X$ (d.h. die
+Wahrscheinlichkeit $P(X = k)$ für $k = 1, \dots, 6$) angeben. Wählen Sie die
+Verteilung so, dass $P(X = k) = 0$ für höchstens $k$ gilt.
+
+\begin{align*}
+    P_1 + P_2 + P_3 + P_4 + P_5 + P_6 = 1        \\
+    P_1 + 2P_2 + 3P_3 + 4P_4 + 5P_5 + 6P_6 = 2.6 \\
+\end{align*}
+
+\begin{longtable}{p{4cm}|p{3cm}}
+
+    \hline
+    \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}}    \\
+    \hline
+    \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}}                              \\
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    $\displaystyle\begin{matrix}
+                          1 & 1 & 1 & 1 & 1 & 1 \\
+                          1 & 2 & 3 & 4 & 5 & 6 \\
+                      \end{matrix}$                    &
+    $\displaystyle\begin{matrix}
+                          1 \\
+                          2.6
+                      \end{matrix}$                                                               \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II - I}                  \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          1 & 1 & 1 & 1 & 1 & 1 \\
+                          0 & 1 & 2 & 3 & 4 & 5 \\
+                      \end{matrix}$                    &
+    $\displaystyle\begin{matrix}
+                          1 \\
+                          1.6
+                      \end{matrix}$                                                               \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I - II}                  \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          1 & 0 & -1 & -2 & -3 & -4 \\
+                          0 & 1 & 2  & 3  & 4  & 5  \\
+                      \end{matrix}$                    &
+    $\displaystyle\begin{matrix}
+                          -0.6 \\
+                          1.6
+                      \end{matrix}$                                                               \\\hline
+\end{longtable}
+
+\begin{align*}
+    P_1 - P_3 - 2P_4 - 3P_5 - 4P_6 = -0.6                                                                 \\
+    P_1 = -0.6 + P_3 + 2P_4 + 3P_5 + 4P_6                                                                 \\
+    P_2 + 2P_3 + 3P_4 + 4P_5 + 5P_6 = 1.6                                                                 \\
+    P_2 = 1.6 - 2P_3 - 3P_4 - 4P_5 - 5P_6                                                                 \\\\
+    P_1 > 0                                                                                               \\
+    -0.6 + P_3 + 2P_4 + 3P_5 + 4P_6 > 0 \quad | + 0.6                                                     \\
+    P_3 + 2P_4 + 3P_5 + 4P_6 > 0.6
+    P_2 > 0                                                                                               \\
+    1.6 - 2P_3 - 3P_4 - 4P_5 - 5P_6 > 0 \quad | -1.6                                                      \\
+    - 2P_3 - 3P_4 - 4P_5 - 5P_6 > -1.6 \quad |\cdot (-1)                                                  \\
+    2P_3 + 3P_4 + 4P_5 + 5P_6 < 1.6                                                                       \\
+    \text{Wähle: } P_3 = P_4 = P_5 = \frac{1}{10}                                                         \\ \\
+    \frac{1}{10} + 2 \cdot \frac{1}{10} + 3 \cdot \frac{1}{10} + 4P_6 > 0.6                               \\
+    \frac{3}{5} + 4P_6 > 0.6 \quad | - \frac{3}{5}                                                        \\
+    4P_6 > 0 \quad | : 4                                                                                  \\
+    P_6 > 0                                                                                               \\\\
+    2 \cdot \frac{1}{10} + 3 \cdot \frac{1}{10} + 4 \cdot \frac{1}{10} + 5P_6 < 1.6                       \\
+    \frac{9}{10} + 5P_6 < 1.6 \quad | -\frac{9}{10}                                                       \\
+    5P_6 < \frac{7}{10} \quad | : 5                                                                       \\
+    5P_6 < \frac{7}{10} \quad | : 5                                                                       \\
+    P_6 < \frac{7}{50} \quad | : 5                                                                        \\\\
+    \text{Wähle} P_6 = \frac{5}{50}                                                                       \\
+    P_1 = -0.6 + \frac{1}{10} + 2 \cdot \frac{1}{10} + 3 \cdot \frac{1}{10} + 4 \cdot \frac{5}{50}        \\
+    P_1 = \frac{2}{5}                                                                                     \\
+    P_2 = 1.6 - 2 \cdot \frac{1}{10} - 3 \cdot \frac{1}{10} - 4 \cdot \frac{1}{10} - 5 \cdot \frac{5}{50} \\
+    P_2 = \frac{1}{5}
+\end{align*}

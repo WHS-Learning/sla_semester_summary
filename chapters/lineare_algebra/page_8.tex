@@ -7,102 +7,105 @@ Bestimmen Sie Skalarprodukt und Kreuzprodukt der Einheitsvektoren $e_1 = \begin{
 
 \subsubsection*{Skalarprodukt}
 \begin{align*}
-    \left\langle e_1, e_2\right\rangle \\
+    \left\langle e_1, e_2\right\rangle  \\
     = 1 \cdot 0 + 0 \cdot 1 + 0 \cdot 0 \\
-    = 0 + 0 + 0 \\
+    = 0 + 0 + 0                         \\
     = 0
 \end{align*}
 
 \subsubsection*{Kreuzprodukt}
 \begin{align*}
-    e_1 \times e_2 \\
+    e_1 \times e_2         \\
     =\begin{pmatrix}
-        0 \cdot 0 - 0 \cdot 1 \\
-        0 \cdot 0 - 1 \cdot 0 \\
-        1 \cdot 1 - 0 \cdot 0
-    \end{pmatrix} \\
+         0 \cdot 0 - 0 \cdot 1 \\
+         0 \cdot 0 - 1 \cdot 0 \\
+         1 \cdot 1 - 0 \cdot 0
+     \end{pmatrix} \\
     = \begin{pmatrix}
-        0 \\ 0 \\ 1
-    \end{pmatrix}
+          0 \\ 0 \\ 1
+      \end{pmatrix}
 \end{align*}
 
 \subsection{b}
-Sei $v \in \mathbb{R}^n$ beliebig. Sei $e_i \in \mathbb{R}^n (i \in \{1, \dots, n\})$ der i-te Einheitsvektor in $\mathbb{R}^n$. Bestimmen Sie $\langle v, e_i \rangle$ und (für den Fall $n = 3$) $v \times e_i$.
+Sei $v \in \mathbb{R}^n$ beliebig. Sei $e_i \in \mathbb{R}^n (i \in \{1, \dots,
+    n\})$ der i-te Einheitsvektor in $\mathbb{R}^n$. Bestimmen Sie $\langle v, e_i
+    \rangle$ und (für den Fall $n = 3$) $v \times e_i$.
 
 \subsection*{Skalarprodukt}
 
 \begin{align*}
-    \left\langle v, e_1 \right\rangle \\
-    = v_1 \cdot 1 + v_2 \cdot 0 + v_3 \cdot 0\\
+    \left\langle v, e_1 \right\rangle         \\
+    = v_1 \cdot 1 + v_2 \cdot 0 + v_3 \cdot 0 \\
     = v_1
 \end{align*}
 
 allgemein
 
 \begin{align*}
-    \left\langle v, e_i \right\rangle \\
-    = v_1 \cdot e_1 + v_2 \cdot e_2 + \cdots + v_n \cdot e_i\\
+    \left\langle v, e_i \right\rangle                        \\
+    = v_1 \cdot e_1 + v_2 \cdot e_2 + \cdots + v_n \cdot e_i \\
     = v_i
 \end{align*}
 
 \subsubsection*{Kreuzprodukt}
 \begin{align*}
-    v \times e_1 \\
+    v \times e_1                \\
     = \begin{pmatrix}
-        v_2 \cdot 0 - v_3 \cdot 0 \\
-        v_3 \cdot 1 - v_1 \cdot 0 \\
-        v_1 \cdot 0 - v_2 \cdot 1
-    \end{pmatrix} \\
+          v_2 \cdot 0 - v_3 \cdot 0 \\
+          v_3 \cdot 1 - v_1 \cdot 0 \\
+          v_1 \cdot 0 - v_2 \cdot 1
+      \end{pmatrix} \\
     = \begin{pmatrix}
-        0 \\ v_3 \\ -v_2
-    \end{pmatrix}
+          0 \\ v_3 \\ -v_2
+      \end{pmatrix}
 \end{align*}
 
 \begin{align*}
-    v \times e_2 \\
+    v \times e_2                \\
     = \begin{pmatrix}
-        v_2 \cdot 0 - v_3 \cdot 1 \\
-        v_3 \cdot 0 - v_1 \cdot 0 \\
-        v_1 \cdot 1 - v_2 \cdot 0
-    \end{pmatrix} \\
+          v_2 \cdot 0 - v_3 \cdot 1 \\
+          v_3 \cdot 0 - v_1 \cdot 0 \\
+          v_1 \cdot 1 - v_2 \cdot 0
+      \end{pmatrix} \\
     = \begin{pmatrix}
-        -v_3 \\ 0 \\ v_1
-    \end{pmatrix}
+          -v_3 \\ 0 \\ v_1
+      \end{pmatrix}
 \end{align*}
 
 \begin{align*}
-    v \times e_3 \\
+    v \times e_3                \\
     = \begin{pmatrix}
-        v_2 \cdot 1 - v_3 \cdot 0 \\
-        v_3 \cdot 0 - v_1 \cdot 1 \\
-        v_1 \cdot 0 - v_2 \cdot 0
-    \end{pmatrix} \\
+          v_2 \cdot 1 - v_3 \cdot 0 \\
+          v_3 \cdot 0 - v_1 \cdot 1 \\
+          v_1 \cdot 0 - v_2 \cdot 0
+      \end{pmatrix} \\
     = \begin{pmatrix}
-        v_2 \\ -v_1 \\ 0
-    \end{pmatrix}
+          v_2 \\ -v_1 \\ 0
+      \end{pmatrix}
 \end{align*}
 
 \subsection{c}
 Bestimmen Sie einen Vektor, der auf der von $\begin{pmatrix}5 \\ 1 \\ 9\end{pmatrix}$ und $\begin{pmatrix}1 \\ 2 \\ 10\end{pmatrix}$ aufgespannten Ebene senkrecht steht.
 
-Das Kreuzprodukt zweier Vektoren steht orthogonal auf der von diesen Vektoren aufgespannten Ebene.
+Das Kreuzprodukt zweier Vektoren steht orthogonal auf der von diesen Vektoren
+aufgespannten Ebene.
 
 \begin{align*}
     \begin{pmatrix}
         5 \\ 1 \\ 9
     \end{pmatrix} \times \begin{pmatrix}
-        1 \\ 2 \\ 10
-    \end{pmatrix} = \begin{pmatrix}
-        1 \cdot 10 - 9 \cdot 2 \\
-        9 \cdot 1 - 5 \cdot 10 \\
-        5 \cdot 2 - 1 \cdot 1
-    \end{pmatrix} = \begin{pmatrix}
-        10 - 18 \\
-        9 - 50 \\
-        10 - 1
-    \end{pmatrix} = \begin{pmatrix}
-        -8 \\ -41 \\ 9
-    \end{pmatrix}
+                             1 \\ 2 \\ 10
+                         \end{pmatrix} = \begin{pmatrix}
+                                             1 \cdot 10 - 9 \cdot 2 \\
+                                             9 \cdot 1 - 5 \cdot 10 \\
+                                             5 \cdot 2 - 1 \cdot 1
+                                         \end{pmatrix} = \begin{pmatrix}
+                                                             10 - 18 \\
+                                                             9 - 50  \\
+                                                             10 - 1
+                                                         \end{pmatrix} = \begin{pmatrix}
+                                                                             -8 \\ -41 \\ 9
+                                                                         \end{pmatrix}
 \end{align*}
 
 \section{Aufgabe 2}
@@ -121,52 +124,52 @@ Bestimmen Sie $det(A)$
 \subsubsection*{Saurrus Regel}
 
 \begin{tikzpicture}[
-    every node/.style={minimum size=0.7cm},
-    positive/.style={blue, thick},
-    negative/.style={red, thick, dashed}
-  ]
-  \matrix (m) [matrix of math nodes,
-               nodes in empty cells,
-               left delimiter=(, right delimiter=),
-               column sep=0.7cm, row sep=0.7cm, % Abstand zwischen Zellen
-               ampersand replacement=\&] % Wichtig für tikz-matrix
-  {
-    6 \& 17 \& 24 \\
-    9 \& 32 \& 6 \\
-    -5 \& -1 \& 47 \\
-  };
+        every node/.style={minimum size=0.7cm},
+        positive/.style={blue, thick},
+        negative/.style={red, thick, dashed}
+    ]
+    \matrix (m) [matrix of math nodes,
+        nodes in empty cells,
+        left delimiter=(, right delimiter=),
+        column sep=0.7cm, row sep=0.7cm, % Abstand zwischen Zellen
+        ampersand replacement=\&] % Wichtig für tikz-matrix
+    {
+        6 \& 17 \& 24  \\
+        9 \& 32 \& 6   \\
+        -5 \& -1 \& 47 \\
+    };
 
-  % Erweiterte Spalten (nur für die Visualisierung der Linien)
-  \node at ($(m-1-3.east)!0.5!(m-1-3.east) + (0.7cm,0)$) (m-1-4) {$6$};
-  \node at ($(m-2-3.east)!0.5!(m-2-3.east) + (0.7cm,0)$) (m-2-4) {$9$};
-  \node at ($(m-3-3.east)!0.5!(m-3-3.east) + (0.7cm,0)$) (m-3-4) {$-5$};
+    % Erweiterte Spalten (nur für die Visualisierung der Linien)
+    \node at ($(m-1-3.east)!0.5!(m-1-3.east) + (0.7cm,0)$) (m-1-4) {$6$};
+    \node at ($(m-2-3.east)!0.5!(m-2-3.east) + (0.7cm,0)$) (m-2-4) {$9$};
+    \node at ($(m-3-3.east)!0.5!(m-3-3.east) + (0.7cm,0)$) (m-3-4) {$-5$};
 
-  \node at ($(m-1-4.east)!0.5!(m-1-4.east) + (0.7cm,0)$) (m-1-5) {$17$};
-  \node at ($(m-2-4.east)!0.5!(m-2-4.east) + (0.7cm,0)$) (m-2-5) {$32$};
-  \node at ($(m-3-4.east)!0.5!(m-3-4.east) + (0.7cm,0)$) (m-3-5) {$-1$};
+    \node at ($(m-1-4.east)!0.5!(m-1-4.east) + (0.7cm,0)$) (m-1-5) {$17$};
+    \node at ($(m-2-4.east)!0.5!(m-2-4.east) + (0.7cm,0)$) (m-2-5) {$32$};
+    \node at ($(m-3-4.east)!0.5!(m-3-4.east) + (0.7cm,0)$) (m-3-5) {$-1$};
 
-  % Vertikale Trennlinie (optional)
-  \draw[gray, thin] ($(m-1-3.east)!0.5!(m-2-3.east) + (0.35cm,0.35cm)$) -- ($(m-3-3.east) + (0.35cm,-0.35cm)$);
+    % Vertikale Trennlinie (optional)
+    \draw[gray, thin] ($(m-1-3.east)!0.5!(m-2-3.east) + (0.35cm,0.35cm)$) -- ($(m-3-3.east) + (0.35cm,-0.35cm)$);
 
+    % Positive Diagonalen (blau, durchgezogen)
+    \draw[positive] (m-1-1.center) -- (m-2-2.center) -- (m-3-3.center); % a-e-i
+    \draw[positive] (m-1-2.center) -- (m-2-3.center) -- (m-3-4.center); % b-f-g (auf erweiterter Spalte)
+    \draw[positive] (m-1-3.center) -- (m-2-4.center) -- (m-3-5.center); % c-d-h (auf erweiterter Spalte)
 
-  % Positive Diagonalen (blau, durchgezogen)
-  \draw[positive] (m-1-1.center) -- (m-2-2.center) -- (m-3-3.center); % a-e-i
-  \draw[positive] (m-1-2.center) -- (m-2-3.center) -- (m-3-4.center); % b-f-g (auf erweiterter Spalte)
-  \draw[positive] (m-1-3.center) -- (m-2-4.center) -- (m-3-5.center); % c-d-h (auf erweiterter Spalte)
-
-  % Negative Diagonalen (rot, gestrichelt)
-  \draw[negative] (m-1-3.center) -- (m-2-2.center) -- (m-3-1.center); % c-e-g
-  \draw[negative] (m-1-4.center) -- (m-2-3.center) -- (m-3-2.center); % a-f-h (auf erweiterter Spalte)
-  \draw[negative] (m-1-5.center) -- (m-2-4.center) -- (m-3-3.center); % b-d-i (auf erweiterter Spalte)
+    % Negative Diagonalen (rot, gestrichelt)
+    \draw[negative] (m-1-3.center) -- (m-2-2.center) -- (m-3-1.center); % c-e-g
+    \draw[negative] (m-1-4.center) -- (m-2-3.center) -- (m-3-2.center); % a-f-h (auf erweiterter Spalte)
+    \draw[negative] (m-1-5.center) -- (m-2-4.center) -- (m-3-3.center); % b-d-i (auf erweiterter Spalte)
 
 \end{tikzpicture}
 
 \bigskip % Etwas Abstand
 
-Die Zahlen an den Linien werden Multipliziert. Blaue Linien werden miteinander addiert und Rote subtrahiert.
+Die Zahlen an den Linien werden Multipliziert. Blaue Linien werden miteinander
+addiert und Rote subtrahiert.
 
 \begin{align*}
-    6 \cdot 32 \cdot 47 + 17 \cdot 6 \cdot -5 + 24 \cdot 9 \cdot -1 \\ 
+    6 \cdot 32 \cdot 47 + 17 \cdot 6 \cdot -5 + 24 \cdot 9 \cdot -1   \\
     - -5 \cdot 32 \cdot 24 - -1 \cdot 6 \cdot 6 - 47 \cdot 9 \cdot 17 \\
     = 4983
 \end{align*}
@@ -179,51 +182,51 @@ Muss ich nachher machen
 
 \begin{longtable}{p{10cm}}
     \hline
-    \multicolumn{1}{c}{\textbf{Linearkombination}} \\
+    \multicolumn{1}{c}{\textbf{Linearkombination}}                                         \\
     \hline
     \endfirsthead
 
     \hline
     \multicolumn{1}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
     \hline
-    \multicolumn{1}{c}{\textbf{Linearkombination}} \\
+    \multicolumn{1}{c}{\textbf{Linearkombination}}                                         \\
     \hline
     \endhead
 
     \hline
-    \multicolumn{1}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
+    \multicolumn{1}{r}{\textit{Fortsetzung siehe nächste Seite}}                           \\
     \endfoot
 
     \hline
     \endlastfoot
 
     $\displaystyle\begin{matrix}
-    6 & 17 & 24 \\
-    9 & 32 & 6 \\
-    -5 & -1 & 47
-    \end{matrix}$\\\hline
-    Operation: III + $\frac{5}{6}$I \\\hline\pagebreak[0]
+                          6  & 17 & 24 \\
+                          9  & 32 & 6  \\
+                          -5 & -1 & 47
+                      \end{matrix}$                                                            \\\hline
+    Operation: III + $\frac{5}{6}$I                                                        \\\hline\pagebreak[0]
 
     $\displaystyle\begin{matrix}
-    6 & 17 & 24 \\
-    9 & 32 & 6 \\
-    0 & \frac{79}{6} & 67
-    \end{matrix}$\\\hline
+                          6 & 17           & 24 \\
+                          9 & 32           & 6  \\
+                          0 & \frac{79}{6} & 67
+                      \end{matrix}$                                                    \\\hline
 
-    Operation: II - $\frac{3}{2}$I \\\hline\pagebreak[0]
+    Operation: II - $\frac{3}{2}$I                                                         \\\hline\pagebreak[0]
 
     $\displaystyle\begin{matrix}
-    6 & 17 & 24 \\
-    0 & \frac{13}{2} & -30 \\
-    0 & \frac{79}{6} & 67
-    \end{matrix}$\\\hline
+                          6 & 17           & 24  \\
+                          0 & \frac{13}{2} & -30 \\
+                          0 & \frac{79}{6} & 67
+                      \end{matrix}$                                                   \\\hline
 
 \end{longtable}
 
 \begin{align*}
     6 \cdot \det\left(\begin{pmatrix}
-        \frac{13}{2} & -30 \\ \frac{79}{6} & 67
-    \end{pmatrix}\right) \\
+                              \frac{13}{2} & -30 \\ \frac{79}{6} & 67
+                          \end{pmatrix}\right) \\
     = 6 \cdot \frac{13}{2} \cdot 67 - \frac{79}{6} \cdot -30 \\
     = 4983
 \end{align*}
@@ -231,87 +234,84 @@ Muss ich nachher machen
 \subsection{b}
 
 Sei $B = \begin{pmatrix}
-    1 & 0 & 2 & 0 \\ 1 & 2 & 9 & 0 \\ 2 & 0 & 1 & 5 \\ 1 & 1 & 1 & 1
-\end{pmatrix}$.
+        1 & 0 & 2 & 0 \\ 1 & 2 & 9 & 0 \\ 2 & 0 & 1 & 5 \\ 1 & 1 & 1 & 1
+    \end{pmatrix}$.
 
 Bestimmen Sie $det(B)$
-
 
 \begin{longtable}{p{10cm}}
 
     \hline
-    \multicolumn{1}{c}{\textbf{Linearkombination}} \\
+    \multicolumn{1}{c}{\textbf{Linearkombination}}                                         \\
     \hline
     \endfirsthead
 
     \hline
     \multicolumn{1}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
     \hline
-    \multicolumn{1}{c}{\textbf{Linearkombination}} \\
+    \multicolumn{1}{c}{\textbf{Linearkombination}}                                         \\
     \hline
     \endhead
 
     \hline
-    \multicolumn{1}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
+    \multicolumn{1}{r}{\textit{Fortsetzung siehe nächste Seite}}                           \\
     \endfoot
 
     \hline
     \endlastfoot
 
     $\displaystyle\begin{matrix}
-    1 & 0 & 2 & 0 \\
-    1 & 2 & 9 & 0 \\
-    2 & 0 & 1 & 5 \\
-    1 & 1 & 1 & 1
-    \end{matrix}$\\\hline
-    I und IV tauschen \\\hline\pagebreak[0]
-
-
-    $\displaystyle\begin{matrix}
-    1 & 1 & 1 & 1 \\
-    1 & 2 & 9 & 0 \\
-    2 & 0 & 1 & 5 \\
-    1 & 0 & 2 & 0 
-    \end{matrix}$\\\hline
-    IV - 2I \\\hline\pagebreak[0]
-    
-    $\displaystyle\begin{matrix}
-    1 & 1 & 1 & 1 \\
-    -1 & 0 & 7 & -2 \\
-    2 & 0 & 1 & 5 \\
-    1 & 0 & 2 & 0 
-    \end{matrix}$\\\hline
-
-    IV + II \\\hline\pagebreak[0]
+                          1 & 0 & 2 & 0 \\
+                          1 & 2 & 9 & 0 \\
+                          2 & 0 & 1 & 5 \\
+                          1 & 1 & 1 & 1
+                      \end{matrix}$                                                            \\\hline
+    I und IV tauschen                                                                      \\\hline\pagebreak[0]
 
     $\displaystyle\begin{matrix}
-    1 & 1 & 1 & 1 \\
-    -1 & 0 & 7 & -2 \\
-    2 & 0 & 1 & 5 \\
-    0 & 0 & 9 & -2 
-    \end{matrix}$\\\hline
-
-    III + 2II \\\hline\pagebreak[0]
+                          1 & 1 & 1 & 1 \\
+                          1 & 2 & 9 & 0 \\
+                          2 & 0 & 1 & 5 \\
+                          1 & 0 & 2 & 0
+                      \end{matrix}$                                                            \\\hline
+    IV - 2I                                                                                \\\hline\pagebreak[0]
 
     $\displaystyle\begin{matrix}
-    1 & 1 & 1 & 1 \\
-    -1 & 0 & 7 & -2 \\
-    0 & 0 & 15 & 1 \\
-    0 & 0 & 9 & -2 
-    \end{matrix}$\\\hline
+                          1  & 1 & 1 & 1  \\
+                          -1 & 0 & 7 & -2 \\
+                          2  & 0 & 1 & 5  \\
+                          1  & 0 & 2 & 0
+                      \end{matrix}$                                                          \\\hline
 
+    IV + II                                                                                \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          1  & 1 & 1 & 1  \\
+                          -1 & 0 & 7 & -2 \\
+                          2  & 0 & 1 & 5  \\
+                          0  & 0 & 9 & -2
+                      \end{matrix}$                                                          \\\hline
+
+    III + 2II                                                                              \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          1  & 1 & 1  & 1  \\
+                          -1 & 0 & 7  & -2 \\
+                          0  & 0 & 15 & 1  \\
+                          0  & 0 & 9  & -2
+                      \end{matrix}$                                                         \\\hline
 
 \end{longtable}
 
 \[
-B = \left( \begin{array}{cc|cc}
-1 & 1 & 1 & 1 \\
--1 & 0 & 7 & -2 \\
-\hline
-0 & 0 & 15 & 1 \\
-0 & 0 & 9 & -2
-\end{array} \right)
-= \begin{pmatrix} A & B \\ 0 & D \end{pmatrix}
+    B = \left( \begin{array}{cc|cc}
+            1  & 1 & 1  & 1  \\
+            -1 & 0 & 7  & -2 \\
+            \hline
+            0  & 0 & 15 & 1  \\
+            0  & 0 & 9  & -2
+        \end{array} \right)
+    = \begin{pmatrix} A & B \\ 0 & D \end{pmatrix}
 \]
 
 wobei $A = \begin{pmatrix} 1 & 1 \\ -1 & 0 \end{pmatrix}$ und $D = \begin{pmatrix} 15 & 1 \\ 9 & -2 \end{pmatrix}$.
@@ -320,45 +320,44 @@ Die Determinante ist $\det(M) = \det(A) \cdot \det(D)$.
 \bigskip
 
 \begin{tikzpicture}[
-    every node/.style={minimum size=0.7cm},
-    positive/.style={blue, thick},
-    negative/.style={red, thick, dashed},
-    block/.style={draw, very thick, rounded corners, inner sep=3pt}
-  ]
-  \matrix (m) [matrix of math nodes,
-               nodes in empty cells,
-               column sep=0.7cm, row sep=0.7cm,
-               ampersand replacement=\&]
-  {
-    1 \& 1 \& 1 \& 1 \\
-    -1 \& 0 \& 7 \& -2 \\
-    0 \& 0 \& 15 \& 1 \\
-    0 \& 0 \& 9 \& -2 \\
-  };
-
-  \draw[gray, thin] (m-2-1.south west) -- (m-2-4.south east);
-  \draw[gray, thin] (m-1-2.north east) -- (m-4-2.south east);
-
-  \node[block, fit=(m-1-1) (m-2-2), label={[yshift=-0.1cm]below:$\det(A)$}] (blockA) {};
-  \node[block, fit=(m-3-3) (m-4-4), label={[yshift=-0.1cm]below:$\det(D)$}] (blockD) {};
-
-  \draw[positive, shorten >=2pt, shorten <=2pt] (m-1-1.center) -- (m-2-2.center);
-  \draw[negative, shorten >=2pt, shorten <=2pt] (m-1-2.center) -- (m-2-1.center);
-
-  \draw[positive, shorten >=2pt, shorten <=2pt] (m-3-3.center) -- (m-4-4.center);
-  \draw[negative, shorten >=2pt, shorten <=2pt] (m-3-4.center) -- (m-4-3.center);
-
-  \node[anchor=west, text width=6cm, at={($(m-2-4.east)+(1cm,0)$)}] (formel)
+        every node/.style={minimum size=0.7cm},
+        positive/.style={blue, thick},
+        negative/.style={red, thick, dashed},
+        block/.style={draw, very thick, rounded corners, inner sep=3pt}
+    ]
+    \matrix (m) [matrix of math nodes,
+        nodes in empty cells,
+        column sep=0.7cm, row sep=0.7cm,
+        ampersand replacement=\&]
     {
-     $\det(B) = \underbrace{(1 \cdot 0 - 1 \cdot -1)}_{\det(A)} \cdot \underbrace{(15 \cdot -2 - 9 \cdot 1)}_{\det(D)} = (0 - 1) \cdot (-30 - 9) = -1 \cdot -39 = 39$
+        1 \& 1 \& 1 \& 1   \\
+        -1 \& 0 \& 7 \& -2 \\
+        0 \& 0 \& 15 \& 1  \\
+        0 \& 0 \& 9 \& -2  \\
+    };
+
+    \draw[gray, thin] (m-2-1.south west) -- (m-2-4.south east);
+    \draw[gray, thin] (m-1-2.north east) -- (m-4-2.south east);
+
+    \node[block, fit=(m-1-1) (m-2-2), label={[yshift=-0.1cm]below:$\det(A)$}] (blockA) {};
+    \node[block, fit=(m-3-3) (m-4-4), label={[yshift=-0.1cm]below:$\det(D)$}] (blockD) {};
+
+    \draw[positive, shorten >=2pt, shorten <=2pt] (m-1-1.center) -- (m-2-2.center);
+    \draw[negative, shorten >=2pt, shorten <=2pt] (m-1-2.center) -- (m-2-1.center);
+
+    \draw[positive, shorten >=2pt, shorten <=2pt] (m-3-3.center) -- (m-4-4.center);
+    \draw[negative, shorten >=2pt, shorten <=2pt] (m-3-4.center) -- (m-4-3.center);
+
+    \node[anchor=west, text width=6cm, at={($(m-2-4.east)+(1cm,0)$)}] (formel)
+    {
+        $\det(B) = \underbrace{(1 \cdot 0 - 1 \cdot -1)}_{\det(A)} \cdot \underbrace{(15 \cdot -2 - 9 \cdot 1)}_{\det(D)} = (0 - 1) \cdot (-30 - 9) = -1 \cdot -39 = 39$
     };
 \end{tikzpicture}
 
-
 \subsection{c}
 Sei $C = \begin{pmatrix}
-    1 & 0 & 2 & 0 \\ 1 & 2 & 9 & 0 \\ 2 & 0 & 1 & 5 \\ 1 & 2 & 9 & 0
-\end{pmatrix}$. 
+        1 & 0 & 2 & 0 \\ 1 & 2 & 9 & 0 \\ 2 & 0 & 1 & 5 \\ 1 & 2 & 9 & 0
+    \end{pmatrix}$.
 
 Bestimmen Sie ohne Rechung $det(C)$.
 
@@ -371,14 +370,14 @@ Prüfen Sie die Vektoren $\begin{pmatrix}5 \\ 1 \\ 9\end{pmatrix}, \begin{pmatri
 
 \begin{align*}
     det\left(\begin{pmatrix}
-        5 & 1 & 4 \\
-        1 & 2 & 4 \\
-        9 & 3 & 1
-    \end{pmatrix}\right) \\
-    =5 \cdot 2 \cdot 1 + 1 \cdot 4 \cdot 9 + 4 \cdot 1 \cdot 3 \\
-     - 9 \cdot 2 \cdot 4 - 3 \cdot 4 \cdot 5 - 1 \cdot 1 \cdot 1  \\
-    = 10 + 36 + 12 - 72 - 60 - 1 \\
-    = -75 
+                 5 & 1 & 4 \\
+                 1 & 2 & 4 \\
+                 9 & 3 & 1
+             \end{pmatrix}\right)                               \\
+    =5 \cdot 2 \cdot 1 + 1 \cdot 4 \cdot 9 + 4 \cdot 1 \cdot 3  \\
+    - 9 \cdot 2 \cdot 4 - 3 \cdot 4 \cdot 5 - 1 \cdot 1 \cdot 1 \\
+    = 10 + 36 + 12 - 72 - 60 - 1                                \\
+    = -75
 \end{align*}
 
 \subsection{b}
@@ -386,13 +385,13 @@ Ist das lineare Gleichungssystem $Ax = b$ mit $b = \begin{pmatrix}5 \\ 10 \\ 1\e
 
 \begin{align*}
     \det \left(\begin{pmatrix}
-        1 & 0 & 2 \\
-        1 & 2 & 0 \\
-        2 & 0 & 1
-    \end{pmatrix}\right) \\
+                   1 & 0 & 2 \\
+                   1 & 2 & 0 \\
+                   2 & 0 & 1
+               \end{pmatrix}\right)                             \\
     = 1 \cdot 2 \cdot 1 + 0 \cdot 0 \cdot 2 + 2 \cdot 1 \cdot 0 \\
     - 2 \cdot 2 \cdot 2 - 0 \cdot 0 \cdot 1 - 1 \cdot 1 \cdot 0 \\
-    = 2 + 0 + 0 - 8 - 0 - 0 \\
+    = 2 + 0 + 0 - 8 - 0 - 0                                     \\
     = -6
 \end{align*}
 

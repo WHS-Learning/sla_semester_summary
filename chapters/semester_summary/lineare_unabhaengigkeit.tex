@@ -2,38 +2,47 @@
 
 \section{Zwei Vektoren}
 
-Zwei Vektoren $\vec{a}$ und $\vec{b}$, die beide nicht der Nullvektor sind, werden als linear \textbf{abhängig} bezeichnet, wenn einer ein skalares Vielfaches des anderen ist. Das bedeutet, es existiert eine Zahl (Skalar) $k \in \mathbb{R}$, für die $\vec{a} = k \cdot \vec{b}$ gilt.
+Zwei Vektoren $\vec{a}$ und $\vec{b}$, die beide nicht der Nullvektor sind,
+werden als linear \textbf{abhängig} bezeichnet, wenn einer ein skalares
+Vielfaches des anderen ist. Das bedeutet, es existiert eine Zahl (Skalar) $k
+    \in \mathbb{R}$, für die $\vec{a} = k \cdot \vec{b}$ gilt.
 
-Sind die Vektoren nicht linear abhängig, so sind sie linear \textbf{unabhängig}.
-Äquivalent dazu kann die lineare Unabhängigkeit/Abhängigkeit über die Linearkombination zum Nullvektor geprüft werden:
-Die Vektoren $\vec{a}$ und $\vec{b}$ sind linear \textbf{unabhängig}, wenn die Vektorgleichung
+Sind die Vektoren nicht linear abhängig, so sind sie linear
+\textbf{unabhängig}. Äquivalent dazu kann die lineare
+Unabhängigkeit/Abhängigkeit über die Linearkombination zum Nullvektor geprüft
+werden: Die Vektoren $\vec{a}$ und $\vec{b}$ sind linear \textbf{unabhängig},
+wenn die Vektorgleichung
 \[ x_1 \vec{a} + x_2 \vec{b} = \vec{0} \]
-nur die triviale Lösung $x_1 = 0$ und $x_2 = 0$ besitzt. Gibt es hingegen eine nichttriviale Lösung (bei der $x_1$ oder $x_2$ oder beide ungleich Null sind), sind die Vektoren linear \textbf{abhängig}.
+nur die triviale Lösung $x_1 = 0$ und $x_2 = 0$ besitzt. Gibt es hingegen eine
+nichttriviale Lösung (bei der $x_1$ oder $x_2$ oder beide ungleich Null sind),
+sind die Vektoren linear \textbf{abhängig}.
 
 \subsection*{Beispiel}
 Gegeben seien die Vektoren
 \[
     \vec{a} = \begin{pmatrix} 2 \\ 0 \\ 1 \end{pmatrix}, \quad \vec{b} = \begin{pmatrix} 4 \\ 6 \\ 8 \end{pmatrix}.
 \]
-Es wird geprüft, ob ein Skalar $k$ existiert, sodass $\vec{a} = k \cdot \vec{b}$:
+Es wird geprüft, ob ein Skalar $k$ existiert, sodass $\vec{a} = k \cdot
+    \vec{b}$:
 \begin{align*}
-    \begin{pmatrix} 2 \\ 0 \\ 1 \end{pmatrix} &= k \cdot \begin{pmatrix} 4 \\ 6 \\ 8 \end{pmatrix} \\
-    \Rightarrow \quad & \begin{cases} 
-        2 = k \cdot 4 \quad \Rightarrow k = \frac{2}{4} = \frac{1}{2} \\
-        0 = k \cdot 6 \quad \Rightarrow k = \frac{0}{6} = 0 \\
-        1 = k \cdot 8 \quad \Rightarrow k = \frac{1}{8}
-    \end{cases}
+    \begin{pmatrix} 2 \\ 0 \\ 1 \end{pmatrix} & = k \cdot \begin{pmatrix} 4 \\ 6 \\ 8 \end{pmatrix}           \\
+    \Rightarrow \quad                         & \begin{cases}
+                                                    2 = k \cdot 4 \quad \Rightarrow k = \frac{2}{4} = \frac{1}{2} \\
+                                                    0 = k \cdot 6 \quad \Rightarrow k = \frac{0}{6} = 0           \\
+                                                    1 = k \cdot 8 \quad \Rightarrow k = \frac{1}{8}
+                                                \end{cases}
 \end{align*}
 Da die Werte für $k$ ($\frac{1}{2}$, $0$, $\frac{1}{8}$) nicht übereinstimmen, existiert kein einheitlicher Skalar $k$, der alle drei Gleichungen gleichzeitig erfüllt. Somit ist $\vec{a}$ kein skalares Vielfaches von $\vec{b}$. Die Vektoren $\vec{a}$ und $\vec{b}$ sind daher linear \textbf{unabhängig}.
 
-Zur Überprüfung mit dem alternativen Ansatz $x_1 \vec{a} + x_2 \vec{b} = \vec{0}$:
+Zur Überprüfung mit dem alternativen Ansatz $x_1 \vec{a} + x_2 \vec{b} =
+    \vec{0}$:
 \begin{align*}
-    x_1 \begin{pmatrix} 2 \\ 0 \\ 1 \end{pmatrix} + x_2 \begin{pmatrix} 4 \\ 6 \\ 8 \end{pmatrix} &= \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix} \\
-    \Rightarrow \quad & \begin{cases} 
-        2x_1 + 4x_2 = 0 \\
-        \phantom{0x_1} + 6x_2 = 0 \\
-        \phantom{2}x_1 + 8x_2 = 0
-    \end{cases}
+    x_1 \begin{pmatrix} 2 \\ 0 \\ 1 \end{pmatrix} + x_2 \begin{pmatrix} 4 \\ 6 \\ 8 \end{pmatrix} & = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix} \\
+    \Rightarrow \quad                                                                             & \begin{cases}
+                                                                                                        2x_1 + 4x_2 = 0           \\
+                                                                                                        \phantom{0x_1} + 6x_2 = 0 \\
+                                                                                                        \phantom{2}x_1 + 8x_2 = 0
+                                                                                                    \end{cases}
 \end{align*}
 Aus der zweiten Gleichung ($6x_2 = 0$) folgt direkt $x_2 = 0$.
 Setzt man $x_2 = 0$ in die erste Gleichung ein, erhält man $2x_1 + 4 \cdot 0 = 0 \Rightarrow 2x_1 = 0 \Rightarrow x_1 = 0$.
@@ -42,95 +51,104 @@ Da $x_1=0$ und $x_2=0$ die einzige Lösung ist (triviale Lösung), sind die Vekt
 
 \section{Beliebig viele Vektoren}
 
-Eine Menge von $n$ Vektoren $\vec{v}_1, \vec{v}_2, \dots, \vec{v}_n$ heißt linear \textbf{unabhängig}, wenn die Vektorgleichung
+Eine Menge von $n$ Vektoren $\vec{v}_1, \vec{v}_2, \dots, \vec{v}_n$ heißt
+linear \textbf{unabhängig}, wenn die Vektorgleichung
 \[
     x_1 \vec{v}_1 + x_2 \vec{v}_2 + \dots + x_n \vec{v}_n = \vec{0}
 \]
 ausschließlich die triviale Lösung $x_1 = x_2 = \dots = x_n = 0$ besitzt.
-Existiert hingegen mindestens eine nichttriviale Lösung (d.h. mindestens ein Koeffizient $x_i \neq 0$), so sind die Vektoren linear \textbf{abhängig}.
+Existiert hingegen mindestens eine nichttriviale Lösung (d.h. mindestens ein
+Koeffizient $x_i \neq 0$), so sind die Vektoren linear \textbf{abhängig}.
 
 \subsection*{Beispiel}
-Es soll geprüft werden, ob die folgenden Vektoren linear unabhängig oder abhängig sind:
+Es soll geprüft werden, ob die folgenden Vektoren linear unabhängig oder
+abhängig sind:
 \[
     \vec{a} = \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}, \quad \vec{b} = \begin{pmatrix} -2 \\ 1 \\ 3 \end{pmatrix}, \quad \vec{c} = \begin{pmatrix} 4 \\ 3 \\ -1 \end{pmatrix}.
 \]
-Dazu wird der Ansatz $x_1 \vec{a} + x_2 \vec{b} + x_3 \vec{c} = \vec{0}$ verfolgt. Dies führt zu dem homogenen linearen Gleichungssystem:
+Dazu wird der Ansatz $x_1 \vec{a} + x_2 \vec{b} + x_3 \vec{c} = \vec{0}$
+verfolgt. Dies führt zu dem homogenen linearen Gleichungssystem:
 \begin{align*}
-    1x_1 - 2x_2 + 4x_3 &= 0 \\
-    2x_1 + 1x_2 + 3x_3 &= 0 \\
-    1x_1 + 3x_2 - 1x_3 &= 0
+    1x_1 - 2x_2 + 4x_3 & = 0 \\
+    2x_1 + 1x_2 + 3x_3 & = 0 \\
+    1x_1 + 3x_2 - 1x_3 & = 0
 \end{align*}
 Dieses System wird mithilfe des \nameref{gauss_jordan_verfahren} (Gauß-Jordan-Elimination) gelöst. Betrachtet wird die Koeffizientenmatrix:
 
 \begin{longtable}{p{10cm}}
     \hline
-    \multicolumn{1}{c}{\textbf{Linearkombination}} \\
+    \multicolumn{1}{c}{\textbf{Linearkombination}}                                                                                                                                                         \\
     \hline
     \endfirsthead
 
     \hline
-    \multicolumn{1}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
+    \multicolumn{1}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}}                                                                                                                 \\
     \hline
-    \multicolumn{1}{c}{\textbf{Linearkombination}} \\
+    \multicolumn{1}{c}{\textbf{Linearkombination}}                                                                                                                                                         \\
     \hline
     \endhead
 
     \hline
-    \multicolumn{1}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
+    \multicolumn{1}{r}{\textit{Fortsetzung siehe nächste Seite}}                                                                                                                                           \\
     \endfoot
 
     \hline
     \endlastfoot
 
     $\displaystyle\begin{matrix}
-    1 & -2 & 4 \\
-    2 & 1 & 3 \\
-    1 & 3 & -1
-    \end{matrix}$\\\hline
-    Operation: III - I \\\hline\pagebreak[0]
+                          1 & -2 & 4  \\
+                          2 & 1  & 3  \\
+                          1 & 3  & -1
+                      \end{matrix}$                                                                                                                                                                            \\\hline
+    Operation: III - I                                                                                                                                                                                     \\\hline\pagebreak[0]
     $\displaystyle\begin{matrix}
-    1 & -2 & 4 \\
-    2 & 1 & 3 \\
-    0 & -5 & 5
-    \end{matrix}$\\\hline
-    Operation: II - 2I \\\hline\pagebreak[0]
+                          1 & -2 & 4 \\
+                          2 & 1  & 3 \\
+                          0 & -5 & 5
+                      \end{matrix}$                                                                                                                                                                            \\\hline
+    Operation: II - 2I                                                                                                                                                                                     \\\hline\pagebreak[0]
     $\displaystyle\begin{matrix}
-    1 & -2 & 4 \\
-    0 & 5 & -5 \\
-    0 & -5 & 5
-    \end{matrix}$\\\hline
-    Operation: III + II \\\hline\pagebreak[0]
+                          1 & -2 & 4  \\
+                          0 & 5  & -5 \\
+                          0 & -5 & 5
+                      \end{matrix}$                                                                                                                                                                            \\\hline
+    Operation: III + II                                                                                                                                                                                    \\\hline\pagebreak[0]
     $\displaystyle\begin{matrix}
-    1 & -2 & 4 \\
-    0 & 5 & -5 \\
-    0 & 0 & 0
-    \end{matrix}$\\\hline
+                          1 & -2 & 4  \\
+                          0 & 5  & -5 \\
+                          0 & 0  & 0
+                      \end{matrix}$                                                                                                                                                                            \\\hline
     Hier ist jetzt eine Nullzeile entstanden. Das bedeutet nur, dass das Gleichungssystem nicht eindeutig lösbar ist. Diese muss nicht mehr betrachtet werden, da sie als einzige Aussage $0 = 0$ liefert. \\\hline\pagebreak[0]
-    Operation: 5I + 2II \\\hline\pagebreak[0]
+    Operation: 5I + 2II                                                                                                                                                                                    \\\hline\pagebreak[0]
     $\displaystyle\begin{matrix}
-    1 & 0 & 10 \\
-    0 & 5 & -5
-    \end{matrix}$\\\hline
-    Operation: II + 2I \\\hline\pagebreak[0]
+                          1 & 0 & 10 \\
+                          0 & 5 & -5
+                      \end{matrix}$                                                                                                                                                                            \\\hline
+    Operation: II + 2I                                                                                                                                                                                     \\\hline\pagebreak[0]
     $\displaystyle\begin{matrix}
-    1 & 0 & 10 \\
-    0 & 5 & 0
-    \end{matrix}$\\\hline
+                          1 & 0 & 10 \\
+                          0 & 5 & 0
+                      \end{matrix}$                                                                                                                                                                            \\\hline
 \end{longtable}
 
-Aus der reduzierten Zeilenstufenform lassen sich die folgenden Gleichungen ablesen:
+Aus der reduzierten Zeilenstufenform lassen sich die folgenden Gleichungen
+ablesen:
 \begin{align*}
-    \text{I:\@} \quad x_1 + 2x_3 &= 0 \quad \Rightarrow \quad x_1 = -2x_3 \\
-    \text{II:\@} \quad x_2 - x_3 &= 0 \quad \Rightarrow \quad x_2 = x_3
+    \text{I:\@} \quad x_1 + 2x_3 & = 0 \quad \Rightarrow \quad x_1 = -2x_3 \\
+    \text{II:\@} \quad x_2 - x_3 & = 0 \quad \Rightarrow \quad x_2 = x_3
 \end{align*}
 Setzt man $x_3 = t$, wobei $t \in \mathbb{R}$ ein freier Parameter ist, so erhält man die allgemeine Lösung des Gleichungssystems:
 \[
     \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} = \begin{pmatrix} -2t \\ t \\ t \end{pmatrix} = t \begin{pmatrix} -2 \\ 1 \\ 1 \end{pmatrix}.
 \]
-Da es nichttriviale Lösungen gibt (z.B. für $t=1$ ergibt sich die Lösung $x_1=-2, x_2=1, x_3=1$), sind die Vektoren $\vec{a}, \vec{b}, \vec{c}$ linear \textbf{abhängig}.
+Da es nichttriviale Lösungen gibt (z.B. für $t=1$ ergibt sich die Lösung
+$x_1=-2, x_2=1, x_3=1$), sind die Vektoren $\vec{a}, \vec{b}, \vec{c}$ linear
+\textbf{abhängig}.
 
-Lineare abhängigkeit kann auch über die \nameref{determinante} geprüft werden. Hierbei sind die Vektoren Linear abhängig, wenn $\det(A) = 0$ ist, wobei $A$ die Matrixkombination aus den Vektoren ist. In dem o.g. Beispiel ist $A = \begin{pmatrix}
-    1 & -2 & 4 \\
-    2 & 1 & 3 \\
-    1 & 3 & -1
-\end{pmatrix}$
+Lineare abhängigkeit kann auch über die \nameref{determinante} geprüft werden.
+Hierbei sind die Vektoren Linear abhängig, wenn $\det(A) = 0$ ist, wobei $A$
+die Matrixkombination aus den Vektoren ist. In dem o.g. Beispiel ist $A = \begin{pmatrix}
+        1 & -2 & 4  \\
+        2 & 1  & 3  \\
+        1 & 3  & -1
+    \end{pmatrix}$

@@ -1,70 +1,89 @@
 \chapter{Matrizen}
 
-Eine Matrix ist eine rechteckige Anordnung von Zahlen oder anderen mathematischen Objekten, die in Zeilen und Spalten organisiert sind. Die Notation $M \in \mathbb{R}^{m \times n}$ wird hier verwendet, um eine Matrix zu beschreiben, welche $n$ Zeilen (Höhe) und $m$ Spalten (Breite) besitzt. Die einzelnen Elemente der Matrix werden mit $a_{ij}$ bezeichnet, wobei $i$ den Zeilenindex (von $1$ bis $n$) und $j$ den Spaltenindex (von $1$ bis $m$) angibt.
+Eine Matrix ist eine rechteckige Anordnung von Zahlen oder anderen
+mathematischen Objekten, die in Zeilen und Spalten organisiert sind. Die
+Notation $M \in \mathbb{R}^{m \times n}$ wird hier verwendet, um eine Matrix zu
+beschreiben, welche $n$ Zeilen (Höhe) und $m$ Spalten (Breite) besitzt. Die
+einzelnen Elemente der Matrix werden mit $a_{ij}$ bezeichnet, wobei $i$ den
+Zeilenindex (von $1$ bis $n$) und $j$ den Spaltenindex (von $1$ bis $m$)
+angibt.
 
 Eine solche Matrix $M$ mit $n$ Zeilen und $m$ Spalten hat die allgemeine Form:
 \[
    M = \begin{pmatrix}
-   a_{11} & a_{12} & \cdots & a_{1m} \\
-   a_{21} & a_{22} & \cdots & a_{2m} \\
-   \vdots & \vdots & \ddots & \vdots \\
-   a_{n1} & a_{n2} & \cdots & a_{nm}
+      a_{11} & a_{12} & \cdots & a_{1m} \\
+      a_{21} & a_{22} & \cdots & a_{2m} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      a_{n1} & a_{n2} & \cdots & a_{nm}
    \end{pmatrix}
 \]
-Eine Matrix kann auch als eine Zusammenfassung von Spaltenvektoren (wenn jede Spalte als Vektor betrachtet wird) oder Zeilenvektoren (wenn jede Zeile als Vektor betrachtet wird) angesehen werden.
+Eine Matrix kann auch als eine Zusammenfassung von Spaltenvektoren (wenn jede
+Spalte als Vektor betrachtet wird) oder Zeilenvektoren (wenn jede Zeile als
+Vektor betrachtet wird) angesehen werden.
 
 \section{Matrix-Vektor-Produkt}
 
-Das Produkt einer Matrix $M \in \mathbb{R}^{n \times m}$ (also $n$ Zeilen, $m$ Spalten) mit einem Spaltenvektor $V \in \mathbb{R}^{m \times 1}$ (also ein Vektor mit $m$ Elementen) ist ein neuer Spaltenvektor $W \in \mathbb{R}^{n \times 1}$ (also ein Vektor mit $n$ Elementen).
-Die Multiplikation ist nur definiert, wenn die Anzahl der Spalten der Matrix $M$ gleich der Anzahl der Zeilen (Elemente) des Vektors $V$ ist. Hier müssen also beide die Dimension $m$ aufweisen.
+Das Produkt einer Matrix $M \in \mathbb{R}^{n \times m}$ (also $n$ Zeilen, $m$
+Spalten) mit einem Spaltenvektor $V \in \mathbb{R}^{m \times 1}$ (also ein
+Vektor mit $m$ Elementen) ist ein neuer Spaltenvektor $W \in \mathbb{R}^{n
+      \times 1}$ (also ein Vektor mit $n$ Elementen). Die Multiplikation ist nur
+definiert, wenn die Anzahl der Spalten der Matrix $M$ gleich der Anzahl der
+Zeilen (Elemente) des Vektors $V$ ist. Hier müssen also beide die Dimension $m$
+aufweisen.
 
 Sei $M = \begin{pmatrix}
-a_{11} & a_{12} & \cdots & a_{1m} \\
-a_{21} & a_{22} & \cdots & a_{2m} \\
-\vdots & \vdots & \ddots & \vdots \\
-a_{n1} & a_{n2} & \cdots & a_{nm}
-\end{pmatrix}$ und $V = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_m \end{pmatrix}$.
+      a_{11} & a_{12} & \cdots & a_{1m} \\
+      a_{21} & a_{22} & \cdots & a_{2m} \\
+      \vdots & \vdots & \ddots & \vdots \\
+      a_{n1} & a_{n2} & \cdots & a_{nm}
+   \end{pmatrix}$ und $V = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_m \end{pmatrix}$.
 
-Das Matrix-Vektor-Produkt $MV$ wird berechnet, indem das Skalarprodukt jeder Zeile der Matrix $M$ mit dem Vektor $V$ gebildet wird:
+Das Matrix-Vektor-Produkt $MV$ wird berechnet, indem das Skalarprodukt jeder
+Zeile der Matrix $M$ mit dem Vektor $V$ gebildet wird:
 \[
    MV = \begin{pmatrix}
-   a_{11}v_1 + a_{12}v_2 + \cdots + a_{1m}v_m \\
-   a_{21}v_1 + a_{22}v_2 + \cdots + a_{2m}v_m \\
-   \vdots \\
-   a_{n1}v_1 + a_{n2}v_2 + \cdots + a_{nm}v_m
+      a_{11}v_1 + a_{12}v_2 + \cdots + a_{1m}v_m \\
+      a_{21}v_1 + a_{22}v_2 + \cdots + a_{2m}v_m \\
+      \vdots                                     \\
+      a_{n1}v_1 + a_{n2}v_2 + \cdots + a_{nm}v_m
    \end{pmatrix} = \begin{pmatrix} \sum_{j=1}^{m} a_{1j}v_j \\ \sum_{j=1}^{m} a_{2j}v_j \\ \vdots \\ \sum_{j=1}^{m} a_{nj}v_j \end{pmatrix}
 \]
 Das Ergebnis ist ein Vektor mit $n$ Elementen.
 
 \section{Diagonalmatrix}
 
-Eine Diagonalmatrix ist eine quadratische Matrix, d.h. sie besitzt gleich viele Zeilen wie Spalten ($n=m$). Bei einer Diagonalmatrix sind alle Elemente außerhalb der Hauptdiagonalen (die von links oben nach rechts unten verläuft) gleich Null. Nur die Elemente auf der Hauptdiagonalen können von Null verschieden sein.
+Eine Diagonalmatrix ist eine quadratische Matrix, d.h. sie besitzt gleich viele
+Zeilen wie Spalten ($n=m$). Bei einer Diagonalmatrix sind alle Elemente
+außerhalb der Hauptdiagonalen (die von links oben nach rechts unten verläuft)
+gleich Null. Nur die Elemente auf der Hauptdiagonalen können von Null
+verschieden sein.
 
 Eine Diagonalmatrix $D \in \mathbb{R}^{n \times n}$ hat die Form:
 \[
-D = \begin{pmatrix}
-d_{11} & 0 & \cdots & 0 \\
-0 & d_{22} & \cdots & 0 \\
-\vdots & \vdots & \ddots & \vdots \\
-0 & 0 & \cdots & d_{nn}
-\end{pmatrix}
+   D = \begin{pmatrix}
+      d_{11} & 0      & \cdots & 0      \\
+      0      & d_{22} & \cdots & 0      \\
+      \vdots & \vdots & \ddots & \vdots \\
+      0      & 0      & \cdots & d_{nn}
+   \end{pmatrix}
 \]
 Beispiel einer $3 \times 3$ Diagonalmatrix (hier ist $n=m=3$):
 \[
    D = \begin{pmatrix}
-   1 & 0 & 0 \\
-   0 & 2 & 0 \\
-   0 & 0 & 7
+      1 & 0 & 0 \\
+      0 & 2 & 0 \\
+      0 & 0 & 7
    \end{pmatrix}
    \in \mathbb{R}^{3 \times 3}
 \]
-Das Matrix-Vektor-Produkt mit einer Diagonalmatrix ist besonders einfach zu berechnen. Jedes Element des Vektors wird mit dem entsprechenden Diagonalelement der Matrix multipliziert:
-Sei $V = \begin{pmatrix}v_1\\v_2\\v_3\end{pmatrix}$. Dann ist
+Das Matrix-Vektor-Produkt mit einer Diagonalmatrix ist besonders einfach zu
+berechnen. Jedes Element des Vektors wird mit dem entsprechenden
+Diagonalelement der Matrix multipliziert: Sei $V = \begin{pmatrix}v_1\\v_2\\v_3\end{pmatrix}$. Dann ist
 \[
    D V = \begin{pmatrix}
-   1 & 0 & 0 \\
-   0 & 2 & 0 \\
-   0 & 0 & 7
+      1 & 0 & 0 \\
+      0 & 2 & 0 \\
+      0 & 0 & 7
    \end{pmatrix}
    \begin{pmatrix}v_1\\v_2\\v_3\end{pmatrix}
    = \begin{pmatrix}1 \cdot v_1\\2 \cdot v_2\\7 \cdot v_3\end{pmatrix}
@@ -72,29 +91,36 @@ Sei $V = \begin{pmatrix}v_1\\v_2\\v_3\end{pmatrix}$. Dann ist
 
 \subsection{Einheitsmatrix}
 
-Die Einheitsmatrix, oft mit $I$ oder $I_n$ (wobei $n$ die Dimension angibt) bezeichnet, ist eine spezielle Diagonalmatrix. Bei der Einheitsmatrix sind alle Elemente auf der Hauptdiagonalen gleich Eins, und alle anderen Elemente sind Null. Sie ist ebenfalls quadratisch.
+Die Einheitsmatrix, oft mit $I$ oder $I_n$ (wobei $n$ die Dimension angibt)
+bezeichnet, ist eine spezielle Diagonalmatrix. Bei der Einheitsmatrix sind alle
+Elemente auf der Hauptdiagonalen gleich Eins, und alle anderen Elemente sind
+Null. Sie ist ebenfalls quadratisch.
 
 Beispiel der $3 \times 3$ Einheitsmatrix $I_3$:
 \[
    I_3 = \begin{pmatrix}
-   1 & 0 & 0 \\
-   0 & 1 & 0 \\
-   0 & 0 & 1
+      1 & 0 & 0 \\
+      0 & 1 & 0 \\
+      0 & 0 & 1
    \end{pmatrix}
    \in \mathbb{R}^{3 \times 3}
 \]
-Die Multiplikation einer Matrix oder eines Vektors mit der Einheitsmatrix passender Dimension verändert diese nicht (d.h. $IM = M$ und $Iv = v$). Sie ist das neutrale Element der Matrizenmultiplikation.
+Die Multiplikation einer Matrix oder eines Vektors mit der Einheitsmatrix
+passender Dimension verändert diese nicht (d.h. $IM = M$ und $Iv = v$). Sie ist
+das neutrale Element der Matrizenmultiplikation.
 
 \section{Drehmatrizen}
 
-Drehmatrizen sind quadratische Matrizen, die verwendet werden, um Vektoren um einen Ursprung (in 2D) oder eine Achse (in 3D) um einen bestimmten Winkel zu drehen.
+Drehmatrizen sind quadratische Matrizen, die verwendet werden, um Vektoren um
+einen Ursprung (in 2D) oder eine Achse (in 3D) um einen bestimmten Winkel zu
+drehen.
 
 \subsection*{Drehmatrix in $\mathbb{R}^2$}
 Eine Drehung eines Vektors in der Ebene ($\mathbb{R}^2$) um den Ursprung um den Winkel $\alpha$ (üblicherweise gegen den Uhrzeigersinn) wird durch die folgende $2 \times 2$-Matrix $R(\alpha)$ beschrieben:
 \[
    R(\alpha) = \begin{pmatrix}
-       \cos(\alpha) & -\sin(\alpha) \\
-       \sin(\alpha) & \cos(\alpha)
+      \cos(\alpha) & -\sin(\alpha) \\
+      \sin(\alpha) & \cos(\alpha)
    \end{pmatrix}
 \]
 Wird ein Vektor $v = \begin{pmatrix} x \\ y \end{pmatrix}$ mit dieser Matrix multipliziert, $v' = R(\alpha)v$, so ist $v'$ der um $\alpha$ gedrehte Vektor.
@@ -106,9 +132,9 @@ Im dreidimensionalen Raum ($\mathbb{R}^3$) erfolgen Drehungen typischerweise um 
 Eine Drehung um den Winkel $\alpha$ um die $x$-Achse wird durch die Matrix $R_x(\alpha)$ repräsentiert:
 \[
    R_x(\alpha) = \begin{pmatrix}
-       1 & 0 & 0 \\
-       0 & \cos(\alpha) & -\sin(\alpha) \\
-       0 & \sin(\alpha) & \cos(\alpha)
+      1 & 0            & 0             \\
+      0 & \cos(\alpha) & -\sin(\alpha) \\
+      0 & \sin(\alpha) & \cos(\alpha)
    \end{pmatrix}
 \]
 
@@ -116,9 +142,9 @@ Eine Drehung um den Winkel $\alpha$ um die $x$-Achse wird durch die Matrix $R_x(
 Eine Drehung um den Winkel $\alpha$ (oder $\beta$ zur Unterscheidung) um die $y$-Achse wird durch die Matrix $R_y(\alpha)$ repräsentiert:
 \[
    R_y(\alpha) = \begin{pmatrix}
-       \cos(\alpha) & 0 & \sin(\alpha) \\
-       0 & 1 & 0 \\
-       -\sin(\alpha) & 0 & \cos(\alpha)
+      \cos(\alpha)  & 0 & \sin(\alpha) \\
+      0             & 1 & 0            \\
+      -\sin(\alpha) & 0 & \cos(\alpha)
    \end{pmatrix}
 \]
 
@@ -126,23 +152,32 @@ Eine Drehung um den Winkel $\alpha$ (oder $\beta$ zur Unterscheidung) um die $y$
 Eine Drehung um den Winkel $\alpha$ (oder $\gamma$) um die $z$-Achse wird durch die Matrix $R_z(\alpha)$ repräsentiert:
 \[
    R_z(\alpha) = \begin{pmatrix}
-       \cos(\alpha) & -\sin(\alpha) & 0 \\
-       \sin(\alpha) & \cos(\alpha) & 0 \\
-       0 & 0 & 1
+      \cos(\alpha) & -\sin(\alpha) & 0 \\
+      \sin(\alpha) & \cos(\alpha)  & 0 \\
+      0            & 0             & 1
    \end{pmatrix}
 \]
 
 \subsection{Drehung um mehrere Achsen}
-Wenn ein Vektor in $\mathbb{R}^3$ nacheinander um mehrere Achsen gedreht werden soll, können die entsprechenden Drehmatrizen miteinander multipliziert werden (siehte \nameref{matrix_multiplitzieren}). Das Ergebnis dieser Matrizenmultiplikation ist eine einzelne Matrix, die die Gesamttransformation (also die verkettete Drehung) darstellt.
-Wird beispielsweise zuerst eine Drehung $R_1$ und danach eine Drehung $R_2$ auf einen Vektor $v$ angewendet, so ist der transformierte Vektor $v' = R_2 (R_1 v) = (R_2 R_1) v$. Die Gesamttransformationsmatrix ist $R_{ges} = R_2 R_1$.
-Es ist wichtig zu beachten, dass die Matrizenmultiplikation im Allgemeinen nicht kommutativ ist, d.h. die Reihenfolge der Multiplikation (und somit der Drehungen) ist entscheidend ($R_2 R_1 \neq R_1 R_2$ im Allgemeinen). Die Matrix, die der zuerst auszuführenden Drehung entspricht, steht im Produkt rechts.
+Wenn ein Vektor in $\mathbb{R}^3$ nacheinander um mehrere Achsen gedreht werden
+soll, können die entsprechenden Drehmatrizen miteinander multipliziert werden
+(siehte \nameref{matrix_multiplitzieren}). Das Ergebnis dieser
+Matrizenmultiplikation ist eine einzelne Matrix, die die Gesamttransformation
+(also die verkettete Drehung) darstellt. Wird beispielsweise zuerst eine
+Drehung $R_1$ und danach eine Drehung $R_2$ auf einen Vektor $v$ angewendet, so
+ist der transformierte Vektor $v' = R_2 (R_1 v) = (R_2 R_1) v$. Die
+Gesamttransformationsmatrix ist $R_{ges} = R_2 R_1$. Es ist wichtig zu
+beachten, dass die Matrizenmultiplikation im Allgemeinen nicht kommutativ ist,
+d.h. die Reihenfolge der Multiplikation (und somit der Drehungen) ist
+entscheidend ($R_2 R_1 \neq R_1 R_2$ im Allgemeinen). Die Matrix, die der
+zuerst auszuführenden Drehung entspricht, steht im Produkt rechts.
 
 \section{Spiegelungen}
 
-Eine Spiegelungsmatrix ist eine orthogonale Matrix, welche Vektoren an einer Hyperebene spiegelt. Im $\mathbb{R}^2$ ist dies eine Gerade.
+Eine Spiegelungsmatrix ist eine orthogonale Matrix, welche Vektoren an einer
+Hyperebene spiegelt. Im $\mathbb{R}^2$ ist dies eine Gerade.
 
-Die Matrix \[ A = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \] spiegelt Vektoren an der Winkelhalbierenden $y=x$.
-Der Vektor \begin{math}\begin{pmatrix} 2 \\ 1 \end{pmatrix}\end{math} wird durch die Multiplikation mit der Matrix $A$ auf den Vektor \begin{math}\begin{pmatrix} 1 \\ 2 \end{pmatrix}\end{math} abgebildet:
+Die Matrix \[ A = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \] spiegelt Vektoren an der Winkelhalbierenden $y=x$. Der Vektor \begin{math}\begin{pmatrix} 2 \\ 1 \end{pmatrix}\end{math} wird durch die Multiplikation mit der Matrix $A$ auf den Vektor \begin{math}\begin{pmatrix} 1 \\ 2 \end{pmatrix}\end{math} abgebildet:
 \[ \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 0 \cdot 2 + 1 \cdot 1 \\ 1 \cdot 2 + 0 \cdot 1 \end{pmatrix} = \begin{pmatrix} 1 \\ 2 \end{pmatrix} \]
 
 \subsection{Anmerkung zur Spiegelung an der x-Achse}
@@ -152,56 +187,66 @@ Die Anwendung auf den Vektor \begin{math}\begin{pmatrix} 2 \\ 1 \end{pmatrix}\en
 \[ \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} 2 \\ 1 \end{pmatrix} = \begin{pmatrix} 2 \\ -1 \end{pmatrix} \]
 
 \section{Spiegelungen im 3-dimensionalen Raum}
-Im dreidimensionalen Raum erfolgt die Spiegelung eines Vektors an einer Ebene. Eine Spiegelung an einer Achse oder einem Punkt ist ebenfalls möglich, kann aber als eine Kombination von Drehungen und einer Ebenenspiegelung verstanden werden.
+Im dreidimensionalen Raum erfolgt die Spiegelung eines Vektors an einer Ebene.
+Eine Spiegelung an einer Achse oder einem Punkt ist ebenfalls möglich, kann
+aber als eine Kombination von Drehungen und einer Ebenenspiegelung verstanden
+werden.
 
 \subsection{Berechnung von Spiegelungsmatrizen (Householder-Transformation)}
-Eine Spiegelungsmatrix $H$ für die Spiegelung an einer Ebene durch den Ursprung kann mit Hilfe des Normalenvektors $\vec{n}$ dieser Ebene berechnet werden. Der Normalenvektor ist ein Vektor, der senkrecht auf der Ebene steht. Für die Berechnung wird ein auf die Länge 1 normierter Normalenvektor $\vec{v}$ benötigt.
+Eine Spiegelungsmatrix $H$ für die Spiegelung an einer Ebene durch den Ursprung
+kann mit Hilfe des Normalenvektors $\vec{n}$ dieser Ebene berechnet werden. Der
+Normalenvektor ist ein Vektor, der senkrecht auf der Ebene steht. Für die
+Berechnung wird ein auf die Länge 1 normierter Normalenvektor $\vec{v}$
+benötigt.
 
-Sei $\vec{v}$ der normierte Normalenvektor der Ebene, an der gespiegelt werden soll. Die Spiegelungsmatrix $H$ (oft auch als Householder-Matrix bezeichnet) wird wie folgt berechnet:
+Sei $\vec{v}$ der normierte Normalenvektor der Ebene, an der gespiegelt werden
+soll. Die Spiegelungsmatrix $H$ (oft auch als Householder-Matrix bezeichnet)
+wird wie folgt berechnet:
 \[ H = I - 2 \vec{v} \vec{v}^T \]
 Hierbei ist:
 \begin{itemize}
-    \item $I$ die 3x3-Einheitsmatrix.
-    \item $\vec{v}$ der normierte Normalenvektor als Spaltenvektor.
-    \item $\vec{v}^T$ der transponierte Normalenvektor (ein Zeilenvektor).
-    \item Das Produkt $\vec{v} \vec{v}^T$ ist das äußere Produkt, das eine 3x3-Matrix ergibt.
+   \item $I$ die 3x3-Einheitsmatrix.
+   \item $\vec{v}$ der normierte Normalenvektor als Spaltenvektor.
+   \item $\vec{v}^T$ der transponierte Normalenvektor (ein Zeilenvektor).
+   \item Das Produkt $\vec{v} \vec{v}^T$ ist das äußere Produkt, das eine 3x3-Matrix
+         ergibt.
 \end{itemize}
 
 \subsection{Beispiel}
 Gesucht ist die Spiegelungsmatrix für die Spiegelung an der $xy$-Ebene.
 
 \begin{enumerate}
-    \item \textbf{Normalenvektor bestimmen:} Der Normalenvektor der $xy$-Ebene ist der z-Vektor, da er senkrecht auf dieser Ebene steht.
-    \[ \vec{n} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \]
+   \item \textbf{Normalenvektor bestimmen:} Der Normalenvektor der $xy$-Ebene ist der z-Vektor, da er senkrecht auf dieser Ebene steht.
+         \[ \vec{n} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \]
 
-    \item \textbf{Normalenvektor normieren:} Der Vektor hat bereits die Länge 1, also ist $\vec{v} = \vec{n}$.
-    \[ \|\vec{n}\| = \sqrt{0^2 + 0^2 + 1^2} = 1 \]
-    Somit ist \[ \vec{v} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \]
+   \item \textbf{Normalenvektor normieren:} Der Vektor hat bereits die Länge 1, also ist $\vec{v} = \vec{n}$.
+         \[ \|\vec{n}\| = \sqrt{0^2 + 0^2 + 1^2} = 1 \]
+         Somit ist \[ \vec{v} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \]
 
-    \item \textbf{Äußeres Produkt $\vec{v}\vec{v}^T$ berechnen:}
-    \[ \vec{v}\vec{v}^T = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \begin{pmatrix} 0 & 0 & 1 \end{pmatrix} = \begin{pmatrix}
-    0 \cdot 0 & 0 \cdot 0 & 0 \cdot 1 \\
-    0 \cdot 0 & 0 \cdot 0 & 0 \cdot 1 \\
-    1 \cdot 0 & 1 \cdot 0 & 1 \cdot 1
-    \end{pmatrix} = \begin{pmatrix}
-    0 & 0 & 0 \\
-    0 & 0 & 0 \\
-    0 & 0 & 1
-    \end{pmatrix} \]
+   \item \textbf{Äußeres Produkt $\vec{v}\vec{v}^T$ berechnen:}
+         \[ \vec{v}\vec{v}^T = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix} \begin{pmatrix} 0 & 0 & 1 \end{pmatrix} = \begin{pmatrix}
+               0 \cdot 0 & 0 \cdot 0 & 0 \cdot 1 \\
+               0 \cdot 0 & 0 \cdot 0 & 0 \cdot 1 \\
+               1 \cdot 0 & 1 \cdot 0 & 1 \cdot 1
+            \end{pmatrix} = \begin{pmatrix}
+               0 & 0 & 0 \\
+               0 & 0 & 0 \\
+               0 & 0 & 1
+            \end{pmatrix} \]
 
-    \item \textbf{Spiegelungsmatrix H berechnen:}
-    \[ H = I - 2(\vec{v}\vec{v}^T) = \begin{pmatrix}
-    1 & 0 & 0 \\
-    0 & 1 & 0 \\
-    0 & 0 & 1
-    \end{pmatrix} - 2 \begin{pmatrix}
-    0 & 0 & 0 \\
-    0 & 0 & 0 \\
-    0 & 0 & 1
-    \end{pmatrix} = \begin{pmatrix}
-    1 & 0 & 0 \\
-    0 & 1 & 0 \\
-    0 & 0 & -1
-    \end{pmatrix} \]
+   \item \textbf{Spiegelungsmatrix H berechnen:}
+         \[ H = I - 2(\vec{v}\vec{v}^T) = \begin{pmatrix}
+               1 & 0 & 0 \\
+               0 & 1 & 0 \\
+               0 & 0 & 1
+            \end{pmatrix} - 2 \begin{pmatrix}
+               0 & 0 & 0 \\
+               0 & 0 & 0 \\
+               0 & 0 & 1
+            \end{pmatrix} = \begin{pmatrix}
+               1 & 0 & 0  \\
+               0 & 1 & 0  \\
+               0 & 0 & -1
+            \end{pmatrix} \]
 \end{enumerate}
 Diese Matrix spiegelt jeden Vektor $\begin{pmatrix} x \\ y \\ z \end{pmatrix}$ auf $\begin{pmatrix} x \\ y \\ -z \end{pmatrix}$, was der Spiegelung an der $xy$-Ebene entspricht.

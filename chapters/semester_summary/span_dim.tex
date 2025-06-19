@@ -1,7 +1,10 @@
 \chapter{Spannraum, Dimension und Kern von Untervektorräumen}
 
 \section{Untervektorraum}
-Ganz einfach gesagt ist ein Untervektorraum ein Teil eines größeren Vektorraums, der selbst alle Eigenschaften eines Vektorraums erfüllt. Betrachtet man den \(\mathbb{R}^3\) (den normalen 3D-Raum) als gesamten Raum, so ist ein Untervektorraum ein bestimmter Bereich darin, zum Beispiel:
+Ganz einfach gesagt ist ein Untervektorraum ein Teil eines größeren
+Vektorraums, der selbst alle Eigenschaften eines Vektorraums erfüllt.
+Betrachtet man den \(\mathbb{R}^3\) (den normalen 3D-Raum) als gesamten Raum,
+so ist ein Untervektorraum ein bestimmter Bereich darin, zum Beispiel:
 \begin{itemize}
     \item Eine Ebene, die genau durch den Ursprung (den Nullpunkt \(\begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}\)) geht. Wenn zwei Vektoren in dieser Ebene addiert werden, so liegt das Ergebnis wieder in dieser Ebene. Wenn ein Vektor in dieser Ebene gestreckt oder gestaucht wird, verbleibt man ebenfalls in der Ebene.
     \item Eine Gerade, die genau durch den Ursprung geht, ist auch ein Untervektorraum.
@@ -12,8 +15,10 @@ Ein Beispiel im \(\mathbb{R}^3\): Die Menge aller Vektoren der Form \(\begin{pma
 Die Menge aller Vektoren der Form \(\begin{pmatrix} x \\ y \\ 1 \end{pmatrix}\) ist \textbf{kein} Untervektorraum, da sie den Nullvektor nicht enthält und die Addition zweier solcher Vektoren \(\begin{pmatrix} x_1 \\ y_1 \\ 1 \end{pmatrix} + \begin{pmatrix} x_2 \\ y_2 \\ 1 \end{pmatrix} = \begin{pmatrix} x_1+x_2 \\ y_1+y_2 \\ 2 \end{pmatrix}\) nicht wieder in der Menge liegt.
 
 \section{Spannraum}
-Der Spannraum (auch lineare Hülle genannt) umfasst alles, was mit einer gegebenen Menge von Vektoren "erreicht" oder "aufgespannt" werden kann, indem diese beliebig verlängert, verkürzt und addiert werden.
-Man kann sich das anhand von Vektoren als Pfeile vorstellen:
+Der Spannraum (auch lineare Hülle genannt) umfasst alles, was mit einer
+gegebenen Menge von Vektoren "erreicht" oder "aufgespannt" werden kann, indem
+diese beliebig verlängert, verkürzt und addiert werden. Man kann sich das
+anhand von Vektoren als Pfeile vorstellen:
 \begin{itemize}
     \item Mit einem einzigen Vektor (der nicht der Nullvektor ist), z.B. \(\vec{v} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}\), kann eine Gerade aufgespannt werden. Der Spannraum \(span\{\vec{v}\}\) besteht aus allen Vielfachen dieses Vektors (z.B. \(2\vec{v}\), \(-0.5\vec{v}\), etc.), was eben diese Gerade durch den Ursprung ergibt.
     \item Mit zwei Vektoren, die in unterschiedliche Richtungen zeigen, z.B. \(\vec{a} = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}\) und \(\vec{b} = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}\) im \(\mathbb{R}^3\), kann eine ganze Ebene aufgespannt werden (hier die xy-Ebene). Der Spannraum ist dann \(span\{\vec{a}, \vec{b}\} = \{ \lambda_1 \vec{a} + \lambda_2 \vec{b} \}\).
@@ -22,34 +27,51 @@ Der gesamte \(\mathbb{R}^3\) wird zum Beispiel von den drei Einheitsvektoren auf
 \[ \mathbb{R}^3 = span \left\{\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}\right\} \]
 Man sagt, diese Vektoren sind ein Erzeugendensystem für den \(\mathbb{R}^3\).
 
-Wenn die Vektoren, die den Raum aufspannen, linear unabhängig sind (also keiner der Vektoren durch die anderen ausgedrückt werden kann), dann bilden sie eine Basis für diesen Spannraum. Sind sie linear abhängig, gibt es "überflüssige" Vektoren, die man weglassen könnte, ohne den Spannraum zu verkleinern. Zum Beispiel spannen \(\begin{pmatrix} 1 \\ 0 \end{pmatrix}\), \(\begin{pmatrix} 0 \\ 1 \end{pmatrix}\) und \(\begin{pmatrix} 1 \\ 1 \end{pmatrix}\) immer noch die \(\mathbb{R}^2\)-Ebene auf, aber \(\begin{pmatrix} 1 \\ 1 \end{pmatrix}\) ist nicht nötig, da er eine Kombination der ersten beiden ist.
+Wenn die Vektoren, die den Raum aufspannen, linear unabhängig sind (also keiner
+der Vektoren durch die anderen ausgedrückt werden kann), dann bilden sie eine
+Basis für diesen Spannraum. Sind sie linear abhängig, gibt es "überflüssige"
+Vektoren, die man weglassen könnte, ohne den Spannraum zu verkleinern. Zum
+Beispiel spannen \(\begin{pmatrix} 1 \\ 0 \end{pmatrix}\), \(\begin{pmatrix} 0 \\ 1 \end{pmatrix}\) und \(\begin{pmatrix} 1 \\ 1 \end{pmatrix}\) immer noch die \(\mathbb{R}^2\)-Ebene auf, aber \(\begin{pmatrix} 1 \\ 1 \end{pmatrix}\) ist nicht nötig, da er eine Kombination der ersten beiden ist.
 
 \section{Dimension}
-Die Dimension eines Vektorraums (oder Untervektorraums) ist einfach die Anzahl der Vektoren, die mindestens benötigt werden, um diesen Raum aufzuspannen. Diese "minimal notwendigen" Vektoren müssen linear unabhängig sein und bilden eine sogenannte Basis.
+Die Dimension eines Vektorraums (oder Untervektorraums) ist einfach die Anzahl
+der Vektoren, die mindestens benötigt werden, um diesen Raum aufzuspannen.
+Diese "minimal notwendigen" Vektoren müssen linear unabhängig sein und bilden
+eine sogenannte Basis.
 \begin{itemize}
-    \item Eine Gerade hat die Dimension 1 (es wird ein Vektor benötigt, um sie aufzuspannen).
-    \item Eine Ebene hat die Dimension 2 (es werden zwei linear unabhängige Vektoren benötigt, um sie aufzuspannen).
-    \item Der Raum \(\mathbb{R}^3\) hat die Dimension 3 (es werden drei linear unabhängige Vektoren benötigt, z.B. die Einheitsvektoren).
+    \item Eine Gerade hat die Dimension 1 (es wird ein Vektor benötigt, um sie
+          aufzuspannen).
+    \item Eine Ebene hat die Dimension 2 (es werden zwei linear unabhängige Vektoren
+          benötigt, um sie aufzuspannen).
+    \item Der Raum \(\mathbb{R}^3\) hat die Dimension 3 (es werden drei linear
+          unabhängige Vektoren benötigt, z.B. die Einheitsvektoren).
     \item Der \(\mathbb{R}^n\) hat die Dimension \(n\).
     \item Ein Punkt (nur der Nullvektor) hat die Dimension 0.
 \end{itemize}
 Die Dimension gibt also an, wie viele "Freiheitsgrade" oder "unabhängige Richtungen" es in dem Raum gibt.
 
 \section{Kern}
-Der Kern bezieht sich nicht auf einen Vektorraum allein, sondern auf eine lineare Abbildung (oft dargestellt durch eine Matrix \(A\)).
-Ganz einfach gesagt: Der Kern einer Matrix \(A\) ist die Menge aller Vektoren \(\vec{x}\), die von der Matrix \(A\) auf den Nullvektor \(\vec{0}\) abgebildet werden. Also alle \(\vec{x}\), für die gilt: \(A\vec{x} = \vec{0}\).
+Der Kern bezieht sich nicht auf einen Vektorraum allein, sondern auf eine
+lineare Abbildung (oft dargestellt durch eine Matrix \(A\)). Ganz einfach
+gesagt: Der Kern einer Matrix \(A\) ist die Menge aller Vektoren \(\vec{x}\),
+die von der Matrix \(A\) auf den Nullvektor \(\vec{0}\) abgebildet werden. Also
+alle \(\vec{x}\), für die gilt: \(A\vec{x} = \vec{0}\).
 
-Man kann sich eine Maschine (die Matrix) vorstellen, in die Vektoren hineingegeben werden. Der Kern sind all die Vektoren, die nach der Verarbeitung durch die Maschine "verschwinden" (also zum Nullvektor werden).
+Man kann sich eine Maschine (die Matrix) vorstellen, in die Vektoren
+hineingegeben werden. Der Kern sind all die Vektoren, die nach der Verarbeitung
+durch die Maschine "verschwinden" (also zum Nullvektor werden).
 
-Beispiel:
-Gegeben sei die Matrix \(A = \begin{pmatrix} 1 & 2 \\ 2 & 4 \end{pmatrix}\). Es werden Vektoren \(\vec{x} = \begin{pmatrix} x_1 \\ x_2 \end{pmatrix}\) gesucht, sodass \(A\vec{x} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\).
+Beispiel: Gegeben sei die Matrix \(A = \begin{pmatrix} 1 & 2 \\ 2 & 4 \end{pmatrix}\). Es werden Vektoren \(\vec{x} = \begin{pmatrix} x_1 \\ x_2 \end{pmatrix}\) gesucht, sodass \(A\vec{x} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\).
 \[ \begin{pmatrix} 1 & 2 \\ 2 & 4 \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \begin{pmatrix} x_1 + 2x_2 \\ 2x_1 + 4x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \]
-Das führt zu der Gleichung \(x_1 + 2x_2 = 0\), also \(x_1 = -2x_2\).
-Alle Vektoren im Kern haben also die Form \(\begin{pmatrix} -2x_2 \\ x_2 \end{pmatrix} = x_2 \begin{pmatrix} -2 \\ 1 \end{pmatrix}\).
+Das führt zu der Gleichung \(x_1 + 2x_2 = 0\), also \(x_1 = -2x_2\). Alle
+Vektoren im Kern haben also die Form \(\begin{pmatrix} -2x_2 \\ x_2 \end{pmatrix} = x_2 \begin{pmatrix} -2 \\ 1 \end{pmatrix}\).
 Der Kern ist also der Spannraum des Vektors \(\begin{pmatrix} -2 \\ 1 \end{pmatrix}\), was einer Geraden im \(\mathbb{R}^2\) entspricht. Alle Vektoren auf dieser Geraden werden von der Matrix \(A\) auf den Nullvektor abgebildet.
 
 \subsection{Dimensionssatz}
-Für eine lineare Abbildung \(f: V \to W\), die durch eine Matrix \(A \in K^{m \times n}\) repräsentiert wird, setzt der Dimensionssatz die Dimension des Definitionsraums \(V\) in Beziehung zur Dimension des Kerns und des Bildes von \(f\).
+Für eine lineare Abbildung \(f: V \to W\), die durch eine Matrix \(A \in K^{m
+        \times n}\) repräsentiert wird, setzt der Dimensionssatz die Dimension des
+Definitionsraums \(V\) in Beziehung zur Dimension des Kerns und des Bildes von
+\(f\).
 \[
     n = \dim(\mathrm{Kern}(A)) + \mathrm{Rang}(A)
 \]
@@ -67,30 +89,41 @@ Der Definitionsraum ist \(\mathbb{R}^3\), also ist \(n=3\).
 Die Dimensionsformel gilt: \(3 = 1 + 2\).
 
 \section{Injektive lineare Abbildungen}
-Eine lineare Abbildung \(f: V \to W\) ist genau dann injektiv, wenn \(\mathrm{Kern}(f) = \{0_V\}\), also \(\dim(\mathrm{Kern}(f)) = 0\).
+Eine lineare Abbildung \(f: V \to W\) ist genau dann injektiv, wenn
+\(\mathrm{Kern}(f) = \{0_V\}\), also \(\dim(\mathrm{Kern}(f)) = 0\).
 
 \subsubsection{Beispiel}
-Die Abbildung \(f: \mathbb{R}^2 \to \mathbb{R}^3\) mit \(f(x,y) = (x, y, x+y)\) wird durch die Matrix
+Die Abbildung \(f: \mathbb{R}^2 \to \mathbb{R}^3\) mit \(f(x,y) = (x, y, x+y)\)
+wird durch die Matrix
 \[
     A = \begin{pmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 1 \end{pmatrix}
 \]
-dargestellt. Aus \(Ax=0\) folgt \(x=0\) und \(y=0\). Der Kern ist \(\mathrm{Kern}(f) = \{(0,0)\}\), die Abbildung ist injektiv.
+dargestellt. Aus \(Ax=0\) folgt \(x=0\) und \(y=0\). Der Kern ist
+\(\mathrm{Kern}(f) = \{(0,0)\}\), die Abbildung ist injektiv.
 
 \section{Surjektive lineare Abbildungen}
-Eine lineare Abbildung \(f: V \to W\) ist surjektiv, wenn \(\mathrm{Bild}(f) = W\), also \(\dim(\mathrm{Bild}(f)) = \dim(W)\).
+Eine lineare Abbildung \(f: V \to W\) ist surjektiv, wenn \(\mathrm{Bild}(f) =
+W\), also \(\dim(\mathrm{Bild}(f)) = \dim(W)\).
 
 \subsubsection{Beispiel}
-Die Abbildung \(f: \mathbb{R}^3 \to \mathbb{R}^2\) aus dem Beispiel zum Dimensionssatz ist surjektiv, da der Rang der Matrix \(A\) gleich 2 ist, was der Dimension des Zielraums \(\mathbb{R}^2\) entspricht. Jeder Vektor in \(\mathbb{R}^2\) kann als Bild eines Vektors aus \(\mathbb{R}^3\) dargestellt werden.
+Die Abbildung \(f: \mathbb{R}^3 \to \mathbb{R}^2\) aus dem Beispiel zum
+Dimensionssatz ist surjektiv, da der Rang der Matrix \(A\) gleich 2 ist, was
+der Dimension des Zielraums \(\mathbb{R}^2\) entspricht. Jeder Vektor in
+\(\mathbb{R}^2\) kann als Bild eines Vektors aus \(\mathbb{R}^3\) dargestellt
+werden.
 
 \section{Bijektive lineare Abbildungen}
-Eine lineare Abbildung \(f: V \to W\) ist bijektiv, wenn sie injektiv und surjektiv ist. Dies ist nur möglich, wenn \(\dim(V) = \dim(W)\).
+Eine lineare Abbildung \(f: V \to W\) ist bijektiv, wenn sie injektiv und
+surjektiv ist. Dies ist nur möglich, wenn \(\dim(V) = \dim(W)\).
 
 \subsubsection{Beispiel}
 Die Drehung um 90 Grad in \(\mathbb{R}^2\) wird durch die Matrix
 \[
     A = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}
 \]
-beschrieben. Die Determinante ist \(\det(A) = 1 \neq 0\), die Matrix ist also invertierbar. Daraus folgt, dass die Abbildung bijektiv ist. Der Kern ist \(\{(0,0)\}\) (injektiv) und der Rang ist 2 (surjektiv).
+beschrieben. Die Determinante ist \(\det(A) = 1 \neq 0\), die Matrix ist also
+invertierbar. Daraus folgt, dass die Abbildung bijektiv ist. Der Kern ist
+\(\{(0,0)\}\) (injektiv) und der Rang ist 2 (surjektiv).
 
 \section{Orthogonale Projektion}
 Die orthogonale Projektion des Vektors \(b\) auf den Vektor \(a\).
@@ -111,30 +144,40 @@ Die Projektion ist:
 Der Vektor \((2,0)\) ist der Anteil von \(b\), der in Richtung von \(a\) zeigt.
 
 \section{Orthogonale und Spezielle Orthogonale Gruppen}
-Orthogonale Matrizen beschreiben Transformationen (Isometrien), die Längen und Winkel erhalten, wie Drehungen und Spiegelungen.
+Orthogonale Matrizen beschreiben Transformationen (Isometrien), die Längen und
+Winkel erhalten, wie Drehungen und Spiegelungen.
 
 \subsection{Die Orthogonale Gruppe \(O(n)\)}
-Die Menge aller reellen \(n \times n\)-Matrizen \(A\), deren Inverse ihre Transponierte ist.
+Die Menge aller reellen \(n \times n\)-Matrizen \(A\), deren Inverse ihre
+Transponierte ist.
 \[
     O(n) = \{A \in \mathbb{R}^{n \times n} \mid A^T A = I_n\}
 \]
-Für jede Matrix \(A \in O(n)\) gilt \(\det(A)^2 = 1\), woraus folgt, dass \(\det(A) \in \{+1, -1\}\).
+Für jede Matrix \(A \in O(n)\) gilt \(\det(A)^2 = 1\), woraus folgt, dass
+\(\det(A) \in \{+1, -1\}\).
 
 \subsection{Die Spezielle Orthogonale Gruppe \(SO(n)\)}
-Dies ist die Untergruppe von \(O(n)\), die nur die Matrizen mit Determinante +1 enthält.
+Dies ist die Untergruppe von \(O(n)\), die nur die Matrizen mit Determinante +1
+enthält.
 \[
     SO(n) = \{A \in O(n) \mid \det(A) = 1\}
 \]
-Matrizen in $SO(n)$ repräsentieren reine Drehungen und erhalten die Orientierung des Raumes. Die Matrix für die 90-Grad-Drehung im obigen Beispiel ist ein Element von $SO(2)$. Eine Spiegelung an der y-Achse in \(\mathbb{R}^2\) wird durch \(A = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}\) dargestellt. Hier ist \(\det(A) = -1\), also \(A \in O(2)\), aber \(A \notin SO(2)\).
+Matrizen in $SO(n)$ repräsentieren reine Drehungen und erhalten die
+Orientierung des Raumes. Die Matrix für die 90-Grad-Drehung im obigen Beispiel
+ist ein Element von $SO(2)$. Eine Spiegelung an der y-Achse in \(\mathbb{R}^2\)
+wird durch \(A = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}\) dargestellt. Hier ist \(\det(A) = -1\), also \(A \in O(2)\), aber \(A \notin SO(2)\).
 
 \subsection{Der Quotient \(O(n)/SO(n)\)}
-Da \(SO(n)\) ein Normalteiler von \(O(n)\) ist, kann die Quotientengruppe \(O(n)/SO(n)\) gebildet werden. Diese Gruppe beschreibt die "Orientierung".
+Da \(SO(n)\) ein Normalteiler von \(O(n)\) ist, kann die Quotientengruppe
+\(O(n)/SO(n)\) gebildet werden. Diese Gruppe beschreibt die "Orientierung".
 \[
     O(n)/SO(n) \cong \mathbb{Z}_2 = \{+1, -1\}
 \]
 Es gibt zwei Elemente (Nebenklassen) in dieser Gruppe:
 \begin{enumerate}
-    \item Die Menge aller orientierungserhaltenden Transformationen (Drehungen), was \(SO(n)\) selbst ist.
-    \item Die Menge aller orientierungsumkehrenden Transformationen (Spiegelungen und Drehspiegelungen).
+    \item Die Menge aller orientierungserhaltenden Transformationen (Drehungen), was
+          \(SO(n)\) selbst ist.
+    \item Die Menge aller orientierungsumkehrenden Transformationen (Spiegelungen und
+          Drehspiegelungen).
 \end{enumerate}
 Der Quotient fasst also alle Drehungen zu einem Element und alle Spiegelungen/orientierungsumkehrenden Abbildungen zum anderen Element zusammen.

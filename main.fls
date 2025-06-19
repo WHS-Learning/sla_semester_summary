@@ -622,6 +622,9 @@ INPUT chapters\semester_summary\eigenwerte_eigenvektoren.tex
 INPUT .\chapters\semester_summary\arithmetisches_mittel_median_modus.tex
 INPUT .\chapters\semester_summary\arithmetisches_mittel_median_modus.tex
 INPUT chapters\semester_summary\arithmetisches_mittel_median_modus.tex
+INPUT .\chapters\semester_summary\z-test.tex
+INPUT .\chapters\semester_summary\z-test.tex
+INPUT chapters\semester_summary\z-test.tex
 INPUT .\chapters\bonus_tests\test_1.tex
 INPUT .\chapters\bonus_tests\test_1.tex
 INPUT chapters\bonus_tests\test_1.tex
@@ -661,6 +664,9 @@ INPUT chapters\bonus_tests\test_2.tex
 INPUT .\chapters\bonus_tests\test_3.tex
 INPUT .\chapters\bonus_tests\test_3.tex
 INPUT chapters\bonus_tests\test_3.tex
+INPUT .\chapters\bonus_tests\test_9.tex
+INPUT .\chapters\bonus_tests\test_9.tex
+INPUT chapters\bonus_tests\test_9.tex
 INPUT .\chapters\lineare_algebra\page_5.tex
 INPUT .\chapters\lineare_algebra\page_5.tex
 INPUT chapters\lineare_algebra\page_5.tex
@@ -714,6 +720,9 @@ INPUT chapters\statistik\paper_10.tex
 INPUT .\chapters\statistik\paper_11.tex
 INPUT .\chapters\statistik\paper_11.tex
 INPUT chapters\statistik\paper_11.tex
+INPUT .\chapters\statistik\moodle_tasks.tex
+INPUT .\chapters\statistik\moodle_tasks.tex
+INPUT chapters\statistik\moodle_tasks.tex
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out

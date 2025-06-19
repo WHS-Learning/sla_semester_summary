@@ -2,59 +2,84 @@
 
 \section{Definition eines Vektors}
 
-Sollen nicht nur einzelne Zahlen festgehalten werden, sondern mehrere Zahlen, die in einer bestimmten Reihenfolge zusammengehören, kommen Vektoren ins Spiel.
+Sollen nicht nur einzelne Zahlen festgehalten werden, sondern mehrere Zahlen,
+die in einer bestimmten Reihenfolge zusammengehören, kommen Vektoren ins Spiel.
 
-Ein \textbf{Vektor} im $\mathbb{R}^n$ ist formal betrachtet ein Element des mathematischen Raumes $\mathbb{R}^n$. Das bedeutet, ein Vektor ist ein geordnetes n-Tupel reeller Zahlen. Ein solcher Vektor wird oft als Spalte geschrieben:
+Ein \textbf{Vektor} im $\mathbb{R}^n$ ist formal betrachtet ein Element des
+mathematischen Raumes $\mathbb{R}^n$. Das bedeutet, ein Vektor ist ein
+geordnetes n-Tupel reeller Zahlen. Ein solcher Vektor wird oft als Spalte
+geschrieben:
 
 \[
-\vec{v} = \begin{pmatrix}
-    v_1 \\ v_2 \\ \vdots \\ v_n
-\end{pmatrix}
+    \vec{v} = \begin{pmatrix}
+        v_1 \\ v_2 \\ \vdots \\ v_n
+    \end{pmatrix}
 \]
 
-wobei $v1, v2, \dots, v_n$ reelle Zahlen sind, die sogenannten \textbf{Komponenten} oder \textbf{Koordinaten} des Vektors. Die Zahl n gibt die \textbf{Dimension} des Vektors an.
+wobei $v1, v2, \dots, v_n$ reelle Zahlen sind, die sogenannten
+\textbf{Komponenten} oder \textbf{Koordinaten} des Vektors. Die Zahl n gibt die
+\textbf{Dimension} des Vektors an.
 
 \begin{itemize}
     \item Für n=2 liegen Vektoren in der Ebene ($\mathbb{R}^2$) vor, z.B. $\begin{pmatrix}
-        1 \\ 2
-    \end{pmatrix}$.
+                  1 \\ 2
+              \end{pmatrix}$.
     \item Für n=3 liegen Vektoren im Raum ($\mathbb{R}^3$) vor, z.B. $\begin{pmatrix}
-        1 \\ 2 \\ 3
-    \end{pmatrix}$.
-    \item Für $n > 3$ wird von höherdimensionalen Räumen gesprochen, die schwerer vorstellbar, aber mathematisch ebenso bedeutsam sind.
+                  1 \\ 2 \\ 3
+              \end{pmatrix}$.
+    \item Für $n > 3$ wird von höherdimensionalen Räumen gesprochen, die schwerer
+          vorstellbar, aber mathematisch ebenso bedeutsam sind.
 \end{itemize}
 
-Vektoren werden normalerweise mit einem Pfeil gekennzeichnet $\vec{v}$, jedoch wird der einfachkeit halber oft darauf verzichtet.
+Vektoren werden normalerweise mit einem Pfeil gekennzeichnet $\vec{v}$, jedoch
+wird der einfachkeit halber oft darauf verzichtet.
 
-Ein Vektor (zumindest in $\mathbb{R}^2$ und $\mathbb{R}^3$) kann als ein \textbf{Pfeil} interpretiert werden, der von einem Punkt zu einem anderen zeigt. Dieser Pfeil hat eine bestimmte \textbf{Länge} (Betrag) und eine bestimmte \textbf{Richtung}. Wichtig ist, dass Vektoren oft als "frei" betrachtet werden, d.h., ein Pfeil repräsentiert denselben Vektor, egal wo sein Anfangspunkt im Raum liegt, solange Länge und Richtung gleich bleiben. Häufig wird der Pfeil im Ursprung des Koordinatensystems begonnen; dann zeigen seine Koordinaten direkt auf den Endpunkt des Pfeils.
+Ein Vektor (zumindest in $\mathbb{R}^2$ und $\mathbb{R}^3$) kann als ein
+\textbf{Pfeil} interpretiert werden, der von einem Punkt zu einem anderen
+zeigt. Dieser Pfeil hat eine bestimmte \textbf{Länge} (Betrag) und eine
+bestimmte \textbf{Richtung}. Wichtig ist, dass Vektoren oft als "frei"
+betrachtet werden, d.h., ein Pfeil repräsentiert denselben Vektor, egal wo sein
+Anfangspunkt im Raum liegt, solange Länge und Richtung gleich bleiben. Häufig
+wird der Pfeil im Ursprung des Koordinatensystems begonnen; dann zeigen seine
+Koordinaten direkt auf den Endpunkt des Pfeils.
 
 Mit Vektoren können zwei grundlegende Rechenoperationen durchgeführt werden:
 %
 \begin{enumerate}
-\item \textbf{Vektoraddition:} Zwei Vektoren derselben Dimension n können addiert werden, indem ihre entsprechenden Komponenten addiert werden. Wenn $\vec{u} = \begin{pmatrix}
-    u_1 \\ u_2 \\ \vdots \\ u_n
-\end{pmatrix}$ und $v = \begin{pmatrix}
-    v_1 \\ v_2 \\ \vdots \\ v_n
-\end{pmatrix}$, dann ist ihre Summe: 
-\[
-    u + v = \begin{pmatrix}
-        u_1 + v_1 \\ u_2 + v_2 \\ \vdots \\ u_n + v_n
-    \end{pmatrix}
-\]
-Geometrisch entspricht die Addition von Vektoren dem Aneinanderhängen der Pfeile (Parallelogrammregel oder Spitze-an-Schaft-Regel).
+    \item \textbf{Vektoraddition:} Zwei Vektoren derselben Dimension n können addiert werden, indem ihre entsprechenden Komponenten addiert werden. Wenn $\vec{u} = \begin{pmatrix}
+                  u_1 \\ u_2 \\ \vdots \\ u_n
+              \end{pmatrix}$ und $v = \begin{pmatrix}
+                  v_1 \\ v_2 \\ \vdots \\ v_n
+              \end{pmatrix}$, dann ist ihre Summe:
+          \[
+              u + v = \begin{pmatrix}
+                  u_1 + v_1 \\ u_2 + v_2 \\ \vdots \\ u_n + v_n
+              \end{pmatrix}
+          \]
+          Geometrisch entspricht die Addition von Vektoren dem Aneinanderhängen der
+          Pfeile (Parallelogrammregel oder Spitze-an-Schaft-Regel).
 
-\item \textbf{Skalare Multiplikation:} Ein Vektor kann mit einer reellen Zahl (einem sogenannten \textbf{Skalar}) multipliziert werden. Dabei wird jede Komponente des Vektors mit diesem Skalar multipliziert. Wenn $c \in \mathbb{R}$ ein Skalar ist und $\vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix}$ ein Vektor, dann ist das Produkt:
+    \item \textbf{Skalare Multiplikation:} Ein Vektor kann mit einer reellen Zahl (einem sogenannten \textbf{Skalar}) multipliziert werden. Dabei wird jede Komponente des Vektors mit diesem Skalar multipliziert. Wenn $c \in \mathbb{R}$ ein Skalar ist und $\vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix}$ ein Vektor, dann ist das Produkt:
 
-\[
-c \cdot \vec{v} = \begin{pmatrix} c \cdot v_1 \\ c \cdot v_2 \\ \vdots \\ c \cdot v_n \end{pmatrix}
-\]
+          \[
+              c \cdot \vec{v} = \begin{pmatrix} c \cdot v_1 \\ c \cdot v_2 \\ \vdots \\ c \cdot v_n \end{pmatrix}
+          \]
 
-Geometrisch bewirkt die skalare Multiplikation eine Streckung oder Stauchung des Vektors. Wenn der Skalar negativ ist, kehrt sich zusätzlich die Richtung des Vektors um.
+          Geometrisch bewirkt die skalare Multiplikation eine Streckung oder Stauchung
+          des Vektors. Wenn der Skalar negativ ist, kehrt sich zusätzlich die Richtung
+          des Vektors um.
 
 \end{enumerate}
 
-Diese beiden Operationen sind fundamental und bilden die Grundlage für die Struktur eines \textbf{Vektorraums}, ein zentrales Konzept in der linearen Algebra. Ein Vektor ist also nicht nur ein Tupel von Zahlen, sondern ein Objekt, das sich auf definierte Weise mit anderen Vektoren (Addition) und Skalaren (skalare Multiplikation) kombinieren lässt.
+Diese beiden Operationen sind fundamental und bilden die Grundlage für die
+Struktur eines \textbf{Vektorraums}, ein zentrales Konzept in der linearen
+Algebra. Ein Vektor ist also nicht nur ein Tupel von Zahlen, sondern ein
+Objekt, das sich auf definierte Weise mit anderen Vektoren (Addition) und
+Skalaren (skalare Multiplikation) kombinieren lässt.
 
 \section{Parallelität}
 
-Zwei Vektoren sind Parallel zueinander, falls ein Vektor ein vielfaches eines anderen ist. Um zu prüfen, ob zwei Vektoren $\vec{a}, \vec{b}$ parallel zueinander sind, können einfach die einzelnen Einträde dividiert werden. Wenn alle Ergebnisse gleich sind, sind die Vektoren Parallel.
+Zwei Vektoren sind Parallel zueinander, falls ein Vektor ein vielfaches eines
+anderen ist. Um zu prüfen, ob zwei Vektoren $\vec{a}, \vec{b}$ parallel
+zueinander sind, können einfach die einzelnen Einträde dividiert werden. Wenn
+alle Ergebnisse gleich sind, sind die Vektoren Parallel.

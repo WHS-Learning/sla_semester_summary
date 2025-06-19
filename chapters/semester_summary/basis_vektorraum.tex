@@ -1,24 +1,40 @@
 \chapter{Basis von Vektorräumen}
 
-Eine Basis eines Vektorraums $V$ ist eine Menge von Vektoren $\mathcal{B} = \{v_1, v_2, \dots, v_n\}$, die zwei grundlegende Eigenschaften erfüllen:
+Eine Basis eines Vektorraums $V$ ist eine Menge von Vektoren $\mathcal{B} =
+    \{v_1, v_2, \dots, v_n\}$, die zwei grundlegende Eigenschaften erfüllen:
 \begin{itemize}
     \item Die Vektoren in $\mathcal{B}$ sind linear unabhängig.
-    \item Die Vektoren in $\mathcal{B}$ spannen den Vektorraum $V$ auf (d.h., jeder Vektor in $V$ lässt sich als Linearkombination der Vektoren in $\mathcal{B}$ darstellen).
+    \item Die Vektoren in $\mathcal{B}$ spannen den Vektorraum $V$ auf (d.h., jeder
+          Vektor in $V$ lässt sich als Linearkombination der Vektoren in $\mathcal{B}$
+          darstellen).
 \end{itemize}
 Jeder Vektor im Vektorraum $V$ kann eindeutig als Linearkombination der Basisvektoren dargestellt werden. Alle Basen eines gegebenen Vektorraums haben dieselbe Anzahl von Elementen. Diese Anzahl wird als die Dimension des Vektorraums bezeichnet, geschrieben als $\dim(V)$.
 
-Ein Vektorraum besitzt im Allgemeinen unendlich viele verschiedene Basen (sofern der zugrundeliegende Körper, wie z.B. $\mathbb{R}$, unendlich viele Elemente enthält).
-Für den häufig betrachteten Vektorraum $\mathbb{R}^n$ bilden die sogenannten Standardeinheitsvektoren $e_1, e_2, \dots, e_n$ eine spezielle Basis, die als Standardbasis oder kanonische Basis bekannt ist. Beispielsweise ist für $\mathbb{R}^3$ die Standardbasis gegeben durch $\left\{\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}\right\}$.
+Ein Vektorraum besitzt im Allgemeinen unendlich viele verschiedene Basen
+(sofern der zugrundeliegende Körper, wie z.B. $\mathbb{R}$, unendlich viele
+Elemente enthält). Für den häufig betrachteten Vektorraum $\mathbb{R}^n$ bilden
+die sogenannten Standardeinheitsvektoren $e_1, e_2, \dots, e_n$ eine spezielle
+Basis, die als Standardbasis oder kanonische Basis bekannt ist. Beispielsweise
+ist für $\mathbb{R}^3$ die Standardbasis gegeben durch $\left\{\begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}\right\}$.
 
-Die Dimension des Vektorraums $\mathbb{R}^n$ ist $n$. Folglich muss jede Basis des $\mathbb{R}^n$ aus genau $n$ Vektoren bestehen.
+Die Dimension des Vektorraums $\mathbb{R}^n$ ist $n$. Folglich muss jede Basis
+des $\mathbb{R}^n$ aus genau $n$ Vektoren bestehen.
 \begin{itemize}
-    \item Eine Menge von mehr als $n$ Vektoren im $\mathbb{R}^n$ ist immer linear abhängig und kann daher keine Basis bilden. Beispielsweise können vier Vektoren im $\mathbb{R}^3$ keine Basis des $\mathbb{R}^3$ bilden, da sie zwangsläufig linear abhängig sind.
-    \item Eine Menge von weniger als $n$ Vektoren im $\mathbb{R}^n$ kann den Raum $\mathbb{R}^n$ nicht vollständig aufspannen. Beispielsweise können zwei Vektoren im $\mathbb{R}^3$ höchstens eine Ebene aufspannen, aber nicht den gesamten dreidimensionalen Raum.
+    \item Eine Menge von mehr als $n$ Vektoren im $\mathbb{R}^n$ ist immer linear
+          abhängig und kann daher keine Basis bilden. Beispielsweise können vier Vektoren
+          im $\mathbb{R}^3$ keine Basis des $\mathbb{R}^3$ bilden, da sie zwangsläufig
+          linear abhängig sind.
+    \item Eine Menge von weniger als $n$ Vektoren im $\mathbb{R}^n$ kann den Raum
+          $\mathbb{R}^n$ nicht vollständig aufspannen. Beispielsweise können zwei
+          Vektoren im $\mathbb{R}^3$ höchstens eine Ebene aufspannen, aber nicht den
+          gesamten dreidimensionalen Raum.
 \end{itemize}
 
 \section{Bedingungen für eine Basis im $\mathbb{R}^n$}
 
-Eine Menge von Vektoren $\{v_1, v_2, \dots, v_k\}$ aus dem Vektorraum $\mathbb{R}^n$ bildet genau dann eine Basis für den $\mathbb{R}^n$, wenn die folgenden beiden Bedingungen erfüllt sind:
+Eine Menge von Vektoren $\{v_1, v_2, \dots, v_k\}$ aus dem Vektorraum
+$\mathbb{R}^n$ bildet genau dann eine Basis für den $\mathbb{R}^n$, wenn die
+folgenden beiden Bedingungen erfüllt sind:
 \begin{enumerate}
     \item Die Vektoren $v_1, v_2, \dots, v_k$ sind linear unabhängig.
     \item Die Anzahl der Vektoren $k$ ist gleich der Dimension des Raumes, also $k=n$.
@@ -28,78 +44,82 @@ Es ist wichtig zu beachten: Wenn bekannt ist, dass $k=n$ (d.h., die Anzahl der V
 \section{Beispiel: Überprüfung einer Basis im $\mathbb{R}^3$}
 
 Um zu prüfen, ob die Vektoren $\left\{\begin{pmatrix}
-    1 \\ 0 \\ 2
-\end{pmatrix}, \begin{pmatrix}
-    3 \\ 2 \\ 1
-\end{pmatrix}, \begin{pmatrix}
-    1 \\ 1 \\ 1
-\end{pmatrix}\right\}$ eine Basis des $\mathbb{R}^3$ bilden, müssen diese auf lineare Unabhängigkeit geprüft werden. Da es sich um drei Vektoren im $\mathbb{R}^3$ handelt, ist die Anzahl der Vektoren gleich der Dimension des Raumes ($n=3$). Somit genügt es, die lineare Unabhängigkeit nachzuweisen.
+        1 \\ 0 \\ 2
+    \end{pmatrix}, \begin{pmatrix}
+        3 \\ 2 \\ 1
+    \end{pmatrix}, \begin{pmatrix}
+        1 \\ 1 \\ 1
+    \end{pmatrix}\right\}$ eine Basis des $\mathbb{R}^3$ bilden, müssen diese auf lineare Unabhängigkeit geprüft werden. Da es sich um drei Vektoren im $\mathbb{R}^3$ handelt, ist die Anzahl der Vektoren gleich der Dimension des Raumes ($n=3$). Somit genügt es, die lineare Unabhängigkeit nachzuweisen.
 
 Dazu wird das homogene lineare Gleichungssystem $c_1 \begin{pmatrix} 1 \\ 0 \\ 2 \end{pmatrix} + c_2 \begin{pmatrix} 3 \\ 2 \\ 1 \end{pmatrix} + c_3 \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 0 \end{pmatrix}$ betrachtet. Dies führt auf die Koeffizientenmatrix:
 
 \begin{longtable}{p{10cm}}
     \hline
-    \multicolumn{1}{c}{\textbf{Linearkombination / Gauß-Algorithmus}} \\
+    \multicolumn{1}{c}{\textbf{Linearkombination / Gauß-Algorithmus}}                       \\
     \hline
     \endfirsthead
 
     \hline
     \multicolumn{1}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorheriger Seite}} \\
     \hline
-    \multicolumn{1}{c}{\textbf{Linearkombination / Gauß-Algorithmus}} \\
+    \multicolumn{1}{c}{\textbf{Linearkombination / Gauß-Algorithmus}}                       \\
     \hline
     \endhead
 
     \hline
-    \multicolumn{1}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
+    \multicolumn{1}{r}{\textit{Fortsetzung siehe nächste Seite}}                            \\
     \endfoot
 
     \hline
     \endlastfoot
 
     $\displaystyle\begin{matrix}
-    1 & 3 & 1 \\
-    0 & 2 & 1 \\
-    2 & 1 & 1
-    \end{matrix}$\\\hline
-    Operation: III - 2I \\\hline\pagebreak[0]
+                          1 & 3 & 1 \\
+                          0 & 2 & 1 \\
+                          2 & 1 & 1
+                      \end{matrix}$                                                             \\\hline
+    Operation: III - 2I                                                                     \\\hline\pagebreak[0]
     $\displaystyle\begin{matrix}
-    1 & 3 & 1 \\
-    0 & 2 & 1 \\
-    0 & -5 & -1
-    \end{matrix}$\\\hline
-    Operation: 2III + 5II \\\hline\pagebreak[0]
+                          1 & 3  & 1  \\
+                          0 & 2  & 1  \\
+                          0 & -5 & -1
+                      \end{matrix}$                                                             \\\hline
+    Operation: 2III + 5II                                                                   \\\hline\pagebreak[0]
     $\displaystyle\begin{matrix}
-    1 & 3 & 1 \\
-    0 & 2 & 1 \\
-    0 & 0 & 3
-    \end{matrix}$\\\hline
-    Operation: 2I - 3II  \\\hline\pagebreak[0]
+                          1 & 3 & 1 \\
+                          0 & 2 & 1 \\
+                          0 & 0 & 3
+                      \end{matrix}$                                                             \\\hline
+    Operation: 2I - 3II                                                                     \\\hline\pagebreak[0]
     $\displaystyle\begin{matrix}
-    1 & 0 & -1 \\
-    0 & 2 & 1 \\
-    0 & 0 & 3
-    \end{matrix}$\\\hline
-    Operation: I + $\frac{1}{3}$III \\\hline\pagebreak[0]
+                          1 & 0 & -1 \\
+                          0 & 2 & 1  \\
+                          0 & 0 & 3
+                      \end{matrix}$                                                             \\\hline
+    Operation: I + $\frac{1}{3}$III                                                         \\\hline\pagebreak[0]
     $\displaystyle\begin{matrix}
-    1 & 0 & 0 \\
-    0 & 2 & 1 \\
-    0 & 0 & 3
-    \end{matrix}$\\\hline
-    Operation: II - $\frac{1}{3}$III \\\hline\pagebreak[0]
+                          1 & 0 & 0 \\
+                          0 & 2 & 1 \\
+                          0 & 0 & 3
+                      \end{matrix}$                                                             \\\hline
+    Operation: II - $\frac{1}{3}$III                                                        \\\hline\pagebreak[0]
     $\displaystyle\begin{matrix}
-    1 & 0 & 0 \\
-    0 & 2 & 0 \\
-    0 & 0 & 3
-    \end{matrix}$\\\hline
-    Operation: II : 2 \\\hline\pagebreak[0]
-    Operation: III : 3 \\\hline\pagebreak[0]
+                          1 & 0 & 0 \\
+                          0 & 2 & 0 \\
+                          0 & 0 & 3
+                      \end{matrix}$                                                             \\\hline
+    Operation: II : 2                                                                       \\\hline\pagebreak[0]
+    Operation: III : 3                                                                      \\\hline\pagebreak[0]
     $\displaystyle\begin{matrix}
-    1 & 0 & 0 \\
-    0 & 1 & 0 \\
-    0 & 0 & 1
-    \end{matrix}$\\\hline
+                          1 & 0 & 0 \\
+                          0 & 1 & 0 \\
+                          0 & 0 & 1
+                      \end{matrix}$                                                             \\\hline
 \end{longtable}
 
-Da die reduzierte Zeilenstufenform der Koeffizientenmatrix die Einheitsmatrix ist, hat das homogene lineare Gleichungssystem nur die triviale Lösung $c_1 = 0, c_2 = 0, c_3 = 0$. Dies bedeutet, dass die Vektoren linear unabhängig sind.
-Weil es sich um drei linear unabhängige Vektoren im dreidimensionalen Raum $\mathbb{R}^3$ handelt (Anzahl der Vektoren = Dimension des Raumes), bilden sie eine Basis des $\mathbb{R}^3$.
+Da die reduzierte Zeilenstufenform der Koeffizientenmatrix die Einheitsmatrix
+ist, hat das homogene lineare Gleichungssystem nur die triviale Lösung $c_1 =
+    0, c_2 = 0, c_3 = 0$. Dies bedeutet, dass die Vektoren linear unabhängig sind.
+Weil es sich um drei linear unabhängige Vektoren im dreidimensionalen Raum
+$\mathbb{R}^3$ handelt (Anzahl der Vektoren = Dimension des Raumes), bilden sie
+eine Basis des $\mathbb{R}^3$.

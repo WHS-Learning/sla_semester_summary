@@ -8,60 +8,60 @@ Bestimmen Sie sämtliche Eigenwerte der folgenden Matrizen:
 
 \begin{align*}
     A := \begin{pmatrix}
-        1 & 2 & 3 \\
-        4 & 5 & 6 \\ 
-        0 & 0 & 0
-    \end{pmatrix}
+             1 & 2 & 3 \\
+             4 & 5 & 6 \\
+             0 & 0 & 0
+         \end{pmatrix}
 \end{align*}
 
 \begin{align*}
-    A - \lambda \cdot I \\
+    A - \lambda \cdot I                                                      \\
     = \begin{pmatrix}
-        1 & 2 & 3 \\ 
-        4 & 5 & 6 \\ 
-        0 & 0 & 0
-    \end{pmatrix} - \lambda \cdot \begin{pmatrix}
-        1 & 0 & 0 \\
-        0 & 1 & 0 \\
-        0 & 0 & 1
-    \end{pmatrix} \\
+          1 & 2 & 3 \\
+          4 & 5 & 6 \\
+          0 & 0 & 0
+      \end{pmatrix} - \lambda \cdot \begin{pmatrix}
+                                        1 & 0 & 0 \\
+                                        0 & 1 & 0 \\
+                                        0 & 0 & 1
+                                    \end{pmatrix}                           \\
     = \begin{pmatrix}
-        1 & 2 & 3 \\ 
-        4 & 5 & 6 \\ 
-        0 & 0 & 0
-    \end{pmatrix}\begin{pmatrix}
-        \lambda & 0 & 0 \\
-        0 & \lambda & 0 \\
-        0 & 0 & \lambda
-    \end{pmatrix} \\
+          1 & 2 & 3 \\
+          4 & 5 & 6 \\
+          0 & 0 & 0
+      \end{pmatrix}\begin{pmatrix}
+                       \lambda & 0       & 0       \\
+                       0       & \lambda & 0       \\
+                       0       & 0       & \lambda
+                   \end{pmatrix}                               \\
     = \begin{pmatrix}
-        1 - \lambda & 2 & 3 \\
-        4 & 5 - \lambda & 6 \\
-        0 & 0 & -\lambda
-    \end{pmatrix} =: A_\lambda \\
-    \det(A_\lambda) = (1 - \lambda) \cdot (5 - \lambda) \cdot (-\lambda) \\
-        + 2 \cdot 6 \cdot 0  + 3 \cdot 4 \cdot 0 - 0 \cdot (5 - \lambda) \cdot 3\\
-        - 0 \cdot 6 \cdot (1 - \lambda) - (-\lambda) \cdot 4 \cdot 2 \\
-    = (5 - \lambda - 5\lambda + \lambda^2) \cdot (-\lambda) + 0 \\
-        + 0 - 0 - 0 + 4\lambda \cdot 2 \\
-    = -5\lambda +\lambda^2 +5\lambda^2 -\lambda^3 + 8\lambda \\
-    = -\lambda^3 + 6\lambda^2 + 3\lambda \\
-    \text{$\lambda$ Ausklammern} \\
-    \lambda (-\lambda^2 + 6\lambda + 3) \\\\
-    \lambda (-\lambda^2 + 6\lambda + 3) = 0\\
-    \text{Ein Produkt ist null, wenn ein Faktor gleich null ist} \\
+          1 - \lambda & 2           & 3        \\
+          4           & 5 - \lambda & 6        \\
+          0           & 0           & -\lambda
+      \end{pmatrix} =: A_\lambda                                   \\
+    \det(A_\lambda) = (1 - \lambda) \cdot (5 - \lambda) \cdot (-\lambda)     \\
+    + 2 \cdot 6 \cdot 0  + 3 \cdot 4 \cdot 0 - 0 \cdot (5 - \lambda) \cdot 3 \\
+    - 0 \cdot 6 \cdot (1 - \lambda) - (-\lambda) \cdot 4 \cdot 2             \\
+    = (5 - \lambda - 5\lambda + \lambda^2) \cdot (-\lambda) + 0              \\
+    + 0 - 0 - 0 + 4\lambda \cdot 2                                           \\
+    = -5\lambda +\lambda^2 +5\lambda^2 -\lambda^3 + 8\lambda                 \\
+    = -\lambda^3 + 6\lambda^2 + 3\lambda                                     \\
+    \text{$\lambda$ Ausklammern}                                             \\
+    \lambda (-\lambda^2 + 6\lambda + 3)                                      \\\\
+    \lambda (-\lambda^2 + 6\lambda + 3) = 0                                  \\
+    \text{Ein Produkt ist null, wenn ein Faktor gleich null ist}             \\
     \begin{cases}
         \lambda = 0 & \text{Oder} \\
         -\lambda^2 + 6\lambda + 3 = 0
-    \end{cases} \\
-    \lambda_1 = 0 \\
-    -\lambda^2 + 6 \lambda + 3 = 0 \quad |\cdot (-1) \\
-    \Leftrightarrow \lambda^2 - 6 \lambda - 3 = 0 \quad | \text{PQ-Formel} \\
-    p = 6 \quad q = -3 \\
-    \lambda_{2,3} = -\frac{-6}{2} \pm \sqrt{\left(\frac{6}{2}\right)^2 + 3} \\
-    \lambda_{2,3}= 3 \pm \sqrt{\left(3\right)^2 + 3} \\
-    \lambda_{2,3}= 3 \pm \sqrt{9 + 3} \\
-    \lambda_{2,3}= 3 \pm \sqrt{12} \\\\
+    \end{cases}                                             \\
+    \lambda_1 = 0                                                            \\
+    -\lambda^2 + 6 \lambda + 3 = 0 \quad |\cdot (-1)                         \\
+    \Leftrightarrow \lambda^2 - 6 \lambda - 3 = 0 \quad | \text{PQ-Formel}   \\
+    p = 6 \quad q = -3                                                       \\
+    \lambda_{2,3} = -\frac{-6}{2} \pm \sqrt{\left(\frac{6}{2}\right)^2 + 3}  \\
+    \lambda_{2,3}= 3 \pm \sqrt{\left(3\right)^2 + 3}                         \\
+    \lambda_{2,3}= 3 \pm \sqrt{9 + 3}                                        \\
+    \lambda_{2,3}= 3 \pm \sqrt{12}                                           \\\\
     \lambda_1 = 0, \quad \lambda_2 = 3 + \sqrt{12}, \quad \lambda_3 = 3 - \sqrt{12}
 \end{align*}
 
@@ -69,64 +69,64 @@ Bestimmen Sie sämtliche Eigenwerte der folgenden Matrizen:
 
 \begin{align*}
     B := \begin{pmatrix}
-        1 & 1 & 1 \\
-        1 & 1 & 1 \\
-        1 & 1 & 1
-    \end{pmatrix}
+             1 & 1 & 1 \\
+             1 & 1 & 1 \\
+             1 & 1 & 1
+         \end{pmatrix}
 \end{align*}
 
 \begin{align*}
-    B - \lambda \cdot I \\
+    B - \lambda \cdot I                                                              \\
     \begin{pmatrix}
         1 & 1 & 1 \\
         1 & 1 & 1 \\
         1 & 1 & 1
     \end{pmatrix} - \lambda \cdot \begin{pmatrix}
-        1 & 0 & 0 \\
-        0 & 1 & 0 \\
-        0 & 0 & 1
-    \end{pmatrix} \\
-        \begin{pmatrix}
+                                      1 & 0 & 0 \\
+                                      0 & 1 & 0 \\
+                                      0 & 0 & 1
+                                  \end{pmatrix}                                     \\
+    \begin{pmatrix}
         1 & 1 & 1 \\
         1 & 1 & 1 \\
         1 & 1 & 1
     \end{pmatrix} - \begin{pmatrix}
-        \lambda & 0 & 0 \\
-        0 & \lambda & 0 \\
-        0 & 0 & \lambda
-    \end{pmatrix} \\
+                        \lambda & 0       & 0       \\
+                        0       & \lambda & 0       \\
+                        0       & 0       & \lambda
+                    \end{pmatrix}                                      \\
     \begin{pmatrix}
-        1 - \lambda & 1 & 1 \\
-        1 & 1 - \lambda & 1 \\
-        1 & 1 & 1 - \lambda
-    \end{pmatrix} =: B_\lambda \\
-    \det(B_\lambda) = (1 - \lambda) \cdot (1 - \lambda) \cdot (1 - \lambda) \\
-                    + 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 - 1 \cdot (1 - \lambda) \cdot 1 \\
-                    - 1 \cdot 1 \cdot (1 - \lambda) - (1 - \lambda) \cdot 1 \cdot 1 \\
-    = (1 -\lambda - \lambda + \lambda^2) \cdot (1 - \lambda) + 1 \\
-        + 1 - (1 - \lambda) - (1 - \lambda) - (1 - \lambda) \\
-    = (1 - 2\lambda + \lambda^2) \cdot (1 - \lambda) + 2 - 3(1 - \lambda) \\
+        1 - \lambda & 1           & 1           \\
+        1           & 1 - \lambda & 1           \\
+        1           & 1           & 1 - \lambda
+    \end{pmatrix} =: B_\lambda                                          \\
+    \det(B_\lambda) = (1 - \lambda) \cdot (1 - \lambda) \cdot (1 - \lambda)          \\
+    + 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 - 1 \cdot (1 - \lambda) \cdot 1          \\
+    - 1 \cdot 1 \cdot (1 - \lambda) - (1 - \lambda) \cdot 1 \cdot 1                  \\
+    = (1 -\lambda - \lambda + \lambda^2) \cdot (1 - \lambda) + 1                     \\
+    + 1 - (1 - \lambda) - (1 - \lambda) - (1 - \lambda)                              \\
+    = (1 - 2\lambda + \lambda^2) \cdot (1 - \lambda) + 2 - 3(1 - \lambda)            \\
     = 1 - 2\lambda + \lambda^2 - \lambda + 2\lambda^2 - \lambda^3 + 2 - 3 + 3\lambda \\
-    = -\lambda^3 + 3\lambda^2 \\\\
-    -\lambda^3 + 3\lambda^2 = 0 \\
-    \text{$\lambda$ Ausklammern} \\
-    \lambda (-\lambda^2 + 3\lambda) = 0 \\
-    \text{Ein Produkt ist null, wenn mindestens ein Faktor gleich null ist.} \\
+    = -\lambda^3 + 3\lambda^2                                                        \\\\
+    -\lambda^3 + 3\lambda^2 = 0                                                      \\
+    \text{$\lambda$ Ausklammern}                                                     \\
+    \lambda (-\lambda^2 + 3\lambda) = 0                                              \\
+    \text{Ein Produkt ist null, wenn mindestens ein Faktor gleich null ist.}         \\
     \begin{cases}
         \lambda = 0 & \text{Oder} \\
         -\lambda^2 + 3 \lambda = 0
-    \end{cases} \\
-    \lambda_1 = 0 \\
-    \text{$\lambda$ Ausklammern} \\
-    \lambda(\lambda + 3) = 0 \\
-    \text{Ein Produkt ist null, wenn mindestens ein Faktor gleich null ist.} \\
+    \end{cases}                                                        \\
+    \lambda_1 = 0                                                                    \\
+    \text{$\lambda$ Ausklammern}                                                     \\
+    \lambda(\lambda + 3) = 0                                                         \\
+    \text{Ein Produkt ist null, wenn mindestens ein Faktor gleich null ist.}         \\
     \begin{cases}
         \lambda = 0 & \text{Oder} \\
         \lambda + 3 = 0
-    \end{cases} \\
-    \lambda_2 = 0 \\
-    \lambda_3 + 3 = 0 \quad | -3 \\
-    \lambda_3 = -3 \\\\
+    \end{cases}                                                        \\
+    \lambda_2 = 0                                                                    \\
+    \lambda_3 + 3 = 0 \quad | -3                                                     \\
+    \lambda_3 = -3                                                                   \\\\
     \lambda_1 = 0, \quad \lambda_2 = 0, \quad \lambda_3 = -3
 \end{align*}
 
@@ -134,41 +134,41 @@ Bestimmen Sie sämtliche Eigenwerte der folgenden Matrizen:
 
 \begin{align*}
     C := \begin{pmatrix}
-        0 & 0 & 0 \\
-        0 & 0 & 0 \\
-        0 & 0 & 0
-    \end{pmatrix}
+             0 & 0 & 0 \\
+             0 & 0 & 0 \\
+             0 & 0 & 0
+         \end{pmatrix}
 \end{align*}
 
 \begin{align*}
-    C - \lambda \cdot I \\
+    C - \lambda \cdot I                                      \\
     \begin{pmatrix}
         0 & 0 & 0 \\
         0 & 0 & 0 \\
         0 & 0 & 0
     \end{pmatrix} - \lambda \cdot \begin{pmatrix}
-        1 & 0 & 0 \\
-        0 & 1 & 0 \\
-        0 & 0 & 1
-    \end{pmatrix} \\
+                                      1 & 0 & 0 \\
+                                      0 & 1 & 0 \\
+                                      0 & 0 & 1
+                                  \end{pmatrix}             \\
     \begin{pmatrix}
         0 & 0 & 0 \\
         0 & 0 & 0 \\
         0 & 0 & 0
     \end{pmatrix} - \begin{pmatrix}
-        \lambda & 0 & 0 \\
-        0 & \lambda & 0 \\
-        0 & 0 & \lambda
-    \end{pmatrix} \\
+                        \lambda & 0       & 0       \\
+                        0       & \lambda & 0       \\
+                        0       & 0       & \lambda
+                    \end{pmatrix}              \\
     \begin{pmatrix}
-        -\lambda & 0 & 0 \\
-        0 & -\lambda & 0 \\
-        0 & 0 & -\lambda
-    \end{pmatrix} =: C_\lambda \\
+        -\lambda & 0        & 0        \\
+        0        & -\lambda & 0        \\
+        0        & 0        & -\lambda
+    \end{pmatrix} =: C_\lambda                           \\
     \det(C_\lambda) = -\lambda \cdot -\lambda \cdot -\lambda \\
-    = -\lambda^3 \\\\
-    -\lambda^3 = 0 \quad |\cdot (-1) \\
-    \Leftrightarrow \lambda^3 = 0 \quad | \sqrt[3]{0} \\
+    = -\lambda^3                                             \\\\
+    -\lambda^3 = 0 \quad |\cdot (-1)                         \\
+    \Leftrightarrow \lambda^3 = 0 \quad | \sqrt[3]{0}        \\
     \Leftrightarrow \lambda_{1, 2, 3} = 0
 \end{align*}
 
@@ -176,38 +176,38 @@ Bestimmen Sie sämtliche Eigenwerte der folgenden Matrizen:
 
 \begin{align*}
     D := \begin{pmatrix}
-        0 & 1 \\
-        2 & 3
-    \end{pmatrix}
+             0 & 1 \\
+             2 & 3
+         \end{pmatrix}
 \end{align*}
 
 \begin{align*}
-    D - \lambda \cdot I \\
-        \begin{pmatrix}
+    D - \lambda \cdot I                                        \\
+    \begin{pmatrix}
         0 & 1 \\
         2 & 3
     \end{pmatrix} - \lambda \cdot \begin{pmatrix}
-        1 & 0 \\
-        0 & 1
-    \end{pmatrix} \\
+                                      1 & 0 \\
+                                      0 & 1
+                                  \end{pmatrix}               \\
     \begin{pmatrix}
         0 & 1 \\
         2 & 3
     \end{pmatrix} - \begin{pmatrix}
-        \lambda & 0 \\
-        0 & \lambda
-    \end{pmatrix} \\
+                        \lambda & 0       \\
+                        0       & \lambda
+                    \end{pmatrix}                          \\
     \begin{pmatrix}
-        -\lambda & 1 \\
-        2 & 3 - \lambda
-    \end{pmatrix} =: D_\lambda\\\\
+        -\lambda & 1           \\
+        2        & 3 - \lambda
+    \end{pmatrix} =: D_\lambda                                 \\\\
     \det(D_\lambda) = -\lambda \cdot (3 - \lambda) - 2 \cdot 1 \\
-    = \lambda^2 - 3 \lambda - 2 \\\\
-    \lambda^2 - 3 \lambda - 2 = 0 \quad | PQ\\
-    p = -3 \quad q = -2 \\
-    -\frac{-3}{2} \pm \sqrt{\left(\frac{-3}{2}\right)^2 + 2} \\
-    \frac{3}{2} \pm \sqrt{\left(\frac{9}{4}\right) + 2} \\
-    \frac{3}{2} \pm \sqrt{\frac{17}{4}} \\
+    = \lambda^2 - 3 \lambda - 2                                \\\\
+    \lambda^2 - 3 \lambda - 2 = 0 \quad | PQ                   \\
+    p = -3 \quad q = -2                                        \\
+    -\frac{-3}{2} \pm \sqrt{\left(\frac{-3}{2}\right)^2 + 2}   \\
+    \frac{3}{2} \pm \sqrt{\left(\frac{9}{4}\right) + 2}        \\
+    \frac{3}{2} \pm \sqrt{\frac{17}{4}}                        \\
     \lambda_1 = \frac{3}{2} + \sqrt{\frac{17}{4}}, \quad \lambda_2 = \frac{3}{2} - \sqrt{\frac{17}{4}}
 \end{align*}
 
@@ -216,23 +216,28 @@ Bestimmen Sie sämtliche Eigenwerte der folgenden Matrizen:
 \subsection{a}
 
 Ist die Matrix $A := \begin{pmatrix}
-    1 & 2 & 3 \\
-    4 & 5 & 6 \\
-    7 & 8 & 9
-\end{pmatrix}$ positiv definit?
+        1 & 2 & 3 \\
+        4 & 5 & 6 \\
+        7 & 8 & 9
+    \end{pmatrix}$ positiv definit?
 
 \begin{align*}
-    \det(\Delta_1) = 1 \\
+    \det(\Delta_1) = 1                          \\
     \det(\Delta_2) = 1 \cdot 5 - 2 \cdot 4 = -3 \\
 \end{align*}
 
-Die Determinante des dritten Hauptminoren ist hier uninteressant, da die Vorzeichenfolge für positive definitheit durch den zweiten Hauptminoren bereits verletzt wurde. Die Matrix ist \textit{nicht} positiv definit, sondern Indefinit.
+Die Determinante des dritten Hauptminoren ist hier uninteressant, da die
+Vorzeichenfolge für positive definitheit durch den zweiten Hauptminoren bereits
+verletzt wurde. Die Matrix ist \textit{nicht} positiv definit, sondern
+Indefinit.
 
 \subsection{b}
-Wie kann man das Hauptminorenkriterium nutzen, um zu zeigen, dass eine Matrix negativ definit ist? Nutzen Sie Ihr Ergebnis, um zu zeigen, dass die Matrix $B := \begin{pmatrix}
-    -1 & 1 \\
-    -2 & 1
-\end{pmatrix}$ (negativ definit ist??)
+Wie kann man das Hauptminorenkriterium nutzen, um zu zeigen, dass eine Matrix
+negativ definit ist? Nutzen Sie Ihr Ergebnis, um zu zeigen, dass die Matrix $B
+    := \begin{pmatrix}
+        -1 & 1 \\
+        -2 & 1
+    \end{pmatrix}$ (negativ definit ist??)
 
 \begin{align*}
     \det(\Delta_1) = -1 \\
@@ -245,50 +250,55 @@ Die Matrix ist negativ definit.
 
 \subsection{a}
 
-Für welche Winkel $\varphi \in [0, 2\pi)$ hat eine Drehmatrix $A_\varphi \in \mathbb{R}^{2 \times 2}$ reele Eigenwerte? Lösen Sie diese Aufgabe einerseits durch geometrische Argumentation, andererseits rechnerisch.
+Für welche Winkel $\varphi \in [0, 2\pi)$ hat eine Drehmatrix $A_\varphi \in
+    \mathbb{R}^{2 \times 2}$ reele Eigenwerte? Lösen Sie diese Aufgabe einerseits
+durch geometrische Argumentation, andererseits rechnerisch.
 
 \subsubsection*{Geometrische Argumentation}
 
-Drehmatritzen mit gerader Dimension haben keine reellen Eigenwerte. Aus diesem Grund hat nur die Drehmatrix, welche um den Winkel 0 dreht (also gar nicht dreht) reele Eigenwerte.
+Drehmatritzen mit gerader Dimension haben keine reellen Eigenwerte. Aus diesem
+Grund hat nur die Drehmatrix, welche um den Winkel 0 dreht (also gar nicht
+dreht) reele Eigenwerte.
 
 \subsubsection*{Rechnerisch}
 
 \begin{align*}
     A_0 = \begin{pmatrix}
-        1 & 0 \\
-        0 & 1
-    \end{pmatrix} \rightarrow \lambda_{1,2} = 1 \\
+              1 & 0 \\
+              0 & 1
+          \end{pmatrix} \rightarrow \lambda_{1,2} = 1                                                                  \\
     \det\left(\begin{pmatrix}
-        \cos(\varphi) & -\sin(\varphi) \\
-        \sin(\varphi) & \cos(\varphi)
-    \end{pmatrix} - \begin{pmatrix}
-        \lambda & 0 \\
-        0 & \lambda
-    \end{pmatrix}\right) = 0 \\
-    (\cos(\varphi) - \lambda) \cdot (\cos(\varphi) - \lambda) - \sin(\varphi) \cdot -\sin(\varphi) = 0 \\
-    {\cos(\varphi)}^2 - \cos(\varphi) \cdot \lambda - \cos(\varphi) \cdot \lambda  + \lambda^2 + {\sin(\varphi)}^2 = 0\\
-    {\cos(\varphi)}^2 + {\sin(\varphi)}^2 - 2 \cdot \cos(\varphi) \cdot \lambda + \lambda^2 = 0 \\
-    1 - 2 \cdot \cos(\varphi) \cdot \lambda + \lambda^2 = 0 \quad | PQ\\
-    p = - 2 \cdot \cos(\varphi), \quad q = 1 \\
-    -\frac{- 2 \cdot \cos(\varphi)}{2} \pm \sqrt{\left(\frac{- 2 \cdot \cos(\varphi)}{2}\right)^2 - 1} \\
-    \cos(\varphi)\pm \sqrt{(-\cos(\varphi))^2 - 1} \\
-    \cos(\varphi)\pm \sqrt{\cos(\varphi)^2 - 1} \\
-    \cos(\varphi)\pm \sqrt{-\sin(\varphi)^2} \\
-    \text{Aus negativen Zahlen kann die Wurzel nicht gezogen werden.} \\
+                      \cos(\varphi) & -\sin(\varphi) \\
+                      \sin(\varphi) & \cos(\varphi)
+                  \end{pmatrix} - \begin{pmatrix}
+                                      \lambda & 0       \\
+                                      0       & \lambda
+                                  \end{pmatrix}\right) = 0                                                                 \\
+    (\cos(\varphi) - \lambda) \cdot (\cos(\varphi) - \lambda) - \sin(\varphi) \cdot -\sin(\varphi) = 0                 \\
+    {\cos(\varphi)}^2 - \cos(\varphi) \cdot \lambda - \cos(\varphi) \cdot \lambda  + \lambda^2 + {\sin(\varphi)}^2 = 0 \\
+    {\cos(\varphi)}^2 + {\sin(\varphi)}^2 - 2 \cdot \cos(\varphi) \cdot \lambda + \lambda^2 = 0                        \\
+    1 - 2 \cdot \cos(\varphi) \cdot \lambda + \lambda^2 = 0 \quad | PQ                                                 \\
+    p = - 2 \cdot \cos(\varphi), \quad q = 1                                                                           \\
+    -\frac{- 2 \cdot \cos(\varphi)}{2} \pm \sqrt{\left(\frac{- 2 \cdot \cos(\varphi)}{2}\right)^2 - 1}                 \\
+    \cos(\varphi)\pm \sqrt{(-\cos(\varphi))^2 - 1}                                                                     \\
+    \cos(\varphi)\pm \sqrt{\cos(\varphi)^2 - 1}                                                                        \\
+    \cos(\varphi)\pm \sqrt{-\sin(\varphi)^2}                                                                           \\
+    \text{Aus negativen Zahlen kann die Wurzel nicht gezogen werden.}                                                  \\
     \text{Für alle } \varphi \neq 0 \text{ Gibt es keine reellen lösungen.}
 \end{align*}
 
 \subsection{b}
 
-Bestimmen Sie mindestens eine Matrix, die in $O(n) \backslash SO(n)$ enthalten ist.
+Bestimmen Sie mindestens eine Matrix, die in $O(n) \backslash SO(n)$ enthalten
+ist.
 
 \begin{align*}
     \begin{pmatrix}
         0 & 1 \\
         1 & 0
-    \end{pmatrix} \\
+    \end{pmatrix}                          \\
     \det\left(    \begin{pmatrix}
-        0 & 1 \\
-        1 & 0
-    \end{pmatrix}\right) = -1 \\
+                      0 & 1 \\
+                      1 & 0
+                  \end{pmatrix}\right) = -1 \\
 \end{align*}

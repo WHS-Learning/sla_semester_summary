@@ -1,57 +1,110 @@
 \chapter{Bonustest 9: z-Test}
 
 \section{Frage 1}
-Ein Unternehmen stellt elektronische Massenware her, von welcher maximal 20\% mit Materialfehlern behaftet sein sollen. Die Prüfabteilung untersucht 100 Bauteile und stellt bei 15 Bauteilen einen Defekt fest. 
+Ein Unternehmen stellt elektronische Massenware her, von welcher maximal 20\%
+mit Materialfehlern behaftet sein sollen. Die Prüfabteilung untersucht 100
+Bauteile und stellt bei 15 Bauteilen einen Defekt fest.
 
-Kann die angenommene Fehlerhäufigkeit bei einer Irrtumswahrscheinlichkeit von höchstens 10\% aufrecht erhalten werden?
+Kann die angenommene Fehlerhäufigkeit bei einer Irrtumswahrscheinlichkeit von
+höchstens 10\% aufrecht erhalten werden?
 
 \begin{align*}
     X = \begin{cases}
-        0 & \text{Wenn keine Materialfehler} \\
-        1 & \text{sonst}
-    \end{cases} \\
-    S_n = \sum_{i = 1}^{100} X_i ~ B(100, p) \\
-    H_0: p \leq 0.2 \\
-    \rightarrow \text{Extremster Wert: } p = 0.2 \\
-    E(S_n) = 100 \cdot 0.2 = 20 \\
+            0 & \text{Wenn keine Materialfehler} \\
+            1 & \text{sonst}
+        \end{cases}                      \\
+    S_n = \sum_{i = 1}^{100} X_i \sim B(100, p)                   \\
+    H_0: p \leq 0.2                                               \\
+    \rightarrow \text{Extremster Wert: } p = 0.2                  \\
+    E(S_n) = 100 \cdot 0.2 = 20                                   \\
     \sigma(S_n) = \sqrt{100  \cdot 0.2 \cdot 0.8} = \sqrt{16} = 4 \\
-    \frac{S_n - 20}{4} \overset{ldm}{\approx} N(0, 1) \\
-    \text{Nullhypothese wird abgelehnt, falls} \\
-    \frac{S_n - 20}{4} \leq 1.29 \\
-    \Leftrightarrow S_n \leq 1.29 \cdot 4 + 20 \\
-    \Leftrightarrow S_n = 25.16 \\
-    \text{d.h. } S_n \leq 25 \\
-    \text{beobachtetes Ergebnis:} \\
-    S_n = 15 \\
+    \frac{S_n - 20}{4} \overset{ldm}{\approx} N(0, 1)             \\
+    \text{Nullhypothese wird abgelehnt, falls}                    \\
+    \frac{S_n - 20}{4} \leq 1.29                                  \\
+    \Leftrightarrow S_n \leq 1.29 \cdot 4 + 20                    \\
+    \Leftrightarrow S_n = 25.16                                   \\
+    \text{d.h. } S_n \leq 25                                      \\
+    \text{beobachtetes Ergebnis:}                                 \\
+    S_n = 15                                                      \\
     \text{Die Nullhypothese wird nicht abgelehnt.}
 \end{align*}
 
 \section{Frage 2}
-Ein sehr böser Ganove stellt für ein privates Casino Würfel her, bei denen angeblich in höchstens 10\% der Fälle eine Eins fällt. Um das zu überprüfen, wirft der ebenfalls böse Casinobetreiber den Würfel 80 Mal. Er zählt 17 Mal die Eins.
+Ein sehr böser Ganove stellt für ein privates Casino Würfel her, bei denen
+angeblich in höchstens 10\% der Fälle eine Eins fällt. Um das zu überprüfen,
+wirft der ebenfalls böse Casinobetreiber den Würfel 80 Mal. Er zählt 17 Mal die
+Eins.
 
-Kann mit einer Sicherheit von mindestens 97\% gesagt werden, dass die Angaben des Ganoven stimmen?
+Kann mit einer Sicherheit von mindestens 97\% gesagt werden, dass die Angaben
+des Ganoven stimmen?
 
 \begin{align*}
-    X = \text{Gewürfelte einsen} \\
-    S_n = \sum_{i = 1}^{80} X_i ~ B\left(80, \frac{1}{6}\right) \\
-    H_0: p \geq \frac{1}{6} \\
-    \leftarrow \text{Extremster Wert: } p = \frac{1}{6} \\
-    E(S_n) = 80 \cdot \frac{1}{6} = \frac{40}{3} \\
-    \sigma (S_n) = \sqrt{\frac{40}{3} \cdot \frac{5}{6}} = \frac{10}{3} \\
-    \frac{S_n - \frac{40}{3}}{\frac{10}{3}} \overset{ldm}{\approx} N(0, 1) \\
-    \text{Nullhypothese wird abgelehnt falls} \\
-    \frac{S_n - \frac{40}{3}}{\frac{10}{3}} \leq 1.89 \\
-    \Leftrightarrow S_n \geq 1.89 \cdot \frac{10}{3} + \frac{40}{3} \\
-    \Leftrightarrow S_n \geq \frac{589}{3} \\
-    \text{d.h. } S_n \geq 20 \\
-    \text{beobachtetes Ergebnis: } \\
-    S_n = 17 \\
-    \text{Die Nullhypothese wird nicht abgelehnt.}
+    X = \text{Gewürfelte einsen}                              \\
+    S_n = \sum_{i = 1}^{80} X_i \sim B\left(80, p\right)      \\
+    H_0: p \geq 0.1                                           \\
+    \rightarrow \text{Extremster Wert: } p = 0.1              \\
+    E(S_n) = 80 \cdot 0.1 = 8                                 \\
+    \sigma (S_n) = \sqrt{8 \cdot 0.9} = \sqrt{7.2}            \\
+    \frac{S_n - 8}{\sqrt{7.2}} \overset{ldm}{\approx} N(0, 1) \\
+    \text{Nullhypothese wird abgelehnt falls}                 \\
+    \frac{S_n - 8}{\sqrt{7.2}} \geq 1.89                      \\
+    \Leftrightarrow S_n \geq 1.89 \cdot \sqrt{7.2} + 8        \\
+    \Leftrightarrow S_n \geq 13.07                            \\
+    \text{d.h. } S_n \geq 14                                  \\
+    \text{beobachtetes Ergebnis: }                            \\
+    S_n = 17                                                  \\
+    \text{Die Nullhypothese wird abgelehnt.}                  \\
+    \text{Der Z-Wert ist 3.35}
 \end{align*}
 
-\section{Frage 3} 
-In den letzten Jahrzehnten hat es im Sommer an durchschnittlich 20\% der Tage geregnet. Nun wird eine Studie angelegt, die prüfen soll, ob es einen Klimawandel gab. 150 Tage werden getestet und es wird festgestellt, dass es an 53 Tagen regnete. Kann mit einer Irrtumwahrscheinlichkeit von höchstens 6\% davon ausgegangen werden, dass ein Klimawandel stattfand?
+\section{Frage 3}
+In den letzten Jahrzehnten hat es im Sommer an durchschnittlich 20\% der Tage
+geregnet. Nun wird eine Studie angelegt, die prüfen soll, ob es einen
+Klimawandel gab. 150 Tage werden getestet und es wird festgestellt, dass es an
+53 Tagen regnete. Kann mit einer Irrtumwahrscheinlichkeit von höchstens 6\%
+davon ausgegangen werden, dass ein Klimawandel stattfand?
 
-%\begin{align*}
+\begin{align*}
+    X = \text{Geregnete Tage}                                                        \\
+    S_n = \sum_{i = 1}^{150}X_i \sim B(150, p)                                       \\
+    H_0: p = 0.2                                                                     \\
+    \text{Alternativhypothese: } H_1: p \neq 0.2                                     \\
+    \text{Signifikanzniveau: } 0.06                                                  \\
+    \mu = 150 \cdot 0.2 = 30                                                         \\
+    E(S_n) = 150 \cdot 0.2 = 30                                                      \\
+    \sigma(S_n) = \sqrt{30 \cdot 0.8} = sqrt(24)                                     \\
+    \frac{S_n - 30}{\sqrt{24}} \overset{ldm}{\approx} N(0, 1)                        \\
+    \text{Nullhypothese wird abgelehnt falls}                                        \\
+    \frac{S_n - 30}{\sqrt{24}} \leq 1.89                                             \\
+    \Rightarrow \frac{S_n - 30}{\sqrt{24}} \leq -1.89                                \\
+    \text{Annahmebereich: } -1.89 \leq z \leq 1.89                                   \\
+    \Leftrightarrow -1.89 \cdot \sqrt{24} + 30 \leq x \leq 1.89 \cdot \sqrt{24} + 30 \\
+    \Leftrightarrow 20.74 \leq x \leq 39.26                                          \\
+    \Leftrightarrow 21 \leq x \leq 39
+\end{align*}
 
-%\end{align*}
+\section{Frage 4}
+Jörn behauptet gegenüber seiner neuen Freundin Bianca, dass mindestens 10\%
+seiner Socken ein Loch haben. Als Bianca nun Jörns Waschmaschine ausräumt,
+stellt sie fest, dass von den 30 Paar Socken, 4 einzelne Socken ein Loch haben.
+Kann mit einer Irrtumswahrscheinlichkeit von höchstens 5\% davon ausgegangen
+werden, dass Jörn weiß wovon er spricht ?
+
+\begin{align*}
+    X = \text{Socken mit Loch}                                \\
+    S_n = \sum_{i = 1}^{60} X_i \sim B\left(60, p\right)      \\
+    H_0: p \geq 0.1                                           \\
+    H_1: p < 0.1                                              \\
+    \rightarrow \text{Extremster Wert: } p = 0.1              \\
+    E(S_n) = 60 \cdot 0.1 = 6                                 \\
+    \sigma(S_n) = \sqrt{6 \cdot 0.9} = \sqrt{5.4}             \\
+    \frac{S_n - 6}{\sqrt{5.4}} \overset{ldm}{\approx} N(0, 1) \\
+    \text{Nullhypothese wird abgelehnt falls}                 \\
+    \frac{S_n - 6}{\sqrt{5.4}} \leq -1.65                     \\
+    \Leftrightarrow S_n \leq -1.65 \cdot \sqrt{5.4} + 6       \\
+    \Leftrightarrow S_n \leq 2.17                             \\
+    \text{d.h. } S_n \leq 2                                   \\
+    \text{beobachtetes Ergebnis:}                             \\
+    S_n = 4                                                   \\
+    \text{Die Nullhypothese wird nicht abgelehnt}
+\end{align*}

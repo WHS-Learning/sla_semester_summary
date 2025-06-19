@@ -1,185 +1,185 @@
 \chapter{Übungsblatt 6}
 
 \section{Aufgabe 1}
-Bestimmen Sie die Lösungsmengen der folgenden linearen Gleichungssysteme mit Hilfe des Gauß-Jordan-Algorithmus.
+Bestimmen Sie die Lösungsmengen der folgenden linearen Gleichungssysteme mit
+Hilfe des Gauß-Jordan-Algorithmus.
 
 \subsection{a}
 \begin{align*}
-    \begin{cases}
-        3x_1 + 2x_2 = 1 \\
-        5x_1 + 4x_2 = 5
-    \end{cases}
+  \begin{cases}
+    3x_1 + 2x_2 = 1 \\
+    5x_1 + 4x_2 = 5
+  \end{cases}
 \end{align*}
 
 \begin{longtable}{p{4cm}|p{3cm}}
 
-    \hline
-    \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
-    \hline
-    \endfirsthead
+  \hline
+  \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
+  \hline
+  \endfirsthead
 
-    \hline
-    \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
-    \hline
-    \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
-    \hline
-    \endhead
+  \hline
+  \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}}    \\
+  \hline
+  \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
+  \hline
+  \endhead
 
-    \hline
-    \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
-    \endfoot
+  \hline
+  \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}}                              \\
+  \endfoot
 
-    \hline
-    \endlastfoot
+  \hline
+  \endlastfoot
 
-    $\displaystyle\begin{matrix}
-      3 & 2 \\ 5 & 4
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      1 \\ 5
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    3 & 2 \\ 5 & 4
+                  \end{matrix}$                    &
+  $\displaystyle\begin{matrix}
+                    1 \\ 5
+                  \end{matrix}$                                                               \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 3II - 5I} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 3II - 5I}                \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      3 & 2 \\ 0 & 2
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      1 \\ 10
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    3 & 2 \\ 0 & 2
+                  \end{matrix}$                    &
+  $\displaystyle\begin{matrix}
+                    1 \\ 10
+                  \end{matrix}$                                                               \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I - II} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I - II}                  \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      3 & 0 \\ 0 & 2
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      -9 \\ 10
-    \end{matrix}$\\\hline
-    
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I : 3} \\\hline\pagebreak[0]
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II : 2} \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    3 & 0 \\ 0 & 2
+                  \end{matrix}$                    &
+  $\displaystyle\begin{matrix}
+                    -9 \\ 10
+                  \end{matrix}$                                                               \\\hline
 
-    $\displaystyle\begin{matrix}
-      1 & 0 \\ 0 & 1
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      -3 \\ 5
-    \end{matrix}$\\\hline
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I : 3}                   \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II : 2}                  \\\hline\pagebreak[0]
+
+  $\displaystyle\begin{matrix}
+                    1 & 0 \\ 0 & 1
+                  \end{matrix}$                    &
+  $\displaystyle\begin{matrix}
+                    -3 \\ 5
+                  \end{matrix}$                                                               \\\hline
 
 \end{longtable}
 
-
 $x_1 = -3 \quad x_2 = 5$
 
-\subsection{b)}
-\begin{align*}    
+\subsection{b}
+\begin{align*}
   \begin{cases}
     \begin{aligned}
-      x_1 &+ 2x_2 &- x_3 &= 10 \\
-      15x_1 &+ x_2 &- 4x_3 &= 10 \\
-      -x_1 &       &- 3x_3 &= 10
+      x_1   & + 2x_2 & - x_3  & = 10 \\
+      15x_1 & + x_2  & - 4x_3 & = 10 \\
+      -x_1  &        & - 3x_3 & = 10
     \end{aligned}
   \end{cases}
 \end{align*}
 
 \begin{longtable}{p{4cm}|p{3cm}}
 
-    \hline
-    \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
-    \hline
-    \endfirsthead
+  \hline
+  \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
+  \hline
+  \endfirsthead
 
-    \hline
-    \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
-    \hline
-    \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
-    \hline
-    \endhead
+  \hline
+  \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}}    \\
+  \hline
+  \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
+  \hline
+  \endhead
 
-    \hline
-    \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
-    \endfoot
+  \hline
+  \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}}                              \\
+  \endfoot
 
-    \hline
-    \endlastfoot
+  \hline
+  \endlastfoot
 
-    $\displaystyle\begin{matrix}
-      1 & 2 & -1 \\ 15 & 1 & -4 \\ -1 & 0 & -3
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      10 \\ 10 \\ 10
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    1 & 2 & -1 \\ 15 & 1 & -4 \\ -1 & 0 & -3
+                  \end{matrix}$        &
+  $\displaystyle\begin{matrix}
+                    10 \\ 10 \\ 10
+                  \end{matrix}$                                                               \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II + 15III} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II + 15III}              \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      1 & 2 & -1 \\ 0 & 1 & -49 \\ -1 & 0 & -3
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      10 \\ 160 \\ 10
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    1 & 2 & -1 \\ 0 & 1 & -49 \\ -1 & 0 & -3
+                  \end{matrix}$        &
+  $\displaystyle\begin{matrix}
+                    10 \\ 160 \\ 10
+                  \end{matrix}$                                                              \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III + I} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III + I}                 \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      1 & 2 & -1 \\ 0 & 1 & -49 \\ 0 & 2 & -4
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      10 \\ 160 \\ 20
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    1 & 2 & -1 \\ 0 & 1 & -49 \\ 0 & 2 & -4
+                  \end{matrix}$         &
+  $\displaystyle\begin{matrix}
+                    10 \\ 160 \\ 20
+                  \end{matrix}$                                                              \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III - 2II} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III - 2II}               \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      1 & 2 & -1 \\ 0 & 1 & -49 \\ 0 & 0 & 94
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      10 \\ 160 \\ -300
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    1 & 2 & -1 \\ 0 & 1 & -49 \\ 0 & 0 & 94
+                  \end{matrix}$         &
+  $\displaystyle\begin{matrix}
+                    10 \\ 160 \\ -300
+                  \end{matrix}$                                                            \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III : 94} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III : 94}                \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      1 & 2 & -1 \\ 0 & 1 & -49 \\ 0 & 0 & 1
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      10 \\ 160 \\ -\dfrac{150}{47}
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    1 & 2 & -1 \\ 0 & 1 & -49 \\ 0 & 0 & 1
+                  \end{matrix}$          &
+  $\displaystyle\begin{matrix}
+                    10 \\ 160 \\ -\dfrac{150}{47}
+                  \end{matrix}$                                                \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I + III} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I + III}                 \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      1 & 2 & 0 \\ 0 & 1 & -49 \\ 0 & 0 & 1
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      \dfrac{320}{47} \\ 160 \\ -\dfrac{150}{47}
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    1 & 2 & 0 \\ 0 & 1 & -49 \\ 0 & 0 & 1
+                  \end{matrix}$           &
+  $\displaystyle\begin{matrix}
+                    \dfrac{320}{47} \\ 160 \\ -\dfrac{150}{47}
+                  \end{matrix}$                                   \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II + 49III} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II + 49III}              \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      1 & 2 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      \dfrac{320}{47} \\ \dfrac{170}{47} \\ -\dfrac{150}{47}
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    1 & 2 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1
+                  \end{matrix}$             &
+  $\displaystyle\begin{matrix}
+                    \dfrac{320}{47} \\ \dfrac{170}{47} \\ -\dfrac{150}{47}
+                  \end{matrix}$                       \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I - 2II} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I - 2II}                 \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      -\dfrac{20}{47} \\ \dfrac{170}{47} \\ -\dfrac{150}{47}
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1
+                  \end{matrix}$             &
+  $\displaystyle\begin{matrix}
+                    -\dfrac{20}{47} \\ \dfrac{170}{47} \\ -\dfrac{150}{47}
+                  \end{matrix}$                       \\\hline
 
 \end{longtable}
 
 $x_1 = -\frac{20}{47}\quad x_2 = \frac{170}{47}\quad x_3 = -\frac{150}{47}$
 
-\subsection{c)}
-\begin{align*}    
+\subsection{c}
+\begin{align*}
   \begin{cases}
     \begin{aligned}
       x_1 - x_2 - x_3 = 1 \\
@@ -190,63 +190,63 @@ $x_1 = -\frac{20}{47}\quad x_2 = \frac{170}{47}\quad x_3 = -\frac{150}{47}$
 
 \begin{longtable}{p{4cm}|p{3cm}}
 
-    \hline
-    \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
-    \hline
-    \endfirsthead
+  \hline
+  \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
+  \hline
+  \endfirsthead
 
-    \hline
-    \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
-    \hline
-    \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
-    \hline
-    \endhead
+  \hline
+  \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}}    \\
+  \hline
+  \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
+  \hline
+  \endhead
 
-    \hline
-    \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
-    \endfoot
+  \hline
+  \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}}                              \\
+  \endfoot
 
-    \hline
-    \endlastfoot
+  \hline
+  \endlastfoot
 
-    $\displaystyle\begin{matrix}
-      1 & -1 & -1 \\
-      1 & 1 & -1
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      1 \\ 2
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    1 & -1 & -1 \\
+                    1 & 1  & -1
+                  \end{matrix}$                    &
+  $\displaystyle\begin{matrix}
+                    1 \\ 2
+                  \end{matrix}$                                                               \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II - I} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II - I}                  \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      1 & -1 & -1 \\
-     0 & 2 & 0
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      1 \\ 1
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    1 & -1 & -1 \\
+                    0 & 2  & 0
+                  \end{matrix}$                    &
+  $\displaystyle\begin{matrix}
+                    1 \\ 1
+                  \end{matrix}$                                                               \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 2I + II} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 2I + II}                 \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      2 & 0 & -2 \\
-     0 & 2 & 0
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      3 \\ 1
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    2 & 0 & -2 \\
+                    0 & 2 & 0
+                  \end{matrix}$                    &
+  $\displaystyle\begin{matrix}
+                    3 \\ 1
+                  \end{matrix}$                                                               \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I : 2} \\\hline\pagebreak[0]
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II : 2} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I : 2}                   \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II : 2}                  \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      1 & 0 & -1 \\
-     0 & 1 & 0
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      \frac{3}{2} \\ \frac{1}{2}
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    1 & 0 & -1 \\
+                    0 & 1 & 0
+                  \end{matrix}$                    &
+  $\displaystyle\begin{matrix}
+                    \frac{3}{2} \\ \frac{1}{2}
+                  \end{matrix}$                                                   \\\hline
 
 \end{longtable}
 
@@ -261,15 +261,17 @@ $x_1 - t = \frac{3}{2} \quad | + t$
 $\Leftrightarrow x_1 = \frac{3}{2} + t$
 
 $\begin{pmatrix}
-  x_1 \\ x_2 \\ x_3
-\end{pmatrix} = \begin{pmatrix}
-  \frac{3}{2} + t \\ \frac{1}{2} \\ t
-\end{pmatrix}$ wobei $t \in \mathbb{R}$
+    x_1 \\ x_2 \\ x_3
+  \end{pmatrix} = \begin{pmatrix}
+    \frac{3}{2} + t \\ \frac{1}{2} \\ t
+  \end{pmatrix}$ wobei $t \in \mathbb{R}$
 
 \section{Aufgabe 2}
 
-\subsection{a)}
-Wenn fünf Ochsen und zwei Schafe acht Taels Gold kosten, sowie zwei Ochsen und acht Schafe auch acht Taels, was ist dann der Preis eines Tieres? (Chiu-Chang Suan-Chu, 300 n.Chr.)
+\subsection{a}
+Wenn fünf Ochsen und zwei Schafe acht Taels Gold kosten, sowie zwei Ochsen und
+acht Schafe auch acht Taels, was ist dann der Preis eines Tieres? (Chiu-Chang
+Suan-Chu, 300 n.Chr.)
 
 $x_1 :=$ Ochsen \quad $x_2 :=$ Schafe
 
@@ -280,630 +282,638 @@ $x_1 :=$ Ochsen \quad $x_2 :=$ Schafe
   \end{cases}
 \end{align*}
 
-
 \begin{longtable}{p{4cm}|p{3cm}}
 
-    \hline
-    \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
-    \hline
-    \endfirsthead
+  \hline
+  \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
+  \hline
+  \endfirsthead
 
-    \hline
-    \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
-    \hline
-    \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
-    \hline
-    \endhead
+  \hline
+  \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}}    \\
+  \hline
+  \multicolumn{1}{c|}{\textbf{Linearkombination}} & \multicolumn{1}{c}{\textbf{Konstanten}} \\
+  \hline
+  \endhead
 
-    \hline
-    \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
-    \endfoot
+  \hline
+  \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}}                              \\
+  \endfoot
 
-    \hline
-    \endlastfoot
+  \hline
+  \endlastfoot
 
-    $\displaystyle\begin{matrix}
-      5 & 2 \\ 
-      2 & 8
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      8 \\ 8
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    5 & 2 \\
+                    2 & 8
+                  \end{matrix}$                    &
+  $\displaystyle\begin{matrix}
+                    8 \\ 8
+                  \end{matrix}$                                                               \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 5II - 2I} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 5II - 2I}                \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      5 & 2 \\ 
-      0 & 36
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      8 \\ 24
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    5 & 2  \\
+                    0 & 36
+                  \end{matrix}$                    &
+  $\displaystyle\begin{matrix}
+                    8 \\ 24
+                  \end{matrix}$                                                               \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 36I - 2II} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 36I - 2II}               \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      180 & 0 \\ 
-      0 & 36
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      240 \\ 24
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    180 & 0  \\
+                    0   & 36
+                  \end{matrix}$                    &
+  $\displaystyle\begin{matrix}
+                    240 \\ 24
+                  \end{matrix}$                                                               \\\hline
 
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I: 180} \\\hline\pagebreak[0]
-    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II: 36} \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I: 180}                  \\\hline\pagebreak[0]
+  \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II: 36}                  \\\hline\pagebreak[0]
 
-    $\displaystyle\begin{matrix}
-      1 & 0 \\ 
-      0 & 1
-    \end{matrix}$&
-    $\displaystyle\begin{matrix}
-      \frac{4}{3} \\ \frac{3}{2}
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    1 & 0 \\
+                    0 & 1
+                  \end{matrix}$                    &
+  $\displaystyle\begin{matrix}
+                    \frac{4}{3} \\ \frac{3}{2}
+                  \end{matrix}$                                                   \\\hline
 
 \end{longtable}
 
-\subsection{b)}
-Ein 9-Tupel $(x1, . . . , x9)$ nennt man \enquote{magisches Quadrat der Ordnung 3}, wenn gilt:
-\begin{align*}    
-    x1 + x2 + x3 = x4 + x5 + x6 = x7 + x8 + x9 = x1 + x4 + x7 \\ = x2 + x5 + x8 = x3 + x6 + x9 = x1 + x5 + x9 = x3 + x5 + x7
+\subsection{b}
+Ein 9-Tupel $(x1, . . . , x9)$ nennt man \enquote{magisches Quadrat der Ordnung
+  3}, wenn gilt:
+\begin{align*}
+  x1 + x2 + x3 = x4 + x5 + x6 = x7 + x8 + x9 = x1 + x4 + x7 \\ = x2 + x5 + x8 = x3 + x6 + x9 = x1 + x5 + x9 = x3 + x5 + x7
 \end{align*}
 
-Stellen Sie ein lineares Gleichungssystem auf, das zu diesen sieben Bedingungen äquivalent ist, und bestimmen Sie den Lösungsraum in $\mathbb{R}^9$. Wie kann man die Menge der rationalen Lösungen (also der $(x_1, \dots, x_9) \in \mathbb{Q}^9)$ beschrieben? Gibt es auch eine Lösung in $\mathbb{Z}^9$? Oder gar in $\mathbb{N}^9$? (siehe J. W. von Goethe 1: Faust. Der Tragödie erster Teil, Hexenküche).
+Stellen Sie ein lineares Gleichungssystem auf, das zu diesen sieben Bedingungen
+äquivalent ist, und bestimmen Sie den Lösungsraum in $\mathbb{R}^9$. Wie kann
+man die Menge der rationalen Lösungen (also der $(x_1, \dots, x_9) \in
+  \mathbb{Q}^9)$ beschrieben? Gibt es auch eine Lösung in $\mathbb{Z}^9$? Oder
+gar in $\mathbb{N}^9$? (siehe J. W. von Goethe 1: Faust. Der Tragödie erster
+Teil, Hexenküche).
 
 (Diese Aufgaben sind entnommen aus: \textit{Peter Knaber, Wolf P. Barth:} Lineare Algebra. Aufgaben und Lösungen. \textit{Springer Verlag,} 2017. Seite 4.)
 
 \begin{align*}
   \begin{cases}
-    x_1 + x_2 + x_3 - x_4 - x_5 - x_6 = 0 \\
-    x_4 + x_5 + x_6 - x_7 - x_8 - x_9 = 0 \\
-    x_7 + x_8 + x_9 - x_1 - x_4 - x_7 = 0 \Rightarrow -x_1 -x_4 +x_8 +x_9 = 0\\
-    x_1 + x_4 + x_7 - x_2 - x_5 - x_8 = 0 \Rightarrow x_1 - x_2 + x_4 - x_5 + x_7 - x_8\\
-    x_2 + x_5 + x_8 - x_3 - x_6 - x_9 = 0 \Rightarrow x_2 - x_3 + x_5 - x_6 + x_8 - x_9\\
-    x_3 + x_6 + x_9 - x_1 - x_5 - x_9 = 0 \Rightarrow - x_1 + x_3 - x_5 + x_6\\ 
+    x_1 + x_2 + x_3 - x_4 - x_5 - x_6 = 0                                               \\
+    x_4 + x_5 + x_6 - x_7 - x_8 - x_9 = 0                                               \\
+    x_7 + x_8 + x_9 - x_1 - x_4 - x_7 = 0 \Rightarrow -x_1 -x_4 +x_8 +x_9 = 0           \\
+    x_1 + x_4 + x_7 - x_2 - x_5 - x_8 = 0 \Rightarrow x_1 - x_2 + x_4 - x_5 + x_7 - x_8 \\
+    x_2 + x_5 + x_8 - x_3 - x_6 - x_9 = 0 \Rightarrow x_2 - x_3 + x_5 - x_6 + x_8 - x_9 \\
+    x_3 + x_6 + x_9 - x_1 - x_5 - x_9 = 0 \Rightarrow - x_1 + x_3 - x_5 + x_6           \\
     x_1 + x_5 + x_9 - x_3 - x_5 - x_7 = 0 \Rightarrow x_1 - x_3 - x_7 + x_9
   \end{cases} \\
 \end{align*}
 
 \begin{longtable}{p{10cm}}
 
-    \hline
-    \multicolumn{1}{c}{\textbf{Linearkombination}} \\
-    \hline
-    \endfirsthead
+  \hline
+  \multicolumn{1}{c}{\textbf{Linearkombination}}                                            \\
+  \hline
+  \endfirsthead
 
-    \hline
-    \multicolumn{1}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
-    \hline
-    \multicolumn{1}{c}{\textbf{Linearkombination}} \\
-    \hline
-    \endhead
+  \hline
+  \multicolumn{1}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}}    \\
+  \hline
+  \multicolumn{1}{c}{\textbf{Linearkombination}}                                            \\
+  \hline
+  \endhead
 
-    \hline
-    \multicolumn{1}{r}{\textit{Fortsetzung siehe nächste Seite}} \\
-    \endfoot
+  \hline
+  \multicolumn{1}{r}{\textit{Fortsetzung siehe nächste Seite}}                              \\
+  \endfoot
 
-    \hline
-    \endlastfoot
+  \hline
+  \endlastfoot
 
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1 \\
-    III & -1 & 0 & 0 & -1 & 0 & 0 & 0 & 1 & 1 \\
-    IV & 1 & -1 & 0 & 1 & -1 & 0 & 1 & -1 & 0 \\
-    V & 0 & 1 & -1 & 0 & 1 & -1 & 0 & 1 & -1 \\
-    VI & -1 & 0 & 1 & 0 & -1 & 1 & 0 & 0 & 0 \\
-    VII & 1 & 0 & -1 & 0 & 0 & 0 & -1 & 0 & 1
-    \end{matrix}$\\\hline
-    Ziel: erste Spalte bereinigen \\\hline\pagebreak[0]
-    Operation: III + I \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1 \\
-    III & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    IV & 1 & -1 & 0 & 1 & -1 & 0 & 1 & -1 & 0 \\
-    V & 0 & 1 & -1 & 0 & 1 & -1 & 0 & 1 & -1 \\
-    VI & -1 & 0 & 1 & 0 & -1 & 1 & 0 & 0 & 0 \\
-    VII & 1 & 0 & -1 & 0 & 0 & 0 & -1 & 0 & 1
-    \end{matrix}$\\\hline
-    Operation: IV - I \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1 \\
-    III & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    IV & 0 & -2 & -1 & 2 & 0 & 1 & 1 & -1 & 0 \\
-    V & 0 & 1 & -1 & 0 & 1 & -1 & 0 & 1 & -1 \\
-    VI & -1 & 0 & 1 & 0 & -1 & 1 & 0 & 0 & 0 \\
-    VII & 1 & 0 & -1 & 0 & 0 & 0 & -1 & 0 & 1
-    \end{matrix}$\\\hline
-    Operation: VI + I \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1 \\
-    III & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    IV & 0 & -2 & -1 & 2 & 0 & 1 & 1 & -1 & 0 \\
-    V & 0 & 1 & -1 & 0 & 1 & -1 & 0 & 1 & -1 \\
-    VI & 0 & 1 & 2 & -1 & -2 & 0 & 0 & 0 & 0 \\
-    VII & 1 & 0 & -1 & 0 & 0 & 0 & -1 & 0 & 1
-    \end{matrix}$\\\hline
-    Operation: VII - I \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1 \\
-    III & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    IV & 0 & -2 & -1 & 2 & 0 & 1 & 1 & -1 & 0 \\
-    V & 0 & 1 & -1 & 0 & 1 & -1 & 0 & 1 & -1 \\
-    VI & 0 & 1 & 2 & -1 & -2 & 0 & 0 & 0 & 0 \\
-    VII & 0 & -1 & -2 & 1 & 1 & 1 & -1 & 0 & 1
-    \end{matrix}$\\\hline
-    Ziel: zweite Spalte bereinigen \\\hline\pagebreak[0]
-    Operation: II und III tauschen \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1 \\
-    IV & 0 & -2 & -1 & 2 & 0 & 1 & 1 & -1 & 0 \\
-    V & 0 & 1 & -1 & 0 & 1 & -1 & 0 & 1 & -1 \\
-    VI & 0 & 1 & 2 & -1 & -2 & 0 & 0 & 0 & 0 \\
-    VII & 0 & -1 & -2 & 1 & 1 & 1 & -1 & 0 & 1
-    \end{matrix}$\\\hline
-    Operation: IV + 2V \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1 \\
-    IV & 0 & 0 & -3 & 2 & 2 & -1 & 1 & 1 & -2 \\
-    V & 0 & 1 & -1 & 0 & 1 & -1 & 0 & 1 & -1 \\
-    VI & 0 & 1 & 2 & -1 & -2 & 0 & 0 & 0 & 0 \\
-    VII & 0 & -1 & -2 & 1 & 1 & 1 & -1 & 0 & 1
-    \end{matrix}$\\\hline
-    Operation: V - VI \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1 \\
-    IV & 0 & 0 & -3 & 2 & 2 & -1 & 1 & 1 & -2 \\
-    V & 0 & 0 & -3 & 1 & 3 & -1 & 0 & 1 & -1 \\
-    VI & 0 & 1 & 2 & -1 & -2 & 0 & 0 & 0 & 0 \\
-    VII & 0 & -1 & -2 & 1 & 1 & 1 & -1 & 0 & 1
-    \end{matrix}$\\\hline
-    Operation: VI + VII \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1 \\
-    IV & 0 & 0 & -3 & 2 & 2 & -1 & 1 & 1 & -2 \\
-    V & 0 & 0 & -3 & 1 & 3 & -1 & 0 & 1 & -1 \\
-    VI & 0 & 0 & 0 & 0 & -1 & 1 & -1 & 0 & 1 \\
-    VII & 0 & -1 & -2 & 1 & 1 & 1 & -1 & 0 & 1
-    \end{matrix}$\\\hline
-    Operation: VII + II \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1 \\
-    IV & 0 & 0 & -3 & 2 & 2 & -1 & 1 & 1 & -2 \\
-    V & 0 & 0 & -3 & 1 & 3 & -1 & 0 & 1 & -1 \\
-    VI & 0 & 0 & 0 & 0 & -1 & 1 & -1 & 0 & 1 \\
-    VII & 0 & 0 & -1 & -1 & 0 & 0 & -1 & 1 & 2
-    \end{matrix}$\\\hline
-    Ziel: dritte Spalte bereinigen \\\hline\pagebreak[0]
-    Operation: III und VII tauschen \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & -1 & -1 & 0 & 0 & -1 & 1 & 2 \\
-    IV & 0 & 0 & -3 & 2 & 2 & -1 & 1 & 1 & -2 \\
-    V & 0 & 0 & -3 & 1 & 3 & -1 & 0 & 1 & -1 \\
-    VI & 0 & 0 & 0 & 0 & -1 & 1 & -1 & 0 & 1 \\
-    VII & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1
-    \end{matrix}$\\\hline
-    Operation: IV - V \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & -1 & -1 & 0 & 0 & -1 & 1 & 2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & -3 & 1 & 3 & -1 & 0 & 1 & -1 \\
-    VI & 0 & 0 & 0 & 0 & -1 & 1 & -1 & 0 & 1 \\
-    VII & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1
-    \end{matrix}$\\\hline
-    Operation: V - 3III \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & -1 & -1 & 0 & 0 & -1 & 1 & 2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 4 & 3 & -1 & 3 & -2 & -7 \\
-    VI & 0 & 0 & 0 & 0 & -1 & 1 & -1 & 0 & 1 \\
-    VII & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1
-    \end{matrix}$\\\hline
-    Operation: III $\cdot$ (-1) \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 4 & 3 & -1 & 3 & -2 & -7 \\
-    VI & 0 & 0 & 0 & 0 & -1 & 1 & -1 & 0 & 1 \\
-    VII & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1
-    \end{matrix}$\\\hline
-    Ziel: vierte Spalte bereinigen \\\hline\pagebreak[0]
-    Operation: V - 4VII \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 0 & -1 & -5 & 7 & 2 & -3 \\
-    VI & 0 & 0 & 0 & 0 & -1 & 1 & -1 & 0 & 1 \\
-    VII & 0 & 0 & 0 & 1 & 1 & 1 & -1 & -1 & -1
-    \end{matrix}$\\\hline
-    Operation: VII - IV \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 0 & -1 & -5 & 7 & 2 & -3 \\
-    VI & 0 & 0 & 0 & 0 & -1 & 1 & -1 & 0 & 1 \\
-    VII & 0 & 0 & 0 & 0 & 2 & 1 & -2 & -1 & 0
-    \end{matrix}$\\\hline
-    Ziel: fünfte Spalte bereinigen \\\hline\pagebreak[0]
-    Operation: 2VI + VII \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 0 & -1 & -5 & 7 & 2 & -3 \\
-    VI & 0 & 0 & 0 & 0 & -1 & 1 & -1 & 0 & 1 \\
-    VII & 0 & 0 & 0 & 0 & 0 & 3 & -4 & -1 & 2
-    \end{matrix}$\\\hline
-    Operation: VI - V \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 0 & -1 & -5 & 7 & 2 & -3 \\
-    VI & 0 & 0 & 0 & 0 & 0 & 6 & -8 & -2 & 4 \\
-    VII & 0 & 0 & 0 & 0 & 0 & 3 & -4 & -1 & 2
-    \end{matrix}$\\\hline
-    Operation: V $\cdot$ (-1) \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 0 & 1 & 5 & -7 & -2 & 3 \\
-    VI & 0 & 0 & 0 & 0 & 0 & 6 & -8 & -2 & 4 \\
-    VII & 0 & 0 & 0 & 0 & 0 & 3 & -4 & -1 & 2
-    \end{matrix}$\\\hline
-    Ziel: sechste Spalte bereinigen \\\hline\pagebreak[0]
-    Operation: 2VII - VI \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 0 & 1 & 5 & -7 & -2 & 3 \\
-    VI & 0 & 0 & 0 & 0 & 0 & 6 & -8 & -2 & 4 \\
-    VII & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
-    \end{matrix}$\\\hline
-    Operation: VI : 6 \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 0 & 1 & 5 & -7 & -2 & 3 \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3} \\
-    VII & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
-    \end{matrix}$\\\hline
-    Die siebte Zeile (VII) besteht ausschließlich aus nullen. Das bedeutet, 
-    dass die ursprüngliche siebte Gleichung von den anderen linear abhängig 
-    war und keine neuen Informationen liefert. Diese Zeile wird daher im 
-    Folgenden nicht mehr berücksichtigt. \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 0 & 1 & 5 & -7 & -2 & 3 \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
-    Ziel: Einträge in Spalte sechs oberhalb des Pivots eleminieren \\\hline\pagebreak[0]
-    Operation: V - 5VI \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & -1 & 0 & 1 & 1 \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
-    Operation: II + VI \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & -1 & 0 & 0 & 0 \\
-    II & 0 & 1 & 1 & -2 & -1 & 0 & -\frac{4}{3} & \frac{2}{3} & \frac{5}{3} \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
-    Operation: I + VI \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & 0 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3} \\
-    II & 0 & 1 & 1 & -2 & -1 & 0 & -\frac{4}{3} & \frac{2}{3} & \frac{5}{3} \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & -1 & 0 & 1 & 0 & -1 \\
-    V & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
-    Ziel: Einträge in Spalte fünf oberhalb des Pivots eleminieren \\\hline\pagebreak[0]
-    Operation: IV + V \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & 0 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3} \\
-    II & 0 & 1 & 1 & -2 & -1 & 0 & -\frac{4}{3} & \frac{2}{3} & \frac{5}{3} \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3} & -\frac{1}{3} & -\frac{4}{3} \\
-    V & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
-    Operation: II + V \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & -1 & 0 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3} \\
-    II & 0 & 1 & 1 & -2 & 0 & 0 & -\frac{5}{3} & \frac{1}{3} & \frac{4}{3} \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3} & -\frac{1}{3} & -\frac{4}{3} \\
-    V & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
-    Operation: I + V \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & 0 & 0 & -\frac{5}{3} & -\frac{2}{3} & \frac{1}{3} \\
-    II & 0 & 1 & 1 & -2 & 0 & 0 & -\frac{5}{3} & \frac{1}{3} & \frac{4}{3} \\
-    III & 0 & 0 & 1 & 1 & 0 & 0 & 1 & -1 & -2 \\
-    IV & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3} & -\frac{1}{3} & -\frac{4}{3} \\
-    V & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
-    Ziel: Einträge in Spalte vier oberhalb des Pivots eleminieren \\\hline\pagebreak[0]
-    Operation: III - IV \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & 0 & 0 & -\frac{5}{3} & -\frac{2}{3} & \frac{1}{3} \\
-    II & 0 & 1 & 1 & -2 & 0 & 0 & -\frac{5}{3} & \frac{1}{3} & \frac{4}{3} \\
-    III & 0 & 0 & 1 & 0 & 0 & 0 & \frac{1}{3} & -\frac{2}{3} & -\frac{2}{3} \\
-    IV & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3} & -\frac{1}{3} & -\frac{4}{3} \\
-    V & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
-    Operation: II + 2IV \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & -1 & 0 & 0 & -\frac{5}{3} & -\frac{2}{3} & \frac{1}{3} \\
-    II & 0 & 1 & 1 & 0 & 0 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{4}{3} \\
-    III & 0 & 0 & 1 & 0 & 0 & 0 & \frac{1}{3} & -\frac{2}{3} & -\frac{2}{3} \\
-    IV & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3} & -\frac{1}{3} & -\frac{4}{3} \\
-    V & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
-    Operation: I + IV \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & 0 & 0 & 0 & -1 & -1 & -1 \\
-    II & 0 & 1 & 1 & 0 & 0 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{4}{3} \\
-    III & 0 & 0 & 1 & 0 & 0 & 0 & \frac{1}{3} & -\frac{2}{3} & -\frac{2}{3} \\
-    IV & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3} & -\frac{1}{3} & -\frac{4}{3} \\
-    V & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
-    Ziel: Einträge in Spalte drei oberhalb des Pivots eleminieren \\\hline\pagebreak[0]
-    Operation: II - III \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 1 & 0 & 0 & 0 & -1 & -1 & -1 \\
-    II & 0 & 1 & 0 & 0 & 0 & 0 & -\frac{2}{3} & \frac{1}{3} & -\frac{2}{3} \\
-    III & 0 & 0 & 1 & 0 & 0 & 0 & \frac{1}{3} & -\frac{2}{3} & -\frac{2}{3} \\
-    IV & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3} & -\frac{1}{3} & -\frac{4}{3} \\
-    V & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
-    Operation: I - III \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 1 & 0 & 0 & 0 & 0 & -\frac{4}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    II & 0 & 1 & 0 & 0 & 0 & 0 & -\frac{2}{3} & \frac{1}{3} & -\frac{2}{3} \\
-    III & 0 & 0 & 1 & 0 & 0 & 0 & \frac{1}{3} & -\frac{2}{3} & -\frac{2}{3} \\
-    IV & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3} & -\frac{1}{3} & -\frac{4}{3} \\
-    V & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
-    Ziel: Einträge in Spalte zwei oberhalb des Pivots eleminieren \\\hline\pagebreak[0]
-    Operation: I - II \\\hline\pagebreak[0]
-    $\displaystyle\begin{matrix}
-    I & 1 & 0 & 0 & 0 & 0 & 0 & -\frac{2}{3} & -\frac{2}{3} & \frac{1}{3} \\
-    II & 0 & 1 & 0 & 0 & 0 & 0 & -\frac{2}{3} & \frac{1}{3} & -\frac{2}{3} \\
-    III & 0 & 0 & 1 & 0 & 0 & 0 & \frac{1}{3} & -\frac{2}{3} & -\frac{2}{3} \\
-    IV & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3} & -\frac{1}{3} & -\frac{4}{3} \\
-    V & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
-    VI & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
-    \end{matrix}$\\\hline
+  $\displaystyle\begin{matrix}
+                    I   & 1  & 1  & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0  & 0  & 0  & 1  & 1  & 1  & -1 & -1 & -1 \\
+                    III & -1 & 0  & 0  & -1 & 0  & 0  & 0  & 1  & 1  \\
+                    IV  & 1  & -1 & 0  & 1  & -1 & 0  & 1  & -1 & 0  \\
+                    V   & 0  & 1  & -1 & 0  & 1  & -1 & 0  & 1  & -1 \\
+                    VI  & -1 & 0  & 1  & 0  & -1 & 1  & 0  & 0  & 0  \\
+                    VII & 1  & 0  & -1 & 0  & 0  & 0  & -1 & 0  & 1
+                  \end{matrix}$                            \\\hline
+  Ziel: erste Spalte bereinigen                                                             \\\hline\pagebreak[0]
+  Operation: III + I                                                                        \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1  & 1  & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0  & 0  & 0  & 1  & 1  & 1  & -1 & -1 & -1 \\
+                    III & 0  & 1  & 1  & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    IV  & 1  & -1 & 0  & 1  & -1 & 0  & 1  & -1 & 0  \\
+                    V   & 0  & 1  & -1 & 0  & 1  & -1 & 0  & 1  & -1 \\
+                    VI  & -1 & 0  & 1  & 0  & -1 & 1  & 0  & 0  & 0  \\
+                    VII & 1  & 0  & -1 & 0  & 0  & 0  & -1 & 0  & 1
+                  \end{matrix}$                            \\\hline
+  Operation: IV - I                                                                         \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1  & 1  & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0  & 0  & 0  & 1  & 1  & 1  & -1 & -1 & -1 \\
+                    III & 0  & 1  & 1  & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    IV  & 0  & -2 & -1 & 2  & 0  & 1  & 1  & -1 & 0  \\
+                    V   & 0  & 1  & -1 & 0  & 1  & -1 & 0  & 1  & -1 \\
+                    VI  & -1 & 0  & 1  & 0  & -1 & 1  & 0  & 0  & 0  \\
+                    VII & 1  & 0  & -1 & 0  & 0  & 0  & -1 & 0  & 1
+                  \end{matrix}$                            \\\hline
+  Operation: VI + I                                                                         \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1  & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 0  & 0  & 1  & 1  & 1  & -1 & -1 & -1 \\
+                    III & 0 & 1  & 1  & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    IV  & 0 & -2 & -1 & 2  & 0  & 1  & 1  & -1 & 0  \\
+                    V   & 0 & 1  & -1 & 0  & 1  & -1 & 0  & 1  & -1 \\
+                    VI  & 0 & 1  & 2  & -1 & -2 & 0  & 0  & 0  & 0  \\
+                    VII & 1 & 0  & -1 & 0  & 0  & 0  & -1 & 0  & 1
+                  \end{matrix}$                             \\\hline
+  Operation: VII - I                                                                        \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1  & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 0  & 0  & 1  & 1  & 1  & -1 & -1 & -1 \\
+                    III & 0 & 1  & 1  & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    IV  & 0 & -2 & -1 & 2  & 0  & 1  & 1  & -1 & 0  \\
+                    V   & 0 & 1  & -1 & 0  & 1  & -1 & 0  & 1  & -1 \\
+                    VI  & 0 & 1  & 2  & -1 & -2 & 0  & 0  & 0  & 0  \\
+                    VII & 0 & -1 & -2 & 1  & 1  & 1  & -1 & 0  & 1
+                  \end{matrix}$                             \\\hline
+  Ziel: zweite Spalte bereinigen                                                            \\\hline\pagebreak[0]
+  Operation: II und III tauschen                                                            \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1  & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1  & 1  & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0  & 0  & 1  & 1  & 1  & -1 & -1 & -1 \\
+                    IV  & 0 & -2 & -1 & 2  & 0  & 1  & 1  & -1 & 0  \\
+                    V   & 0 & 1  & -1 & 0  & 1  & -1 & 0  & 1  & -1 \\
+                    VI  & 0 & 1  & 2  & -1 & -2 & 0  & 0  & 0  & 0  \\
+                    VII & 0 & -1 & -2 & 1  & 1  & 1  & -1 & 0  & 1
+                  \end{matrix}$                             \\\hline
+  Operation: IV + 2V                                                                        \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1  & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1  & 1  & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0  & 0  & 1  & 1  & 1  & -1 & -1 & -1 \\
+                    IV  & 0 & 0  & -3 & 2  & 2  & -1 & 1  & 1  & -2 \\
+                    V   & 0 & 1  & -1 & 0  & 1  & -1 & 0  & 1  & -1 \\
+                    VI  & 0 & 1  & 2  & -1 & -2 & 0  & 0  & 0  & 0  \\
+                    VII & 0 & -1 & -2 & 1  & 1  & 1  & -1 & 0  & 1
+                  \end{matrix}$                             \\\hline
+  Operation: V - VI                                                                         \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1  & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1  & 1  & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0  & 0  & 1  & 1  & 1  & -1 & -1 & -1 \\
+                    IV  & 0 & 0  & -3 & 2  & 2  & -1 & 1  & 1  & -2 \\
+                    V   & 0 & 0  & -3 & 1  & 3  & -1 & 0  & 1  & -1 \\
+                    VI  & 0 & 1  & 2  & -1 & -2 & 0  & 0  & 0  & 0  \\
+                    VII & 0 & -1 & -2 & 1  & 1  & 1  & -1 & 0  & 1
+                  \end{matrix}$                             \\\hline
+  Operation: VI + VII                                                                       \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1  & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1  & 1  & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0  & 0  & 1  & 1  & 1  & -1 & -1 & -1 \\
+                    IV  & 0 & 0  & -3 & 2  & 2  & -1 & 1  & 1  & -2 \\
+                    V   & 0 & 0  & -3 & 1  & 3  & -1 & 0  & 1  & -1 \\
+                    VI  & 0 & 0  & 0  & 0  & -1 & 1  & -1 & 0  & 1  \\
+                    VII & 0 & -1 & -2 & 1  & 1  & 1  & -1 & 0  & 1
+                  \end{matrix}$                             \\\hline
+  Operation: VII + II                                                                       \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1 & 1  & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0 & 0  & 1  & 1  & 1  & -1 & -1 & -1 \\
+                    IV  & 0 & 0 & -3 & 2  & 2  & -1 & 1  & 1  & -2 \\
+                    V   & 0 & 0 & -3 & 1  & 3  & -1 & 0  & 1  & -1 \\
+                    VI  & 0 & 0 & 0  & 0  & -1 & 1  & -1 & 0  & 1  \\
+                    VII & 0 & 0 & -1 & -1 & 0  & 0  & -1 & 1  & 2
+                  \end{matrix}$                              \\\hline
+  Ziel: dritte Spalte bereinigen                                                            \\\hline\pagebreak[0]
+  Operation: III und VII tauschen                                                           \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1 & 1  & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0 & -1 & -1 & 0  & 0  & -1 & 1  & 2  \\
+                    IV  & 0 & 0 & -3 & 2  & 2  & -1 & 1  & 1  & -2 \\
+                    V   & 0 & 0 & -3 & 1  & 3  & -1 & 0  & 1  & -1 \\
+                    VI  & 0 & 0 & 0  & 0  & -1 & 1  & -1 & 0  & 1  \\
+                    VII & 0 & 0 & 0  & 1  & 1  & 1  & -1 & -1 & -1
+                  \end{matrix}$                              \\\hline
+  Operation: IV - V                                                                         \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1 & 1  & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0 & -1 & -1 & 0  & 0  & -1 & 1  & 2  \\
+                    IV  & 0 & 0 & 0  & 1  & -1 & 0  & 1  & 0  & -1 \\
+                    V   & 0 & 0 & -3 & 1  & 3  & -1 & 0  & 1  & -1 \\
+                    VI  & 0 & 0 & 0  & 0  & -1 & 1  & -1 & 0  & 1  \\
+                    VII & 0 & 0 & 0  & 1  & 1  & 1  & -1 & -1 & -1
+                  \end{matrix}$                              \\\hline
+  Operation: V - 3III                                                                       \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1  & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1 & 1  & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0 & -1 & -1 & 0  & 0  & -1 & 1  & 2  \\
+                    IV  & 0 & 0 & 0  & 1  & -1 & 0  & 1  & 0  & -1 \\
+                    V   & 0 & 0 & 0  & 4  & 3  & -1 & 3  & -2 & -7 \\
+                    VI  & 0 & 0 & 0  & 0  & -1 & 1  & -1 & 0  & 1  \\
+                    VII & 0 & 0 & 0  & 1  & 1  & 1  & -1 & -1 & -1
+                  \end{matrix}$                              \\\hline
+  Operation: III $\cdot$ (-1)                                                               \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1 & 1 & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0  & 1  & -1 & -2 \\
+                    IV  & 0 & 0 & 0 & 1  & -1 & 0  & 1  & 0  & -1 \\
+                    V   & 0 & 0 & 0 & 4  & 3  & -1 & 3  & -2 & -7 \\
+                    VI  & 0 & 0 & 0 & 0  & -1 & 1  & -1 & 0  & 1  \\
+                    VII & 0 & 0 & 0 & 1  & 1  & 1  & -1 & -1 & -1
+                  \end{matrix}$                               \\\hline
+  Ziel: vierte Spalte bereinigen                                                            \\\hline\pagebreak[0]
+  Operation: V - 4VII                                                                       \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1 & 1 & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0  & 1  & -1 & -2 \\
+                    IV  & 0 & 0 & 0 & 1  & -1 & 0  & 1  & 0  & -1 \\
+                    V   & 0 & 0 & 0 & 0  & -1 & -5 & 7  & 2  & -3 \\
+                    VI  & 0 & 0 & 0 & 0  & -1 & 1  & -1 & 0  & 1  \\
+                    VII & 0 & 0 & 0 & 1  & 1  & 1  & -1 & -1 & -1
+                  \end{matrix}$                               \\\hline
+  Operation: VII - IV                                                                       \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1 & 1 & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0  & 1  & -1 & -2 \\
+                    IV  & 0 & 0 & 0 & 1  & -1 & 0  & 1  & 0  & -1 \\
+                    V   & 0 & 0 & 0 & 0  & -1 & -5 & 7  & 2  & -3 \\
+                    VI  & 0 & 0 & 0 & 0  & -1 & 1  & -1 & 0  & 1  \\
+                    VII & 0 & 0 & 0 & 0  & 2  & 1  & -2 & -1 & 0
+                  \end{matrix}$                               \\\hline
+  Ziel: fünfte Spalte bereinigen                                                            \\\hline\pagebreak[0]
+  Operation: 2VI + VII                                                                      \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1 & 1 & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0  & 1  & -1 & -2 \\
+                    IV  & 0 & 0 & 0 & 1  & -1 & 0  & 1  & 0  & -1 \\
+                    V   & 0 & 0 & 0 & 0  & -1 & -5 & 7  & 2  & -3 \\
+                    VI  & 0 & 0 & 0 & 0  & -1 & 1  & -1 & 0  & 1  \\
+                    VII & 0 & 0 & 0 & 0  & 0  & 3  & -4 & -1 & 2
+                  \end{matrix}$                               \\\hline
+  Operation: VI - V                                                                         \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1 & 1 & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0  & 1  & -1 & -2 \\
+                    IV  & 0 & 0 & 0 & 1  & -1 & 0  & 1  & 0  & -1 \\
+                    V   & 0 & 0 & 0 & 0  & -1 & -5 & 7  & 2  & -3 \\
+                    VI  & 0 & 0 & 0 & 0  & 0  & 6  & -8 & -2 & 4  \\
+                    VII & 0 & 0 & 0 & 0  & 0  & 3  & -4 & -1 & 2
+                  \end{matrix}$                               \\\hline
+  Operation: V $\cdot$ (-1)                                                                 \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1 & 1 & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0  & 1  & -1 & -2 \\
+                    IV  & 0 & 0 & 0 & 1  & -1 & 0  & 1  & 0  & -1 \\
+                    V   & 0 & 0 & 0 & 0  & 1  & 5  & -7 & -2 & 3  \\
+                    VI  & 0 & 0 & 0 & 0  & 0  & 6  & -8 & -2 & 4  \\
+                    VII & 0 & 0 & 0 & 0  & 0  & 3  & -4 & -1 & 2
+                  \end{matrix}$                               \\\hline
+  Ziel: sechste Spalte bereinigen                                                           \\\hline\pagebreak[0]
+  Operation: 2VII - VI                                                                      \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & -1 & 0  & 0  & 0  \\
+                    II  & 0 & 1 & 1 & -2 & -1 & -1 & 0  & 1  & 1  \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0  & 1  & -1 & -2 \\
+                    IV  & 0 & 0 & 0 & 1  & -1 & 0  & 1  & 0  & -1 \\
+                    V   & 0 & 0 & 0 & 0  & 1  & 5  & -7 & -2 & 3  \\
+                    VI  & 0 & 0 & 0 & 0  & 0  & 6  & -8 & -2 & 4  \\
+                    VII & 0 & 0 & 0 & 0  & 0  & 0  & 0  & 0  & 0
+                  \end{matrix}$                               \\\hline
+  Operation: VI : 6                                                                         \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & -1 & 0            & 0            & 0           \\
+                    II  & 0 & 1 & 1 & -2 & -1 & -1 & 0            & 1            & 1           \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0  & 1            & -1           & -2          \\
+                    IV  & 0 & 0 & 0 & 1  & -1 & 0  & 1            & 0            & -1          \\
+                    V   & 0 & 0 & 0 & 0  & 1  & 5  & -7           & -2           & 3           \\
+                    VI  & 0 & 0 & 0 & 0  & 0  & 1  & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3} \\
+                    VII & 0 & 0 & 0 & 0  & 0  & 0  & 0            & 0            & 0
+                  \end{matrix}$  \\\hline
+  Die siebte Zeile (VII) besteht ausschließlich aus nullen. Das bedeutet,
+  dass die ursprüngliche siebte Gleichung von den anderen linear abhängig
+  war und keine neuen Informationen liefert. Diese Zeile wird daher im
+  Folgenden nicht mehr berücksichtigt.                                                      \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & -1 & 0            & 0            & 0           \\
+                    II  & 0 & 1 & 1 & -2 & -1 & -1 & 0            & 1            & 1           \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0  & 1            & -1           & -2          \\
+                    IV  & 0 & 0 & 0 & 1  & -1 & 0  & 1            & 0            & -1          \\
+                    V   & 0 & 0 & 0 & 0  & 1  & 5  & -7           & -2           & 3           \\
+                    VI  & 0 & 0 & 0 & 0  & 0  & 1  & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$  \\\hline
+  Ziel: Einträge in Spalte sechs oberhalb des Pivots eleminieren                            \\\hline\pagebreak[0]
+  Operation: V - 5VI                                                                        \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & -1 & 0            & 0            & 0            \\
+                    II  & 0 & 1 & 1 & -2 & -1 & -1 & 0            & 1            & 1            \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0  & 1            & -1           & -2           \\
+                    IV  & 0 & 0 & 0 & 1  & -1 & 0  & 1            & 0            & -1           \\
+                    V   & 0 & 0 & 0 & 0  & 1  & 0  & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    VI  & 0 & 0 & 0 & 0  & 0  & 1  & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$ \\\hline
+  Operation: II + VI                                                                        \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & -1 & 0            & 0            & 0            \\
+                    II  & 0 & 1 & 1 & -2 & -1 & 0  & -\frac{4}{3} & \frac{2}{3}  & \frac{5}{3}  \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0  & 1            & -1           & -2           \\
+                    IV  & 0 & 0 & 0 & 1  & -1 & 0  & 1            & 0            & -1           \\
+                    V   & 0 & 0 & 0 & 0  & 1  & 0  & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    VI  & 0 & 0 & 0 & 0  & 0  & 1  & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$ \\\hline
+  Operation: I + VI                                                                         \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & 0 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}  \\
+                    II  & 0 & 1 & 1 & -2 & -1 & 0 & -\frac{4}{3} & \frac{2}{3}  & \frac{5}{3}  \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0 & 1            & -1           & -2           \\
+                    IV  & 0 & 0 & 0 & 1  & -1 & 0 & 1            & 0            & -1           \\
+                    V   & 0 & 0 & 0 & 0  & 1  & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    VI  & 0 & 0 & 0 & 0  & 0  & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$  \\\hline
+  Ziel: Einträge in Spalte fünf oberhalb des Pivots eleminieren                             \\\hline\pagebreak[0]
+  Operation: IV + V                                                                         \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & 0 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}  \\
+                    II  & 0 & 1 & 1 & -2 & -1 & 0 & -\frac{4}{3} & \frac{2}{3}  & \frac{5}{3}  \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0 & 1            & -1           & -2           \\
+                    IV  & 0 & 0 & 0 & 1  & 0  & 0 & \frac{2}{3}  & -\frac{1}{3} & -\frac{4}{3} \\
+                    V   & 0 & 0 & 0 & 0  & 1  & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    VI  & 0 & 0 & 0 & 0  & 0  & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$  \\\hline
+  Operation: II + V                                                                         \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & -1 & 0 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}  \\
+                    II  & 0 & 1 & 1 & -2 & 0  & 0 & -\frac{5}{3} & \frac{1}{3}  & \frac{4}{3}  \\
+                    III & 0 & 0 & 1 & 1  & 0  & 0 & 1            & -1           & -2           \\
+                    IV  & 0 & 0 & 0 & 1  & 0  & 0 & \frac{2}{3}  & -\frac{1}{3} & -\frac{4}{3} \\
+                    V   & 0 & 0 & 0 & 0  & 1  & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    VI  & 0 & 0 & 0 & 0  & 0  & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$  \\\hline
+  Operation: I + V                                                                          \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & 0 & 0 & -\frac{5}{3} & -\frac{2}{3} & \frac{1}{3}  \\
+                    II  & 0 & 1 & 1 & -2 & 0 & 0 & -\frac{5}{3} & \frac{1}{3}  & \frac{4}{3}  \\
+                    III & 0 & 0 & 1 & 1  & 0 & 0 & 1            & -1           & -2           \\
+                    IV  & 0 & 0 & 0 & 1  & 0 & 0 & \frac{2}{3}  & -\frac{1}{3} & -\frac{4}{3} \\
+                    V   & 0 & 0 & 0 & 0  & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    VI  & 0 & 0 & 0 & 0  & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$   \\\hline
+  Ziel: Einträge in Spalte vier oberhalb des Pivots eleminieren                             \\\hline\pagebreak[0]
+  Operation: III - IV                                                                       \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & 0 & 0 & -\frac{5}{3} & -\frac{2}{3} & \frac{1}{3}  \\
+                    II  & 0 & 1 & 1 & -2 & 0 & 0 & -\frac{5}{3} & \frac{1}{3}  & \frac{4}{3}  \\
+                    III & 0 & 0 & 1 & 0  & 0 & 0 & \frac{1}{3}  & -\frac{2}{3} & -\frac{2}{3} \\
+                    IV  & 0 & 0 & 0 & 1  & 0 & 0 & \frac{2}{3}  & -\frac{1}{3} & -\frac{4}{3} \\
+                    V   & 0 & 0 & 0 & 0  & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    VI  & 0 & 0 & 0 & 0  & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$   \\\hline
+  Operation: II + 2IV                                                                       \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & -1 & 0 & 0 & -\frac{5}{3} & -\frac{2}{3} & \frac{1}{3}  \\
+                    II  & 0 & 1 & 1 & 0  & 0 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{4}{3} \\
+                    III & 0 & 0 & 1 & 0  & 0 & 0 & \frac{1}{3}  & -\frac{2}{3} & -\frac{2}{3} \\
+                    IV  & 0 & 0 & 0 & 1  & 0 & 0 & \frac{2}{3}  & -\frac{1}{3} & -\frac{4}{3} \\
+                    V   & 0 & 0 & 0 & 0  & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    VI  & 0 & 0 & 0 & 0  & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$   \\\hline
+  Operation: I + IV                                                                         \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & 0 & 0 & 0 & -1           & -1           & -1           \\
+                    II  & 0 & 1 & 1 & 0 & 0 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{4}{3} \\
+                    III & 0 & 0 & 1 & 0 & 0 & 0 & \frac{1}{3}  & -\frac{2}{3} & -\frac{2}{3} \\
+                    IV  & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3}  & -\frac{1}{3} & -\frac{4}{3} \\
+                    V   & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    VI  & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$    \\\hline
+  Ziel: Einträge in Spalte drei oberhalb des Pivots eleminieren                             \\\hline\pagebreak[0]
+  Operation: II - III                                                                       \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 1 & 0 & 0 & 0 & -1           & -1           & -1           \\
+                    II  & 0 & 1 & 0 & 0 & 0 & 0 & -\frac{2}{3} & \frac{1}{3}  & -\frac{2}{3} \\
+                    III & 0 & 0 & 1 & 0 & 0 & 0 & \frac{1}{3}  & -\frac{2}{3} & -\frac{2}{3} \\
+                    IV  & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3}  & -\frac{1}{3} & -\frac{4}{3} \\
+                    V   & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    VI  & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$    \\\hline
+  Operation: I - III                                                                        \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 1 & 0 & 0 & 0 & 0 & -\frac{4}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    II  & 0 & 1 & 0 & 0 & 0 & 0 & -\frac{2}{3} & \frac{1}{3}  & -\frac{2}{3} \\
+                    III & 0 & 0 & 1 & 0 & 0 & 0 & \frac{1}{3}  & -\frac{2}{3} & -\frac{2}{3} \\
+                    IV  & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3}  & -\frac{1}{3} & -\frac{4}{3} \\
+                    V   & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    VI  & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$    \\\hline
+  Ziel: Einträge in Spalte zwei oberhalb des Pivots eleminieren                             \\\hline\pagebreak[0]
+  Operation: I - II                                                                         \\\hline\pagebreak[0]
+  $\displaystyle\begin{matrix}
+                    I   & 1 & 0 & 0 & 0 & 0 & 0 & -\frac{2}{3} & -\frac{2}{3} & \frac{1}{3}  \\
+                    II  & 0 & 1 & 0 & 0 & 0 & 0 & -\frac{2}{3} & \frac{1}{3}  & -\frac{2}{3} \\
+                    III & 0 & 0 & 1 & 0 & 0 & 0 & \frac{1}{3}  & -\frac{2}{3} & -\frac{2}{3} \\
+                    IV  & 0 & 0 & 0 & 1 & 0 & 0 & \frac{2}{3}  & -\frac{1}{3} & -\frac{4}{3} \\
+                    V   & 0 & 0 & 0 & 0 & 1 & 0 & -\frac{1}{3} & -\frac{1}{3} & -\frac{1}{3} \\
+                    VI  & 0 & 0 & 0 & 0 & 0 & 1 & -\frac{4}{3} & -\frac{1}{3} & \frac{2}{3}
+                  \end{matrix}$    \\\hline
 
 \end{longtable}
 
-Hierraus lässt sich jetzt Schließen, dass 
-\begin{align*}  
-  x_1 -\frac{2}{3}x_7 - \frac{2}{3}x_8 + \frac{1}{3}x_9 = 0 \Leftrightarrow x_1 = \frac{2}{3}x_7 + \frac{2}{3}x_8 - \frac{1}{3}x_9, \\
-  x_2 -\frac{2}{3}x_7 + \frac{1}{3}x_8 - \frac{2}{3}x_9 = 0 \Leftrightarrow x_2 = \frac{2}{3}x_7 - \frac{1}{3}x_8 + \frac{2}{3}x_9, \\
+Hierraus lässt sich jetzt Schließen, dass
+\begin{align*}
+  x_1 -\frac{2}{3}x_7 - \frac{2}{3}x_8 + \frac{1}{3}x_9 = 0 \Leftrightarrow x_1 = \frac{2}{3}x_7 + \frac{2}{3}x_8 - \frac{1}{3}x_9,    \\
+  x_2 -\frac{2}{3}x_7 + \frac{1}{3}x_8 - \frac{2}{3}x_9 = 0 \Leftrightarrow x_2 = \frac{2}{3}x_7 - \frac{1}{3}x_8 + \frac{2}{3}x_9,    \\
   x_3 + \frac{1}{3}x_7 - \frac{2}{3}x_8 - \frac{2}{3}x_9 = 0 \Leftrightarrow x_3 = - \frac{1}{3}x_7 + \frac{2}{3}x_8 + \frac{2}{3}x_9, \\
   x_4 + \frac{2}{3}x_7 - \frac{1}{3}x_8 - \frac{4}{3}x_9 = 0 \Leftrightarrow x_4 = - \frac{2}{3}x_7 + \frac{1}{3}x_8 + \frac{4}{3}x_9, \\
-  x_5 -\frac{1}{3}x_7 - \frac{1}{3}x_8 - \frac{1}{3}x_9 = 0 \Leftrightarrow x_5 = \frac{1}{3}x_7 + \frac{1}{3}x_8 + \frac{1}{3}x_9, \\
+  x_5 -\frac{1}{3}x_7 - \frac{1}{3}x_8 - \frac{1}{3}x_9 = 0 \Leftrightarrow x_5 = \frac{1}{3}x_7 + \frac{1}{3}x_8 + \frac{1}{3}x_9,    \\
   x_6 - \frac{4}{3}x_7 - \frac{1}{3}x_8 + \frac{2}{3}x_9 = 0 \Leftrightarrow x_6 = \frac{4}{3}x_7 + \frac{1}{3}x_8 - \frac{2}{3}x_9
 \end{align*}
 
-Also gilt 
+Also gilt
 \begin{align*}
   \begin{pmatrix}
     x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \\ x_6 \\ x_7 \\ x_8 \\ x_9
-  \end{pmatrix} \displaybreak[2] \\ =
+  \end{pmatrix} \displaybreak[2]     \\ =
   \begin{pmatrix}
-    \frac{2}{3}x_7 + \frac{2}{3}x_8 - \frac{1}{3}x_9 \\
-    \frac{2}{3}x_7 - \frac{1}{3}x_8 + \frac{2}{3}x_9 \\ 
+    \frac{2}{3}x_7 + \frac{2}{3}x_8 - \frac{1}{3}x_9   \\
+    \frac{2}{3}x_7 - \frac{1}{3}x_8 + \frac{2}{3}x_9   \\
     - \frac{1}{3}x_7 + \frac{2}{3}x_8 + \frac{2}{3}x_9 \\
     - \frac{2}{3}x_7 + \frac{1}{3}x_8 + \frac{4}{3}x_9 \\
-    \frac{1}{3}x_7 + \frac{1}{3}x_8 + \frac{1}{3}x_9 \\
-    \frac{4}{3}x_7 + \frac{1}{3}x_8 - \frac{2}{3}x_9 \\
-    x_7 \\
-    x_8 \\
+    \frac{1}{3}x_7 + \frac{1}{3}x_8 + \frac{1}{3}x_9   \\
+    \frac{4}{3}x_7 + \frac{1}{3}x_8 - \frac{2}{3}x_9   \\
+    x_7                                                \\
+    x_8                                                \\
     x_9
-  \end{pmatrix} \displaybreak[2] \\ = 
+  \end{pmatrix} \displaybreak[2]             \\ =
   \begin{pmatrix}
-    \frac{2}{3}x_7\\
-    \frac{2}{3}x_7 \\ 
+    \frac{2}{3}x_7   \\
+    \frac{2}{3}x_7   \\
     - \frac{1}{3}x_7 \\
     - \frac{2}{3}x_7 \\
-    \frac{1}{3}x_7 \\
-    \frac{4}{3}x_7 \\
-    1x_7 \\
-    0x_7 \\
+    \frac{1}{3}x_7   \\
+    \frac{4}{3}x_7   \\
+    1x_7             \\
+    0x_7             \\
     0x_7
   \end{pmatrix} + \begin{pmatrix}
-    \frac{2}{3}x_8 \\
-    -\frac{1}{3}x_8 \\ 
-    \frac{2}{3}x_8 \\
-    \frac{1}{3}x_8 \\
-    \frac{1}{3}x_8 \\
-    \frac{1}{3}x_8 \\
-    0x_8 \\
-    1x_8 \\
-    0x_8
-  \end{pmatrix} + \begin{pmatrix}
-    - \frac{1}{3}x_9 \\
-    \frac{2}{3}x_9 \\ 
-    \frac{2}{3}x_9 \\
-    \frac{4}{3}x_9 \\
-    \frac{1}{3}x_9 \\
-    - \frac{2}{3}x_9 \\
-    0x_9 \\
-    0x_9 \\
-    1x_9
-  \end{pmatrix} \displaybreak[2] \\ = x_7\begin{pmatrix}
-    \frac{2}{3}\\
-    \frac{2}{3} \\ 
+                    \frac{2}{3}x_8  \\
+                    -\frac{1}{3}x_8 \\
+                    \frac{2}{3}x_8  \\
+                    \frac{1}{3}x_8  \\
+                    \frac{1}{3}x_8  \\
+                    \frac{1}{3}x_8  \\
+                    0x_8            \\
+                    1x_8            \\
+                    0x_8
+                  \end{pmatrix} + \begin{pmatrix}
+                                    - \frac{1}{3}x_9 \\
+                                    \frac{2}{3}x_9   \\
+                                    \frac{2}{3}x_9   \\
+                                    \frac{4}{3}x_9   \\
+                                    \frac{1}{3}x_9   \\
+                                    - \frac{2}{3}x_9 \\
+                                    0x_9             \\
+                                    0x_9             \\
+                                    1x_9
+                                  \end{pmatrix} \displaybreak[2] \\ = x_7\begin{pmatrix}
+    \frac{2}{3}   \\
+    \frac{2}{3}   \\
     - \frac{1}{3} \\
     - \frac{2}{3} \\
-    \frac{1}{3} \\
-    \frac{4}{3} \\
-    1 \\
-    0 \\
+    \frac{1}{3}   \\
+    \frac{4}{3}   \\
+    1             \\
+    0             \\
     0
   \end{pmatrix} + x_8\begin{pmatrix}
-    \frac{2}{3} \\
-    -\frac{1}{3} \\ 
-    \frac{2}{3} \\
-    \frac{1}{3} \\
-    \frac{1}{3} \\
-    \frac{1}{3} \\
-    0 \\
-    1 \\
+    \frac{2}{3}  \\
+    -\frac{1}{3} \\
+    \frac{2}{3}  \\
+    \frac{1}{3}  \\
+    \frac{1}{3}  \\
+    \frac{1}{3}  \\
+    0            \\
+    1            \\
     0
   \end{pmatrix} + x_9\begin{pmatrix}
     - \frac{1}{3} \\
-    \frac{2}{3} \\ 
-    \frac{2}{3} \\
-    \frac{4}{3} \\
-    \frac{1}{3} \\
+    \frac{2}{3}   \\
+    \frac{2}{3}   \\
+    \frac{4}{3}   \\
+    \frac{1}{3}   \\
     - \frac{2}{3} \\
-    0 \\
-    0 \\
+    0             \\
+    0             \\
     1
   \end{pmatrix}
 \end{align*}
 
 wobei $x_7, x_8, x_9 \in \mathbb{R}$
 
-Der Lösungsraum des Tupels in $\mathbb{R}^9$ ist also 
+Der Lösungsraum des Tupels in $\mathbb{R}^9$ ist also
 
 \[
-L = \left\{
+  L = \left\{
   x_7\begin{pmatrix}
-    \frac{2}{3}\\
-    \frac{2}{3} \\ 
+    \frac{2}{3}   \\
+    \frac{2}{3}   \\
     - \frac{1}{3} \\
     - \frac{2}{3} \\
-    \frac{1}{3} \\
-    \frac{4}{3} \\
-    1 \\
-    0 \\
+    \frac{1}{3}   \\
+    \frac{4}{3}   \\
+    1             \\
+    0             \\
     0
   \end{pmatrix} + x_8\begin{pmatrix}
-    \frac{2}{3} \\
-    -\frac{1}{3} \\ 
-    \frac{2}{3} \\
-    \frac{1}{3} \\
-    \frac{1}{3} \\
-    \frac{1}{3} \\
-    0 \\
-    1 \\
+    \frac{2}{3}  \\
+    -\frac{1}{3} \\
+    \frac{2}{3}  \\
+    \frac{1}{3}  \\
+    \frac{1}{3}  \\
+    \frac{1}{3}  \\
+    0            \\
+    1            \\
     0
   \end{pmatrix} + x_9\begin{pmatrix}
     - \frac{1}{3} \\
-    \frac{2}{3} \\ 
-    \frac{2}{3} \\
-    \frac{4}{3} \\
-    \frac{1}{3} \\
+    \frac{2}{3}   \\
+    \frac{2}{3}   \\
+    \frac{4}{3}   \\
+    \frac{1}{3}   \\
     - \frac{2}{3} \\
-    0 \\
-    0 \\
+    0             \\
+    0             \\
     1
-  \end{pmatrix} \Bigg| x_7, x_8, x_9 \in \mathbb{R} 
+  \end{pmatrix} \Bigg| x_7, x_8, x_9 \in \mathbb{R}
   \right\}
 \]
 
 Die Menge der Rationalen Lösungen kann eingach beschrieben werden also
 
 \[
-L = \left\{
+  L = \left\{
   x_7\begin{pmatrix}
-    \frac{2}{3}\\
-    \frac{2}{3} \\ 
+    \frac{2}{3}   \\
+    \frac{2}{3}   \\
     - \frac{1}{3} \\
     - \frac{2}{3} \\
-    \frac{1}{3} \\
-    \frac{4}{3} \\
-    1 \\
-    0 \\
+    \frac{1}{3}   \\
+    \frac{4}{3}   \\
+    1             \\
+    0             \\
     0
   \end{pmatrix} + x_8\begin{pmatrix}
-    \frac{2}{3} \\
-    -\frac{1}{3} \\ 
-    \frac{2}{3} \\
-    \frac{1}{3} \\
-    \frac{1}{3} \\
-    \frac{1}{3} \\
-    0 \\
-    1 \\
+    \frac{2}{3}  \\
+    -\frac{1}{3} \\
+    \frac{2}{3}  \\
+    \frac{1}{3}  \\
+    \frac{1}{3}  \\
+    \frac{1}{3}  \\
+    0            \\
+    1            \\
     0
   \end{pmatrix} + x_9\begin{pmatrix}
     - \frac{1}{3} \\
-    \frac{2}{3} \\ 
-    \frac{2}{3} \\
-    \frac{4}{3} \\
-    \frac{1}{3} \\
+    \frac{2}{3}   \\
+    \frac{2}{3}   \\
+    \frac{4}{3}   \\
+    \frac{1}{3}   \\
     - \frac{2}{3} \\
-    0 \\
-    0 \\
+    0             \\
+    0             \\
     1
-  \end{pmatrix} \Bigg| x_7, x_8, x_9 \in \mathbb{Q} 
+  \end{pmatrix} \Bigg| x_7, x_8, x_9 \in \mathbb{Q}
   \right\}
 \]
 
-Um eine Lösung in $\mathbb{Z}^9$ zu erhalten kann sichergestellt werden, dass alle Komponenten
-ein vielfaches von drei sind. Hierfür kann beispielsweise die hinreichende, aber nicht notwendige Bedingung dass $x_7 = 3a, x_8 = 3b, x_9 = 3c$ mit $a, b, c \in \mathbb{Z}$ aufgestellt werden.
+Um eine Lösung in $\mathbb{Z}^9$ zu erhalten kann sichergestellt werden, dass
+alle Komponenten ein vielfaches von drei sind. Hierfür kann beispielsweise die
+hinreichende, aber nicht notwendige Bedingung dass $x_7 = 3a, x_8 = 3b, x_9 =
+  3c$ mit $a, b, c \in \mathbb{Z}$ aufgestellt werden.
 
-Man wähle beispielsweise $a = 1, b = 1, c = 1$, so erhält an das magische Quadrat 
+Man wähle beispielsweise $a = 1, b = 1, c = 1$, so erhält an das magische
+Quadrat
 \[
-\begin{pmatrix}
-  3 & 3 & 3 \\ 3 & 3 & 3 \\ 3 & 3 & 3
-\end{pmatrix}
+  \begin{pmatrix}
+    3 & 3 & 3 \\ 3 & 3 & 3 \\ 3 & 3 & 3
+  \end{pmatrix}
 \]
 
 Dieses ist auch eine Lösung für ein magisches Quadrat aus $\mathbb{N}^9$.
@@ -961,4 +971,4 @@ def gauss_jordan(matrix: list[list[float]], constants: list[list[float]] | None)
 
   return matrix, constants
   
-\end{lstlisting} 
+\end{lstlisting}

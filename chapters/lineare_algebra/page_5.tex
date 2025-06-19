@@ -5,196 +5,211 @@ Bestimmen Sie die Ergebnisse der folgenden Rechenoperationen.
 
 \subsection{a}
 \begin{align*}
-  3\begin{pmatrix} 1 \\ 1 \end{pmatrix} + 5 \begin{pmatrix} 4 \\ 1 \end{pmatrix}
-  &= \begin{pmatrix} 3 \cdot 1 \\ 3 \cdot 1 \end{pmatrix} + \begin{pmatrix} 5 \cdot 4 \\ 5 \cdot 1 \end{pmatrix} \\
-  &= \begin{pmatrix} 3 \\ 3 \end{pmatrix} + \begin{pmatrix} 20 \\ 5 \end{pmatrix} \\
-  &= \begin{pmatrix} 3+20 \\ 3+5 \end{pmatrix} \\  
-  &= \begin{pmatrix} 23 \\ 8 \end{pmatrix}
+    3\begin{pmatrix} 1 \\ 1 \end{pmatrix} + 5 \begin{pmatrix} 4 \\ 1 \end{pmatrix}
+     & = \begin{pmatrix} 3 \cdot 1 \\ 3 \cdot 1 \end{pmatrix} + \begin{pmatrix} 5 \cdot 4 \\ 5 \cdot 1 \end{pmatrix} \\
+     & = \begin{pmatrix} 3 \\ 3 \end{pmatrix} + \begin{pmatrix} 20 \\ 5 \end{pmatrix}                                \\
+     & = \begin{pmatrix} 3+20 \\ 3+5 \end{pmatrix}                                                                   \\
+     & = \begin{pmatrix} 23 \\ 8 \end{pmatrix}
 \end{align*}
 
 \subsection{b}
 \begin{align*}
-  10\begin{pmatrix} 5 \\ 4 \\ 3 \end{pmatrix} + 4 \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \\ 1 \end{pmatrix}
-  &= \begin{pmatrix} 10 \cdot 5 \\ 10 \cdot 4 \\ 10 \cdot 3 \end{pmatrix} + \begin{pmatrix} 4 \cdot 1 \\ 4 \cdot 1 \\ 4 \cdot 0 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \\ 1 \end{pmatrix} \\
-  &= \begin{pmatrix} 50 \\ 40 \\ 30 \end{pmatrix} + \begin{pmatrix} 4 \\ 4 \\ 0 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \\ 1 \end{pmatrix} \\
-  &= \begin{pmatrix} 50 + 4 + 3 \\ 40 + 4 + 2 \\ 30 + 0 + 1 \end{pmatrix} \\
-  &= \begin{pmatrix} 57 \\ 46 \\ 31 \end{pmatrix}
+    10\begin{pmatrix} 5 \\ 4 \\ 3 \end{pmatrix} + 4 \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \\ 1 \end{pmatrix}
+     & = \begin{pmatrix} 10 \cdot 5 \\ 10 \cdot 4 \\ 10 \cdot 3 \end{pmatrix} + \begin{pmatrix} 4 \cdot 1 \\ 4 \cdot 1 \\ 4 \cdot 0 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \\ 1 \end{pmatrix} \\
+     & = \begin{pmatrix} 50 \\ 40 \\ 30 \end{pmatrix} + \begin{pmatrix} 4 \\ 4 \\ 0 \end{pmatrix} + \begin{pmatrix} 3 \\ 2 \\ 1 \end{pmatrix}                                                 \\
+     & = \begin{pmatrix} 50 + 4 + 3 \\ 40 + 4 + 2 \\ 30 + 0 + 1 \end{pmatrix}                                                                                                                 \\
+     & = \begin{pmatrix} 57 \\ 46 \\ 31 \end{pmatrix}
 \end{align*}
 
 \hrulefill{}
 
 \section{Aufgabe 2}
 
-Sind die folgenden Mengen von Vektoren linear unabhängig? Können sie durch Entfernen eines Vektors linear unabhängig gemacht werden?
+Sind die folgenden Mengen von Vektoren linear unabhängig? Können sie durch
+Entfernen eines Vektors linear unabhängig gemacht werden?
 
-Um auf lineare Unabhängigkeit zu prüfen, gibt es mehrere Möglichkeiten. Hier zwei gängige Ansätze:
+Um auf lineare Unabhängigkeit zu prüfen, gibt es mehrere Möglichkeiten. Hier
+zwei gängige Ansätze:
 
 1.  Prüfung über die Determinante:
-    Man bildet aus den Vektoren eine quadratische Matrix $A$. Die Vektoren sind linear unabhängig, wenn die Determinante dieser Matrix 
-    ungleich null ist ($\det(A) \neq 0$). Ist die Determinante gleich null ($\det(A) = 0$), sind die Vektoren linear abhängig. 
-    (Diese Methode ist direkt nur anwendbar, wenn die Anzahl der Vektoren der Dimension des Raumes entspricht, z.B. 2 Vektoren im $\mathbb{R}^2$ oder 3 Vektoren im $\mathbb{R}^3$).
+Man bildet aus den Vektoren eine quadratische Matrix $A$. Die Vektoren sind linear unabhängig, wenn die Determinante dieser Matrix
+ungleich null ist ($\det(A) \neq 0$). Ist die Determinante gleich null ($\det(A) = 0$), sind die Vektoren linear abhängig.
+(Diese Methode ist direkt nur anwendbar, wenn die Anzahl der Vektoren der Dimension des Raumes entspricht, z.B. 2 Vektoren im $\mathbb{R}^2$ oder 3 Vektoren im $\mathbb{R}^3$).
 
 2.  Prüfung über die Definition der linearen Unabhängigkeit:
-    Eine Menge von Vektoren $\{v_1, v_2, \dots, v_n\}$ ist linear unabhängig, wenn die einzige Lösung der Vektorgleichung
-    \[ x_1v_1 + x_2v_2 + \cdots + x_n v_n = \mathbf{0} \]
-    die sogenannte triviale Lösung ist, bei der alle Skalare $x_1, x_2, \dots, x_n$ gleich null sind ($x_1 = x_2 = \cdots = x_n = 0$).
-    Wenn es mindestens eine nicht-triviale Lösung gibt (d.\ h.\ mindestens ein $x_i \neq 0$), dann sind die Vektoren linear abhängig.
+Eine Menge von Vektoren $\{v_1, v_2, \dots, v_n\}$ ist linear unabhängig, wenn die einzige Lösung der Vektorgleichung
+\[ x_1v_1 + x_2v_2 + \cdots + x_n v_n = \mathbf{0} \]
+die sogenannte triviale Lösung ist, bei der alle Skalare $x_1, x_2, \dots, x_n$
+gleich null sind ($x_1 = x_2 = \cdots = x_n = 0$). Wenn es mindestens eine
+nicht-triviale Lösung gibt (d.\ h.\ mindestens ein $x_i \neq 0$), dann sind die
+Vektoren linear abhängig.
 
 \subsection{a}
 \[ \left\{ \begin{pmatrix} 1 \\ 1 \end{pmatrix}, \begin{pmatrix} 1 \\ 0 \end{pmatrix} \right\} \]
 
 \subsubsection*{Prüfung für a über Determinante}
 1.  Matrix aus den Vektoren erstellen:
-    \[ A = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix} \]
+\[ A = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix} \]
 
 2. Determinante der Matrix A berechnen
-    \begin{align*}
-        \det(A) = A_{1,1} \cdot A_{2,2} - A_{2,1} \cdot A_{1,2} = 1 \cdot 0 - 1 \cdot 1 = 0 - 1 = -1
-    \end{align*}
-    Da die Determinante ungleich null ist, ist die Linearkombination linear unabhängig.
+\begin{align*}
+    \det(A) = A_{1,1} \cdot A_{2,2} - A_{2,1} \cdot A_{1,2} = 1 \cdot 0 - 1 \cdot 1 = 0 - 1 = -1
+\end{align*}
+Da die Determinante ungleich null ist, ist die Linearkombination linear unabhängig.
 
 \subsubsection{Prüfung für a über Linearkombination}
 
 \begin{align*}
     x_1 \cdot \begin{pmatrix}
-        1 \\1
-    \end{pmatrix} + x_2 \cdot \begin{pmatrix}
-        1 \\0
-    \end{pmatrix} = \begin{pmatrix}
-        0 \\0
-    \end{pmatrix} \\
-        \begin{pmatrix}
+                  1 \\1
+              \end{pmatrix} + x_2 \cdot \begin{pmatrix}
+                                            1 \\0
+                                        \end{pmatrix} = \begin{pmatrix}
+                                                            0 \\0
+                                                        \end{pmatrix}            \\
+    \begin{pmatrix}
         1 \cdot x_1 \\1 \cdot x_1
     \end{pmatrix} +\begin{pmatrix}
-        1 \cdot x_2 \\0 \cdot x_2
-    \end{pmatrix} = \begin{pmatrix}
-        0 \\0
-    \end{pmatrix} \\
-            \begin{pmatrix}
+                       1 \cdot x_2 \\0 \cdot x_2
+                   \end{pmatrix} = \begin{pmatrix}
+                                       0 \\0
+                                   \end{pmatrix}                                 \\
+    \begin{pmatrix}
         1 \cdot x_1 + 1 \cdot x_2 \\1 \cdot x_1 + 0 \cdot x_2
     \end{pmatrix} = \begin{pmatrix}
-        0 \\0
-    \end{pmatrix} \\
+                        0 \\0
+                    \end{pmatrix}                          \\
     \begin{cases}
-       \text{I:\@} & 1 \cdot x_1 + 1  \cdot x_2 = 0 \\
-       \text{II:\@} & 1 \cdot x_1 + 0 \cdot x_2 = 0
+        \text{I:\@}  & 1 \cdot x_1 + 1  \cdot x_2 = 0 \\
+        \text{II:\@} & 1 \cdot x_1 + 0 \cdot x_2 = 0
+    \end{cases}                                 \\
+    \begin{cases}
+        \text{I:\@}  & x_1 + x_2 = 0              \\
+        \text{II:\@} & x_1 \phantom{{} + x_2} = 0
     \end{cases} \\
-    \begin{cases}
-       \text{I:\@} & x_1 + x_2 = 0 \\
-       \text{II:\@} & x_1 \phantom{{} + x_2} = 0
-    \end{cases}\\
-    \text{in I einsetzen} \\
-    0 + x_2 = 0 \\
+    \text{in I einsetzen}                                                         \\
+    0 + x_2 = 0                                                                   \\
     x_2 = 0
 \end{align*}
 
-Die einzige Lösung des linearen Gleichungssystem $x_1 = x_2 = 0$ ist, sind die Vektoren linear unabhängig.
+Die einzige Lösung des linearen Gleichungssystem $x_1 = x_2 = 0$ ist, sind die
+Vektoren linear unabhängig.
 
 \subsection{b}
 \[ \left\{ \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix},
-\begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix}, \begin{pmatrix} 2 \\ 1 \\ 1 \end{pmatrix},
-\begin{pmatrix} 1 \\ 2 \\ 2 \end{pmatrix} \right\} \]
+    \begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix}, \begin{pmatrix} 2 \\ 1 \\ 1 \end{pmatrix},
+    \begin{pmatrix} 1 \\ 2 \\ 2 \end{pmatrix} \right\} \]
 
-Es können nur drei Vektoren aus $\mathbb{R}^3$ linear unabhängig sein. Jede Kombination aus mehr als drei Vektoren aus $\mathbb{R}^3$ ist linear abhängig. Daher sind die vier Vektoren linear abhängig.
+Es können nur drei Vektoren aus $\mathbb{R}^3$ linear unabhängig sein. Jede
+Kombination aus mehr als drei Vektoren aus $\mathbb{R}^3$ ist linear abhängig.
+Daher sind die vier Vektoren linear abhängig.
 
-Um auf lineare Unabhängigkeit zu prüfen, wird ein beliebigen Vektor entfernt.\ hier wird der vierte Vektor entfernt.
+Um auf lineare Unabhängigkeit zu prüfen, wird ein beliebigen Vektor entfernt.\
+hier wird der vierte Vektor entfernt.
 
-Im schlimmsten Fall kann es passieren, dass vier Linearkombinationen auf lineare Unabhängigkeit prüfen müssen, bis wir eine Linearkombination gefunden wird, welche linear unabhängig ist.
+Im schlimmsten Fall kann es passieren, dass vier Linearkombinationen auf
+lineare Unabhängigkeit prüfen müssen, bis wir eine Linearkombination gefunden
+wird, welche linear unabhängig ist.
 
 \subsubsection{Prüfung für b über Determinante}
 1.  Matrix aus den Vektoren erstellen:
-    \[ B = \begin{pmatrix} 1 & 1 & 2 \\ 1 & 0 & 1 \\ 1 & 1 & 1 \end{pmatrix} \]
+\[ B = \begin{pmatrix} 1 & 1 & 2 \\ 1 & 0 & 1 \\ 1 & 1 & 1 \end{pmatrix} \]
 
 2. Determinante der Matrix B berechnen
-    \begin{align*}
-        \det(B) = B_{1,1} \cdot B_{2,2} \cdot B_{3,3} + B_{1,2} \cdot B_{2,3} \cdot B_{3,1} + B_{1,3} \cdot B_{2,1} \cdot B_{3,2} \\ - B_{3,1} \cdot B_{2,2} \cdot B_{1,3} - B_{3,2} \cdot B_{2,3} \cdot B_{1,1} - B_{3,3} \cdot B_{2,1} \cdot B_{1,2}\\
-        = 1 \cdot 0 \cdot 1 + 1 \cdot 1 \cdot 1 + 2 \cdot 1 \cdot 1 - 1 \cdot 0 \cdot 2 - 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \\
-        = 0 + 1 + 2 - 0 - 1 - 1 \\
-        = 1
-    \end{align*}
-    Da die Determinante ungleich null ist, kann die Vektormenge durch entfernen des vierten Vektors linear unabhängig gemacht werden.
+\begin{align*}
+    \det(B) = B_{1,1} \cdot B_{2,2} \cdot B_{3,3} + B_{1,2} \cdot B_{2,3} \cdot B_{3,1} + B_{1,3} \cdot B_{2,1} \cdot B_{3,2} \\ - B_{3,1} \cdot B_{2,2} \cdot B_{1,3} - B_{3,2} \cdot B_{2,3} \cdot B_{1,1} - B_{3,3} \cdot B_{2,1} \cdot B_{1,2}\\
+    = 1 \cdot 0 \cdot 1 + 1 \cdot 1 \cdot 1 + 2 \cdot 1 \cdot 1 - 1 \cdot 0 \cdot 2 - 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1   \\
+    = 0 + 1 + 2 - 0 - 1 - 1                                                                                                   \\
+    = 1
+\end{align*}
+Da die Determinante ungleich null ist, kann die Vektormenge durch entfernen des vierten Vektors linear unabhängig gemacht werden.
 
 \subsubsection{Prüfung für b über Linearkombination}
 \begin{align*}
     x_1 \cdot \begin{pmatrix}
-        1 \\ 1 \\ 1
-    \end{pmatrix} + x_2 \cdot \begin{pmatrix}
-        1 \\ 0 \\ 1
-    \end{pmatrix} + x_3 \cdot \begin{pmatrix}
-        2 \\ 1 \\ 1
-    \end{pmatrix} = \begin{pmatrix}
-        0 \\ 0 \\ 0
-    \end{pmatrix} \\
+                  1 \\ 1 \\ 1
+              \end{pmatrix} + x_2 \cdot \begin{pmatrix}
+                                            1 \\ 0 \\ 1
+                                        \end{pmatrix} + x_3 \cdot \begin{pmatrix}
+                                                                      2 \\ 1 \\ 1
+                                                                  \end{pmatrix} = \begin{pmatrix}
+                                                                                      0 \\ 0 \\ 0
+                                                                                  \end{pmatrix}                                                                                \\
     \begin{pmatrix}
         1 \cdot x_1 \\ 1 \cdot x_1 \\ 1 \cdot x_1
     \end{pmatrix} + \begin{pmatrix}
-        1 \cdot x_2\\ 0 \cdot x_2 \\ 1 \cdot x_2
-    \end{pmatrix} + \begin{pmatrix}
-        2 \cdot x_3 \\ 1 \cdot x_3 \\ 1 \cdot x_3
-    \end{pmatrix} = \begin{pmatrix}
-        0 \\ 0 \\ 0
-    \end{pmatrix} \\
+                        1 \cdot x_2 \\ 0 \cdot x_2 \\ 1 \cdot x_2
+                    \end{pmatrix} + \begin{pmatrix}
+                                        2 \cdot x_3 \\ 1 \cdot x_3 \\ 1 \cdot x_3
+                                    \end{pmatrix} = \begin{pmatrix}
+                                                        0 \\ 0 \\ 0
+                                                    \end{pmatrix}                                                                                                    \\
     \begin{cases}
-       \text{I:\@} & 1 \cdot x_1 + 1 \cdot x_2 + 2 \cdot x_3 = 0 \\
-       \text{II:\@} & 1 \cdot x_1 + 0 \cdot x_2 + 1 \cdot x_3 = 0 \\
-       \text{III:\@} & 1 \cdot x_1 + 1 \cdot x_2 + 1 \cdot x_3 = 0
-    \end{cases} \\
+        \text{I:\@}   & 1 \cdot x_1 + 1 \cdot x_2 + 2 \cdot x_3 = 0 \\
+        \text{II:\@}  & 1 \cdot x_1 + 0 \cdot x_2 + 1 \cdot x_3 = 0 \\
+        \text{III:\@} & 1 \cdot x_1 + 1 \cdot x_2 + 1 \cdot x_3 = 0
+    \end{cases}                                                                                                                 \\
     \begin{cases}
-        \text{I:\@} & x_1 + x_2 + 2x_3 = 0 \\
-        \text{II:\@} & x_1 \phantom{{}+x_2} + \phantom{{}2}x_3 = 0 \quad | -x_3 \Leftrightarrow x_1 = -x_3\\
+        \text{I:\@}   & x_1 + x_2 + 2x_3 = 0                                                                \\
+        \text{II:\@}  & x_1 \phantom{{}+x_2} + \phantom{{}2}x_3 = 0 \quad | -x_3 \Leftrightarrow x_1 = -x_3 \\
         \text{III:\@} & x_1 + x_2 + \phantom{{}2}x_3 = 0
     \end{cases} \\
-    x_1 \text{ in III einsetzen} \\
-    -x_3 + x_2 + x_3 = 0 \\ 
-    \Leftrightarrow x_2 = 0 \\
-    x_1 \text{ und } x_2 \text{ in I einsetzen} \\
-    -x_3 + 0 + 2x_3 = 0 \\
-    \Leftrightarrow -x_3 + 2x_3 = 0 \\
-    \Leftrightarrow x_3 = 0 \\
-    x_3 \text{ in II einsetzen}\\
-    x_1 + 0 = 0 \\
+    x_1 \text{ in III einsetzen}                                                                                                                                                \\
+    -x_3 + x_2 + x_3 = 0                                                                                                                                                        \\
+    \Leftrightarrow x_2 = 0                                                                                                                                                     \\
+    x_1 \text{ und } x_2 \text{ in I einsetzen}                                                                                                                                 \\
+    -x_3 + 0 + 2x_3 = 0                                                                                                                                                         \\
+    \Leftrightarrow -x_3 + 2x_3 = 0                                                                                                                                             \\
+    \Leftrightarrow x_3 = 0                                                                                                                                                     \\
+    x_3 \text{ in II einsetzen}                                                                                                                                                 \\
+    x_1 + 0 = 0                                                                                                                                                                 \\
     \Leftrightarrow x_1 = 0
 \end{align*}
 Die einzige Lösung des linearen Gleichungssystem ist $x_1 = x_2 = x_3 = 0$, das heißt, dass die Vektormenge ohne den vierten Vektor linear unabhängig ist.
-
 
 \hrulefill{}
 \section{Aufgabe 3}
 Bestimmen Sie die Dimension des Untervektorraums
 \[ V := \text{span}\left\{ \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}, \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix} \right\} \]
 
-Die Dimension eines Untervektorraums ist die anzahl der Basisvektoren. Um herauszufinden, ob die gegebenen Vektoren eines Basis des $\mathbb{R}^3$ bilden, muss auf lineare unabhängigkeit geprüft werden.
+Die Dimension eines Untervektorraums ist die anzahl der Basisvektoren. Um
+herauszufinden, ob die gegebenen Vektoren eines Basis des $\mathbb{R}^3$
+bilden, muss auf lineare unabhängigkeit geprüft werden.
 
-Hier bietet es sich nicht an, dies über die Determinante zu errechnen, da nur quadratische Matzitzen eine Determinante besitzen.
+Hier bietet es sich nicht an, dies über die Determinante zu errechnen, da nur
+quadratische Matzitzen eine Determinante besitzen.
 
 \begin{align*}
     x_1 \cdot \begin{pmatrix}
-        1 \\ 1 \\1
-    \end{pmatrix} + x_2 \cdot \begin{pmatrix}
-        1 \\ 1 \\ 0
-    \end{pmatrix} = \begin{pmatrix}
-        0 \\ 0 \\ 0
-    \end{pmatrix} \\
+                  1 \\ 1 \\1
+              \end{pmatrix} + x_2 \cdot \begin{pmatrix}
+                                            1 \\ 1 \\ 0
+                                        \end{pmatrix} = \begin{pmatrix}
+                                                            0 \\ 0 \\ 0
+                                                        \end{pmatrix}             \\
     \begin{pmatrix}
         1 \cdot x_1 \\ 1 \cdot x_1 \\1 \cdot x_1
     \end{pmatrix} + \begin{pmatrix}
-        1 \cdot x_2 \\ 1 \cdot x_2 \\ 0 \cdot x_2
-    \end{pmatrix} = \begin{pmatrix}
-        0 \\ 0 \\ 0
-    \end{pmatrix} \\
+                        1 \cdot x_2 \\ 1 \cdot x_2 \\ 0 \cdot x_2
+                    \end{pmatrix} = \begin{pmatrix}
+                                        0 \\ 0 \\ 0
+                                    \end{pmatrix}                       \\
     \begin{cases}
-        \text{I:\@} & 1 \cdot x_1 + 1 \cdot x_2 = 0 \\
-        \text{II:\@} & 1 \cdot x_1 + 1 \cdot x_2 = 0 \\
+        \text{I:\@}   & 1 \cdot x_1 + 1 \cdot x_2 = 0 \\
+        \text{II:\@}  & 1 \cdot x_1 + 1 \cdot x_2 = 0 \\
         \text{III:\@} & 1 \cdot x_1 + 0 \cdot x_2 = 0
-    \end{cases} \\
+    \end{cases}                                  \\
     \begin{cases}
-        \text{I:\@} & x_1 + x_2 = 0 \\
-        \text{II:\@} & x_1 + x_2 = 0 \\
+        \text{I:\@}   & x_1 + x_2 = 0              \\
+        \text{II:\@}  & x_1 + x_2 = 0              \\
         \text{III:\@} & x_1 \phantom{{} + x_2} = 0
     \end{cases} \\
-    x_1 \text{ in I einsetzen} \\
-    0 + x_2 = 0 \\
+    x_1 \text{ in I einsetzen}                                                     \\
+    0 + x_2 = 0                                                                    \\
     \Leftrightarrow x_2 = 0
 \end{align*}
 
-Da $x_1 = x_2 = 0$ ist, ist die Vektormenge linear unabhängig. Diese zwei linear unabhängigen Vektoren spannen den Untervektorraum V auf und bilden somit eine Basis dieses Untervektorraums V. Da diese Basis aus zwei Vektoren besteht, ist die Dimension des Untervektorraums V gleich 2.
+Da $x_1 = x_2 = 0$ ist, ist die Vektormenge linear unabhängig. Diese zwei
+linear unabhängigen Vektoren spannen den Untervektorraum V auf und bilden somit
+eine Basis dieses Untervektorraums V. Da diese Basis aus zwei Vektoren besteht,
+ist die Dimension des Untervektorraums V gleich 2.

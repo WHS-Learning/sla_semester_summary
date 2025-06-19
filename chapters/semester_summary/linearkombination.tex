@@ -1,14 +1,21 @@
 \chapter{Linearkombinationen}
 
-Eine Linearkombination von Vektoren ist eine Summe dieser Vektoren, wobei jeder Vektor zuvor mit einem Skalar (einer reellen Zahl) multipliziert wird. Das Ergebnis einer solchen Operation ist wiederum ein Vektor.
+Eine Linearkombination von Vektoren ist eine Summe dieser Vektoren, wobei jeder
+Vektor zuvor mit einem Skalar (einer reellen Zahl) multipliziert wird. Das
+Ergebnis einer solchen Operation ist wiederum ein Vektor.
 
-Ein Vektor $\vec{x}$ wird als Linearkombination der Vektoren $\vec{v}_1, \vec{v}_2, \ldots, \vec{v}_n$ bezeichnet, falls Skalare $k_1, k_2, \ldots, k_n \in \mathbb{R}$ existieren, sodass gilt:
+Ein Vektor $\vec{x}$ wird als Linearkombination der Vektoren $\vec{v}_1,
+    \vec{v}_2, \ldots, \vec{v}_n$ bezeichnet, falls Skalare $k_1, k_2, \ldots, k_n
+    \in \mathbb{R}$ existieren, sodass gilt:
 
 \[
     \vec{x} = k_1 \cdot \vec{v}_1 + k_2 \cdot \vec{v}_2 + \ldots + k_n \cdot \vec{v}_n
 \]
 
-Um festzustellen, ob ein gegebener Vektor $\vec{x}$ als Linearkombination anderer Vektoren dargestellt werden kann und um die entsprechenden Skalare $k_i$ zu bestimmen, wird in der Regel ein lineares Gleichungssystem aufgestellt und gelöst.
+Um festzustellen, ob ein gegebener Vektor $\vec{x}$ als Linearkombination
+anderer Vektoren dargestellt werden kann und um die entsprechenden Skalare
+$k_i$ zu bestimmen, wird in der Regel ein lineares Gleichungssystem aufgestellt
+und gelöst.
 
 \section{Beispiel}
 
@@ -18,7 +25,9 @@ Gegeben sind die Vektoren
     \vec{u} = \begin{pmatrix} 2 \\ 4 \\ 1 \end{pmatrix}, \quad \vec{v} = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}, \quad \text{und} \quad \vec{w} = \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix}.
 \]
 
-Es soll geprüft werden, ob $\vec{w}$ eine Linearkombination von $\vec{u}$ und $\vec{v}$ ist. Gesucht sind also Skalare $a, b \in \mathbb{R}$, sodass die Gleichung $a \cdot \vec{u} + b \cdot \vec{v} = \vec{w}$ erfüllt ist.
+Es soll geprüft werden, ob $\vec{w}$ eine Linearkombination von $\vec{u}$ und
+$\vec{v}$ ist. Gesucht sind also Skalare $a, b \in \mathbb{R}$, sodass die
+Gleichung $a \cdot \vec{u} + b \cdot \vec{v} = \vec{w}$ erfüllt ist.
 
 Einsetzen der Vektorkomponenten führt zu:
 
@@ -29,19 +38,19 @@ Einsetzen der Vektorkomponenten führt zu:
 Daraus ergibt sich das folgende lineare Gleichungssystem:
 \begin{align*}
     \begin{cases}
-        \text{I:\@} & a \cdot 2 + b \cdot 0 = 1 \\
-        \text{II:\@} & a \cdot 4 + b \cdot 0 = 2 \\
+        \text{I:\@}   & a \cdot 2 + b \cdot 0 = 1 \\
+        \text{II:\@}  & a \cdot 4 + b \cdot 0 = 2 \\
+        \text{III:\@} & a \cdot 1 + b \cdot 1 = 0
+    \end{cases}                                 \\
+    \begin{cases}
+        \text{I:\@}   & a \cdot 2 = 1 \quad | : 2 \Leftrightarrow a = \frac{1}{2} \\
+        \text{II:\@}  & a \cdot 4 = 2 \quad | : 4 \Leftrightarrow a = \frac{1}{2} \\
         \text{III:\@} & a \cdot 1 + b \cdot 1 = 0
     \end{cases} \\
+    \text{Einsetzen von } a=\frac{1}{2} \text{ in Gleichung III:}             \\
     \begin{cases}
-        \text{I:\@} & a \cdot 2 = 1 \quad | : 2 \Leftrightarrow a = \frac{1}{2}\\
-        \text{II:\@} & a \cdot 4 = 2 \quad | : 4 \Leftrightarrow a = \frac{1}{2}\\
-        \text{III:\@} & a \cdot 1 + b \cdot 1 = 0
-    \end{cases} \\
-    \text{Einsetzen von } a=\frac{1}{2} \text{ in Gleichung III:} \\
-    \begin{cases}
-        \text{I:\@} & a = \frac{1}{2}\\
-        \text{II:\@} & a = \frac{1}{2}\\
+        \text{I:\@}   & a = \frac{1}{2}                                                                                                               \\
+        \text{II:\@}  & a = \frac{1}{2}                                                                                                               \\
         \text{III:\@} & \frac{1}{2} \cdot 1 + b \cdot 1 = 0 \Leftrightarrow \frac{1}{2} + b = 0 \quad |- \frac{1}{2} \Leftrightarrow b = -\frac{1}{2}
     \end{cases}
 \end{align*}
