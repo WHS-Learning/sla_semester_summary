@@ -1250,6 +1250,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.131 ...mberline {19.2}Frage 2}{67}{section.19.2}
+l.131 ...mberline {19.2}Frage 2}{67}{section.19.2}
                                                   % [3]
 
 
@@ -1675,14 +1676,14 @@ LaTeX Warning: Command \texteuro invalid in math mode on input line 32.
 
 LaTeX Warning: Command \texteuro invalid in math mode on input line 32.
 
-Missing character: There is no ¿ in font cmr10!
+Missing character: There is no ï¿½ in font cmr10!
 
 LaTeX Warning: Command \texteuro invalid in math mode on input line 33.
 
 
 LaTeX Warning: Command \texteuro invalid in math mode on input line 33.
 
-Missing character: There is no ¿ in font cmr10!
+Missing character: There is no ï¿½ in font cmr10!
 )
 
 [46
@@ -1710,6 +1711,7 @@ Chapter 17.
 
 ] (chapters/bonus_tests/test_1.tex
 Chapter 18.
+Chapter 18.
 
 Overfull \hbox (4.22386pt too wide) in paragraph at lines 1--1
 |[]\OT1/cmr/bx/n/24.88 Bonustest 1 - Rech-nen mit
@@ -1728,6 +1730,7 @@ Package pdftex.def Info: assets/bonus_tests/vector_lengths.png  used on input li
 
 
 [52
+[52
 
 
  <./assets/bonus_tests/unique_vectors.png>]
@@ -1738,7 +1741,9 @@ Overfull \hbox (21.5161pt too wide) in paragraph at lines 44--52
 
 
 [53 <./assets/bonus_tests/vector_lengths.png>]
+[53 <./assets/bonus_tests/vector_lengths.png>]
 
+[54]
 [54]
 
 [55]
@@ -1749,7 +1754,9 @@ Overfull \hbox (3.25493pt too wide) in paragraph at lines 235--236
 
 
 [56]
+[56]
 
+[57]
 [57]
 
 [58]
@@ -1793,9 +1800,13 @@ Package pdftex.def Info: assets/bonus_tests/drehmoment.png  used on input line 5
 
 
 [62]
+[62]
 
 [63 <./assets/bonus_tests/drehmoment.png>])
+[63 <./assets/bonus_tests/drehmoment.png>])
 
+[64] (chapters/bonus_tests/test_2.tex
+Chapter 19.
 [64] (chapters/bonus_tests/test_2.tex
 Chapter 19.
 
@@ -1834,6 +1845,7 @@ Overfull \hbox (111.54576pt too wide) in paragraph at lines 300--302
 
 
 [69]
+[69]
 
 [70]
 
@@ -1848,9 +1860,12 @@ Chapter 20.
 ]
 
 [74]
+[74]
 
 [75]
+[75]
 
+[76])
 [76])
 
 [77] (chapters/bonus_tests/test_9.tex
@@ -1871,6 +1886,7 @@ Chapter 21.
 
 
 ] (chapters/lineare_algebra/page_5.tex
+Chapter 22.
 Chapter 22.
 
 
@@ -4918,6 +4934,7 @@ Chapter 28.
 
 
 ] (chapters/statistik/paper_5.tex
+Chapter 29.
 Chapter 29.
 
 Overfull \hbox (8.3549pt too wide) in paragraph at lines 6--9
