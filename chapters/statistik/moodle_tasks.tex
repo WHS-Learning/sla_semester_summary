@@ -235,3 +235,47 @@ Verteilung so, dass $P(X = k) = 0$ für höchstens $k$ gilt.
     P_2 = 1.6 - 2 \cdot \frac{1}{10} - 3 \cdot \frac{1}{10} - 4 \cdot \frac{1}{10} - 5 \cdot \frac{5}{50} \\
     P_2 = \frac{1}{5}
 \end{align*}
+
+\section{Aufgabe: Normalapproximation}
+
+Beim Paketversand kann es bei jedem Paket unabhängig voneinander mit Wahrscheinlichkeit $p=\frac{1}{12}$ zu Lieferverzögerungen kommen. Täglich werden $n=240$ Pakete verschickt. Sei $X$ die zufällige Anzahl der Pakete, die nicht rechtzeitig zugestellt werden können. 
+
+\subsection{a}
+
+Berechnen Sie exakt die Wahrscheinlichkeit, dass es an einem Tag bei mindestens 19, aber gleichzeitig nur höchstens 23 Paketen zu Lieferverzögerungen kommt.
+
+\begin{align*}
+    X = \text{Anzahl Verspäteter Pakete} \\
+    X \sim B(n, p) \\
+    P(19 \leq X \leq 23) = P(X \leq 23) - P(X < 19) \\
+    = \sum_{i = 0}^{23}\left(\begin{pmatrix}
+        240 \\ i
+    \end{pmatrix} \cdot \frac{1}{12}^i \cdot \frac{11}{12}^{240 - i}\right) - \\
+    \sum_{i = 0}^{18}\left(\begin{pmatrix}
+        240 \\ i
+    \end{pmatrix} \cdot \frac{1}{12}^i \cdot \frac{11}{12}^{240 - i}\right) \\
+    = 0.422379171
+\end{align*}
+
+\subsection{b}
+
+Wir können die gesuchte Wahrscheinlichkeit auch approximativ berechnen, indem wir die Normalapproximation verwenden, welche auf dem zentralen Grenzwertsatz beruht. Berechnen Sie die Wahrscheinlichkeit, dass es an einem Tag bei mindestens 19, aber gleichzeitig nur höchstens 23 Paketen zu Lieferverzögerungen kommt, approximativ mittels einer Normalapproximation ohne Stetigkeitskorrektur. 
+
+\begin{align*}
+    X = \text{Anzahl Verspäteter Pakete} \\
+    X \sim B(n, p) \\
+    E(X) = 240 \cdot \frac{1}{12} = 20 \\
+    Var(X) = 240 \cdot \frac{1}{12} \cdot \frac{11}{12} = \frac{55}{3} \\
+    \sigma(X) = \sqrt{\frac{55}{3}}
+    P(19 \geq X \geq 23) = P(X \leq 23) - P(X < 19) \\
+    P(X \leq 23) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{23 - 20}{\sqrt{\frac{55}{3}}}\right) \sim N(0, 1)\\
+    \varphi\left(\frac{23 - 20}{\sqrt{\frac{55}{3}}}\right) \\
+    \approx \varphi\left(\frac{23 - 20}{\sqrt{\frac{55}{3}}}\right)0.70 \\
+    \overset{Tabelle}{\approx} 0.75804 = 75.80\% \\
+    P(X < 19) = P\left(\frac{X - E(X)}{\sigma} < \frac{19 - 20}{\sqrt{\frac{55}{3}}}\right) \sim N(0, 1) \\
+    \varphi \left(\frac{19 - 20}{\sqrt{\frac{55}{3}}}\right) \\
+    \approx \varphi\left(-0.23\right) = \\
+    1 - \varphi \left(0.23\right) = 1 - 0.59095 = \\
+    0.40905 \approx 40.91\%
+    P(19 \geq X \geq 23) = 0.75804 - 0.40905 = 0.34899
+\end{align*}
