@@ -238,44 +238,204 @@ Verteilung so, dass $P(X = k) = 0$ für höchstens $k$ gilt.
 
 \section{Aufgabe: Normalapproximation}
 
-Beim Paketversand kann es bei jedem Paket unabhängig voneinander mit Wahrscheinlichkeit $p=\frac{1}{12}$ zu Lieferverzögerungen kommen. Täglich werden $n=240$ Pakete verschickt. Sei $X$ die zufällige Anzahl der Pakete, die nicht rechtzeitig zugestellt werden können. 
+Beim Paketversand kann es bei jedem Paket unabhängig voneinander mit
+Wahrscheinlichkeit $p=\frac{1}{12}$ zu Lieferverzögerungen kommen. Täglich
+werden $n=240$ Pakete verschickt. Sei $X$ die zufällige Anzahl der Pakete, die
+nicht rechtzeitig zugestellt werden können.
 
 \subsection{a}
 
-Berechnen Sie exakt die Wahrscheinlichkeit, dass es an einem Tag bei mindestens 19, aber gleichzeitig nur höchstens 23 Paketen zu Lieferverzögerungen kommt.
+Berechnen Sie exakt die Wahrscheinlichkeit, dass es an einem Tag bei mindestens
+19, aber gleichzeitig nur höchstens 23 Paketen zu Lieferverzögerungen kommt.
 
 \begin{align*}
-    X = \text{Anzahl Verspäteter Pakete} \\
-    X \sim B(n, p) \\
-    P(19 \leq X \leq 23) = P(X \leq 23) - P(X < 19) \\
+    X = \text{Anzahl Verspäteter Pakete}                                                               \\
+    X \sim B(n, p)                                                                                     \\
+    P(19 \leq X \leq 23) = P(X \leq 23) - P(X < 19)                                                    \\
     = \sum_{i = 0}^{23}\left(\begin{pmatrix}
-        240 \\ i
-    \end{pmatrix} \cdot \frac{1}{12}^i \cdot \frac{11}{12}^{240 - i}\right) - \\
+                                 240 \\ i
+                             \end{pmatrix} \cdot \frac{1}{12}^i \cdot \frac{11}{12}^{240 - i}\right) - \\
     \sum_{i = 0}^{18}\left(\begin{pmatrix}
-        240 \\ i
-    \end{pmatrix} \cdot \frac{1}{12}^i \cdot \frac{11}{12}^{240 - i}\right) \\
+                               240 \\ i
+                           \end{pmatrix} \cdot \frac{1}{12}^i \cdot \frac{11}{12}^{240 - i}\right)     \\
     = 0.422379171
 \end{align*}
 
 \subsection{b}
 
-Wir können die gesuchte Wahrscheinlichkeit auch approximativ berechnen, indem wir die Normalapproximation verwenden, welche auf dem zentralen Grenzwertsatz beruht. Berechnen Sie die Wahrscheinlichkeit, dass es an einem Tag bei mindestens 19, aber gleichzeitig nur höchstens 23 Paketen zu Lieferverzögerungen kommt, approximativ mittels einer Normalapproximation ohne Stetigkeitskorrektur. 
+Wir können die gesuchte Wahrscheinlichkeit auch approximativ berechnen, indem
+wir die Normalapproximation verwenden, welche auf dem zentralen Grenzwertsatz
+beruht. Berechnen Sie die Wahrscheinlichkeit, dass es an einem Tag bei
+mindestens 19, aber gleichzeitig nur höchstens 23 Paketen zu
+Lieferverzögerungen kommt, approximativ mittels einer Normalapproximation ohne
+Stetigkeitskorrektur.
 
 \begin{align*}
-    X = \text{Anzahl Verspäteter Pakete} \\
-    X \sim B(n, p) \\
-    E(X) = 240 \cdot \frac{1}{12} = 20 \\
-    Var(X) = 240 \cdot \frac{1}{12} \cdot \frac{11}{12} = \frac{55}{3} \\
-    \sigma(X) = \sqrt{\frac{55}{3}}
-    P(19 \geq X \geq 23) = P(X \leq 23) - P(X < 19) \\
-    P(X \leq 23) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{23 - 20}{\sqrt{\frac{55}{3}}}\right) \sim N(0, 1)\\
-    \varphi\left(\frac{23 - 20}{\sqrt{\frac{55}{3}}}\right) \\
-    \approx \varphi\left(\frac{23 - 20}{\sqrt{\frac{55}{3}}}\right)0.70 \\
-    \overset{Tabelle}{\approx} 0.75804 = 75.80\% \\
-    P(X < 19) = P\left(\frac{X - E(X)}{\sigma} < \frac{19 - 20}{\sqrt{\frac{55}{3}}}\right) \sim N(0, 1) \\
-    \varphi \left(\frac{19 - 20}{\sqrt{\frac{55}{3}}}\right) \\
-    \approx \varphi\left(-0.23\right) = \\
-    1 - \varphi \left(0.23\right) = 1 - 0.59095 = \\
-    0.40905 \approx 40.91\%
-    P(19 \geq X \geq 23) = 0.75804 - 0.40905 = 0.34899
+    X = \text{Anzahl Verspäteter Pakete}                                                          \\
+    X \sim B(n, p)                                                                                \\
+    E(X) = 240 \cdot \frac{1}{12} = 20                                                            \\
+    Var(X) = 240 \cdot \frac{1}{12} \cdot \frac{11}{12} = \frac{55}{3}                            \\
+    \sigma(X) = \sqrt{\frac{55}{3}}                                                               \\
+    P(19 \geq X \geq 23) = P(X \leq 23) - P(X \leq 18)                                            \\\\
+    P(X \leq 23) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{23 - 20}{\sqrt{\frac{55}{3}}}\right) \\
+    \varphi\left(\frac{23 - 20}{\sqrt{\frac{55}{3}}}\right)                                       \\
+    \approx \varphi\left(\frac{23 - 20}{\sqrt{\frac{55}{3}}}\right) = \varphi(0.70)               \\
+    \overset{Tabelle}{\approx} = 0.75804 = 75.80\%                                                \\\\
+    P(X \leq 18) = P\left(\frac{X - E(X)}{\sigma} < \frac{18 - 20}{\sqrt{\frac{55}{3}}}\right)    \\
+    \varphi \left(\frac{18 - 20}{\sqrt{\frac{55}{3}}}\right)                                      \\
+    \approx \varphi\left(-0.47\right) =                                                           \\
+    1 - \varphi \left(0.47\right) = 1 - 0.68082 =                                                 \\
+    0.31918 \approx 31.92\%                                                                       \\
+    P(19 \geq X \geq 23)                                                                          \\
+    = 0.75804 - 0.31918                                                                           \\
+    = 0.43886 = 43.89\%
+\end{align*}
+
+\subsection{c}
+
+Bei Zufallsvariablen mit Werten in den ganzen Zahlen kann die
+Normalapproximation um eine sogenannte Stetigkeitskorrektur erweitert werden.
+Dabei werden die (ganzzahligen) Intervallgrenzen um $0.5$ erhöht bzw. um $0.5$
+verringert, sodass die mit der Binomialverteilung exakt berechnete
+Wahrscheinlichkeit unverändert bleibt, aber bei der Approximation durch die
+Normalverteilung sich eine oftmals bessere Näherung an den exakten Wert ergibt.
+
+Berechnen Sie die Wahrscheinlichkeit, dass es an einem Tag bei mindestens $19$,
+aber gleichzeitig nur höchstens $23$ Paketen zu Lieferverzögerungen kommt,
+approximativ mittels einer Normalapproximation mit Stetigkeitskorrektur.
+
+\begin{align*}
+    X = \text{Anzahl Verspäteter Pakete}                                                            \\
+    X \sim B(n, p)                                                                                  \\
+    E(X) = 240 \cdot \frac{1}{12} = 20                                                              \\
+    Var(X) = 240 \cdot \frac{1}{12} \cdot \frac{11}{12} = \frac{55}{3}                              \\
+    \sigma(X) = \sqrt{\frac{55}{3}}                                                                 \\
+    P(19 \geq X \geq 23) = P(X \leq 23) - P(X \leq 18)                                              \\\\
+    P(23 \leq X) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{23 - 20}{\sqrt{\frac{55}{3}}}\right)   \\
+    \text{Stetigkeitskorrektur }                                                                    \\
+    P(23 \leq X) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{23.5 - 20}{\sqrt{\frac{55}{3}}}\right) \\
+    \varphi\left(\frac{23.5 - 20}{\sqrt{\frac{55}{3}}}\right)                                       \\
+    \approx \varphi(0.82) \overset{Tabelle}{\approx} 0.79389                                        \\\\
+    P(18 \leq X) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{18 - 20}{\sqrt{\frac{55}{3}}}\right)   \\
+    \text{Stetigkeitskorrektur}                                                                     \\
+    P(18 \leq X) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{18.5 - 20}{\sqrt{\frac{55}{3}}}\right) \\
+    \varphi\left(\frac{18.5 - 20}{\sqrt{\frac{55}{3}}}\right)                                       \\
+    \approx \varphi\left(-0.35\right)                                                               \\
+    = 1 - \varphi\left(0.35\right) \overset{Tabelle}{\approx} 1 - 0.63683                           \\
+    = 0.36317                                                                                       \\\\
+    P(19 \geq X \geq 23) = 0.79389 - 0.36317                                                        \\
+    = 0.43072
+\end{align*}
+
+\section{Aufgabe: Sigma-Bereiche}
+
+\subsection{a}
+
+Bei einer einzeldosierten Arzneiform mit einem Sollgewicht von $\mu = 50mg$
+gibt der Hersteller als Standardabweichung den Wert $\sigma = 1.5mg$ an. Zur
+Qualitätskontrolle einer produzierten Charge werden $20$ ausgewählten Tabletten
+die Gewichte $x_1, \dots, x_{20}$ mittels einer Analysewaage gewogen und das
+arithmetische Mittel $\overline{x}_{20} = \frac{1}{20} \sum_{i = 1}^{20} x_i$
+als Prüfgröße herangezogen. Es wird angenommen, dass die gemessenen Gewichte
+Realisierungen von unabhängigen und identischen $N(50, 2.25)$-verteilten
+Zufallsvariablen $X_1, \dots, X_{20}$ sind.
+
+Berechnen Sie die Wahrscheinlichkeit, dass das zufällige Gewicht $X_1$ einer
+einzelnen Tablette um höchstens eine Standardabweichung von $\sigma$ vom
+Sollgewicht $\mu$ abweicht.
+
+\begin{align*}
+    P\left(\left|X_1 - \mu\right| \leq \sigma\right) = P\left(\left|X_1 - 50\right| \leq 1.5\right) \\
+    -1.5 \leq X_1 - 50 \leq 1.5 \quad | + 50                                                        \\
+    \Leftrightarrow -1.5 + 50 \leq X_1 \leq 1.5 + 50                                                \\
+    \Leftrightarrow 48.5 \leq X_1 \leq 51.5                                                         \\
+    X = \text{Gewicht einer Tablette in mg}                                                         \\
+    P\left(48.5 \leq X_1 \leq 51.5\right) = P(X_1 \leq 51.5) - P(X_1 \leq 47.5)                     \\\\
+    P(X_1 \leq 51.5) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{51.5 - 50}{1.5}\right)             \\
+    \varphi\left(\frac{51.5 - 50}{1.5}\right)                                                       \\
+    = \varphi(1) \overset{Tabelle}{\approx} 0.84134                                                 \\\\
+    P(X_1 \leq 48.5) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{48.5 - 50}{1.5}\right)             \\
+    \varphi(-1) = 1 - \varphi(1) = 1 - 0.84134 = 0.15866                                            \\
+    P(48.5 \leq X_1 \leq 51.5)                                                                      \\
+    = 0.84134 - 0.15866                                                                             \\
+    = 0.68268 = 68.27\%
+\end{align*}
+
+\subsection{b}
+
+Als Prüfsumme bei der Qualitätskontrolle wird nicht das Gewicht einer einzelnen
+Tablette, sondern das mittlere Gewicht von $20$ Tabletten ermittel. Man kann
+zeigen, dass die Zufallsvariable $\overline{X}_{20}$, die das arithmetische
+Mittel der Gewichte beschreibt, wieder eine Normalverteilung besitzt. Berechen
+Sie die Parameter dieser Normalverteilung, also dem Erwartungswert
+$\overline{\mu} = E(\overline{X}_{20})$ und die Varianz $\overline{\sigma}^2 =
+    Var(\overline{X}_{20})$.
+
+\begin{align*}
+    \overline{\sigma}^2 = Var(\overline{X}_{20})                                  \\
+    = Var(\frac{1}{20} \sum_{i = 1}^{20}X_i)                                      \\
+    = \frac{1}{20^2} \sum_{i = 1}^{20} \sigma^2                                   \\
+    = \frac{1}{20} \sigma^2                                                       \\
+    = \frac{\sigma^2}{20}                                                         \\
+    = \frac{1.5}{20} = 0.1125 = \overline{\sigma}^2                               \\
+    \overline{\mu} = E(\overline{X}_{20})                                         \\\\
+    = E\left(\frac{1}{20}\sum_{i = 1}^{20}X_i\right)                              \\
+    = \frac{1}{20} \sum_{i = 1}^{20} E(X_i)                                       \\
+    = \frac{1}{20} \sum_{i = 1}^{20} \mu                                          \\
+    = \mu                                                                         \\
+    = 50 = \overline{\mu}                                                         \\\\
+    \overline{X}_{20} \sim N(\overline{\mu}, \overline{\sigma}^2) = N(50, 0.1125) \\
+\end{align*}
+
+\subsection{c}
+
+Es gibt $\overline{X}_{20} \sim N(50, 0.1125)$. Berechnen Sie die
+Wahrscheinlichkeit, dass das arithmetische Mittel $\overline{X}_{20}$ um
+höchstens eine Standardabweichung $\overline{\sigma}$ von Mittelwert
+$\overline{\mu}$ abweicht.
+
+\begin{align*}
+    P\left(\left|\overline{X}_{20} - \overline{\mu}\right| \leq \overline{\sigma}\right)
+    = P\left(\left|\overline{X}_{20} - 50\right| \leq \frac{0.75}{\sqrt{5}}\right)                                  \\
+    -\frac{0.75}{\sqrt{5}} \leq X_{20} - 50 \leq \frac{0.75}{\sqrt{5}} \quad | + 50                                 \\
+    -\frac{0.75}{\sqrt{5}} + 50 \leq X_{20} \leq \frac{0.75}{\sqrt{5}} + 50                                         \\
+    \frac{1000 - 3\sqrt{5}}{20} \leq X_{20} \leq \frac{1000 + 3\sqrt{5}}{20}                                        \\
+    P\left(\frac{1000 - 3\sqrt{5}}{20} \leq X_{20} \leq \frac{1000 + 3\sqrt{5}}{20}\right)                          \\
+    = P\left(\frac{1000 + 3\sqrt{5}}{20} \leq X_{20}\right) - P\left(\frac{1000 - 3\sqrt{5}}{20} \leq X_{20}\right) \\
+    P\left(\frac{1000 + 3\sqrt{5}}{20} \leq X_{20}\right)                                                           \\
+    =P\left(\frac{X - E(X)}{\sigma} \leq \frac{\frac{1000 + 3\sqrt{5}}{20} - 50}{\sqrt{0.1125}}\right)              \\
+    \varphi\left(\frac{\frac{1000 + 3\sqrt{5}}{20} - 50}{\sqrt{0.1125}}\right) \approx \varphi\left(1\right)        \\
+    \overset{Tabelle}{\approx} 0.84134                                                                              \\\\
+    P\left(\frac{1000 - 3\sqrt{5}}{20} \leq X_{20}\right)                                                           \\
+    = P\left(\frac{X - E(X)}{\sigma} \leq \frac{\frac{1000 - 3\sqrt{5}}{20} - 50}{\sqrt{0.1125}}\right)             \\
+    \varphi\left(\frac{\frac{1000 - 3\sqrt{5}}{20} - 50}{\sqrt{0.1125}}\right) = \varphi(-1)                        \\
+    = 1 - \varphi(1) = 1 - 0.84134 = 0.15866                                                                        \\
+    P\left(\frac{1000 - 3\sqrt{5}}{20} \leq X_{20} \leq \frac{1000 + 3\sqrt{5}}{20}\right)                          \\
+    = 0.84134 - 0.15866                                                                                             \\
+    = 0.68268 = 68.27\%
+\end{align*}
+
+\section{Aufgabe: Passagiere eines Transatlantikflugs}
+
+Die Lufthansa Weiß aus Erfahrung, dass Passagiere mit einer Wahrscheinlichkeit
+von $90\%$ zum Flug erschienen. Für einen Transatlantikflug hat sie 900 Tickets
+verkauft. Wir bezeichnen mit $X$ die Anzahl an Passagiere, die zum Flug
+erscheinen.
+
+Bestimmen Sie näherungsweise die Wahrscheinlichkeit, dass nicht mehr als $819$
+Passagiere zum Abflug erscheinen. Verwenden Sie dazu die Normalapproximation
+und geben Sie das Ergebnis auf mindestens zwei Nachkommastellen genau an.
+
+\begin{align*}
+    X = \text{Anzahl passagiere die erscheinen}                                             \\
+    B \sim (900, 0.9)                                                                       \\
+    E(X) = 900 \cdot 0.9 = 810                                                              \\
+    Var(X) = 810 \cdot 0.1 = 81                                                             \\
+    \sigma = \sqrt{81} = 9                                                                  \\
+    P(X \leq 819) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{819 - 810}{9}\right)          \\
+    \varphi\left(\frac{819 - 810}{9}\right) = \varphi(1) \overset{Tabelle}{\approx} 0.84134 \\\\
+    Z = \frac{X - 810}{9} \\
+    \left\{X \leq 819\right\} = \frac{819 \leq 810}{9} \\
+    \frac{819}{9} \leq \frac{810}{9} \quad | \cdot 9\\
+    819 \leq 810 \quad | \cdot 9\\
 \end{align*}

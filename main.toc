@@ -40,12 +40,12 @@
 \contentsline {subsubsection}{Beispiel}{23}{subsubsection*.5}%
 \contentsline {section}{\numberline {8.7}Bijektive lineare Abbildungen}{23}{section.8.7}%
 \contentsline {subsubsection}{Beispiel}{23}{subsubsection*.6}%
-\contentsline {section}{\numberline {8.8}Orthogonale Projektion}{23}{section.8.8}%
+\contentsline {section}{\numberline {8.8}Orthogonale Projektion}{24}{section.8.8}%
 \contentsline {subsubsection}{Beispiel}{24}{subsubsection*.7}%
 \contentsline {section}{\numberline {8.9}Orthogonale und Spezielle Orthogonale Gruppen}{24}{section.8.9}%
 \contentsline {subsection}{\numberline {8.9.1}Die Orthogonale Gruppe \(O(n)\)}{24}{subsection.8.9.1}%
 \contentsline {subsection}{\numberline {8.9.2}Die Spezielle Orthogonale Gruppe \(SO(n)\)}{24}{subsection.8.9.2}%
-\contentsline {subsection}{\numberline {8.9.3}Der Quotient \(O(n)/SO(n)\)}{24}{subsection.8.9.3}%
+\contentsline {subsection}{\numberline {8.9.3}Der Quotient \(O(n)/SO(n)\)}{25}{subsection.8.9.3}%
 \contentsline {chapter}{\numberline {9}Skalar- und Kreuzprodukt}{26}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Skalarprodukt}{26}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Kreuzprodukt}{26}{section.9.2}%
@@ -155,7 +155,7 @@
 \contentsline {subsubsection}{Prüfung für a über Linearkombination}{83}{subsubsection*.17}%
 \contentsline {subsection}{\numberline {22.2.2}b}{84}{subsection.22.2.2}%
 \contentsline {subsubsection}{Prüfung für b über Determinante}{84}{subsubsection*.18}%
-\contentsline {subsubsection}{Prüfung für b über Linearkombination}{84}{subsubsection*.19}%
+\contentsline {subsubsection}{Prüfung für b über Linearkombination}{85}{subsubsection*.19}%
 \contentsline {section}{\numberline {22.3}Aufgabe 3}{85}{section.22.3}%
 \contentsline {chapter}{\numberline {23}Übungsblatt 6}{87}{chapter.23}%
 \contentsline {section}{\numberline {23.1}Aufgabe 1}{87}{section.23.1}%
@@ -302,3 +302,9 @@
 \contentsline {section}{\numberline {36.5}Aufgabe: Normalapproximation}{159}{section.36.5}%
 \contentsline {subsection}{\numberline {36.5.1}a}{159}{subsection.36.5.1}%
 \contentsline {subsection}{\numberline {36.5.2}b}{159}{subsection.36.5.2}%
+\contentsline {subsection}{\numberline {36.5.3}c}{160}{subsection.36.5.3}%
+\contentsline {section}{\numberline {36.6}Aufgabe: Sigma-Bereiche}{162}{section.36.6}%
+\contentsline {subsection}{\numberline {36.6.1}a}{162}{subsection.36.6.1}%
+\contentsline {subsection}{\numberline {36.6.2}b}{162}{subsection.36.6.2}%
+\contentsline {subsection}{\numberline {36.6.3}c}{163}{subsection.36.6.3}%
+\contentsline {section}{\numberline {36.7}Aufgabe: Passagiere eines Transatlantikflugs}{164}{section.36.7}%
