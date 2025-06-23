@@ -622,6 +622,12 @@ INPUT chapters\semester_summary\eigenwerte_eigenvektoren.tex
 INPUT .\chapters\semester_summary\arithmetisches_mittel_median_modus.tex
 INPUT .\chapters\semester_summary\arithmetisches_mittel_median_modus.tex
 INPUT chapters\semester_summary\arithmetisches_mittel_median_modus.tex
+INPUT .\chapters\semester_summary\verteilungen.tex
+INPUT .\chapters\semester_summary\verteilungen.tex
+INPUT chapters\semester_summary\verteilungen.tex
+INPUT .\chapters\semester_summary\dml.tex
+INPUT .\chapters\semester_summary\dml.tex
+INPUT chapters\semester_summary\dml.tex
 INPUT .\chapters\semester_summary\z-test.tex
 INPUT .\chapters\semester_summary\z-test.tex
 INPUT chapters\semester_summary\z-test.tex
@@ -762,6 +768,8 @@ INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsf
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb

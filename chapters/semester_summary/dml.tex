@@ -1,0 +1,76 @@
+\chapter{Satz von Moivre-Laplace}
+\label{dml}
+Der Satz von de Moivre-Laplace ist ein zentraler Grenzwertsatz der Stochastik. Er besagt, dass die Binomialverteilung für eine große Anzahl von Versuchen \(n\) durch die Normalverteilung angenähert werden kann. Dies vereinfacht die Berechnung von Wahrscheinlichkeiten, da die oft aufwändige Summation von Binomialkoeffizienten vermieden wird.
+
+\section{Voraussetzung: Laplace-Bedingung}
+Die Näherung ist in der Regel ausreichend genau, wenn die sogenannte Laplace-Bedingung erfüllt ist. Diese Faustregel besagt, dass die Varianz größer als 9 sein muss:
+\[ \sigma^2 = n \cdot p \cdot (1-p) > 9 \]
+
+\section{Stetigkeitskorrektur}
+\label{sec:stetigkeitskorrektur}
+Da eine diskrete Verteilung (Binomialverteilung, ganzzahlige Werte) durch eine stetige Verteilung (Normalverteilung, beliebige reelle Werte) angenähert wird, ist eine Stetigkeitskorrektur notwendig. Die Wahrscheinlichkeit eines einzelnen ganzzahligen Wertes \(k\) wird dabei auf das Intervall \([k-0.5, k+0.5]\) "verteilt", um die Genauigkeit der Approximation zu verbessern.
+
+Die Anwendung der Korrektur hängt von der gesuchten Wahrscheinlichkeit ab:
+\begin{itemize}
+    \item \( P(X \le k) \quad \rightarrow \quad P(X \le k + 0.5) \)
+    \item \( P(X < k) \), was identisch ist zu \(P(X \le k-1)\), wird zu \( \quad \rightarrow \quad P(X \le k - 0.5) \)
+    \item \( P(X \ge k) \quad \rightarrow \quad P(X \ge k - 0.5) \)
+    \item \( P(X > k) \), was identisch ist zu \(P(X \ge k+1)\), wird zu \( \quad \rightarrow \quad P(X \ge k + 0.5) \)
+    \item \( P(X = k) \quad \rightarrow \quad P(k - 0.5 \le X \le k + 0.5) \)
+\end{itemize}
+
+\section{Ablesen aus der z-Tabelle}
+Die Wahrscheinlichkeiten für die Standardnormalverteilung werden aus einer z-Tabelle abgelesen. Eine solche Tabelle mit auf zwei Nachkommastellen gerundeten z-Werten findet sich beispielsweise auf \href{https://de.wikipedia.org/wiki/Tabelle_Standardnormalverteilung}{Wikipedia}.
+
+Die Tabelle gibt den Wert der kumulativen Verteilungsfunktion \(\Phi(z)\) an, also die Wahrscheinlichkeit \(P(Z \le z)\), wobei \(Z\) standardnormalverteilt ist.
+
+\subsection*{Vorgehen}
+Ein z-Wert wird auf die ersten beiden Nachkommastellen gerundet. Der Wert wird aufgeteilt:
+\begin{itemize}
+    \item Die \textbf{erste Spalte} der Tabelle zeigt den z-Wert bis zur ersten Nachkommastelle.
+    \item Die \textbf{erste Zeile} der Tabelle zeigt die zweite Nachkommastelle des z-Wertes.
+\end{itemize}
+Der gesuchte Tabellenwert \(\Phi(z)\) steht am Schnittpunkt der entsprechenden Zeile und Spalte.
+
+\subsubsection*{Beispiel: Ablesen von \(\Phi(0.29)\)}
+\begin{enumerate}
+    \item Suche in der ersten Spalte den Wert für \textbf{0.2}.
+    \item Suche in der ersten Zeile den Wert für \textbf{0.09}.
+    \item Der Wert am Schnittpunkt der Zeile "0.2" und der Spalte "0.09" ist der gesuchte Wert \(\approx 0.6141\).
+\end{enumerate}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+    \matrix (table) [matrix of nodes,
+        nodes={minimum width=1.5cm, minimum height=0.7cm, anchor=center},
+        column 1/.style={nodes={fill=gray!20}},
+        row 1/.style={nodes={fill=gray!20}},
+        ampersand replacement=\&]
+    {
+        \(z\) \& \dots \& \textbf{0.08} \& \textbf{0.09} \\
+        $\vdots$ \& $\ddots$ \& \& \\
+        \textbf{0.2} \& \dots \& 0.6103 \& \textbf{0.6141} \\
+    };
+    \draw[red, thick, rounded corners=2pt] (table-3-1.north west) rectangle (table-3-4.south east);
+    \draw[red, thick, rounded corners=2pt] (table-1-4.north west) rectangle (table-3-4.south east);
+\end{tikzpicture}
+\end{figure}
+
+\section{Beispielrechnung}
+Es wird die Wahrscheinlichkeit gesucht, dass von 300 Schrauben, von denen jede mit 99\% Wahrscheinlichkeit funktioniert, mindestens 298 funktionieren.
+
+\begin{align*}
+    X &= \text{Anzahl der funktionierenden Schrauben} \\\\
+    X &\sim B(300, 0.99) \\\\
+    E(X) &= 300 \cdot 0.99 = 297 \\\\
+    Var(X) &= 297 \cdot 0.01 = 2.97 \\\\
+    \sigma &= \sqrt{2.97} \\\\
+    P(X \ge 298) &\overset{\text{Stetigkeitskorrektur}}{=} P(X \ge 297.5) \\
+    &= 1 - P(X < 297.5) \\
+    &= 1 - P\left(\frac{X - E(X)}{\sigma} < \frac{297.5 - 297}{\sqrt{2.97}}\right) \\
+    &= 1 - \phi\left(\frac{297.5 - 297}{\sqrt{2.97}}\right) \\
+    &= 1 - \phi(0.29) \\
+    &\overset{\text{Tabelle}}{\approx} 1 - 0.6141 \\
+    &= 0.3859 = 38.59\%
+\end{align*}

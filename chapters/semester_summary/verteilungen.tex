@@ -1,0 +1,46 @@
+\chapter{Verteilungen}
+
+\section{Bernoulliverteilung}
+\begin{description}
+    \item[Beschreibung] Unterscheidet zwischen zwei Ergebnissen: Erfolg (\texttt{1}) und Misserfolg (\texttt{0}).
+    \item[Formel] \[ X \sim \text{Bernoulli}(p) \quad P(X=1) = p, \quad P(X=0) = 1-p \]
+    \item[Erwartungswert] \[ E(X) = p \]
+    \item[Varianz] \[ \text{Var}(X) = p(1-p) \]
+    \item[Anwendungsbeispiel] Einmaliger Münzwurf (Kopf oder Zahl), Würfeln einer 6 (6 oder keine 6).
+\end{description}
+
+\section{Binomialverteilung}
+\begin{description}
+    \item[Beschreibung] Beschreibt die Anzahl der Erfolge in einer festen Serie von unabhängigen Bernoulliversuchen.
+    \item[Formel] \[ X \sim B(n, p) \quad P(X=k) = \binom{n}{k} p^k {(1-p)}^{n-k} \]
+    \item[Erwartungswert] \[ E(X) = n \cdot p \]
+    \item[Varianz] \[ \text{Var}(X) = n \cdot p \cdot (1-p) \]
+    \item[Anwendungsbeispiel] Anzahl der Sechsen bei fünffachem Würfeln.
+\end{description}
+
+\section{Geometrische Verteilung}
+\begin{description}
+    \item[Beschreibung] Beschreibt die Anzahl der Misserfolge, bevor der erste Erfolg in einer Serie von Bernoulliversuchen eintritt.
+    \item[Formel] \[ X \sim \text{Geom}(p) \quad P(X=k) = {(1-p)}^k \cdot p \]
+    \item[Erwartungswert] \[ E(X) = \frac{1-p}{p} \]
+    \item[Varianz] \[ \text{Var}(X) = \frac{1-p}{p^2} \]
+    \item[Anwendungsbeispiel] Wie oft muss man würfeln, bis die erste 6 gewürfelt wird?
+\end{description}
+
+\section{Hypergeometrische Verteilung}
+\begin{description}
+    \item[Beschreibung] Beschreibt die Wahrscheinlichkeit, bei \(n\) Zügen ohne Zurücklegen aus einer Gesamtmenge \(N\), die \(M\) Objekte mit einer bestimmten Eigenschaft enthält, genau \(k\) solcher Objekte zu ziehen.
+    \item[Formel] \[ X \sim H(N, M, n) \quad P(X=k) = \frac{\binom{M}{k} \binom{N-M}{n-k}}{\binom{N}{n}} \]
+    \item[Erwartungswert] \[ E(X) = n \cdot \frac{M}{N} \]
+    \item[Varianz] \[ \text{Var}(X) = n \cdot \frac{M}{N} \cdot \left(1 - \frac{M}{N}\right) \cdot \frac{N-n}{N-1} \]
+    \item[Anwendungsbeispiel] Lottospiel (Ziehen von 6 aus 49 Kugeln), Qualitätskontrolle (Ziehen einer Stichprobe aus einer Warenlieferung).
+\end{description}
+
+\section{Normalverteilung}
+\begin{description}
+    \item[Beschreibung] Eine stetige Verteilung, die häufig zur Modellierung von Messfehlern oder biologischen Merkmalen (z.B. Körpergröße) verwendet wird. Im Rahmen dieser Veranstaltung wird sie primär als Approximation der Binomialverteilung bei großem \(n\) mittels des \textbf{Satzes von de Moivre-Laplace} (\nameref{dml}) betrachtet.
+    \item[Formel (Dichtefunktion)] \[ f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2} \]
+    \item[Erwartungswert] \[ E(X) = \mu \]
+    \item[Varianz] \[ \text{Var}(X) = \sigma^2 \]
+    \item[Anwendungsbeispiel] Approximation der Binomialverteilung bei großem \(n\), Messfehler, Körpergrößen in einer Population.
+\end{description}
