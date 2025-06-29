@@ -431,6 +431,8 @@ INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\tr
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex\latex\inlinedef\inlinedef.sty
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex\latex\inlinedef\inlinedef.sty
+INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
+INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarymatrix.code.tex
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarymatrix.code.tex
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
@@ -670,6 +672,15 @@ INPUT chapters\bonus_tests\test_2.tex
 INPUT .\chapters\bonus_tests\test_3.tex
 INPUT .\chapters\bonus_tests\test_3.tex
 INPUT chapters\bonus_tests\test_3.tex
+INPUT .\chapters\bonus_tests\test_4.tex
+INPUT .\chapters\bonus_tests\test_4.tex
+INPUT chapters\bonus_tests\test_4.tex
+INPUT .\chapters\bonus_tests\test_5.tex
+INPUT .\chapters\bonus_tests\test_5.tex
+INPUT chapters\bonus_tests\test_5.tex
+INPUT .\chapters\bonus_tests\test_6.tex
+INPUT .\chapters\bonus_tests\test_6.tex
+INPUT chapters\bonus_tests\test_6.tex
 INPUT .\chapters\bonus_tests\test_9.tex
 INPUT .\chapters\bonus_tests\test_9.tex
 INPUT chapters\bonus_tests\test_9.tex
@@ -776,6 +787,8 @@ INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsf
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
+INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrb8a.pfb

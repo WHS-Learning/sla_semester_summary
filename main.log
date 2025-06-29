@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.1)  23 JUN 2025 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.29)  29 JUN 2025 22:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1033,20 +1033,28 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@copy@out=\write6
 \forest@externalize@max@outer@n=\count531
 \forest@externalize@inner@n=\count532
+) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip85
+\enit@outerparindent=\dimen323
+\enit@toks=\toks69
+\enit@inbox=\box99
+\enit@count@id=\count533
+\enitdp@description=\count534
 ) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen323
-\pgfarrowlength=\dimen324
-\pgfarrowwidth=\dimen325
-\pgfarrowlinewidth=\dimen326
+\pgfarrowinset=\dimen324
+\pgfarrowlength=\dimen325
+\pgfarrowwidth=\dimen326
+\pgfarrowlinewidth=\dimen327
 ) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@layerbox@background=\box99
-\pgf@layerboxsaved@background=\box100
+\pgf@layerbox@background=\box100
+\pgf@layerboxsaved@background=\box101
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1055,24 +1063,24 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1110,24 +1118,24 @@ LaTeX Font Info:    ... okay on input line 17.
 
 (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count533
-\scratchdimen=\dimen327
-\scratchbox=\box101
-\nofMPsegments=\count534
-\nofMParguments=\count535
-\everyMPshowfont=\toks69
-\MPscratchCnt=\count536
-\MPscratchDim=\dimen328
-\MPnumerator=\count537
-\makeMPintoPDFobject=\count538
-\everyMPtoPDFconversion=\toks70
+\scratchcounter=\count535
+\scratchdimen=\dimen328
+\scratchbox=\box102
+\nofMPsegments=\count536
+\nofMParguments=\count537
+\everyMPshowfont=\toks70
+\MPscratchCnt=\count538
+\MPscratchDim=\dimen329
+\MPnumerator=\count539
+\makeMPintoPDFobject=\count540
+\everyMPtoPDFconversion=\toks71
 ) (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count539
+\c@lstlisting=\count541
 Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
 Package biblatex Info: ... file 'english-apa.lbx' found.
  (C:\Users\EntchenEric\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\english-apa.lbx
@@ -1158,9 +1166,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 17.
-Package biblatex Info: Reference segment=0 on input line 17.
-Package hyperref Info: Link coloring ON on input line 17.
+Package biblatex Info: Reference section=0 on input line 19.
+Package biblatex Info: Reference segment=0 on input line 19.
+Package hyperref Info: Link coloring ON on input line 19.
  (main.out) (main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
@@ -1171,7 +1179,7 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 (config/globals.tex) (titlepage.tex
-<assets/frontpage.png, id=1218, 803.0pt x 334.24875pt>
+<assets/frontpage.png, id=1290, 803.0pt x 334.24875pt>
 File: assets/frontpage.png Graphic file (type png)
 <use assets/frontpage.png>
 Package pdftex.def Info: assets/frontpage.png  used on input line 24.
@@ -1256,28 +1264,28 @@ l.130 ...berline {20.6.2}b}{65}{subsection.20.6.2}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.175 ...erline {25.2}Aufgabe 2}{95}{section.25.2}
+l.171 ... {26}Bonustest 9: z-Test}{94}{chapter.26}
                                                   % [4]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.220 ...erline {29.1.1}a}{127}{subsection.29.1.1}
+l.218 ...rline {30.2}Aufgabe 2}{128}{section.30.2}
                                                   % [5]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.263 ...erline {33.4.2}b}{151}{subsection.33.4.2}
+l.261 ...erline {34.3.1}a}{155}{subsection.34.3.1}
                                                   % [6]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.307 ...erline {38.3.2}b}{163}{subsection.38.3.2}
+l.305 ...erline {39.1.3}c}{168}{subsection.39.1.3}
                                                   % [7])
 \tf@toc=\write8
 \openout8 = `main.toc'.
@@ -1288,14 +1296,14 @@ l.307 ...erline {38.3.2}b}{163}{subsection.38.3.2}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 	\clearpage
+l.34 	\clearpage
                  [8]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 	\part{Semesterzusammenfassung}
+l.38 	\part{Semesterzusammenfassung}
                                      [1
 
 
@@ -1417,7 +1425,7 @@ Overfull \hbox (32.78972pt too wide) in paragraph at lines 75--77
 [16] (chapters/semester_summary/basis_vektorraum.tex
 Chapter 7.
 
-Overfull \hbox (20.75134pt too wide) in paragraph at lines 3--5
+Overfull \hbox (20.75134pt too wide) in paragraph at lines 3--6
 \OT1/cmr/m/n/10.95 Eine Ba-sis eines Vek-tor-raums $\OML/cmm/m/it/10.95 V$ \OT1/cmr/m/n/10.95 ist eine Menge von Vek-toren $\OMS/cmsy/m/n/10.95 B \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 v[]; v[]; [] ; v[]\OMS/cmsy/m/n/10.95 g$\OT1/cmr/m/n/10.95 ,
  []
 
@@ -1826,7 +1834,7 @@ Overfull \hbox (5.29126pt too wide) in paragraph at lines 104--104
 
 
 [55])
-Overfull \hbox (1.48846pt too wide) in paragraph at lines 137--57
+Overfull \hbox (1.48846pt too wide) in paragraph at lines 137--59
 []\OT1/cmr/bx/n/10.95 Schritt 5: Ergeb-nis in-ter-pretieren \OT1/cmr/m/n/10.95 Die Null-hy-pothese $\OML/cmm/m/it/10.95 H[]$ \OT1/cmr/m/n/10.95 wird abgelehnt.
  []
 
@@ -1844,12 +1852,12 @@ Overfull \hbox (4.22386pt too wide) in paragraph at lines 1--1
 |[]\OT1/cmr/bx/n/24.88 Bonustest 1 - Rech-nen mit
  []
 
-<assets/bonus_tests/unique_vectors.png, id=1900, 367.87437pt x 367.87437pt>
+<assets/bonus_tests/unique_vectors.png, id=1991, 367.87437pt x 367.87437pt>
 File: assets/bonus_tests/unique_vectors.png Graphic file (type png)
 <use assets/bonus_tests/unique_vectors.png>
 Package pdftex.def Info: assets/bonus_tests/unique_vectors.png  used on input line 11.
 (pdftex.def)             Requested size: 180.67499pt x 180.681pt.
-<assets/bonus_tests/vector_lengths.png, id=1901, 545.03625pt x 543.53062pt>
+<assets/bonus_tests/vector_lengths.png, id=1992, 545.03625pt x 543.53062pt>
 File: assets/bonus_tests/vector_lengths.png Graphic file (type png)
 <use assets/bonus_tests/vector_lengths.png>
 Package pdftex.def Info: assets/bonus_tests/vector_lengths.png  used on input line 28.
@@ -1871,7 +1879,7 @@ Overfull \hbox (21.5161pt too wide) in paragraph at lines 44--52
 [60]
 
 [61]
-Overfull \hbox (3.25493pt too wide) in paragraph at lines 235--236
+Overfull \hbox (3.25493pt too wide) in paragraph at lines 235--237
 \OT1/cmr/m/n/10.95 Betrachten wir das Vorze-ichen von $[](\OML/cmm/m/it/10.95 ^^R\OT1/cmr/m/n/10.95 )$ f^^?ur die m^^?oglichen Werte des Winkels
  []
 
@@ -1898,7 +1906,7 @@ Overfull \hbox (5.73006pt too wide) in paragraph at lines 421--429
 \OT1/cmr/m/n/10.95 wei^^Ye Kugel und die blaue Kugel haben beide einen Durchmesser $\OML/cmm/m/it/10.95 d \OT1/cmr/m/n/10.95 = 57\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 2 []$.
  []
 
-<assets/bonus_tests/pool.png, id=1944, 666.23906pt x 408.77719pt>
+<assets/bonus_tests/pool.png, id=2035, 666.23906pt x 408.77719pt>
 File: assets/bonus_tests/pool.png Graphic file (type png)
 <use assets/bonus_tests/pool.png>
 Package pdftex.def Info: assets/bonus_tests/pool.png  used on input line 430.
@@ -1906,7 +1914,7 @@ Package pdftex.def Info: assets/bonus_tests/pool.png  used on input line 430.
 
 
 [66 <./assets/bonus_tests/pool.png>]
-<assets/bonus_tests/pool2.png, id=1950, 3383.64125pt x 2392.94pt>
+<assets/bonus_tests/pool2.png, id=2041, 3383.64125pt x 2392.94pt>
 File: assets/bonus_tests/pool2.png Graphic file (type png)
 <use assets/bonus_tests/pool2.png>
 Package pdftex.def Info: assets/bonus_tests/pool2.png  used on input line 439.
@@ -1914,7 +1922,7 @@ Package pdftex.def Info: assets/bonus_tests/pool2.png  used on input line 439.
 
 
 [67 <./assets/bonus_tests/pool2.png>]
-<assets/bonus_tests/drehmoment.png, id=1956, 929.4725pt x 331.2375pt>
+<assets/bonus_tests/drehmoment.png, id=2047, 929.4725pt x 331.2375pt>
 File: assets/bonus_tests/drehmoment.png Graphic file (type png)
 <use assets/bonus_tests/drehmoment.png>
 Package pdftex.def Info: assets/bonus_tests/drehmoment.png  used on input line 505.
@@ -1980,55 +1988,106 @@ Chapter 22.
 
 [81]
 
-[82])
+[82]
 
-[83] (chapters/bonus_tests/test_9.tex
+[83] [84])
+
+[85] (chapters/bonus_tests/test_4.tex
 Chapter 23.
 
-
-[84
-
-
-
-]
-
-[85])
-
-[86]
-
-[87
+Overfull \hbox (5.73567pt too wide) in paragraph at lines 1--1
+|[]\OT1/cmr/bx/n/24.88 Bonustest 4 - De-ter-mi-nan-
+ []
 
 
-] (chapters/lineare_algebra/page_5.tex
+
+[86
+
+
+
+])
+
+[87] (chapters/bonus_tests/test_5.tex
 Chapter 24.
+
+Overfull \hbox (9.26033pt too wide) in paragraph at lines 1--1
+|[]\OT1/cmr/bx/n/24.88 Bonustest 5 - ge-ometrische
+ []
+
+
+Overfull \hbox (12.76773pt too wide) in paragraph at lines 1--1
+\OT1/cmr/bx/n/24.88 In-ter-pre-ta-tion lin-earer Ab-
+ []
+
 
 
 [88
 
 
+
 ]
 
-[89]
+[89])
 
-[90]
-
-[91])
-
-[92] (chapters/lineare_algebra/page_6.tex
+[90] (chapters/bonus_tests/test_6.tex
 Chapter 25.
 
 
-[93
+[91
 
 
 
 ]
 
-[94] [95] [96] [97] [98] [99] [100] [101] [102]
+[92])
 
-[103]
+[93] (chapters/bonus_tests/test_9.tex
+Chapter 26.
 
-[104]
+
+[94
+
+
+
+]
+
+[95])
+
+[96]
+
+[97
+
+
+] (chapters/lineare_algebra/page_5.tex
+Chapter 27.
+
+
+[98
+
+
+]
+
+[99]
+
+[100]
+
+[101])
+
+[102] (chapters/lineare_algebra/page_6.tex
+Chapter 28.
+
+
+[103
+
+
+
+]
+
+[104] [105] [106] [107] [108] [109] [110] [111] [112]
+
+[113]
+
+[114]
 
 Package xcolor Warning: Incompatible color definition on input line 923.
 
@@ -4059,7 +4118,7 @@ Package xcolor Warning: Incompatible color definition on input line 957.
 
 
 
-[105]
+[115]
 
 Package xcolor Warning: Incompatible color definition on input line 958.
 
@@ -4926,112 +4985,86 @@ Package xcolor Warning: Incompatible color definition on input line 974.
 
 )
 
-[106] (chapters/lineare_algebra/page_7.tex
-Chapter 26.
+[116] (chapters/lineare_algebra/page_7.tex
+Chapter 29.
 
 
-[107
+[117
 
 
 
 ]
 
-[108]
+[118]
 
-[109]
+[119]
 
-[110]
+[120]
 
-[111]
+[121]
 
-[112]
+[122]
 
-[113]
+[123]
 Overfull \hbox (6.35873pt too wide) in paragraph at lines 539--540
 \OT1/cmr/m/n/10.95 Dass eine Ma-trix in-vertier-bar ist, muss sie lin-ear un-abh^^?angig sein. $\OMS/cmsy/m/n/10.95 ! []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 T\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 =
  []
 
 
 
-[114])
+[124])
 
-[115] (chapters/lineare_algebra/page_8.tex
-Chapter 27.
+[125] (chapters/lineare_algebra/page_8.tex
+Chapter 30.
 
 
-[116
+[126
 
 
 
 ]
 
-[117]
+[127]
 Overfull \hbox (5.46533pt too wide) in paragraph at lines 168--170
 []\OT1/cmr/m/n/10.95 Die Zahlen an den Lin-ien wer-den Mul-ti-pliziert. Blaue Lin-ien wer-den miteinan-
  []
 
-[118]
+[128]
 
-[119]
+[129]
 Underfull \hbox (badness 10000) in paragraph at lines 352--354
 [][]$[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 B\OT1/cmr/m/n/10.95 ) = 
  []
 
 
 
-[120])
+[130])
 
-[121] (chapters/lineare_algebra/page_9.tex
-Chapter 28.
-
-
-[122
+[131] (chapters/lineare_algebra/page_9.tex
+Chapter 31.
 
 
-
-]
-
-[123]
-
-[124]
-
-[125])
-
-[126] (chapters/lineare_algebra/page_10.tex
-Chapter 29.
-
-
-[127
+[132
 
 
 
 ]
 
-[128]
-
-[129]
-
-[130]
-
-[131])
-
-[132] (chapters/lineare_algebra/page_11.tex
-Chapter 30.
-
-
-[133
-
-
-
-]
+[133]
 
 [134]
 
-[135]
+[135])
 
-[136]
+[136] (chapters/lineare_algebra/page_10.tex
+Chapter 32.
 
-[137]
+
+[137
+
+
+
+]
 
 [138]
 
@@ -5041,13 +5074,39 @@ Chapter 30.
 
 [141])
 
-[142]
+[142] (chapters/lineare_algebra/page_11.tex
+Chapter 33.
+
 
 [143
 
 
+
+]
+
+[144]
+
+[145]
+
+[146]
+
+[147]
+
+[148]
+
+[149]
+
+[150]
+
+[151])
+
+[152]
+
+[153
+
+
 ] (chapters/statistik/paper_5.tex
-Chapter 31.
+Chapter 34.
 
 Overfull \hbox (8.3549pt too wide) in paragraph at lines 6--9
 \OT1/cmr/m/n/10.95 (also zwei Fin-ger aus-gestreckt, die an-dere eingeklappt zu lassen)? (Anatomisch
@@ -5055,26 +5114,26 @@ Overfull \hbox (8.3549pt too wide) in paragraph at lines 6--9
 
 
 
-[144
+[154
 
 
 ])
 
-[145] (chapters/statistik/paper_6.tex
-Chapter 32.
+[155] (chapters/statistik/paper_6.tex
+Chapter 35.
 Package pgfplots info on input line 26: Using 'lua backend=false' for axis: x coord trafo unsupported.
 
 
-[146
+[156
 
 
 
 ]
 
-[147])
+[157])
 
-[148] (chapters/statistik/paper_7.tex
-Chapter 33.
+[158] (chapters/statistik/paper_7.tex
+Chapter 36.
 
 Overfull \hbox (21.27837pt too wide) in paragraph at lines 5--10
 \OT1/cmr/m/n/10.95 Wahrschein-lichkeiten mit Worten: $\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 E\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 E\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 A\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 E[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 E\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 A[]\OT1/cmr/m/n/10.95 )$. Welche
@@ -5122,7 +5181,7 @@ Overfull \hbox (4.95763pt too wide) in paragraph at lines 15--16
 
 
 
-[149
+[159
 
 
 
@@ -5133,15 +5192,15 @@ Overfull \hbox (5.47548pt too wide) in paragraph at lines 52--54
 
 
 
-[150]
+[160]
 Overfull \hbox (3.04202pt too wide) in paragraph at lines 106--108
 \OT1/cmr/m/n/10.95 Was ist der Un-ter-schied zwis-chen vollst^^?andi-ger stochastis-cher Un-abh^^?angigkeit
  []
 
 )
 
-[151] (chapters/statistik/paper_8.tex
-Chapter 34.
+[161] (chapters/statistik/paper_8.tex
+Chapter 37.
 
 Overfull \hbox (14.43677pt too wide) in paragraph at lines 19--20
 $\OML/cmm/m/it/10.95 Var\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 Y\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 Var\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 ) + \OML/cmm/m/it/10.95 Var\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Y\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; []X[]Y[]:$ 
@@ -5149,14 +5208,14 @@ $\OML/cmm/m/it/10.95 Var\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X \OT1/cmr/m/n/1
 
 
 
-[152
+[162
 
 
 
 ])
 
-[153] (chapters/statistik/paper_9.tex
-Chapter 35.
+[163] (chapters/statistik/paper_9.tex
+Chapter 38.
 
 Overfull \hbox (2.60107pt too wide) in paragraph at lines 38--45
 \OT1/cmr/m/n/10.95 Gem^^?a^^Y einer Def-i-ni-tion von Ar-mut gilt als arm, wer ein monatliches Haushalt-
@@ -5164,7 +5223,7 @@ Overfull \hbox (2.60107pt too wide) in paragraph at lines 38--45
 
 
 
-[154
+[164
 
 
 
@@ -5180,12 +5239,12 @@ Overfull \hbox (22.66078pt too wide) in paragraph at lines 59--65
 
 
 
-[155]
+[165]
 
-[156])
+[166])
 
-[157] (chapters/statistik/paper_10.tex
-Chapter 36.
+[167] (chapters/statistik/paper_10.tex
+Chapter 39.
 
 Overfull \hbox (0.72028pt too wide) in paragraph at lines 5--13
 \OT1/cmr/m/n/10.95 Becher einen De-fek-ten Deckel be-sitzen. Nor-maler-weise kann dieser Qualit^^?ats-
@@ -5208,47 +5267,47 @@ Overfull \hbox (12.94786pt too wide) in paragraph at lines 43--49
 
 
 
-[158
+[168
 
 
 
 ])
 
-[159] (chapters/statistik/paper_11.tex
-Chapter 37.
+[169] (chapters/statistik/paper_11.tex
+Chapter 40.
 )
-Overfull \hbox (9.5987pt too wide) in paragraph at lines 9--81
+Overfull \hbox (9.5987pt too wide) in paragraph at lines 9--86
 \OT1/cmr/m/it/10.95 fallsvari-ablen ange-wandt, in-dem wir die zu Grunde liegende Bi-no-mi-alverteilung
  []
 
 
 
-[160
+[170
 
 
 
 ] (chapters/statistik/moodle_tasks.tex
-Chapter 38.
+Chapter 41.
 
 
-[161
+[171
 
 
 
 ]
 
-[162]
+[172]
 
-[163]
+[173]
 Overfull \hbox (3.10588pt too wide) in paragraph at lines 200--203
 []|$ [] $| 
  []
 
 
 
-[164]
+[174]
 
-[165]
+[175]
 Overfull \hbox (4.3399pt too wide) in paragraph at lines 296--302
 \OT1/cmr/m/n/10.95 prox-i-ma-tion um eine so-ge-nan-nte Stetigkeit-sko-r-rek-tur er-weit-ert wer-den. Dabei
  []
@@ -5265,44 +5324,44 @@ Overfull \hbox (2.34245pt too wide) in paragraph at lines 303--306
 
 
 
-[166]
+[176]
 Overfull \hbox (2.73793pt too wide) in paragraph at lines 334--342
 \OT1/cmr/m/n/10.95 Qualit^^?atskon-trolle einer pro-duzierten Charge wer-den $20$ aus-gew^^?ahlten Tablet-
  []
 
 
 
-[167]
+[177]
 
-[168]
+[178]
 
-[169]
+[179]
 
-[170])
+[180])
 
-[171] (main.aux)
+[181] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 69E783F4D79CBB1D2AA302AB623C0FA7;38487.
+(rerunfilecheck)             Checksum: EB927443483273DD62880E4A2F8D3EF3;40780.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58898 strings out of 469923
- 1371263 string characters out of 5466267
- 2805438 words of memory out of 5000000
- 84199 multiletter control sequences out of 15000+600000
+ 59301 strings out of 469923
+ 1378544 string characters out of 5466266
+ 2822826 words of memory out of 5000000
+ 84559 multiletter control sequences out of 15000+600000
  645318 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 130i,20n,130p,1753b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (182 pages, 1993425 bytes).
+ 130i,20n,130p,1658b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on main.pdf (192 pages, 2033680 bytes).
 PDF statistics:
- 2713 PDF objects out of 2984 (max. 8388607)
- 630 named destinations out of 1000 (max. 500000)
- 2467 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2859 PDF objects out of 2984 (max. 8388607)
+ 660 named destinations out of 1000 (max. 500000)
+ 2611 words of extra memory for PDF output out of 10000 (max. 10000000)
 

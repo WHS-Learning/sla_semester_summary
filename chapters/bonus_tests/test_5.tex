@@ -1,0 +1,155 @@
+\chapter{Bonustest 5 - geometrische Interpretation linearer Abbildungen}
+
+\section{Frage 1}
+
+Wählen Sie die richtige Achse für die entsprechende Drehmatrix.
+
+\begin{align*}
+    \begin{matrix}
+        A = \begin{pmatrix}
+                \cos(a) & -\sin(a) & 0 \\
+                \sin(a) & \cos(a)  & 0 \\
+                0       & 0        & 1
+            \end{pmatrix} & \text{Drehung um die Z-Achse} \\
+        B = \begin{pmatrix}
+                1 & 0       & 0        \\
+                0 & \cos(a) & -\sin(a) \\
+                0 & \sin(a) & \cos(a)
+            \end{pmatrix} & \text{Drehung um die X-Achse} \\
+        C = \begin{pmatrix}
+                \cos(a) & 0 & -\sin(a) \\
+                0       & 1 & 0        \\
+                \sin(a) & 0 & \cos(a)
+            \end{pmatrix} & \text{Drehung um die Y-Achse}
+    \end{matrix}
+\end{align*}
+
+\section{Frage 2}
+
+Wählen Sie die richtigen Lösungen.
+
+\begin{align*}
+    \begin{matrix}
+        \begin{pmatrix}
+            -1 & 0  \\
+            0  & -1
+        \end{pmatrix} & \text{orthogonale Matrix aber keine Drehmatrix} \\
+        \begin{pmatrix}
+            0  & 1 \\
+            -1 & 0
+        \end{pmatrix} & \text{Drehmatrix}                               \\
+        \begin{pmatrix}
+            -1 & 0 \\
+            0  & 0
+        \end{pmatrix} & \text{Weder Drehmatrix noch orthogonale Matrix}
+    \end{matrix}
+\end{align*}
+
+\section{Frage 3}
+
+Kreuzen Sie die richtigen Aussagen an.
+
+\begin{tabular}{llp{0.8\textwidth}}
+    \makebox[0pt][l]{$\square$}\raisebox{.15ex}{\hspace{0.1em}$\checkmark$}           & a & Inverse Matrizen zu orthogonalen Matrizen sind ebenfalls orthogonale Matrizen.                 \\
+    \makebox[0pt][l]{$\square$}\raisebox{.15ex}{\hspace{0.1em}$\checkmark$}           & b & Alle Drehmatrizen sind orthogonale Matrizen.                                                   \\
+    \makebox[0pt][l]{$\square$}\raisebox{.15ex}{\hspace{0.1em}$\phantom{\checkmark}$} & c & $\mathbb{R}^{2 \times 2}$ ist eine Untergruppe von $O(n)$.                                     \\
+    \makebox[0pt][l]{$\square$}\raisebox{.15ex}{\hspace{0.1em}$\checkmark$}           & d & Multipliziert man zwei orthogonale Matrizen, so ist das Ergebnis auch eine orthogonale Matrix. \\
+\end{tabular}
+
+\section{Frage 4}
+
+Eine orthogonale Matrix $A$ ist eine Matrix, für die gilt: $A^{-1} = A^T$
+
+Wahr
+
+\section{Frage 5}
+
+Sei $D_{\frac{\pi}{2}}: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ die lineare
+Abbildung, die jeden Vektor aus $\mathbb{R}^2$ um $\frac{\pi}{2}$ dreht.
+
+Stellen Sie die Matrix zu $D_{\frac{\pi}{2}}$ auf.
+
+\begin{align*}
+    \begin{pmatrix}
+        \cos(\alpha) & -\sin(\alpha) \\
+        \sin(\alpha) & \cos(\alpha)
+    \end{pmatrix} = \begin{pmatrix}
+                        \cos(\frac{\pi}{2}) & -\sin(\frac{\pi}{2}) \\
+                        \sin(\frac{\pi}{2}) & \cos(\frac{\pi}{2})
+                    \end{pmatrix} = \begin{pmatrix}
+                                        0 & -1 \\
+                                        1 & 0
+                                    \end{pmatrix}
+\end{align*}
+
+Sei $v = \begin{pmatrix}
+        1 \\ 1
+    \end{pmatrix}$. Bestimmen Sie $D_{\frac{\pi}{2}}(v)$.
+
+\begin{align*}
+    \begin{pmatrix}
+        0 & -1 \\
+        1 & 0
+    \end{pmatrix} \cdot \begin{pmatrix}
+                            1 \\ 1
+                        \end{pmatrix} = \begin{pmatrix}
+                                            -1 \\ 1
+                                        \end{pmatrix}
+\end{align*}
+
+Bestimmen Sie $\left<v, D_{\frac{\pi}{2}}(v)\right>$.
+
+\begin{align*}
+    \left< \begin{pmatrix}
+               1 \\ 1
+           \end{pmatrix}, \begin{pmatrix}
+                              -1 \\ 1
+                          \end{pmatrix}\right> = 1 \cdot -1 + 1 \cdot 1 = 0
+\end{align*}
+
+\section{Frage 6}
+
+Sei $D_{\frac{\pi}{3}}: \mathbb{R}^2 \rightarrow \mathbb{R}^2$ die lineare
+Abbildung, die jeden Vektor aus $\mathbb{R}^2$ um $\frac{\pi}{3}$ dreht.
+
+Stellen Sie die Matrix zu $D_{\frac{\pi}{3}}$ auf.
+
+\begin{align*}
+    \begin{pmatrix}
+        \cos(\alpha) & -\sin(\alpha) \\
+        \sin(\alpha) & \cos(\alpha)
+    \end{pmatrix} = \begin{pmatrix}
+                        \cos(\frac{\pi}{3}) & -\sin(\frac{\pi}{3}) \\
+                        \sin(\frac{\pi}{3}) & \cos(\frac{\pi}{3})
+                    \end{pmatrix} =  \begin{pmatrix}
+                                         \frac{1}{2}        & -\frac{\sqrt{3}}{2} \\
+                                         \frac{\sqrt{3}}{2} & \frac{1}{2}
+                                     \end{pmatrix}
+\end{align*}
+
+Sei $v = \begin{pmatrix}
+        2 \\ 1
+    \end{pmatrix}$. Bestimmen Sie $D_{\frac{\pi}{3}}(v)$.
+
+\begin{align*}
+    \begin{pmatrix}
+        \frac{1}{2}        & -\frac{\sqrt{3}}{2} \\
+        \frac{\sqrt{3}}{2} & \frac{1}{2}
+    \end{pmatrix} \cdot \begin{pmatrix}
+                            2 \\ 1
+                        \end{pmatrix} = \begin{pmatrix}
+                                            1 - \frac{\sqrt{3}}{2} \\
+                                            \sqrt{3} + \frac{1}{2}
+                                        \end{pmatrix}
+\end{align*}
+
+Bestimmen Sie $\left<v, D_{\frac{\pi}{3}}(v)\right>$.
+
+\begin{align*}
+    \left<\begin{pmatrix}
+              2 \\ 1
+          \end{pmatrix}, \begin{pmatrix}
+                             1 - \frac{\sqrt{3}}{2} \\
+                             \sqrt{3} + \frac{1}{2}
+                         \end{pmatrix}\right> = 2 \cdot \left(1 - \frac{\sqrt{3}}{2}\right) + 1 \cdot \left(\sqrt{3} + \frac{1}{2}\right) = \frac{5}{2}
+\end{align*}

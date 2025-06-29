@@ -421,3 +421,224 @@ invertiert werden. Hierfür wird das \nameref{gauss_jordan_verfahren} verwendet.
 
 Nun können die Elemente abgelesen werden: $A^{-1}_{12} = -\frac{19}{160},
     A^{-1}_{22} = \frac{1}{20}, A^{-1}_{31} = -\frac{1}{80}$.
+
+\section{Frage 6}
+
+Bestimmen Sie die Inverse von $M = \begin{pmatrix}
+        3 & -2 \\ -1 & 1
+    \end{pmatrix}$
+
+Als erstes sollte bestimmt werden, ob die Matrix eine Inverse besitzt. Sie
+besitzt eine Inverse, wenn $\det(M) \neq 0$.
+
+\begin{align*}
+    \det(M) = 3 \cdot 1 - (-1 \cdot -2) = 3 - 2 = 1
+\end{align*}
+
+Die Matrix besitzt also eine Inverse. Diese kann nun über das Gauß-jordan
+verfahren ermittelt werden
+
+\begin{longtable}{p{4cm}|p{3cm}}
+
+    \hline
+    \multicolumn{1}{c|}{\textbf{Matrix}} & \multicolumn{1}{c}{\textbf{Einheitsmatrix}}     \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
+    \hline
+    \multicolumn{1}{c|}{\textbf{Matrix}} & \multicolumn{1}{c}{\textbf{Einheitsmatrix}}     \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}}                           \\
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    $\displaystyle\begin{matrix}
+                          3  & -2 \\
+                          -1 & 1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1 & 0 \\
+                          0 & 1
+                      \end{matrix}$                                                            \\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 3II + I}              \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          3 & -2 \\
+                          0 & 1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1 & 0 \\
+                          1 & 3
+                      \end{matrix}$                                                            \\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I + 2II}              \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          3 & 0 \\
+                          0 & 1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          3 & 6 \\
+                          1 & 3
+                      \end{matrix}$                                                            \\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I : 3}                \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          1 & 0 \\
+                          0 & 1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1 & 2 \\
+                          1 & 3
+                      \end{matrix}$                                                            \\\hline
+\end{longtable}
+
+Die Inverse $M^{-1}$ ist also $\begin{pmatrix}
+        1 & 2 \\ 1 & 3
+    \end{pmatrix}$
+
+\section{Frage 7}
+
+Bestimmen Sie die Inverse von $M = \begin{pmatrix}
+        -5 & 1 & -3 \\
+        9  & 1 & 2  \\
+        -3 & 0 & -1
+    \end{pmatrix}$
+
+Als erstes sollte bestimmt werden, ob die Matrix eine Inverse besitzt. Sie
+besitzt eine Inverse, wenn $\det(M) \neq 0$
+
+\begin{align*}
+    \det(M) = -5 \cdot 1 \cdot -1 + 1 \cdot 2 \cdot -3 + -3 \cdot 9 \cdot 0 \\
+    - (-3 \cdot 1 \cdot -3) - (0 \cdot 2 \cdot -5) - (-1 \cdot 9 \cdot 1)   \\
+    = 5 - 6 +0 - 9 + 0 + 9 = -10
+\end{align*}
+
+Die Matrix besitzt also eine Inverse. Diese kann über das Gauß-jordan verfahren
+berechnet werden.
+
+\begin{longtable}{p{4cm}|p{3cm}}
+
+    \hline
+    \multicolumn{1}{c|}{\textbf{Matrix}} & \multicolumn{1}{c}{\textbf{Einheitsmatrix}}     \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
+    \hline
+    \multicolumn{1}{c|}{\textbf{Matrix}} & \multicolumn{1}{c}{\textbf{Einheitsmatrix}}     \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}}                           \\
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    $\displaystyle\begin{matrix}
+                          -5 & 1 & -3 \\
+                          9  & 1 & 2  \\
+                          -3 & 0 & -1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1 & 0 & 0 \\
+                          0 & 1 & 0 \\
+                          0 & 0 & 1
+                      \end{matrix}$                                                            \\\hline
+
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II + 3III}            \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          -5 & 1 & -3 \\
+                          0  & 1 & -1 \\
+                          -3 & 0 & -1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1 & 0 & 0 \\
+                          0 & 1 & 3 \\
+                          0 & 0 & 1
+                      \end{matrix}$                                                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: 5III - 3I}            \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          -5 & 1  & -3 \\
+                          0  & 1  & -1 \\
+                          0  & -3 & 4
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1  & 0 & 0 \\
+                          0  & 1 & 3 \\
+                          -3 & 0 & 5
+                      \end{matrix}$                                                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I - II}               \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          -5 & 0  & -2 \\
+                          0  & 1  & -1 \\
+                          0  & -3 & 4
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1  & -1 & -3 \\
+                          0  & 1  & 3  \\
+                          -3 & 0  & 5
+                      \end{matrix}$                                                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III + 3II}            \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          -5 & 0 & -2 \\
+                          0  & 1 & -1 \\
+                          0  & 0 & 1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1  & -1 & -3 \\
+                          0  & 1  & 3  \\
+                          -3 & 3  & 14
+                      \end{matrix}$                                                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II + III}             \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          -5 & 0 & -2 \\
+                          0  & 1 & 0  \\
+                          0  & 0 & 1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1  & -1 & -3 \\
+                          -3 & 4  & 17 \\
+                          -3 & 3  & 14
+                      \end{matrix}$                                                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I + 2III}             \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          -5 & 0 & 0 \\
+                          0  & 1 & 0 \\
+                          0  & 0 & 1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          -5 & 5 & 25 \\
+                          -3 & 4 & 17 \\
+                          -3 & 3 & 14
+                      \end{matrix}$                                                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I : -5}               \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          0 & 0 & 0 \\
+                          0 & 1 & 0 \\
+                          0 & 0 & 1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1  & -1 & -5 \\
+                          -3 & 4  & 17 \\
+                          -3 & 3  & 14
+                      \end{matrix}$                                                            \\\hline
+\end{longtable}
+
+Die Inverse $M^{-1}$ ist also $\begin{pmatrix}
+    1 & -1 & -5 \\
+    -3 & 4 & 17 \\
+    -3 & 3 & 14
+\end{pmatrix}$
