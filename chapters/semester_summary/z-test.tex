@@ -1,138 +1,120 @@
-\chapter{Der Z-Test}
+\chapter{Der Z-Test (100\% Klau\-sur\-auf\-gabe)}
 
-Wird eine Münze beispielsweise 100 Mal geworfen und das Ergebnis ist 70 Mal „Kopf“, stellt sich die Frage, ob die Münze gezinkt ist oder dieses Ergebnis im Rahmen des Zufalls liegt. Der \textbf{Z-Test} ist eines der grundlegendsten Werkzeuge, um solche Fragen zu beantworten. Er erlaubt es, eine Annahme (Hypothese) über eine Grundgesamtheit zu überprüfen, indem eine Stichprobe analysiert wird.
+Der Z-Test ist ein grundlegendes statistisches Verfahren zur Überprüfung von
+Hypothesen über Populationsparameter. Er ermöglicht es, basierend auf einer
+Stichprobe zu beurteilen, ob ein beobachtetes Ergebnis durch Zufall entstanden
+ist oder ob es eine signifikante Abweichung von einer angenommenen
+Grundgesamtheit darstellt.
 
-Die mathematische Grundlage dafür liefert der \textbf{Zentrale Grenzwertsatz} (in seiner einfachen Form auch als Satz von de Moivre-Laplace bekannt). Dieser besagt, dass sich die Verteilung von Summen oder Mittelwerten aus vielen unabhängigen Zufallsvariablen einer Normalverteilung annähert – selbst wenn die ursprüngliche Verteilung keine Normalverteilung war. Dies ermöglicht die Anwendung der Normalverteilung für statistische Tests.
+Die Anwendbarkeit des Z-Tests beruht maßgeblich auf dem \textbf{Zentralen
+    Grenzwertsatz}. Dieser Satz besagt, dass die Verteilung von
+Stichprobenmittelwerten (oder Summen) sich einer Normalverteilung annähert,
+wenn der Stichprobenumfang ausreichend groß ist. Dies gilt unabhängig von der
+ursprünglichen Verteilung der Population und ist entscheidend für die
+Durchführung parametrischer Tests wie des Z-Tests.
 
-\section{Die Bausteine eines Hypothesentests}
+\section{Grundlagen eines Hypothesentests}
 
-Jeder Hypothesentest folgt einer ähnlichen Logik und verwendet die gleichen Grundbausteine.
+Jeder statistische Hypothesentest folgt einer standardisierten Struktur, die
+aus den folgenden wesentlichen Komponenten besteht.
 
 \subsection{Nullhypothese ($H_0$)}
-Die Nullhypothese ist die „konservative“ Annahme oder der Status quo. Sie beschreibt den Zustand, der vorläufig als gegeben angenommen, aber versucht wird zu widerlegen. Oft formuliert sie, dass „kein Effekt“ oder „kein Unterschied“ vorliegt.
-
-\textit{Beispiel Münzwurf:} $H_0$: Die Münze ist fair. Die Wahrscheinlichkeit für Kopf ist $p = 0.5$.
+Die Nullhypothese repräsentiert die ursprüngliche Annahme oder den bestehenden
+Zustand, der vorläufig als wahr angenommen wird. Ihr Ziel ist es, diese Annahme
+zu widerlegen. Häufig postuliert $H_0$, dass kein Effekt, kein Unterschied oder
+keine Beziehung in der Grundgesamtheit vorliegt.
+\begin{itemize}
+    \item \textit{Beispiel Münzwurf:} $H_0$: Die Münze ist fair; die Wahrscheinlichkeit für „Kopf“ ist $p = 0.5$.
+\end{itemize}
 
 \subsection{Alternativhypothese ($H_1$)}
-Die Alternativhypothese ist die Annahme, die geprüft werden soll. Sie steht im direkten Gegensatz zur Nullhypothese und beschreibt den Zustand, der angenommen wird, falls die Nullhypothese verworfen wird.
-
-\textit{Beispiel Münzwurf:} $H_1$: Die Münze ist nicht fair ($p \neq 0.5$) oder sie ist gezinkt zugunsten von Kopf ($p > 0.5$).
+Die Alternativhypothese stellt die Annahme dar, die der Nullhypothese
+entgegensteht. Sie wird akzeptiert, wenn die Nullhypothese aufgrund der
+Testergebnisse abgelehnt wird. $H_1$ formuliert in der Regel den Effekt, den
+Unterschied oder die Beziehung, die in den Daten vermutet wird.
+\begin{itemize}
+    \item \textit{Beispiel Münzwurf:} $H_1$: Die Münze ist nicht fair ($p \neq 0.5$) oder sie ist zugunsten von „Kopf“ gezinkt ($p > 0.5$).
+\end{itemize}
 
 \subsection{Signifikanzniveau ($\alpha$) und Konfidenzniveau ($1-\alpha$)}
-Vor der Durchführung des Tests muss festgelegt werden, wie unwahrscheinlich ein Ergebnis sein muss, um die ursprüngliche Annahme ($H_0$) zu verwerfen.
+Die Festlegung dieser Werte erfolgt vor der Testdurchführung und bestimmt die
+Kriterien für die Ablehnung der Nullhypothese.
 \begin{itemize}
-    \item \textbf{Das Signifikanzniveau $\alpha$} (Alpha) ist die maximale Wahrscheinlichkeit, die Nullhypothese fälschlicherweise abzulehnen, obwohl sie wahr ist (Fehler 1. Art). Ein typischer Wert ist $\alpha = 0.05$ (oder 5 \%).
-    \item \textbf{Das Konfidenzniveau} ist $1-\alpha$ (z.B. 95 \%). Es beschreibt die Wahrscheinlichkeit, eine wahre Nullhypothese korrekterweise nicht abzulehnen.
+    \item \textbf{Das Signifikanzniveau $\alpha$} (Alpha) ist die vorab festgelegte maximale Wahrscheinlichkeit, die Nullhypothese fälschlicherweise abzulehnen, obwohl sie in Wirklichkeit wahr ist (Fehler 1. Art). Übliche Werte sind $\alpha = 0.05$ (5\%) oder $\alpha = 0.01$ (1\%).
+    \item \textbf{Das Konfidenzniveau}, definiert als $1-\alpha$, gibt die Wahrscheinlichkeit an, eine wahre Nullhypothese korrekt beizubehalten.
 \end{itemize}
-Wenn ein Testergebnis so extrem ist, dass seine Wahrscheinlichkeit (unter Annahme der $H_0$) kleiner als $\alpha$ ist, wird das Ergebnis als \textbf{statistisch signifikant} bezeichnet und die Nullhypothese verworfen.
+Ein Ergebnis wird als \textbf{statistisch signifikant} betrachtet, wenn die Wahrscheinlichkeit seines Auftretens unter Annahme der Gültigkeit von $H_0$ kleiner als $\alpha$ ist. In diesem Fall wird die Nullhypothese abgelehnt.
 
-\section{Anwendungsbeispiel 1: Test einer Proportion (Approximativer Binomialtest)}
-
-Es wird die Hypothese geprüft, ob eine Münze, die bei 100 Würfen ($n=100$) 62 Mal Kopf ($S_n = 62$) zeigt, überproportional häufig Kopf anzeigt.
-
-\textbf{Schritt 1: Hypothesen aufstellen}
-\begin{itemize}
-    \item $H_0: p = 0.5$ (Die Münze ist fair)
-    \item $H_1: p > 0.5$ (Die Münze ist zugunsten von Kopf gezinkt). Dies ist ein \textit{einseitiger} Test.
-\end{itemize}
-
-\textbf{Schritt 2: Signifikanzniveau festlegen}
-\begin{itemize}
-    \item Es wird ein übliches Niveau gewählt: $\alpha = 0.05$.
-\end{itemize}
-
-\textbf{Schritt 3: Teststatistik berechnen}
-Unter $H_0$ ist die Anzahl der Köpfe $S_n$ binomialverteilt mit $B(100, 0.5)$. Dies wird durch eine Normalverteilung approximiert.
-\begin{itemize}
-    \item Erwartungswert: $\mu = n \cdot p = 100 \cdot 0.5 = 50$
-    \item Standardabweichung: $\sigma = \sqrt{n \cdot p \cdot (1-p)} = \sqrt{100 \cdot 0.5 \cdot 0.5} = \sqrt{25} = 5$
-\end{itemize}
-Die Z-Teststatistik standardisiert das Ergebnis:
-$$Z = \frac{S_n - \mu}{\sigma} = \frac{62 - 50}{5} = \frac{12}{5} = 2.4$$
-
-\textbf{Schritt 4: Kritischen Wert bestimmen und Entscheidung treffen}
-Gesucht wird der Wert $z_{krit}$ in der Standardnormalverteilung, der die oberen 5 \% der Verteilung abschneidet.
-\begin{itemize}
-    \item Für $\alpha = 0.05$ bei einem einseitigen Test ist $z_{krit} \approx 1.645$.
-    \item Der berechnete Z-Wert ist $Z = 2.4$.
-    \item \textbf{Entscheidung:} Da $2.4 > 1.645$, liegt das Ergebnis im Ablehnungsbereich.
-\end{itemize}
-
-\textbf{Schritt 5: Ergebnis interpretieren}
-Die Nullhypothese $H_0$ wird verworfen. Auf einem Signifikanzniveau von 5 \% gibt es statistische Evidenz dafür, dass die Münze gezinkt ist und überproportional häufig Kopf zeigt.
-
-\section{Anwendungsbeispiel 2: Test eines Mittelwerts (Klassischer Z-Test)}
-
-Ein Schokoladenhersteller behauptet, seine Tafeln wiegen im Mittel 100g. Aus Erfahrung ist die Standardabweichung der Produktion $\sigma = 1g$ bekannt. Es soll geprüft werden, ob die Tafeln systematisch zu leicht sind. Hierfür wird eine Stichprobe von $n=25$ Tafeln gewogen, die ein Durchschnittsgewicht von $\bar{x} = 99.5g$ aufweist.
-
-\textbf{Schritt 1: Hypothesen aufstellen}
-\begin{itemize}
-    \item $H_0: \mu = 100g$ (Der Hersteller hält sein Versprechen)
-    \item $H_1: \mu < 100g$ (Der Hersteller füllt systematisch zu wenig ab). Dies ist ein \textit{einseitiger} Test.
-\end{itemize}
-
-\textbf{Schritt 2: Signifikanzniveau festlegen}
-\begin{itemize}
-    \item Es wird wieder $\alpha = 0.05$ gewählt.
-\end{itemize}
-
-\textbf{Schritt 3: Teststatistik berechnen}
-Die Formel für den Z-Test eines Mittelwerts lautet:
-$$Z = \frac{\bar{x} - \mu_0}{\frac{\sigma}{\sqrt{n}}}$$Wobei $\mu_0$ der Wert aus der Nullhypothese ist.$$Z = \frac{99.5 - 100}{\frac{1}{\sqrt{25}}} = \frac{-0.5}{\frac{1}{5}} = -0.5 \cdot 5 = -2.5$$
-
-\textbf{Schritt 4: Kritischen Wert bestimmen und Entscheidung treffen}
-Da dies ein linksseitiger Test ist, wird der kritische Wert gesucht, der die unteren 5 \% der Verteilung abschneidet.
-\begin{itemize}
-    \item Aufgrund der Symmetrie der Normalverteilung ist dies $z_{krit} = -1.645$.
-    \item Der berechnete Z-Wert ist $Z = -2.5$.
-    \item \textbf{Entscheidung:} Da $-2.5 < -1.645$, liegt das Ergebnis im Ablehnungsbereich.
-\end{itemize}
-
-\textbf{Schritt 5: Ergebnis interpretieren}
-Die Nullhypothese wird verworfen. Das Stichprobenergebnis ist so niedrig, dass es sehr unwahrscheinlich ist, wenn der wahre Mittelwert tatsächlich 100g wäre. Es liegt ein statistisch signifikanter Grund zur Annahme vor, dass der Hersteller zu wenig abfüllt.
-
-\section{Allgemeines Vorgehen beim Z-Test – Eine Zusammenfassung}
+\section{Systematisches Vorgehen beim Z-Test}
+Ein Hypothesentest mittels Z-Test folgt einer klaren Abfolge von Schritten:
 \begin{enumerate}
-    \item \textbf{Hypothesen formulieren:} Festlegung der Nullhypothese ($H_0$) und der Alternativhypothese ($H_1$). Entscheidung, ob der Test ein- oder zweiseitig ist.
-    \item \textbf{Signifikanzniveau ($\alpha$) wählen:} Bestimmung des Risikos für einen Fehler 1. Art (üblich sind 5 \%, 1 \% oder 10 \%).
-    \item \textbf{Voraussetzungen prüfen:} Gilt die Normalverteilungsannahme? Ist $\sigma$ bekannt (für Mittelwert-Test) oder $n$ groß genug (für Proportionen-Test)?
-    \item \textbf{Teststatistik berechnen:} Berechnung des Z-Werts basierend auf der Stichprobe.
-    \item \textbf{Entscheidungsregel anwenden:} Vergleich des berechneten Z-Werts mit dem kritischen Z-Wert (aus der Tabelle für das gewählte $\alpha$) oder Berechnung des p-Werts und Vergleich mit $\alpha$.
-    \item \textbf{Schlussfolgerung ziehen:} Ablehnung oder Nicht-Ablehnung von $H_0$. Formulierung einer Antwort im Kontext des Problems.
+    \item \textbf{Hypothesenformulierung:} Präzise Definition der Nullhypothese ($H_0$) und der Alternativhypothese ($H_1$). Festlegung, ob ein ein- oder zweiseitiger Test erforderlich ist.
+    \item \textbf{Signifikanzniveauwahl:} Bestimmung des akzeptablen Risikos für einen Fehler 1. Art ($\alpha$).
+    \item \textbf{Voraussetzungsprüfung:} Verifikation der Anwendbarkeit des Z-Tests (z.B. Normalverteilungsannahme, bekanntes $\sigma$ oder ausreichend großer Stichprobenumfang $n$).
+    \item \textbf{Teststatistikberechnung:} Ermittlung des Z-Werts auf Basis der Stichprobendaten.
+    \item \textbf{Entscheidungsfindung:} Vergleich des berechneten Z-Werts mit den kritischen Werten (aus der Z-Tabelle) oder Analyse des p-Werts im Verhältnis zu $\alpha$.
+    \item \textbf{Schlussfolgerung:} Ablehnung oder Beibehaltung von $H_0$ und Interpretation der Ergebnisse im Kontext der ursprünglichen Fragestellung.
 \end{enumerate}
 
-\section{Anwendungsbeispiel 3: Zweiseitiger Test eines Mittelwerts}
+\section{Anwendungsbeispiel 1: Einseitiger Z-Test}
 
-Ein IT-Administrator gibt an, dass die durchschnittliche Antwortzeit eines Webservers stabil bei 200 Millisekunden (ms) liegt. Aus langjähriger Erfahrung ist bekannt, dass die Standardabweichung der Antwortzeiten $\sigma = 15$ ms beträgt und die Werte als normalverteilt angesehen werden können.
+Ein Unternehmen strebt eine maximale Materialfehlerquote von 20\% an. Eine
+Qualitätskontrolle von 100 Bauteilen zeigt 15 Defekte. Es soll überprüft
+werden, ob die angenommene Fehlerhäufigkeit bei einer Irrtumswahrscheinlichkeit
+von höchstens 10\% aufrechterhalten werden kann.
 
-Um diese Angabe zu überprüfen, wird eine Stichprobe von $n=36$ Anfragen aufgezeichnet. Das mittlere Ergebnis dieser Stichprobe beträgt $\bar{x} = 206.5$ ms. Es soll geprüft werden, ob sich die tatsächliche durchschnittliche Antwortzeit signifikant von den behaupteten 200 ms unterscheidet (egal ob schneller oder langsamer).
+\begin{align*}
+    X                  & = \begin{cases}
+                               0 & \text{Kein Materialfehler} \\
+                               1 & \text{Materialfehler}
+                           \end{cases}                                                              \\
+    S_n                & = \sum_{i = 1}^{100} X_i \sim B(100, p) \quad (\text{Summe der Fehler ist binomialverteilt})  \\
+    H_0:               & p \leq 0.2 \quad (\text{Fehleranteil ist höchstens 20\%})                                     \\
+    H_1:               & p > 0.2 \quad (\text{Fehleranteil ist größer als 20\%})                                       \\
+    \alpha             & = 0.10 \quad (\text{Signifikanzniveau von 10\%})                                              \\
+                       & \rightarrow \text{Für den Test wird der Randfall von } H_0 \text{ betrachtet: } p = 0.2       \\
+    E(S_n)             & = n \cdot p = 100 \cdot 0.2 = 20                                                              \\
+    \sigma(S_n)        & = \sqrt{n \cdot p \cdot (1-p)} = \sqrt{100 \cdot 0.2 \cdot 0.8} = \sqrt{16} = 4               \\
+    \intertext{Der standardisierte Z-Wert mittels Normalapproximation ist:}
+    Z                  & = \frac{S_n - E(S_n)}{\sigma(S_n)} = \frac{S_n - 20}{4} \overset{\text{ldm}}{\approx} N(0, 1) \\
+    \intertext{Die Nullhypothese wird abgelehnt, wenn der berechnete Z-Wert den kritischen Wert überschreitet. Für $\alpha=0.10$ bei einem einseitig rechten Test ist der kritische Z-Wert ca. $1.28$. Der Annahmebereich für $S_n$ ist daher:}
+    \frac{S_n - 20}{4} & \leq 1.28                                                                                     \\
+    S_n                & \leq 1.28 \cdot 4 + 20                                                                        \\
+    S_n                & \leq 5.12 + 20                                                                                \\
+    S_n                & \leq 25.12                                                                                    \\
+    \intertext{Beobachtetes Ergebnis:}
+    S_n                & = 15                                                                                          \\
+\end{align*}
+Da $15 \leq 25.12$, liegt das beobachtete Ergebnis im Annahmebereich von $H_0$. Der berechnete Z-Wert ist $Z = \frac{15 - 20}{4} = -1.25$. Da $-1.25$ nicht größer als $1.28$ ist (d.h., nicht im kritischen Bereich liegt), wird $H_0$ nicht abgelehnt.
+\textbf{Schlussfolgerung:} Die Nullhypothese kann nicht abgelehnt werden. Es liegen keine statistisch signifikanten Belege (bei $\alpha=10\%$) vor, die darauf hindeuten, dass die Fehlerquote über 20\% liegt. Die angenommene Fehlerhäufigkeit kann aufrechterhalten werden.
 
-\textbf{Schritt 1: Hypothesen aufstellen}
-Da eine Abweichung in beide Richtungen (schneller oder langsamer) von Interesse ist, wird ein zweiseitiger Test durchgeführt.
-\begin{itemize}
-    \item $H_0: \mu = 200$ ms (Die mittlere Antwortzeit beträgt 200 ms.)
-    \item $H_1: \mu \neq 200$ ms (Die mittlere Antwortzeit weicht von 200 ms ab.)
-\end{itemize}
+\section{Anwendungsbeispiel 2: Zweiseitiger Z-Test}
 
-\textbf{Schritt 2: Signifikanzniveau festlegen}
-\begin{itemize}
-    \item Das Signifikanzniveau wird auf $\alpha = 0.05$ gesetzt.
-    \item Bei einem zweiseitigen Test wird dieses Risiko auf beide Enden der Verteilung aufgeteilt. Der Ablehnungsbereich liegt also in den äußeren $2.5\%$ auf jeder Seite ($\alpha/2 = 0.025$).
-\end{itemize}
+Historisch regnete es im Sommer an durchschnittlich 20\% der Tage. Eine
+aktuelle Studie untersucht, ob eine Klimaveränderung stattgefunden hat. Von 150
+analysierten Sommertagen regnete es an 53 Tagen. Es soll beurteilt werden, ob
+bei einer Irrtumswahrscheinlichkeit von höchstens 6\% von einem Klimawandel
+ausgegangen werden kann.
 
-\textbf{Schritt 3: Teststatistik berechnen}
-Die Z-Teststatistik für den Mittelwert wird berechnet:
-$$Z = \frac{\bar{x} - \mu_0}{\frac{\sigma}{\sqrt{n}}}$$Einsetzen der Werte aus dem Beispiel:$$Z = \frac{206.5 - 200}{\frac{15}{\sqrt{36}}} = \frac{6.5}{\frac{15}{6}} = \frac{6.5}{2.5} = 2.6$$
-
-\textbf{Schritt 4: Kritischen Wert bestimmen und Entscheidung treffen}
-Der kritische Bereich wird durch die Z-Werte definiert, die die Fläche $\alpha/2 = 0.025$ an jedem Ende der Standardnormalverteilung abschneiden.
-\begin{itemize}
-    \item Aus der Z-Tabelle (oder mit einer Funktion) ergibt sich für eine kumulierte Wahrscheinlichkeit von $1 - 0.025 = 0.975$ ein kritischer Wert von $z_{krit} \approx 1.96$.
-    \item Aufgrund der Symmetrie sind die beiden kritischen Grenzen $-1.96$ und $+1.96$.
-    \item Die Nullhypothese wird verworfen, falls der berechnete Z-Wert kleiner als $-1.96$ oder größer als $+1.96$ ist.
-    \item Der berechnete Z-Wert ist $Z = 2.6$.
-    \item \textbf{Entscheidung:} Da $2.6 > 1.96$, liegt der Wert im oberen Ablehnungsbereich.
-\end{itemize}
-
-\textbf{Schritt 5: Ergebnis interpretieren}
-Die Nullhypothese $H_0$ wird abgelehnt. Die Stichprobendaten liefern auf einem Signifikanzniveau von 5\% den statistischen Nachweis, dass die tatsächliche mittlere Antwortzeit des Servers von 200 ms abweicht. Das gemessene Ergebnis von 206.5 ms ist eine statistisch signifikant höhere Antwortzeit als die vom Administrator angegebene.
+\begin{align*}
+    X                          & = \text{Indikator für Regentag}                                                               \\
+    S_n                        & = \sum_{i = 1}^{150}X_i \sim B(150, p)                                                        \\
+    H_0:                       & p = 0.2 \quad (\text{Anteil der Regentage ist 20\%})                                          \\
+    H_1:                       & p \neq 0.2 \quad (\text{Anteil der Regentage weicht von 20\% ab})                             \\
+    \alpha                     & = 0.06 \quad (\text{Signifikanzniveau von 6\%})                                               \\
+    \mu                        & = n \cdot p = 150 \cdot 0.2 = 30                                                              \\
+    \sigma                     & = \sqrt{n \cdot p \cdot (1-p)} = \sqrt{150 \cdot 0.2 \cdot 0.8} = \sqrt{24} \approx 4.899     \\
+    \intertext{Der standardisierte Z-Wert für die Stichprobe ist:}
+    Z                          & = \frac{S_n - \mu}{\sigma} = \frac{S_n - 30}{\sqrt{24}} \overset{\text{ldm}}{\approx} N(0, 1) \\
+    \intertext{Für einen zweiseitigen Test mit $\alpha=0.06$ (was 3\% in jedem Endbereich entspricht), sind die kritischen Z-Werte ca. $\pm 1.88$. Der Annahmebereich für $H_0$ liegt zwischen diesen Werten:}
+    -1.88 \cdot \sqrt{24} + 30 & \leq S_n \leq 1.88 \cdot \sqrt{24} + 30                                                       \\
+    -9.21 + 30                 & \leq S_n \leq 9.21 + 30                                                                       \\
+    20.79                      & \leq S_n \leq 39.21                                                                           \\
+    \intertext{Gerundet auf ganze Tage (da $S_n$ eine diskrete Zählgröße ist):}
+    \intertext{!Man würde die 20.79 \textbf{immer} aufrunden und die 39.21 \textbf{immer} abrunden!}
+    21                         & \leq S_n \leq 39                                                                              \\
+    \intertext{Beobachtetes Ergebnis:}
+    S_n                        & = 53                                                                                          \\
+    \intertext{Da $53 > 39$, liegt das beobachtete Ergebnis außerhalb des Annahmebereichs von $H_0$. Der berechnete Z-Wert ist $Z = \frac{53-30}{\sqrt{24}} \approx 4.695$. Da $4.695 > 1.88$ (und somit im Ablehnungsbereich liegt), wird $H_0$ abgelehnt.}
+\end{align*}
+\textbf{Schlussfolgerung:} Die Nullhypothese wird abgelehnt. Es kann bei einem Signifikanzniveau von 6\% statistisch gesichert davon ausgegangen werden, dass der Anteil der Regentage von 20\% abweicht, was auf einen Klimawandel hindeutet.
