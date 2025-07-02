@@ -1,12 +1,11 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1751452754.8041 -1
-  "main.bcf" 1751452754 133314 482e3d1e8a309e70e56eb618f22d51f3 "pdflatex"
-  "references.bib" 1748678230 170 02a6cc0afeeaaad43f264fda1ad92277 ""
+["biber main"] 1751452782.33764 "main.bcf" "main.bbl" "main" 1751452796.7968 0
+  "main.bcf" 1751452796 133314 482e3d1e8a309e70e56eb618f22d51f3 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1751452749.26129 "c:/Users/EntchenEric/Documents/github/SLA_Uebzngsblaetter/main.tex" "main.pdf" "main" 1751452754.8048 0
+["pdflatex"] 1751452791.89801 "c:/Users/EntchenEric/Documents/github/SLA_Uebzngsblaetter/main.tex" "main.pdf" "main" 1751452796.79753 0
   "C:/Users/EntchenEric/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1751441286 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/EntchenEric/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1095.pk" 1748776743 13580 0e5bdef823ed6786d8df8eb680cba9cc ""
   "C:/Users/EntchenEric/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1748776742 12668 a0780ce28ab6cda23ecd0718c34f6716 ""
@@ -359,7 +358,7 @@
   "chapters/semester_summary/vektoren.tex" 1749995897 4161 e5111546b15ea0f56bdc4820de34804f ""
   "chapters/semester_summary/vektorraum.tex" 1749995899 2649 8eecf4b23ad29c561d1090dc27a5ec68 ""
   "chapters/semester_summary/verteilungen.tex" 1750689911 2971 805b6592092e50509a362faa04adc758 ""
-  "chapters/semester_summary/z-test.tex" 1750691058 10337 ab20d90cc78cd1c85d2ff8be583f9f27 ""
+  "chapters/semester_summary/z-test.tex" 1751452781 10245 dcaec095592f30d27b5c6d1966a3f0d7 ""
   "chapters/statistik/moodle_tasks.tex" 1750518093 23428 322e053426ab589aebbd67a3f7c8f91c ""
   "chapters/statistik/paper_10.tex" 1750000927 2636 f532f26da59467fd80664fffd0b8ca99 ""
   "chapters/statistik/paper_11.tex" 1750347050 461 efff68bdfb362093b53feb639ef14ebd ""
@@ -369,15 +368,15 @@
   "chapters/statistik/paper_8.tex" 1749996218 2769 724b99131ac373213d250fbb5b48bc37 ""
   "chapters/statistik/paper_9.tex" 1749998180 7136 8dc7f74b4761a3877fc0dc92157039a3 ""
   "config/code.sty" 1748678231 1506 252c1c2c1410bd504f089934790ae373 ""
-  "config/globals.tex" 1751452748 293 f7c18a332e87284ea30bac813da635aa ""
+  "config/globals.tex" 1751452772 293 f7c18a332e87284ea30bac813da635aa ""
   "config/style.sty" 1748976773 1116 b6863cc1e604fa14d378ba7662771ced ""
   "copyright.tex" 1748678230 425 95963a582d464b4b93c52050afb676c4 ""
-  "main.aux" 1751452754 267148 478b08ce3a9374e59b142cade46bc90f "pdflatex"
-  "main.bbl" 1750513672 486 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.out" 1751452754 40780 eb927443483273dd62880e4a2f8d3ef3 "pdflatex"
-  "main.run.xml" 1751452754 2427 d1bfcd6d722f5bf4e724fdcb22d9bbf2 "pdflatex"
+  "main.aux" 1751452796 266885 230c7da6cd91f6214d74c42e86a1bf34 "pdflatex"
+  "main.bbl" 1751452786 486 76d65a242ec496c9b4361af646ff12cb "biber main"
+  "main.out" 1751452796 40102 d8903de2fbc98e59e558e468559013a0 "pdflatex"
+  "main.run.xml" 1751452796 2427 d1bfcd6d722f5bf4e724fdcb22d9bbf2 "pdflatex"
   "main.tex" 1751217737 2836 bd4d93362e9607062cc5d9b6aebe532b ""
-  "main.toc" 1751452754 26740 0429d8c32f69426ce2d3da88884c252a "pdflatex"
+  "main.toc" 1751452796 26565 62508605c65ecdaeb1c9b4ef0fb05658 "pdflatex"
   "titlepage.tex" 1748685883 1845 d7ad900603673c9d6970d6c37a0ecea7 ""
   (generated)
   "main.aux"
