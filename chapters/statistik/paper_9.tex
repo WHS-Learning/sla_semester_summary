@@ -17,8 +17,8 @@ Wahrscheinlichkeit dafür, dass ein zufällig ausgewähler Mann größer als $20
     P(X > 200)                                                     \\
     1 - P(X \leq 200)                                              \\
     1 - P(\frac{X - E(X)}{\sigma} \leq \frac{200 - 176.69}{6.959}) \\
-    = 1 - \phi(\frac{200 - 176.69}{6.959})                         \\
-    \approx 1 - \phi(3.35)                                         \\
+    = 1 - \Phi(\frac{200 - 176.69}{6.959})                         \\
+    \approx 1 - \Phi(3.35)                                         \\
     \overset{Tabelle}{\approx} 1 - 0.99960                         \\
     = 0.0004                                                       \\
     = 0.04\%                                                       \\
@@ -26,8 +26,8 @@ Wahrscheinlichkeit dafür, dass ein zufällig ausgewähler Mann größer als $20
     P(X > 300)                                                     \\
     1 - P(X \leq 300)                                              \\
     1 - P(\frac{X - E(X)}{\sigma} \leq \frac{300 - 176.69}{6.959}) \\
-    = 1 - \phi(\frac{300 - 176.69}{6.959})                         \\
-    = 1 - \phi(17.72)                                              \\
+    = 1 - \Phi(\frac{300 - 176.69}{6.959})                         \\
+    = 1 - \Phi(17.72)                                              \\
     \overset{Tabelle}{\approx} 1 - 1                               \\
     = 0                                                            \\
     = 0\%                                                          \\
@@ -90,7 +90,7 @@ näherungsweise mit dem Satz von Moivere-Laplace ohne Stetigkeitskorrektur
     P(X \geq 99)                                                              \\
     = 1 - P(X < 99)                                                           \\
     = 1 - P\left(\frac{X - E(X)}{\sigma} < \frac{99 - 96}{\sqrt{3.84}}\right) \\
-    \approx 1 - \phi(1.53)                                                    \\
+    \approx 1 - \Phi(1.53)                                                    \\
     \overset{Tabelle}{\approx} 1 - 0.93699                                    \\
     \approx 0.0630                                                            \\
     = 6.30\%
@@ -110,7 +110,7 @@ näherungsweise mit dem Satz von Moivre-Laplace mit Stetigkeitskorrektur.
     P(X \geq 98.5)                                                            \\
     1 - P(X < 98.5)                                                           \\
     1 - P\left(\frac{X - E(X)}{\sigma} < \frac{98.5 - 96}{\sqrt{3.84}}\right) \\
-    \approx 1 - \phi(1.28)                                                    \\
+    \approx 1 - \Phi(1.28)                                                    \\
     \overset{Tabelle}{\approx} 1 - 0.89973                                    \\
     \approx 0.1003                                                            \\
     = 10.03 \%
@@ -129,8 +129,8 @@ de Moivre-Laplace.
                                        1 & \text{sonst}
                                    \end{cases} \\
     P(0.49 \leq X \leq 0.51)                            \\
-    \phi(1 - 0.49) = \phi(0.51)                         \\
-    \phi(0.51) = 0.03                                   \\
+    \Phi(1 - 0.49) = \Phi(0.51)                         \\
+    \Phi(0.51) = 0.03                                   \\
     \frac{n - n \cdot \frac{1}{2}}{\sqrt{n \cdot \frac{1}{2} \cdot \frac{1}{2}}} = 0.03\\
     \Leftrightarrow \frac{\frac{n}{2}}{\sqrt{\frac{n}{4}}} = 0.03 \\
     \Leftrightarrow \frac{\frac{n}{2}}{\frac{\sqrt{n}}{2}} = 0.03 \\

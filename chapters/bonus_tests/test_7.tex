@@ -1,0 +1,184 @@
+\chapter{Bonustest 7 - Zufallsvariablen und Verteilungen}
+
+\section{Frage 1}
+
+Die Zufallsvariable $X$ ist binomialverteilt mit den Parametern $n=20$ und $p= 0.2$. Berechnen Sie, auf zwei Nachkommastellen genau: 
+
+\subsection{a}
+$P(X = 2)$
+
+\begin{align*}
+    X \sim B(20, 0.2) \\
+    P(X = 2) = \begin{pmatrix}
+        20 \\ 2
+    \end{pmatrix} \cdot 0.2^2 \cdot 0.8^{18} \approx 13.69\%
+\end{align*}
+
+\subsection{b}
+$P(X \geq 12)$
+
+\begin{align*}
+    X \sim B(20, 0.2) \\
+    P(X \leq 12) = \sum_{i = 0}^{12} \left(\begin{pmatrix}
+        20 \\ i
+    \end{pmatrix} \cdot 0.2^i \cdot 0.8^{20 - i}\right) \approx 100\% \\
+    \text{Alternativ:} \\
+    P(X \leq 12) = 1 - P(X > 12) = \\
+    1 - \sum_{i = 12}^{20} \left(\begin{pmatrix}
+        20 \\ i
+    \end{pmatrix} \cdot 0.2^i \cdot 0.8^{20 - i}\right) \approx 100\%
+\end{align*}
+
+\subsection{c}
+$P(X > 2)$
+
+\begin{align*}
+    X \sim B(20, 0.2) \\
+    P(X > 2) = \sum_{i = 3}^{20} \left(\begin{pmatrix}
+        20 \\ i
+    \end{pmatrix} \cdot 0.2^i \cdot 0.8^{20 - i}\right) \approx 79.39\%\\
+    \text{Alternativ: } \\
+    P(X > 2) = 1 - P(X \leq 2) = \\
+    1 - \sum_{2}^{0}  \left(\begin{pmatrix}
+        20 \\ i
+    \end{pmatrix} \cdot 0.2^i \cdot 0.8^{20 - i}\right) \approx 79.39\%
+\end{align*}
+
+\section{Frage 2}
+
+Wie groß ist die Wahrscheinlichkeit, dass in einer Familie mit fünf Kindern\dots
+
+Die Zufallsvariable ist Binomialverteilt, da sie in mehreren, voneinander unabhängigen Zufallsexperimenten zwischen Treffer und Niete unterscheidet.
+
+$p = 0.5$ Junge und Mädchen haben modelliert gleiche Wahrscheinlichkeit
+
+$n = 5$ 5 Kinder
+
+\subsection{a}
+
+genau drei Mädchen sind?
+
+\begin{align*}
+    X \sim B(5, 0.5) \\
+    X = \text{Anzahl der Mädchen} \\
+    P(X = 3) = \begin{pmatrix}
+        5 \\ 3
+    \end{pmatrix} \cdot 0.5^3 \cdot 0.5^2 = 31.25\%
+\end{align*}
+
+\subsection{b}
+
+mindestens zwei Mädchen sind
+
+\begin{align*}
+    X \sim B(5, 0.5) \\
+    X = \text{Anzahl der Mädchen} \\
+    P(X \geq 2) = \sum_{i = 2}^{5} \left(\begin{pmatrix}
+        5 \\ i
+    \end{pmatrix} \cdot 0.5^i \cdot 0.5^{5 - i}\right) \approx 81.25\%
+\end{align*}
+
+\subsection{c}
+
+kein Junge ist
+
+\begin{align*}
+    X \sim B(5, 0.5) \\
+    X = \text{Anzahl der Jungen} \\
+    P(X = 0) = \begin{pmatrix}
+        5 \\ 0
+    \end{pmatrix} \cdot 0.5^0 \cdot 0.5^5 \approx 3.13
+\end{align*}
+
+\subsection{d}
+
+vier Mädchen und ein Junge sind? 
+
+\begin{align*}
+    X \sim B(5, 0.5) \\
+    X = \text{Anzahl der Mädchen} \\
+    P(X = 4) = \begin{pmatrix}
+        5 \\ 4
+    \end{pmatrix} \cdot 0.5^4 \cdot 0.5^1 = 15.63
+\end{align*}
+
+(gibt es 4 Mädchen muss es auch einen Jungen geben. Die Aussage ist also Äquivalen zu den Aussagen `genau vier Mädchen sind' und `genau ein Junge ist')
+
+\section{Frage 3}
+
+Beim Spiel `Mensch, ärgere dich nicht' muss zum Spielbeginn eine Sechs gewürfelt werden.
+
+Wie hoch ist die Wahrscheinlichkeit, genau nach 3-maligem Würfeln mitspielen zu dürfen?
+
+Hier wird nach der Wahrscheinlichkeit gefragt, nach \textit{genau} 3 malen eine 6 zu würfeln, also keine 6, keine 6, 6. Dies sind drei aneinander gereihte Bernoulliexperimente. 
+
+\begin{align*}
+    X \sim Bernoulli(\frac{1}{6}) \\
+    X = \text{6 gewürfelt} \\
+    P(X = 0) \cdot P(X = 0) \cdot P(X = 1) \\
+    = \frac{5}{6} \cdot \frac{5}{6} \cdot \frac{1}{6} \approx 11.57
+\end{align*}
+
+\pagebreak
+
+\section{Frage 4}
+
+Bei einer unfairen Münze liegt die Wahrscheinlichkeit Kopf zu werfen bei $p = \frac{1}{5}$.
+
+Wie hoch ist die Wahrscheinlichkeit, dass erst beim dritten Versuch Kopf geworfen wird?
+
+Hier ist nach der Wahrscheinlichkeit gefragt, \textit{genau} nach dem dritten mal Kopf zu würfeln. Also sind hier 3 aneinander gekettete Bernoulliexperimente vertreten.
+
+\begin{align*}
+    X \sim Bernoulli(\frac{1}{5}) \\
+    X = \text{Kopf geworfen} \\
+    P(X = 0) \cdot P(X = 0) \cdot P(X = 1) = \\
+    \frac{4}{5} \cdot \frac{4}{5} \cdot \frac{1}{5} = 12.8\%
+\end{align*}
+
+Wie hoch ist die Wahrscheinlichkeit, dass erst beim fünften Versuch Kopf geworfen wird?
+
+\begin{align*}
+    X \sim Bernoulli(\frac{1}{5}) \\
+    X = \text{Kopf geworfen} \\
+    P(X = 0) \cdot P(X = 0) \cdot P(X = 0) \cdot P(X = 0) \cdot P(X = 1) = \\
+    \frac{4}{5} \cdot \frac{4}{5} \cdot \frac{4}{5} \cdot \frac{4}{5} \cdot \frac{1}{5} \approx 8.19\%
+\end{align*}
+
+\section{Frage 5}
+
+Für eine Stelle haben sich $16$ Personen beworben, davon haben $5$ bereits Arbeitserfahrung, die übrigen $11$ noch nicht.
+
+Es werden nun $6$ Personen per Losentscheid ausgewählt. Wie hoch ist die Wahrscheinlichkeit, dass genau $3$ Personen mit Arbeitserfahrung ausgewählt werden?
+
+Die Zufallsvariable ist Hypergeometrisch verteilt, da aus einer Gesamtmenge eine kleinere Zielmenge gezogen wird.
+
+\begin{align*}
+    X \sim H(16, 5, 6) \\
+    X = \text{Anzahl Personen mit Berufserfahrung} \\
+    P(X = 3) = \frac{\begin{pmatrix}
+        5 \\ 3
+    \end{pmatrix} \cdot \begin{pmatrix}
+        11 \\ 3
+    \end{pmatrix}}{\begin{pmatrix}
+        16 \\ 6
+    \end{pmatrix}} \approx 20.60\%
+\end{align*}
+
+\section{Frage 6}
+
+In einer Packung seien $500$ Nägel. Davon seien $10$ Nägel defekt. Wie groß ist die Wahrscheinlichkeit, dass unter $5$ zufällig aus der Packung gezogenen Nägel genau einer defekt ist?
+
+Die Zufallsvariable ist Hypergeometrisch verteilt, da aus einer Gesamtmenge eine kleinere Zielmenge gezogen wird.
+
+\begin{align*}
+    X \sim H(500, 10, 5) \\
+    X = \text{Anzahl Defekter Nägel} \\
+    P(X = 1) = \frac{\begin{pmatrix}
+        10 \\ 1
+    \end{pmatrix} \cdot \begin{pmatrix}
+        490 \\ 4
+    \end{pmatrix}}{\begin{pmatrix}
+        500 \\ 5
+    \end{pmatrix}} \approx 9.30\%
+\end{align*}
