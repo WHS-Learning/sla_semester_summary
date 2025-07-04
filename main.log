@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.3)  3 JUL 2025 17:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.7.3)  4 JUL 2025 10:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -24,11 +24,11 @@ File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (./config/style.sty (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+) (./config/style.sty (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
@@ -1034,20 +1034,31 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box98
 \enit@count@id=\count514
 \enitdp@description=\count515
+) (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box99
+\UL@hyphenbox=\box100
+\UL@skip=\skip85
+\UL@hook=\toks70
+\UL@height=\dimen318
+\UL@pe=\count516
+\UL@pixel=\dimen319
+\ULC@box=\box101
+Package: ulem 2019/11/18
+\ULdepth=\dimen320
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen318
-\pgfarrowlength=\dimen319
-\pgfarrowwidth=\dimen320
-\pgfarrowlinewidth=\dimen321
+\pgfarrowinset=\dimen321
+\pgfarrowlength=\dimen322
+\pgfarrowwidth=\dimen323
+\pgfarrowlinewidth=\dimen324
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@layerbox@background=\box99
-\pgf@layerboxsaved@background=\box100
+\pgf@layerbox@background=\box102
+\pgf@layerboxsaved@background=\box103
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1056,24 +1067,24 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1111,24 +1122,30 @@ LaTeX Font Info:    ... okay on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count516
-\scratchdimen=\dimen322
-\scratchbox=\box101
-\nofMPsegments=\count517
-\nofMParguments=\count518
-\everyMPshowfont=\toks70
-\MPscratchCnt=\count519
-\MPscratchDim=\dimen323
-\MPnumerator=\count520
-\makeMPintoPDFobject=\count521
-\everyMPtoPDFconversion=\toks71
+\scratchcounter=\count517
+\scratchdimen=\dimen325
+\scratchbox=\box104
+\nofMPsegments=\count518
+\nofMParguments=\count519
+\everyMPshowfont=\toks71
+\MPscratchCnt=\count520
+\MPscratchDim=\dimen326
+\MPnumerator=\count521
+\makeMPintoPDFobject=\count522
+\everyMPtoPDFconversion=\toks72
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count522
+\c@lstlisting=\count523
 Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
 Package biblatex Info: ... file 'english-apa.lbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
@@ -1159,9 +1176,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 19.
-Package biblatex Info: Reference segment=0 on input line 19.
-Package hyperref Info: Link coloring ON on input line 19.
+Package biblatex Info: Reference section=0 on input line 21.
+Package biblatex Info: Reference segment=0 on input line 21.
+Package hyperref Info: Link coloring ON on input line 21.
+ (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
@@ -1171,7 +1189,7 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 (./config/globals.tex) (./titlepage.tex
-<assets/frontpage.png, id=7, 803.0pt x 334.24875pt>
+<assets/frontpage.png, id=1458, 803.0pt x 334.24875pt>
 File: assets/frontpage.png Graphic file (type png)
 <use assets/frontpage.png>
 Package pdftex.def Info: assets/frontpage.png  used on input line 24.
@@ -1200,8 +1218,65 @@ l.6 \end{abstract}
                    [1
 
 
-])
-No file main.toc.
+]) (./main.toc
+Overfull \hbox (1.88638pt too wide) in paragraph at lines 19--19
+ [][] [][][]\OT1/cmr/m/n/10.95 Erlaubte Um-for-mungen: El-e-mentare Zeilenum-for-mungen[][] [][]  
+ []
+
+
+Overfull \hbox (12.50186pt too wide) in paragraph at lines 22--22
+ [][] [][][]\OT1/cmr/m/n/10.95 Phase 2: R^^?uckw^^?art-se-lim-i-na-tion (Re-duzierte Zeilen-stufen- 
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33 ...umberline {8.3}Dimension}{21}{section.8.3}
+                                                  % [1
+
+
+]
+Overfull \hbox (54.56813pt too wide) in paragraph at lines 62--62
+ [][] [][][]\OT1/cmr/m/n/10.95 Berechnung von Spiegelungs-ma-trizen (Householder-Transformation)[][] [][]  
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.81 ...enwerte und Eigenvektoren}{45}{chapter.15}
+                                                  % [2]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.132 ...berline {20.7.2}b}{66}{subsection.20.7.2}
+                                                  % [3]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.174 ...berline {26.1.1}a}{97}{subsection.26.1.1}
+                                                  % [4]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.218 ...erline {29.2.1}a}{118}{subsection.29.2.1}
+                                                  % [5]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.266 ...erline {33.2.1}a}{152}{subsection.33.2.1}
+                                                  % [6]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.308 ...line {38}Übungsblatt 7}{178}{chapter.38}
+                                                  % [7]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.351 ...}Moodle Übungsaufgaben}{191}{chapter.43}
+                                                  % [8])
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -1209,15 +1284,12 @@ No file main.toc.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 	\clearpage
-                 [1
-
-
-]
+l.36 	\clearpage
+                 [9]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 	\part{Semesterzusammenfassung}
+l.40 	\part{Semesterzusammenfassung}
                                      [1
 
 
@@ -1302,18 +1374,11 @@ Chapter 6.
 
 
 ]
+Overfull \hbox (32.78972pt too wide) in paragraph at lines 75--77
+\OT1/cmr/m/n/10.95 Dieses Sys-tem wird mithilfe des [][]Gau^^Y-Jordan Ver-fahren[][] (Gau^^Y-Jordan-Elimination)
+ []
 
-LaTeX Warning: Reference `gauss_jordan_verfahren' on page 15 undefined on input line 76.
-
-[15]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 6.1 on input line 132.
-
-
-LaTeX Warning: Reference `determinante' on page 16 undefined on input line 148.
-
-) [16] (./chapters/semester_summary/basis_vektorraum.tex
+[15]) [16] (./chapters/semester_summary/basis_vektorraum.tex
 Chapter 7.
 
 Overfull \hbox (20.75134pt too wide) in paragraph at lines 3--6
@@ -1348,10 +1413,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 44.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 7.1 on input line 118.
 
 [18]) [19] (./chapters/semester_summary/span_dim.tex
 Chapter 8.
@@ -1408,8 +1469,9 @@ Chapter 9.
 
 
 ]
-
-LaTeX Warning: Reference `fig:kreuzprodukt_sarrus_user' on page 27 undefined on input line 88.
+Overfull \hbox (1.719pt too wide) in paragraph at lines 87--91
+\OT1/cmr/m/n/10.95 Die oben dargestellte Grafik (siehe Ab-bil-dung [][]9.1[][]) ve-r-an-schaulicht eine Meth-
+ []
 
 
 Overfull \hbox (17.00192pt too wide) in paragraph at lines 97--102
@@ -1427,11 +1489,7 @@ Overfull \hbox (1.06506pt too wide) in paragraph at lines 19--23
 
 
 
-] [30]
-
-LaTeX Warning: Reference `matrix_multiplitzieren' on page 31 undefined on input line 164.
-
-[31] [32]) [33] (./chapters/semester_summary/determinante.tex
+] [30] [31] [32]) [33] (./chapters/semester_summary/determinante.tex
 Chapter 11.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1466,12 +1524,7 @@ Overfull \hbox (4.24864pt too wide) in paragraph at lines 74--76
 
 
 
-] [35] [36]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 11.1 on input line 203.
-
-[37]
+] [35] [36] [37]
 Overfull \hbox (4.33682pt too wide) in paragraph at lines 266--267
 [][] 
  []
@@ -1484,22 +1537,11 @@ Chapter 12.
 
 ] (./chapters/semester_summary/matrix_invertieren.tex
 Chapter 13.
-
-LaTeX Warning: Reference `gauss_jordan_verfahren' on page 40 undefined on input line 7.
-
-
-LaTeX Warning: Reference `determinante' on page 40 undefined on input line 15.
-
 [40
 
 
 
-]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 13.1 on input line 129.
-
-[41]) [42] (./chapters/semester_summary/definitheit.tex
+] [41]) [42] (./chapters/semester_summary/definitheit.tex
 Chapter 14.
 
 Overfull \hbox (9.55124pt too wide) in paragraph at lines 32--33
@@ -1575,9 +1617,6 @@ Overfull \hbox (1.47154pt too wide) in paragraph at lines 32--33
 Overfull \hbox (12.08574pt too wide) in paragraph at lines 36--37
 []\OT1/cmr/m/n/10.95 Lottospiel (Ziehen von 6 aus 49 Kugeln), Qualit^^?atskon-
  []
-
-
-LaTeX Warning: Reference `dml' on page 48 undefined on input line 41.
 
 ) [48] (./chapters/semester_summary/dml.tex
 Chapter 18.
@@ -1684,12 +1723,12 @@ Overfull \hbox (4.22386pt too wide) in paragraph at lines 1--1
 |[]\OT1/cmr/bx/n/24.88 Bonustest 1 - Rech-nen mit
  []
 
-<assets/bonus_tests/unique_vectors.png, id=451, 367.87437pt x 367.87437pt>
+<assets/bonus_tests/unique_vectors.png, id=2203, 367.87437pt x 367.87437pt>
 File: assets/bonus_tests/unique_vectors.png Graphic file (type png)
 <use assets/bonus_tests/unique_vectors.png>
 Package pdftex.def Info: assets/bonus_tests/unique_vectors.png  used on input line 11.
 (pdftex.def)             Requested size: 180.67499pt x 180.681pt.
-<assets/bonus_tests/vector_lengths.png, id=452, 545.03625pt x 543.53062pt>
+<assets/bonus_tests/vector_lengths.png, id=2204, 545.03625pt x 543.53062pt>
 File: assets/bonus_tests/vector_lengths.png Graphic file (type png)
 <use assets/bonus_tests/vector_lengths.png>
 Package pdftex.def Info: assets/bonus_tests/vector_lengths.png  used on input line 28.
@@ -1722,19 +1761,19 @@ Overfull \hbox (5.73006pt too wide) in paragraph at lines 421--429
 \OT1/cmr/m/n/10.95 wei^^Ye Kugel und die blaue Kugel haben beide einen Durchmesser $\OML/cmm/m/it/10.95 d \OT1/cmr/m/n/10.95 = 57\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 2 []$.
  []
 
-<assets/bonus_tests/pool.png, id=509, 666.23906pt x 408.77719pt>
+<assets/bonus_tests/pool.png, id=2248, 666.23906pt x 408.77719pt>
 File: assets/bonus_tests/pool.png Graphic file (type png)
 <use assets/bonus_tests/pool.png>
 Package pdftex.def Info: assets/bonus_tests/pool.png  used on input line 430.
 (pdftex.def)             Requested size: 361.34999pt x 221.71567pt.
 [65 <./assets/bonus_tests/pool.png>]
-<assets/bonus_tests/pool2.png, id=516, 3383.64125pt x 2392.94pt>
+<assets/bonus_tests/pool2.png, id=2254, 3383.64125pt x 2392.94pt>
 File: assets/bonus_tests/pool2.png Graphic file (type png)
 <use assets/bonus_tests/pool2.png>
 Package pdftex.def Info: assets/bonus_tests/pool2.png  used on input line 439.
 (pdftex.def)             Requested size: 361.34999pt x 255.51991pt.
  [66 <./assets/bonus_tests/pool2.png>]
-<assets/bonus_tests/drehmoment.png, id=525, 929.4725pt x 331.2375pt>
+<assets/bonus_tests/drehmoment.png, id=2260, 929.4725pt x 331.2375pt>
 File: assets/bonus_tests/drehmoment.png Graphic file (type png)
 <use assets/bonus_tests/drehmoment.png>
 Package pdftex.def Info: assets/bonus_tests/drehmoment.png  used on input line 505.
@@ -1750,10 +1789,6 @@ Overfull \hbox (49.41966pt too wide) in paragraph at lines 1--1
 Overfull \hbox (18.64214pt too wide) in paragraph at lines 1--1
 \OT1/cmr/bx/n/24.88 itzen und lin-eare Ab-bil-dun-
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 21.1 on input line 168.
 
 [70
 
@@ -1776,35 +1811,11 @@ Overfull \hbox (111.54576pt too wide) in paragraph at lines 300--302
 
 [74] [75] [76]) [77] (./chapters/bonus_tests/test_3.tex
 Chapter 22.
-
-LaTeX Warning: Reference `gauss_jordan_verfahren' on page 78 undefined on input line 26.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 22.1 on input line 145.
-
 [78
 
 
 
-] [79] [80] [81]
-
-LaTeX Warning: Reference `gauss_jordan_verfahren' on page 82 undefined on input line 313.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 22.2 on input line 420.
-
-[82]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 22.3 on input line 503.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 22.4 on input line 638.
-
-[83]) [84] (./chapters/bonus_tests/test_4.tex
+] [79] [80] [81] [82] [83]) [84] (./chapters/bonus_tests/test_4.tex
 Chapter 23.
 
 Overfull \hbox (5.73567pt too wide) in paragraph at lines 1--1
@@ -1854,151 +1865,32 @@ Overfull \hbox (25.33154pt too wide) in paragraph at lines 1--1
 
 
 
-] [103] [104] [105] [106]
-Runaway argument?
- 
-./chapters/bonus_tests/test_8.tex:182: Paragraph ended before \align* was complete.
-<to be read again> 
-                   \par 
-l.182 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-./chapters/bonus_tests/test_8.tex:182: Missing $ inserted.
-<inserted text> 
-                $
-l.182 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./chapters/bonus_tests/test_8.tex:182: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.182 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./chapters/bonus_tests/test_8.tex:182: Display math should end with $$.
-<to be read again> 
-                   \tex_par:D 
-l.182 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-./chapters/bonus_tests/test_8.tex:183: Misplaced \cr.
-\math@cr@@@ ->\cr 
-                  
-l.183 \end{align*}
-                  
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./chapters/bonus_tests/test_8.tex:183: Misplaced \noalign.
-\math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
-                                                  {\vskip #1\relax }
-l.183 \end{align*}
-                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-./chapters/bonus_tests/test_8.tex:183: Misplaced \noalign.
-\black@ #1->\noalign 
-                     {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
-l.183 \end{align*}
-                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
-Overfull \hbox (312.73854pt too wide) detected at line 183
-[]
+] [103] [104] [105] [106] [107] [108] [109]
+Overfull \hbox (1.15623pt too wide) in paragraph at lines 301--302
+[]\OT1/cmr/m/n/10.95 Falls dies der Fall ist, f^^?ahrt man fort mit der Berech-nung des Er-wartungswerts
  []
 
-./chapters/bonus_tests/test_8.tex:183: Extra }, or forgotten \endgroup.
-\endalign ->\math@cr \black@ \totwidth@ \egroup 
-                                                \ifingather@ \restorealignst...
-l.183 \end{align*}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./chapters/bonus_tests/test_8.tex:183: Missing $ inserted.
-<inserted text> 
-                $
-l.183 \end{align*}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./chapters/bonus_tests/test_8.tex:183: Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.183 \end{align*}
-                  
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-) [107] (./chapters/bonus_tests/test_9.tex
+[110] [111]) [112] (./chapters/bonus_tests/test_9.tex
 Chapter 28.
-[108
+[113
 
 
 
-] [109]) [110] [111
+] [114]) [115] [116
 
 
 ] (./chapters/lineare_algebra/page_5.tex
 Chapter 29.
-[112
-
-
-] [113] [114] [115]) [116] (./chapters/lineare_algebra/page_6.tex
-Chapter 30.
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 30.1 on input line 71.
-
 [117
 
 
-
-]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 30.2 on input line 177.
-
-[118]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 30.3 on input line 251.
+] [118] [119] [120]) [121] (./chapters/lineare_algebra/page_6.tex
+Chapter 30.
+[122
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 30.4 on input line 345.
 
-[119]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 30.5 on input line 737.
-
-[120] [121] [122] [123] [124] [125] [126] [127] [128]
+] [123] [124] [125] [126] [127] [128] [129] [130] [131] [132] [133]
 
 Package xcolor Warning: Incompatible color definition on input line 923.
 
@@ -4027,7 +3919,7 @@ Package xcolor Warning: Incompatible color definition on input line 957.
 
 Package xcolor Warning: Incompatible color definition on input line 957.
 
-[129]
+[134]
 
 Package xcolor Warning: Incompatible color definition on input line 958.
 
@@ -4892,106 +4784,52 @@ Package xcolor Warning: Incompatible color definition on input line 974.
 
 Package xcolor Warning: Incompatible color definition on input line 974.
 
-) [130] (./chapters/lineare_algebra/page_7.tex
+) [135] (./chapters/lineare_algebra/page_7.tex
 Chapter 31.
-[131
+[136
 
 
 
-] [132] [133]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 31.1 on input line 291.
-
-[134] [135] [136] [137]
+] [137] [138] [139] [140] [141] [142]
 Overfull \hbox (6.35873pt too wide) in paragraph at lines 539--540
 \OT1/cmr/m/n/10.95 Dass eine Ma-trix in-vertier-bar ist, muss sie lin-ear un-abh^^?angig sein. $\OMS/cmsy/m/n/10.95 ! []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 T\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 =
  []
 
-[138]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 31.2 on input line 704.
-
-) [139] (./chapters/lineare_algebra/page_8.tex
+[143]) [144] (./chapters/lineare_algebra/page_8.tex
 Chapter 32.
-[140
+[145
 
 
 
-] [141]
+] [146]
 Overfull \hbox (5.46533pt too wide) in paragraph at lines 168--170
 []\OT1/cmr/m/n/10.95 Die Zahlen an den Lin-ien wer-den Mul-ti-pliziert. Blaue Lin-ien wer-den miteinan-
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 32.1 on input line 224.
-
-[142]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 32.2 on input line 304.
-
-[143]
+[147] [148]
 Underfull \hbox (badness 10000) in paragraph at lines 352--354
 [][]$[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 B\OT1/cmr/m/n/10.95 ) = 
  []
 
-[144]) [145] (./chapters/lineare_algebra/page_9.tex
+[149]) [150] (./chapters/lineare_algebra/page_9.tex
 Chapter 33.
-[146
-
-
-
-] [147] [148] [149]) [150] (./chapters/lineare_algebra/page_10.tex
-Chapter 34.
 [151
 
 
 
-] [152] [153] [154] [155]) [156] (./chapters/lineare_algebra/page_11.tex
+] [152] [153] [154]) [155] (./chapters/lineare_algebra/page_10.tex
+Chapter 34.
+[156
+
+
+
+] [157] [158] [159] [160]) [161] (./chapters/lineare_algebra/page_11.tex
 Chapter 35.
-[157
+[162
 
 
 
-]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 35.1 on input line 97.
-
-[158]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 35.2 on input line 210.
-
-[159]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 35.3 on input line 320.
-
-[160] [161]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 35.4 on input line 427.
-
-[162]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 35.5 on input line 562.
-
-[163] [164]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 35.6 on input line 708.
-
-[165]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 35.7 on input line 780.
-
-) [166] [167
+] [163] [164] [165] [166] [167] [168] [169] [170]) [171] [172
 
 
 ] (./chapters/statistik/paper_5.tex
@@ -5001,17 +4839,17 @@ Overfull \hbox (8.3549pt too wide) in paragraph at lines 6--9
 \OT1/cmr/m/n/10.95 (also zwei Fin-ger aus-gestreckt, die an-dere eingeklappt zu lassen)? (Anatomisch
  []
 
-[168
+[173
 
 
-]) [169] (./chapters/statistik/paper_6.tex
+]) [174] (./chapters/statistik/paper_6.tex
 Chapter 37.
 Package pgfplots info on input line 26: Using 'lua backend=false' for axis: x coord trafo unsupported.
-[170
+[175
 
 
 
-] [171]) [172] (./chapters/statistik/paper_7.tex
+] [176]) [177] (./chapters/statistik/paper_7.tex
 Chapter 38.
 
 Overfull \hbox (21.27837pt too wide) in paragraph at lines 5--10
@@ -5058,7 +4896,7 @@ Overfull \hbox (4.95763pt too wide) in paragraph at lines 15--16
 \OT1/pcr/m/n/10.95 der Bedingung, dass die Alarmanlage \OT1/pcr/b/n/10.95 nicht \OT1/pcr/m/n/10.95 angeht\OT1/cmr/m/n/10.95 : Die
  []
 
-[173
+[178
 
 
 
@@ -5067,30 +4905,30 @@ Overfull \hbox (5.47548pt too wide) in paragraph at lines 52--54
 \OT1/cmr/m/n/10.95 Wie gro^^Y ist die Wahrschein-lichkeit daf^^?ur, dass ein Dop-ingtest pos-i-tiv ausf^^?allt? 
  []
 
-[174]
+[179]
 Overfull \hbox (3.04202pt too wide) in paragraph at lines 106--108
 \OT1/cmr/m/n/10.95 Was ist der Un-ter-schied zwis-chen vollst^^?andi-ger stochastis-cher Un-abh^^?angigkeit
  []
 
-) [175] (./chapters/statistik/paper_8.tex
+) [180] (./chapters/statistik/paper_8.tex
 Chapter 39.
 
 Overfull \hbox (14.43677pt too wide) in paragraph at lines 19--20
 $\OML/cmm/m/it/10.95 Var\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 Y\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 Var\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 ) + \OML/cmm/m/it/10.95 Var\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Y\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; []X[]Y[]:$ 
  []
 
-[176
+[181
 
 
 
-]) [177] (./chapters/statistik/paper_9.tex
+]) [182] (./chapters/statistik/paper_9.tex
 Chapter 40.
 
 Overfull \hbox (2.60107pt too wide) in paragraph at lines 38--45
 \OT1/cmr/m/n/10.95 Gem^^?a^^Y einer Def-i-ni-tion von Ar-mut gilt als arm, wer ein monatliches Haushalt-
  []
 
-[178
+[183
 
 
 
@@ -5104,7 +4942,7 @@ Overfull \hbox (22.66078pt too wide) in paragraph at lines 59--65
 \OT1/cmr/m/n/10.95 unter der An-nahme, dass das Er-scheinen der Tick-et-inhaber paar-weise stochastisch
  []
 
-[179] [180]) [181] (./chapters/statistik/paper_10.tex
+[184] [185]) [186] (./chapters/statistik/paper_10.tex
 Chapter 41.
 
 Overfull \hbox (0.72028pt too wide) in paragraph at lines 5--13
@@ -5126,37 +4964,45 @@ Overfull \hbox (12.94786pt too wide) in paragraph at lines 43--49
 \OT1/cmr/m/n/10.95 tien-ren-dite nor-malverteilt. Au^^Yer-dem gibt es eine von $\OML/cmm/m/it/10.95 A$ \OT1/cmr/m/n/10.95 un-abh^^?angige, risikolose
  []
 
-[182
+[187
 
 
 
-]) [183] (./chapters/statistik/paper_11.tex
+]) [188] (./chapters/statistik/paper_11.tex
 Chapter 42.
-)
-Overfull \hbox (9.5987pt too wide) in paragraph at lines 9--88
+
+Overfull \hbox (9.5987pt too wide) in paragraph at lines 9--10
 \OT1/cmr/m/it/10.95 fallsvari-ablen ange-wandt, in-dem wir die zu Grunde liegende Bi-no-mi-alverteilung
  []
 
-[184
 
+Overfull \hbox (11.42812pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/n/10.95 fallsabh^^?angig und wird durch eine nor-malverteilte Zu-fallsvari-able $\OML/cmm/m/it/10.95 X \OMS/cmsy/m/n/10.95 ^^X \OML/cmm/m/it/10.95 N\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^V; ^^[[]\OT1/cmr/m/n/10.95 )$
+ []
+
+
+Overfull \hbox (2.22087pt too wide) in paragraph at lines 13--14
+[]\OT1/cmr/m/n/10.95 F^^?ur $85$ (zuf^^?allig und un-abh^^?angig) aus-gew^^?ahlte Br^^?otchen ergibt sich ein Durch-
+ []
+
+) [189
+
+
+
+] [190
 
 
 ] (./chapters/statistik/moodle_tasks.tex
 Chapter 43.
-[185
+[191
 
 
-
-] [186] [187]
+] [192] [193]
 Overfull \hbox (3.10588pt too wide) in paragraph at lines 200--203
 []|$ [] $| 
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 43.1 on input line 208.
-
-[188] [189]
+[194] [195]
 Overfull \hbox (4.3399pt too wide) in paragraph at lines 296--302
 \OT1/cmr/m/n/10.95 prox-i-ma-tion um eine so-ge-nan-nte Stetigkeit-sko-r-rek-tur er-weit-ert wer-den. Dabei
  []
@@ -5171,57 +5017,35 @@ Overfull \hbox (2.34245pt too wide) in paragraph at lines 303--306
 \OT1/cmr/m/n/10.95 19$, aber gle-ichzeitig nur h^^?ochstens $23$ Paketen zu Liefer-verz^^?ogerun-gen kommt,
  []
 
-[190]
+[196]
 Overfull \hbox (2.73793pt too wide) in paragraph at lines 334--342
 \OT1/cmr/m/n/10.95 Qualit^^?atskon-trolle einer pro-duzierten Charge wer-den $20$ aus-gew^^?ahlten Tablet-
  []
 
-[191] [192] [193] [194]) [195]
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-(./main.aux)
+[197] [198] [199] [200]) [201] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  47F0569B820F6970483777CB23BA4331;43494.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: DB89E3E8A565AE631790318A227B3F59;45243.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58594 strings out of 474222
- 1348921 string characters out of 5748734
- 2643828 words of memory out of 5000000
- 79253 multiletter control sequences out of 15000+600000
- 576562 words of font info for 105 fonts, out of 8000000 for 9000
+ 59203 strings out of 474222
+ 1360725 string characters out of 5748734
+ 2805133 words of memory out of 5000000
+ 79827 multiletter control sequences out of 15000+600000
+ 576668 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  130i,20n,130p,1651b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (199 pages, 1743844 bytes).
+Output written on main.pdf (213 pages, 1799155 bytes).
 PDF statistics:
- 1643 PDF objects out of 1728 (max. 8388607)
- 1366 compressed objects within 14 object streams
- 700 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3184 PDF objects out of 3580 (max. 8388607)
+ 2878 compressed objects within 29 object streams
+ 720 named destinations out of 1000 (max. 500000)
+ 2931 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -168,10 +168,14 @@ Ein Würfel trägt $3$ Einser, $2$ Zweier und eine Sechs. Er wird $1000$ mal gew
 
 In einer Bonbon-Tüte gibt es grüne, blaue und rote Bonbons. Die Anzahl der blauen Bonbons kann mit einer Normalverteilung beschrieben werden. Hierbei liegt der Erwartungswert bei $24$ und die Standardabweichung bei $4$.
 
+\subsection{Ohne Stetigkeitskorrektur}
+
+Wie hoch ist die Wahrscheinlichkeit das in einer Tüte weniger als 19 blaue Bonbons sind?
+
 \begin{align*}
     X \sim N(24, 4) \\
-    X = Anzahl blauer Bonbons \\
-    P(X > 19) = P\left(\frac{X - E(X)}{\sigma} > \frac{19 - 24}{4}\right) \\
+    X = \text{Anzahl blauer Bonbons} \\
+    P(X < 19) = P\left(\frac{X - E(X)}{\sigma} < \frac{19 - 24}{4}\right) \\
     \Phi(\frac{19 - 24}{4}) \\
     \approx \Phi(-1.25) = 1 - \Phi(1.25) \overset{Tabelle}{\approx} 1 - 0.89435 = 0.10565 = 19.57\%
 \end{align*}
@@ -179,5 +183,193 @@ In einer Bonbon-Tüte gibt es grüne, blaue und rote Bonbons. Die Anzahl der bla
 Wie muss der Erwartungswert gewählt werden, so dass die Wahrscheinlichkeit bei weniger als $19$ blauen Bonbons bei $95\%$ liegt?
 
 \begin{align*}
-    
+    \text{Die Wahrscheinlichkeit soll bei 95\% liegen.} \\
+    \text{Der z-Wert für 0.95 ist ca. 1.65} \\
+    1.65 = \frac{19 - E(X)}{4} \quad | \cdot 4  \\
+    6.6 = 19 - E(X) \quad | +E(X) \quad | -6.6 \\
+    E(X) = 12.4
+\end{align*}
+
+\subsection{Mit Stetigkeitskorrektur}
+
+Wie hoch ist die Wahrscheinlichkeit das in einer Tüte weniger als 19 blaue Bonbons sind?
+
+\begin{align*}
+    X \sim N(24, 4) \\
+    X = \text{Anzahl blauer Bonbons} \\
+    \text{Gesucht ist }P(X < 19) \text{, mit Stetigkeitskorrektur wird daraus} P(X < 18.5) \\
+    P(X < 18.5) = P\left(\frac{X - E(X)}{\sigma} > \frac{18.5 - 24}{4}\right) \\
+    \Phi(\frac{18.5 - 24}{4}) \\
+    \approx \Phi(-1.38) = 1 - \Phi(1.38) \overset{Tabelle}{\approx} 1 - 0.91621 = 0.0838 = 8.38\%
+\end{align*}
+
+Wie muss der Erwartungswert gewählt werden, so dass die Wahrscheinlichkeit bei weniger als $19$ blauen Bonbons bei $95\%$ liegt?
+
+\begin{align*}
+    \text{Gesucht ist  } P(X < 19) \text{, mit Stetigkeitskorrektur} P(X < 18.5) \\
+    \text{Die Wahrscheinlichkeit soll bei 95\% liegen.} \\
+    \text{Der z-Wert für 0.95 ist ca. 1.65} \\
+    1.65 = \frac{18.5 - E(X)}{4} \quad | \cdot 4  \\
+    6.6 = 18.5 - E(X) \quad | +E(X) \quad | -6.6 \\
+    E(X) = 11.9
+\end{align*}
+
+\section{Frage 5}
+
+Eine Maschine produziert 500 mm lange Schrauben mit einer Standardabweichung von 15 mm. Die Länge der Schrauben kann als normalverteilt angesehen werden.
+
+\subsection{Ohne Stetigkeitskorrektur}
+
+Wie hoch ist die Wahrscheinlichkeit, dass eine Schraube kürzer ist als 485 mm ist?
+
+\begin{align*}
+    X \sim N(500, 15) \\
+    X = \text{Länge der Schraube} \\
+    P(X < 485) = P\left(\frac{X - E(X)}{\sigma} < \frac{485 - 500}{15}\right) \\
+    \Phi\left(\frac{485 - 500}{15}\right) \\
+    \approx \Phi(-1) = 1 - \Phi(1) \overset{Tabelle}{\approx} 1 - 0.84134 = 0.1587 = 15.87\%
+\end{align*}
+
+Wie hoch ist die Wahrscheinlichkeit, dass eine Schraube höchstens 501 mm und mindestens 499 mm lang ist?
+
+\begin{align*}
+    X \sim N(500, 15) \\
+    X = \text{Länge der Schraube} \\
+    P(499 \leq X \leq 501) = P(X \leq 501) - P(X \leq 499) \\
+    P(X \leq 501) = P\left(\frac{X - E(X)}{\sigma} < \frac{501 - 500}{15}\right) \\
+    \Phi(\frac{501 - 500}{15}) \approx \Phi(0.07) \overset{Tabelle}{\approx} 0.52790 \approx 52.79\% \\
+    P(X \leq 499) = P\left(\frac{X - E(X)}{\sigma} < \frac{499 - 500}{15}\right) \\
+    \Phi\left(\frac{499-500}{15}\right) \approx \Phi(-0.07) = 1 - \Phi(0.07)\\
+    = 1 - 0.52790 = 0.4721 \approx 47.21\%\\
+    P(499 \leq X \leq 501) = 0.52790 - 0.4721 = 0.0558 \approx 5.58\%
+\end{align*}
+
+\section*{Berechnung mit Stetigkeitskorrektur}
+
+Eine Maschine produziert 500 mm lange Schrauben mit einer Standardabweichung von 15 mm. Die Länge der Schrauben kann als normalverteilt angesehen werden.
+
+\subsection{Mit Stetigkeitskorrektur}
+
+Wie hoch ist die Wahrscheinlichkeit, dass eine Schraube kürzer ist als 485 mm ist?
+
+\begin{align*}
+    X \sim N(500, 15) \\
+    X = \text{Länge der Schraube} \\
+    \text{Aus P(X < 485) wird P(X $\leq$ 484), mit Korrektur also P(X < 484.5)} \\
+    P(X < 484.5) = P\left(\frac{X - E(X)}{\sigma} < \frac{484.5 - 500}{15}\right) \\
+    \Phi\left(\frac{-15.5}{15}\right) \\
+    \approx \Phi(-1.03) = 1 - \Phi(1.03) \overset{Tabelle}{\approx} 1 - 0.84849 = 0.15151 = 15.15\%
+\end{align*}
+
+Wie hoch ist die Wahrscheinlichkeit, dass eine Schraube höchstens 501 mm und mindestens 499 mm lang ist?
+
+\begin{align*}
+    X \sim N(500, 15) \\
+    X = \text{Länge der Schraube} \\
+    \text{Aus P(499 $\leq$ X $\leq$ 501) wird mit Korrektur P(498.5 $\leq$ X $\leq$ 501.5)} \\
+    P(498.5 \leq X \leq 501.5) = P(X \leq 501.5) - P(X \leq 498.5) \\
+    \\
+    P(X \leq 501.5) = P\left(\frac{X - E(X)}{\sigma} < \frac{501.5 - 500}{15}\right) \\
+    \Phi(\frac{1.5}{15}) = \Phi(0.1) \overset{Tabelle}{\approx} 0.53983 \approx 53.98\% \\
+    \\
+    P(X \leq 498.5) = P\left(\frac{X - E(X)}{\sigma} < \frac{498.5 - 500}{15}\right) \\
+    \Phi\left(\frac{-1.5}{15}\right) = \Phi(-0.1) = 1 - \Phi(0.1)\\
+    = 1 - 0.53983 = 0.46017 \approx 46.02\%\\
+    \\
+    P(498.5 \leq X \leq 501.5) = 0.53983 - 0.46017 = 0.07966 \approx 7.97\%
+\end{align*}
+
+\section{Frage 6}
+
+Waschmaschinen sollen für einen Waschgang durchschnittlich $45l$ Wasser verbrauchen. Ein Hersteller will erreichen, dass bei höchstens $5\%$ seiner Maschinen der Wasserverbrauch größer als $55l$ ist.
+Welche Standardabweichung darf die Maschine (höchstens) haben, wenn man voraussetzt, dass der Wasserverbrauch normalverteilt ist?
+
+\begin{align*}
+    1.65 = \frac{55 - 45}{\sigma} \quad |\cdot \sigma
+    \Leftrightarrow 1.65\sigma = 10 \quad |: 1.65
+    \Leftrightarrow \sigma = 6.06
+\end{align*}
+
+\section{Frage 7}
+
+Wie hoch ist die Wahrscheinlichkeit dafür, maximal $110$ Mal eine sechs zu würfeln bei $600$ Würfen?
+
+Hierbei handelt es sich um ein Zufallsexperiment das auf einer Binomialverteilung basiert. Da das $n$ sehr hoch ist, würde sich die Anwendung vom Satz von Moivre-Laplace anbieten, um einen Näherungswert der Lösung zu erhalten. Sei $X$ die Anzahl der gewürfelten sechsen.
+
+Zuerst sollte man jedoch prüfen ob die Näherung ausreichend `gut' ist. Dies tut man mit der Faustregel:  $n \cdot p \cdot (1 - p) > 9$.
+
+Falls dies der Fall ist, fährt man fort mit der Berechnung des Erwartungswerts sowie der Standardabwechung.
+
+\begin{align*}
+    E(X) = \mu = 600 \cdot \frac{1}{6} = 100 \\
+    \sqrt{Var(X)} = \sigma = \sqrt{100 \cdot \frac{5}{6}} \approx 9.13
+\end{align*}
+
+In dieser Aufgabe wird nach der Wahrscheinlichkeit für $P(X \leq 10)$ gefragt. Wir formen diese Ungleichung nun um. Ziehen hier auf beiden Seiten $\mu$ ab und teilen durch $\sigma$. So erhalten wir:
+
+\begin{align*}
+    P(X \leq 110) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{110 - \mu}{\sigma}\right) 
+\end{align*}
+
+Nach dem Satz von Moivre-Laplace gilt nun:
+
+\begin{align*}
+    P\left(\frac{X - E(X)}{\sigma} \leq \frac{110 - \mu}{\sigma}\right) \approx \Phi\left(\frac{110 - \mu}{\sigma}\right) \\
+    \Phi\left(\frac{110 - \mu}{\sigma}\right) = \Phi(\frac{110 - 100}{9.13}) \approx \Phi(1.10)
+\end{align*}
+
+Nun können Sie den ausgerechneten Wert für $\Phi$ in der Tablle der Werte für die Standardnormalverteilung nachschlagen.
+
+\begin{align*}
+    P(X \leq 110) = 86.43\%
+\end{align*}
+
+\section{Frage 8}
+
+Gegeben sei die diskrete Zufallsvariable $Y$, die die Werte $1,2,3,4$ annehmen kann und die folgende Zähldichte hat:
+
+\begin{align*}
+    f(y) = P(Y = y) \\
+    = \begin{cases}
+        \frac{(5 - y) \cdot y}{20} & \text{Für } y \in \left\{1, 2, 3, 4\right\}\\
+        0 & \text{sonst}
+    \end{cases}
+\end{align*}
+
+Berechnen Sie die Wahrscheinlichkeit, dass die Zufallsvariable $Y$ genau den Wert $3$ annimmt und den Erwartungswert von $Y$.
+
+\begin{align*}
+    P(Y = 3) = \frac{(5 - 3) \cdot 3}{20} = 0.3 = 30\% \\
+    \frac{1 + 2 + 3 + 4}{4} = 2.5
+\end{align*}
+
+\section{Frage 9}
+
+Einer ihrer Kommilitonen schreibt ein Programm, das eine (natürliche) Zufallszahl von 1 bis 100 generieren kann. Er macht daraus ein Spiel, das auf folgenden Regeln basiert:
+
+\begin{itemize}
+    \item es wird pro Versuch $1$€ gesetzt
+    \item bei einer $55$ erhalten Sie $100$€
+    \item bei einer $11$, $22$ oder $33$ erhalten Sie $3$€
+    \item bei einer $44$, $66$, $77$ oder $88$ erhalten Sie $2$€
+    \item bei einer $99$, $1$ oder $100$ erhalten Sie $1$€
+    \item bei jeder andern Zahl behält der Kommilitone den Einsatz und Sie erhalten nichts.
+\end{itemize}
+
+Ist dieses Spiel fair?
+
+\begin{align*}
+    (100 - 1) \cdot \frac{1}{100} + (3 - 1) \cdot \frac{3}{100}\\
+    + (2 - 1) \cdot\frac{4}{100} + (1 - 1) \cdot \frac{3}{100}\\
+    + (0 - 1) \cdot \frac{89}{100} = 0.2 \neq 0 \\
+    \Rightarrow \text{das Spiel ist unfair.}
+\end{align*}
+
+\section{Frage 10}
+
+Ein Torwart hält den Ball bei einem Elfmeter mit einer Wahrscheinlichkeit von $65.0\%$. Nun muss er nach einer Verlängerung ins Tor (Zufallsvariable $x=5$ Elfmeter). Wie viele gehaltene Bälle kann man erwarten?
+
+\begin{align*}
+    E(X) = 5 \cdot  0.65 = 3.25 \\
+    Var(X) = 3.25 \cdot 0.35 \approx 1.14
 \end{align*}
