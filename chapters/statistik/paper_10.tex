@@ -21,6 +21,20 @@ erhöhten Anteil an Joghurtbechern mit defektem Deckel aufweist? Wie groß kann
 die Wahrscheinlichkeit für ein unnötiges Entladen des Lkws bei Einhaltung des
 zugesicherten Qualitätsstandards maximal werden?
 
+\begin{align*}
+    X \sim B(100, p)                                                                                      \\
+    X = \text{Anzahl defekter Becher}                                                                     \\
+    H_0 = p \leq 0.01 \text{, da maximal 1\% der Becher defekt sein dürfen}                               \\
+    H_1 = p > 0.01 \text{, wenn mehr als 2 Becher defekt sind }H_0 \text{ ablehnen}                       \\
+    E(X) = 100 \cdot 0.01 = 1                                                                             \\
+    Var(X) = 1 \cdot 0.99 = 0.99                                                                          \\
+    \sigma = \sqrt{0.99}                                                                                  \\
+    P(X < 2) = P\left(\frac{X - E(X)}{\sigma} < \frac{2 - 1}{\sqrt{0.99}}\right)                          \\
+    \overset{Stetigkeitskorrektur}{=} P\left(\frac{X - E(X)}{\sigma} < \frac{1.5 - 1}{\sqrt{0.99}}\right) \\
+    \Phi\left(\frac{1.5 - 1}{\sqrt{0.99}}\right)                                                          \\
+    \approx \Phi(0.50) \overset{Tabelle}{\approx} 0.69146 \approx 69.15 \%                                \\\\
+\end{align*}
+
 \subsection{b}
 
 Nun soll die Wahrscheinlichkeit eines unnötigen Ausladens des Lkws auf $5\%$
@@ -29,12 +43,38 @@ $95\%$. Bestimmen Sie eine Anzahl $z \in \mathbb{N}$ an Joghurtbechern mit
 defekten Deckel, ab der die Hypothese, dass die Ladung dem Qualitätsstandard
 entspricht, abgelehnt werden soll.
 
+\begin{align*}
+    X \sim B(100, 0.01)                                                          \\
+    X = \text{Anzahl defekter Becher}                                            \\
+    P(X > z) = P\left(\frac{X - E(X)}{\sigma} < \frac{z - 1}{\sqrt{0.99}}\right) \\
+    \Phi\left(\frac{z - 1}{\sqrt{0.99}}\right) = 0.95                            \\
+    \frac{z - 1}{\sqrt{0.99}} = 1.65 \quad | \cdot \sqrt{0.99} \quad | + 1       \\
+    z = 1.65 \cdot \sqrt{0.99} + 1                                               \\
+    z \approx 2.64 \Rightarrow z = 3
+\end{align*}
+
 \subsection{c}
 
 Um das Risiko einer fälschlichen Auslieferung noch kleiner zu machen, soll die
 Lieferung nur dann freigegeben werden, wenn sich kein defekter Deckel in einer
 Stichprobe der Länge $n$ befindet. Bestimmen Sie $n$ so, dass dieses Risiko
 nach der neuen Regel höchstens $1\%$ beträgt.
+
+\begin{align*}
+    X \sim B(n, 0.01)                                                                          \\
+    X = \text{Anzahl defekter Becker}                                                          \\
+    P(X = 0) = P\left(\frac{X - E(X)}{\sigma} < \frac{0 - n \cdot 0.01}{\sqrt{0.0099n}}\right) \\
+    \Phi\left(\frac{0 - 0.01n}{\sqrt{\sqrt{0.0099n}}}\right)                                   \\
+    = \Phi\left(\frac{0 - 0.01n}{\sqrt{0.0099n}}\right) = 0.01                                 \\
+    = \Phi\left(\frac{0 - 0.01n}{\sqrt{0.0099n}}\right) = 1 - 0.99                             \\
+    = \frac{0 - 0.01n}{\sqrt{0.0099n}} = -2.33                                                 \\
+    = \frac{-0.01n}{\sqrt{0.0099n}} = -2.33                                                    \\
+    = \frac{-0.01n}{0.0994987 \cdot \sqrt{n}} = -2.33                                          \\
+    = \frac{-0.01}{0.0994987} \cdot \sqrt{n} = -2.33  \quad | \cdot 0.0994987                  \\
+    = -0.01 \cdot \sqrt{n} = -0.231831971 \quad | : -0.01                                      \\
+    \sqrt{n} = 23.1831971 \quad | \phantom{}^2                                                 \\
+    = 576 = n
+\end{align*}
 
 \section{Aufgabe 2}
 
@@ -46,6 +86,16 @@ Aktienrendite normalverteilt. Außerdem gibt es eine von $A$ unabhängige,
 risikolose Anlagemöglichkeit $R$, die eine Jahresrendite von $2\%$ einbringt.
 Mit welcher Wahrscheinlichkeit ist die Rendite des Aktieninvestments höher als
 die der risikolosen Anlage?
+
+\begin{align*}
+    X \sim N(5\%, 5\%^2)                                                 \\
+    X = \text{Jahresrendite}
+    P(X > 2\%) = 1 - P(X \leq 2\%) =                                     \\
+    1 - P\left(\frac{X - E(X)}{\sigma} \leq \frac{2\% - 5\%}{5\%}\right) \\
+    = 1 - \Phi\left(\frac{2\% - 5\%}{5\%}\right) \approx 1 - \Phi(-0.6)  \\
+    \overset{Tabelle}{\approx} 1 - (1 - 0.72575)                         \\
+    = 0.72575 \approx 72.58\%
+\end{align*}
 
 \subsection{b}
 
@@ -59,3 +109,26 @@ dass von 600 ausgesätzten samen
     \item mindestens $565$ keimen
     \item $565$ bis $575$ keimen
 \end{itemize}
+
+\begin{align*}
+    X \sim B(600, 0.95)                                                                   \\
+    X = \text{Anzahl keimender Gurkensamen}                                               \\
+    E(X) = 600 \cdot 0.95 = 570                                                           \\
+    Var(X) = 28.5                                                                         \\
+    \sigma = \sqrt{28.5}                                                                  \\
+    P(X < 565) = P\left(\frac{X - E(X)}{\sigma} < \frac{565 - 570}{\sqrt{28.5}}\right)    \\
+    \Phi\left(\frac{565 - 570}{\sqrt{28.5}}\right)                                        \\
+    \approx \Phi(-0.94) = 1 - \Phi(0.94) = 0.82639 = 82.64\%                              \\\\
+    P(X > 570) = P(X \leq 570)                                                            \\
+    = P\left(\frac{X - E(X)}{\sigma} \leq \frac{570 - 570}{\sqrt{28.5}}\right)            \\
+    \Phi(0) \overset{Tabelle}{\approx} 0.5 = 50\%                                         \\\\
+    P(565 < X < 575) = P(X < 575) - P(X < 565)                                            \\
+    P(X < 575) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{575 - 570}{\sqrt{28.5}}\right) \\
+    \Phi\left(\frac{575 - 570}{\sqrt{28.5}}\right)                                        \\
+    \approx \Phi(0.94) \overset{Tabelle}{\approx} 0.82639 \approx 82.64 \%                \\
+    P(X < 565) = P\left(\frac{X - E(X)}{\sigma} < \frac{565 - 570}{\sqrt{28.5}}\right)    \\
+    \Phi\left(\frac{565 - 570}{\sqrt{28.5}}\right)                                        \\
+    \approx \Phi(-0.94) = 1 - \Phi(0.94)                                                  \\
+    \overset{Tabelle}{\approx} 1 - 0.82639 = 0.17361 = 17.36\%                            \\
+    P(565 < X < 575) = 0.82639 - 0.17361 = 0.65278 = 65.28\%
+\end{align*}
