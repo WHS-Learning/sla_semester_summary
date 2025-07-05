@@ -433,9 +433,11 @@ und geben Sie das Ergebnis auf mindestens zwei Nachkommastellen genau an.
     Var(X) = 810 \cdot 0.1 = 81                                                             \\
     \sigma = \sqrt{81} = 9                                                                  \\
     P(X \leq 819) = P\left(\frac{X - E(X)}{\sigma} \leq \frac{819 - 810}{9}\right)          \\
-    \varphi\left(\frac{819 - 810}{9}\right) = \varphi(1) \overset{Tabelle}{\approx} 0.84134 \\\\
+    \varphi\left(\frac{819 - 810}{9}\right) = \varphi(1) \overset{Tabelle}{\approx} 0.84134 \\\\\\
     Z = \frac{X - 810}{9} \\
-    \left\{X \leq 819\right\} = \frac{819 \leq 810}{9} \\
-    \frac{819}{9} \leq \frac{810}{9} \quad | \cdot 9\\
-    819 \leq 810 \quad | \cdot 9\\
+    \{ X \leq 819 \} 
+    \iff \left\{ Z \leq \frac{819 - 810}{9} \right\} \\[6pt]
+    \iff \left\{ Z \leq \frac{9}{9} \right\} = \{ Z \leq 1 \} = \{ X \leq 819 \}
 \end{align*}
+
+Die Menge \( \{ X \leq 819 \} \) entspricht also der Menge der standardisierten Werte \( Z \), für die \( Z \leq 1 \) gilt.
