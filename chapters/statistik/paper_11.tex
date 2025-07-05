@@ -21,14 +21,55 @@ Wahrscheinlichkeit von $95\%$ enthalten ist. \textit{(Hinweis: Die Summe von
     $85$ normalverteilten Zufallsvariablen ist selbst auch normalverteilt. Was sind
     ihr Erwartungswert und ihre Standardabweichung?)}
 
+\begin{align*}
+    KI = \left[\overline{x} - z_{1 - \frac{\alpha}{2}} \cdot \frac{\sigma}{\sqrt{n}}, \quad \overline{x} + z_{1 - \frac{\alpha}{2}} \cdot \frac{\sigma}{\sqrt{n}}\right] \\
+    z_{0.975} = 1.96                                                                                                                                                     \\
+    \frac{\sigma}{\sqrt{n}} = \frac{7}{\sqrt{85}}                                                                                                                        \\
+    \textbf{Untere grenze}                                                                                                                                               \\
+    37.5 - 1.96 \cdot \frac{7}{\sqrt{85}} \approx 36.0119                                                                                                                \\
+    \textbf{Obere grenze}                                                                                                                                                \\
+    37.5 + 1.96 \cdot \frac{7}{\sqrt{85}} \approx 38.9881                                                                                                                \\
+    \Rightarrow [36.0119, 38.9881]
+\end{align*}
+
 \subsection{b}
 
 Der Bäcker behauptet, dass \sout{der} das durchschnittliche Brötchengewicht
 genau $38g$ betrage. Prüfen Sie nun diese Hypothese an Hand der vorgegebenen
 Stichprobe zum Signifikanzniveau $\alpha = 0,05$.
 
+\textit{Wir wissen nicht, welche der beiden Lösungsansätze der richtige ist :'(}
+
+\begin{align*}
+    KI = \left[\overline{x} - z_{1 - \frac{\alpha}{2}} \cdot \frac{\sigma}{\sqrt{n}}, \quad \overline{x} + z_{1 - \frac{\alpha}{2}} \cdot \frac{\sigma}{\sqrt{n}}\right] \\
+    z_{0.975} = 1.96                                                                                                                                                     \\
+    \frac{\sigma}{\sqrt{n}} = \frac{7}{\sqrt{85}}                                                                                                                        \\
+    \textbf{Untere grenze}                                                                                                                                               \\
+    38 - 1.96 \cdot \frac{7}{\sqrt{85}} \approx 36.5119                                                                                                                  \\
+    \textbf{Obere grenze}                                                                                                                                                \\
+    38 + 1.96 \cdot \frac{7}{\sqrt{85}} \approx 39.4881                                                                                                                  \\
+    \Rightarrow [36.5119, 39.4881]                                                                                                                                       \\
+    \text{37.5 ist enthalten, also wird die Nullhypothese nicht abgelehnt.}                                                                                              \\
+\end{align*}
+
+\textbf{Oder}
+
+\textbf{Da 38 in dem aus a berechneten Intervall liegt, ist die Nullhypothese nicht abzulehnen.}
+
 \subsection{c}
 
 Der Bäcker behauptet, dass seine Brötchen im Durchschnitt mindestens $38g$
 wiegen. Prüfen Sie diese Hypothese an Hand der vorgegebenen Stichprobe zum
 Signifikanzniveau $\alpha = 0,05$.
+
+\begin{align*}
+    H_0 = E(X) \geq 38                                                                          \\
+    H_1 = E(X) < 38                                                                             \\
+    X \sim N(38, 49)                                                                            \\
+    P(X \geq z | \mu \geq 38) \geq 0.95                                                         \\
+    1 - P\left(\frac{X - E(X)}{\sigma} \leq \frac{z - 38}{\frac{7}{\sqrt{85}}}\right) \geq 0.95 \\
+    z_{-0.95} = -1.65                                                                           \\
+    38 - 1.65 \cdot \frac{7}{\sqrt{85}} \approx 36.75                                           \\
+    \text{Die Nullhypothese ist abzulehnen, falls } X < 36.75                                   \\
+    \text{Da } 37.5 \geq 36.75 \text{ ist, ist die Nullhypothese nicht abzulehnen}
+\end{align*}
