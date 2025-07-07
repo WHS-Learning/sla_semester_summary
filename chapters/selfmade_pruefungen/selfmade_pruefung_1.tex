@@ -19,6 +19,22 @@ Berechnen Sie
     \item $v \cdot M$
 \end{enumerate}
 
+\textbf{Antwort:}
+
+\begin{align*}
+    M \cdot v = \begin{pmatrix}
+                    3 \cdot 1 + 5 \cdot 8 + 9 \cdot 7  \\
+                    3 \cdot 1 + 7 \cdot 8 + 11 \cdot 7 \\
+                    2 \cdot 1 + 3 \cdot 8 + 1 \cdot 7  \\
+                \end{pmatrix} = \begin{pmatrix}
+                                    106 \\ 136 \\ 33
+                                \end{pmatrix} \\\\
+    v \times v = \begin{pmatrix}
+                     0 \\ 0 \\ 0
+                 \end{pmatrix}                    \\\\
+    v \cdot M = \text{Geht nicht}
+\end{align*}
+
 \subsection{Aufgabe 2}
 
 Gegeben sind die Vektoren
@@ -35,6 +51,19 @@ Gegeben sind die Vektoren
 
 Prüfen Sie, ob diese eine Basis des $\mathbb{R}^3$ bilden.
 
+\textbf{Antwort:}
+
+\begin{align*}
+    \det\left(\begin{pmatrix}
+                  1 & 2 & 0 \\
+                  2 & 9 & 0 \\
+                  3 & 5 & 1
+              \end{pmatrix}\right) = 5 \\
+\end{align*}
+
+Da $5 \neq 0$, sind die Vektoren Linear unabhängig und bilden damit eine Basis
+des $\mathbb{R}^3$.
+
 \subsection{Aufgabe 3}
 
 Ist die Matrix $A^{-1} = \begin{pmatrix}
@@ -47,38 +76,208 @@ Ist die Matrix $A^{-1} = \begin{pmatrix}
         -1 & 2  & 1
     \end{pmatrix}$?
 
+\textbf{Antwort:}
+
+\begin{align*}
+    A \cdot A^{-1} = \begin{pmatrix}
+                         1 \cdot 2 - 4 \cdot 1 - 3 \cdot -1  & 1 \cdot 2 - 4 \cdot -1 - 3 \cdot 2  & 1 \cdot 3 - 4 \cdot 0 - 3 \cdot 1  \\
+                         1 \cdot 2 - 5 \cdot 1 - 3 \cdot -1  & 1 \cdot 2 - 5 \cdot -1 - 3 \cdot 2  & 1 \cdot 3 - 5 \cdot 0 - 3 \cdot 1  \\
+                         -1 \cdot 2 + 6 \cdot 1 + 4 \cdot -1 & -1 \cdot 2 + 6 \cdot -1 + 4 \cdot 2 & -1 \cdot 3 + 6 \cdot 0 + 4 \cdot 1 \\
+                     \end{pmatrix} \\
+    =\begin{pmatrix}
+         1 & 0 & 0 \\
+         0 & 1 & 0 \\
+         0 & 0 & 1
+     \end{pmatrix}
+\end{align*}
+
 \section{Eigenwerte und Eigenvektoren}
 
 \subsection{Aufgabe 1}
 
 Sei $M = \begin{pmatrix}
-        12 & 1 & -6 \\
-        4  & 9 & -6 \\
-        11 & 1 & -5
+        2  & 10 & -6  \\
+        -2 & 26 & -14 \\
+        -6 & 42 & -22
     \end{pmatrix}$.
 Berechnen Sie alle Eigenwerte der Matrix und zu einen der Eigenwerte den Eigenvektor.
 
+\textbf{Antwort:}
+
+\begin{align*}
+    M - \lambda I = \begin{pmatrix}
+                        2 - \lambda & 10           & -6            \\
+                        -2          & 26 - \lambda & -14           \\
+                        -6          & 42           & -22 - \lambda
+                    \end{pmatrix}                  \\
+    \det(M - \lambda I) = -\lambda(\lambda^2 - 6\lambda + 8)                    \\
+    -\lambda_1 = 0 \text{ oder } \lambda^2 - 6\lambda + 8 = 0                   \\
+    \lambda^2 - 6\lambda + 8 = 0 \qquad | PQ                                    \\
+    \lambda_{2, 3} = -\frac{-6}{2} \pm \sqrt{{\left(\frac{-6}{2}\right)}^2 - 8} \\
+    \lambda_2 = 4                                                               \\
+    \lambda_3 = 2                                                               \\\\
+    \text{Eigenvektoren zu } \lambda_1 = 0                                      \\
+    \begin{pmatrix}
+        2 - 0 & 10     & -6    \\
+        -2    & 26 - 0 & -14   \\
+        -6    & 42     & -22-0
+    \end{pmatrix}
+\end{align*}
+
+\begin{longtable}{p{10cm}}
+    \hline
+    \multicolumn{1}{c}{\textbf{Linearkombination}}                                         \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{1}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
+    \hline
+    \multicolumn{1}{c}{\textbf{Linearkombination}}                                         \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{1}{r}{\textit{Fortsetzung siehe nächste Seite}}                           \\
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    $\displaystyle\begin{matrix}
+                          2  & 10 & -6  \\
+                          -2 & 26 & -14 \\
+                          -6 & 42 & -22 \\
+                      \end{matrix}$                                                            \\\hline
+    II + I                                                                                 \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          2  & 10 & -6  \\
+                          0  & 36 & -20 \\
+                          -6 & 42 & -22 \\
+                      \end{matrix}$                                                            \\\hline
+    III + 3I                                                                               \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          2 & 10 & -6  \\
+                          0 & 36 & -20 \\
+                          0 & 72 & -40 \\
+                      \end{matrix}$                                                            \\\hline
+    III + 3I                                                                               \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          2 & 10 & -6  \\
+                          0 & 36 & -20 \\
+                          0 & 72 & -40 \\
+                      \end{matrix}$                                                            \\\hline
+    72II - 36III                                                                           \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          2 & 10 & -6  \\
+                          0 & 36 & -20 \\
+                          0 & 0  & 0   \\
+                      \end{matrix}$                                                            \\\hline
+    36II - 10II                                                                            \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          2 & 0  & -16 \\
+                          0 & 36 & -20 \\
+                          0 & 0  & 0   \\
+                      \end{matrix}$                                                            \\\hline
+    -16II - -20I                                                                           \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          2 & 0  & -16 \\
+                          0 & 36 & 0   \\
+                          0 & 0  & 0   \\
+                      \end{matrix}$                                                            \\\hline
+    I : 2                                                                                  \\\hline\pagebreak[0]
+    II : 36                                                                                \\\hline\pagebreak[0]
+    $\displaystyle\begin{matrix}
+                          1 & 0 & -8 \\
+                          0 & 1 & 0  \\
+                          0 & 0 & 0  \\
+                      \end{matrix}$                                                            \\\hline
+\end{longtable}
+
+\begin{align*}
+    \begin{cases}
+        \text{I:\@}  & x_1 -8x_3 = 0 \Leftrightarrow x_1 = 8x_3 \\
+        \text{II:\@} & x_2 = 0
+    \end{cases} \\
+    x_3 = t | t \in \mathbb{R}                              \\
+    \begin{pmatrix}
+        8t \\ 0 \\ t
+    \end{pmatrix}                                          \\
+    t \begin{pmatrix}
+          8 \\ 0 \\ 1
+      \end{pmatrix}                                        \\
+    span\left\{\begin{pmatrix}
+                   8 \\ 0 \\ 1
+               \end{pmatrix}\right\}
+\end{align*}
+
 \section{Zufallsvariablen und Verteilungen}
 
-Sie streiten mit ihren Kommulitoren Thorsten. Thorsten sagt, er schafft es
-durchschnittlich 2 mal die erste Figur bei dem Spiel Mensch ärgere dich nicht
-herauszuziehen.
+In einer Runde Poker (mit einem Standard 52 Karten-deck) haben Sie ein Royal
+Flush (`Ass', `König', `Dame', `Bube', `10') mit dem Symbol Pik. Wie groß ist
+dafür die Wahrscheinlichkeit? Ziehen sie bei der Berechnung nicht in betracht,
+dass noch andere mit Ihnen Poker spielen. Sie Spielen für diese Aufgabe also
+alleine.
 
-Zur Erinnerung: Ist keine Figur auf dem Spielfeld, so dürfen Sie 3 mal würfeln.
-Würfeln Sie eine 6, dürfen Sie die Figur aus dem Haus holen.
+\textbf{Antwort:}
 
-Prüfen Sie, ob Thorsten recht hat. Begründen Sie ihre Antwort.
-
-Sie sollen Keinen z-Test durchführen.
+\begin{align*}
+    X \sim H(52, 5, 5) \\
+    P(X = 5) = P\left(\frac{\begin{pmatrix}
+                                    5 \\ 5
+                                \end{pmatrix} \cdot \begin{pmatrix}
+                                                        47 \\ 0
+                                                    \end{pmatrix}}{\begin{pmatrix}
+                                                                       52 \\ 5
+                                                                   \end{pmatrix}}\right) = 0.000000385 \approx 0\%
+\end{align*}
 
 \section{Normalverteilung und z-Test}
 
-Prüfen Sie nun mit einem Konfidenzniveau von 10\%, ob Thorsten aus der obrigen Aufgabe recht hat.
+Historisch regnete es im Sommer an durchschnittlich 20\% der Tage. Eine
+aktuelle Studie untersucht, ob eine Klimaveränderung stattgefunden hat. Von 150
+analysierten Sommertagen regnete es an 53 Tagen. Es soll beurteilt werden, ob
+bei einer Irrtumswahrscheinlichkeit von höchstens 6\% von einem Klimawandel
+ausgegangen werden kann.
+
+\begin{align*}
+    S_n \sim B(150, 0.2)                                         \\
+    S_n = \text{Anzahl Regentage}                                \\
+    H_0 = S_n = 30                                               \\
+    H_1 = S_n \neq 30                                            \\
+    E(S_n) = 150 \cdot 0.2 = 30                                  \\
+    Var(S_n) = 30 \cdot 0.8 = 24                                 \\
+    \sigma = \sqrt{24}                                           \\
+    Z_{0.97} = 1.89                                              \\
+    \text{Nullhypothese wird abgelehnt, falls }                  \\
+    -1.89 < \frac{S_n - E(S_n)}{\sigma} < 1.89                   \\
+    -1.89 < \frac{S_n - 30}{\sqrt{24}} < 1.89                    \\
+    -1.89 \cdot \sqrt{24} + 30 < S_n < 1.89 \cdot \sqrt{24} + 30 \\
+    20.74 < S_n < 39.26                                          \\
+    21 < S_n < 39
+\end{align*}
+
+Da es an 53 Tagen geregnet hat, wird die Nullhypothese abgelehnt. Es hat also
+ein Klimawandel stattgefunden.
 
 \section{Quiz}
 
-Hat jede Matrix Eigenvektoren?
+Hat jede Matrix (aus $\mathbb{R}^{m \times n}$) Eigenvektoren? Falls nein,
+geben Sie eine Matrix die keinen hat.
 
-Kann jede Matrix gedreht werden?
+\textbf{Antwort:}
+Jede Drehmatrix, die nicht um 360 bzw 0 grad dreht. z.B. $\begin{pmatrix}
+        0 & -1 \\
+        1 & 0
+    \end{pmatrix}$
 
-Kann jeder Vektor ein Eigenvektor einer beliebigen Matrix sein?
+Kann jeder Vektor ein Eigenvektor einer beliebigen Matrix sein? Falls nein,
+geben Sie ein Beispiel.
+
+\textbf{Antwort:}
+
+\begin{align*}
+    \begin{pmatrix}
+        0 \\ 0 \\ 0
+    \end{pmatrix}
+\end{align*}

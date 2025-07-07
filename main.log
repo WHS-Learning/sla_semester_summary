@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.29)  7 JUL 2025 12:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.29)  7 JUL 2025 18:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1196,7 +1196,7 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 (config/globals.tex) (titlepage.tex
-<assets/frontpage.png, id=1494, 963.6pt x 542.025pt>
+<assets/frontpage.png, id=1606, 963.6pt x 542.025pt>
 File: assets/frontpage.png Graphic file (type png)
 <use assets/frontpage.png>
 Package pdftex.def Info: assets/frontpage.png  used on input line 24.
@@ -1305,7 +1305,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.351 ...}Moodle Übungsaufgaben}{194}{chapter.43}
-                                                  % [8])
+                                                  % [8]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.395 ...45.2.1}Aufgabe 1}{212}{subsection.45.2.1}
+                                                  % [9])
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -1316,7 +1323,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.36 	\clearpage
-                 [9]
+                 [10]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -1864,12 +1871,12 @@ Overfull \hbox (4.22386pt too wide) in paragraph at lines 1--1
 |[]\OT1/cmr/bx/n/24.88 Bonustest 1 - Rech-nen mit
  []
 
-<assets/bonus_tests/unique_vectors.png, id=2243, 367.87437pt x 367.87437pt>
+<assets/bonus_tests/unique_vectors.png, id=2386, 367.87437pt x 367.87437pt>
 File: assets/bonus_tests/unique_vectors.png Graphic file (type png)
 <use assets/bonus_tests/unique_vectors.png>
 Package pdftex.def Info: assets/bonus_tests/unique_vectors.png  used on input line 11.
 (pdftex.def)             Requested size: 180.67499pt x 180.681pt.
-<assets/bonus_tests/vector_lengths.png, id=2244, 545.03625pt x 543.53062pt>
+<assets/bonus_tests/vector_lengths.png, id=2387, 545.03625pt x 543.53062pt>
 File: assets/bonus_tests/vector_lengths.png Graphic file (type png)
 <use assets/bonus_tests/vector_lengths.png>
 Package pdftex.def Info: assets/bonus_tests/vector_lengths.png  used on input line 28.
@@ -1918,7 +1925,7 @@ Overfull \hbox (5.73006pt too wide) in paragraph at lines 421--429
 \OT1/cmr/m/n/10.95 wei^^Ye Kugel und die blaue Kugel haben beide einen Durchmesser $\OML/cmm/m/it/10.95 d \OT1/cmr/m/n/10.95 = 57\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 2 []$.
  []
 
-<assets/bonus_tests/pool.png, id=2287, 666.23906pt x 408.77719pt>
+<assets/bonus_tests/pool.png, id=2430, 666.23906pt x 408.77719pt>
 File: assets/bonus_tests/pool.png Graphic file (type png)
 <use assets/bonus_tests/pool.png>
 Package pdftex.def Info: assets/bonus_tests/pool.png  used on input line 430.
@@ -1926,7 +1933,7 @@ Package pdftex.def Info: assets/bonus_tests/pool.png  used on input line 430.
 
 
 [65 <./assets/bonus_tests/pool.png>]
-<assets/bonus_tests/pool2.png, id=2293, 3383.64125pt x 2392.94pt>
+<assets/bonus_tests/pool2.png, id=2436, 3383.64125pt x 2392.94pt>
 File: assets/bonus_tests/pool2.png Graphic file (type png)
 <use assets/bonus_tests/pool2.png>
 Package pdftex.def Info: assets/bonus_tests/pool2.png  used on input line 439.
@@ -1934,7 +1941,7 @@ Package pdftex.def Info: assets/bonus_tests/pool2.png  used on input line 439.
 
 
 [66 <./assets/bonus_tests/pool2.png>]
-<assets/bonus_tests/drehmoment.png, id=2299, 929.4725pt x 331.2375pt>
+<assets/bonus_tests/drehmoment.png, id=2443, 929.4725pt x 331.2375pt>
 File: assets/bonus_tests/drehmoment.png Graphic file (type png)
 <use assets/bonus_tests/drehmoment.png>
 Package pdftex.def Info: assets/bonus_tests/drehmoment.png  used on input line 505.
@@ -5445,31 +5452,87 @@ Chapter 44.
 [206
 
 
+]
+Overfull \hbox (20.71448pt too wide) detected at line 92
+[]
+ []
+
+
+
+[207]
+
+[208]
+
+[209])
+
+[210] (chapters/selfmade_pruefungen/selfmade_pruefung_2.tex
+Chapter 45.
+[211
+
+
+
+]
+
+[212]
+
+[213]
+
+[214])
+
+[215] (chapters/selfmade_pruefungen/selfmade_pruefung_3.tex
+Chapter 46.
+
+
+[216
+
+
+
+]
+
+[217]
+
+[218]
+
+[219])
+
+[220] (chapters/selfmade_pruefungen/selfmade_pruefung_4.tex
+Chapter 47.
+
+Overfull \hbox (1.12468pt too wide) in paragraph at lines 13--24
+[]\OT1/cmr/m/n/10.95 Basis von $\OML/cmm/m/it/10.95 A$ \OT1/cmr/m/n/10.95 sei $[]$ und die Ba-sis von B sei $[]$. 
+ []
+
+
+
+[221
+
+
+
 ])
 
-[207] (main.aux)
+[222] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 75DF76421CFEA255AB21E75FD7E4159A;46904.
+(rerunfilecheck)             Checksum: 5BDB3F8D69BB92A21FB78C26CA31401D;51085.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59587 strings out of 469923
- 1383673 string characters out of 5466266
- 2836405 words of memory out of 5000000
- 84745 multiletter control sequences out of 15000+600000
+ 59696 strings out of 469923
+ 1386152 string characters out of 5466266
+ 2847012 words of memory out of 5000000
+ 84793 multiletter control sequences out of 15000+600000
  645424 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  130i,20n,130p,1658b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\EntchenEric\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><C:/Users/EntchenEric/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on main.pdf (219 pages, 2560075 bytes).
+Output written on main.pdf (235 pages, 2611913 bytes).
 PDF statistics:
- 3246 PDF objects out of 3580 (max. 8388607)
- 740 named destinations out of 1000 (max. 500000)
- 3019 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3470 PDF objects out of 3580 (max. 8388607)
+ 792 named destinations out of 1000 (max. 500000)
+ 3243 words of extra memory for PDF output out of 10000 (max. 10000000)
 

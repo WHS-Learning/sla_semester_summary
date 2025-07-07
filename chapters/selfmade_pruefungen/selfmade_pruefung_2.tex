@@ -1,0 +1,308 @@
+\chapter{Selfmade Prüfung 2}
+
+\section{Lineare Abbildungen}
+
+\subsection{Aufgabe 1}
+
+Sei $D_{\frac{\pi}{2}}: \mathbb{R}^3 \rightarrow \mathbb{R}^3$, die jeden
+Vektor aus $\mathbb{R}^3$ um $\frac{\pi}{2}$ auf der Y-Achse dreht. Sei $v = \begin{pmatrix}
+        1 \\ 6 \\ 2
+    \end{pmatrix}$.
+
+Bestimmen Sie $D_{\frac{\pi}{2}}(v)$
+
+\begin{align*}
+    D_y(\alpha) = \begin{pmatrix}
+                      cos(\alpha)  & 0 & sin(\alpha)  \\
+                      0            & 1 & 0            \\
+                      -sin(\alpha) & 0 & \cos(\alpha)
+                  \end{pmatrix} \\
+    D_{\frac{\pi}{2}} = \begin{pmatrix}
+                            0  & 0 & 1 \\
+                            0  & 1 & 0 \\
+                            -1 & 0 & 0
+                        \end{pmatrix}            \\
+    D_{\frac{\pi}{2}} \cdot v = \begin{pmatrix}
+                                    2 \\ 6 \\ -1
+                                \end{pmatrix}
+\end{align*}
+
+\subsection{Aufgabe 2}
+
+Bestimmen Sie die Umkehrabbildung $A = \begin{pmatrix}
+        3 & 4 & 3 \\
+        4 & 1 & 1 \\
+        2 & 1 & 2
+    \end{pmatrix}$.
+
+\begin{align*}
+    det(A) =6 + 8 + 12 - 6 - 3 - 32 = -15
+\end{align*}
+
+\begin{longtable}{p{4cm}|p{3cm}}
+
+    \hline
+    \multicolumn{1}{c|}{\textbf{Matrix}} & \multicolumn{1}{c}{\textbf{Inverse}}            \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{2}{c}{\tablename\ \thetable\ -- \textit{Fortführung von vorherier Seite}} \\
+    \hline
+    \multicolumn{1}{c|}{\textbf{Matrix}} & \multicolumn{1}{c}{\textbf{Inverse}}            \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{2}{r}{\textit{Fortsetzung siehe nächste Seite}}                           \\
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    $\displaystyle\begin{matrix}
+                          3 & 4 & 3 \\
+                          4 & 1 & 1 \\
+                          2 & 1 & 2
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1 & 0 & 0 \\
+                          0 & 1 & 0 \\
+                          0 & 0 & 1 \\
+                      \end{matrix}$                                                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I - III}              \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          1 & 3 & 1 \\
+                          4 & 1 & 1 \\
+                          2 & 1 & 2
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1 & 0 & -1 \\
+                          0 & 1 & 0  \\
+                          0 & 0 & 1  \\
+                      \end{matrix}$                                                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II - 2III}            \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          1 & 3  & 1  \\
+                          0 & -1 & -3 \\
+                          2 & 1  & 2
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1 & 0 & -1 \\
+                          0 & 1 & -2 \\
+                          0 & 0 & 1  \\
+                      \end{matrix}$                                                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III - 2I}             \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          1 & 3  & 1  \\
+                          0 & -1 & -3 \\
+                          0 & -5 & 0
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1  & 0 & -1 \\
+                          0  & 1 & -2 \\
+                          -2 & 0 & 3  \\
+                      \end{matrix}$                                                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II $\cdot$ -1}        \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          1 & 3  & 1 \\
+                          0 & 1  & 3 \\
+                          0 & -5 & 0
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1  & 0  & -1 \\
+                          0  & -1 & 2  \\
+                          -2 & 0  & 3  \\
+                      \end{matrix}$                                                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III + 5II}            \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          1 & 3 & 1  \\
+                          0 & 1 & 3  \\
+                          0 & 0 & 15
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1  & 0  & -1 \\
+                          0  & -1 & 2  \\
+                          -2 & -5 & 13 \\
+                      \end{matrix}$                                                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: III : 15}             \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          1 & 3 & 1 \\
+                          0 & 1 & 3 \\
+                          0 & 0 & 1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1             & 0            & -1            \\
+                          0             & -1           & 2             \\
+                          -\frac{2}{15} & -\frac{1}{3} & \frac{13}{15} \\
+                      \end{matrix}$                             \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: II - 3III}            \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          1 & 3 & 1 \\
+                          0 & 1 & 0 \\
+                          0 & 0 & 1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          1             & 0            & -1            \\
+                          \frac{2}{5}   & 0            & -\frac{3}{5}  \\
+                          -\frac{2}{15} & -\frac{1}{3} & \frac{13}{15} \\
+                      \end{matrix}$                             \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I - III}              \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          1 & 3 & 0 \\
+                          0 & 1 & 0 \\
+                          0 & 0 & 1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          \frac{17}{15} & \frac{1}{3}  & -\frac{28}{15} \\
+                          \frac{2}{5}   & 0            & -\frac{3}{5}   \\
+                          -\frac{2}{15} & -\frac{1}{3} & \frac{13}{15}  \\
+                      \end{matrix}$                            \\\hline
+    \multicolumn{2}{p{\dimexpr4cm+3cm+2\tabcolsep\relax}}{Operation: I - 3II}              \\\hline\pagebreak[0]
+
+    $\displaystyle\begin{matrix}
+                          1 & 0 & 0 \\
+                          0 & 1 & 0 \\
+                          0 & 0 & 1
+                      \end{matrix}$         &
+    $\displaystyle\begin{matrix}
+                          -\frac{1}{15} & \frac{1}{3}  & -\frac{1}{15} \\
+                          \frac{2}{5}   & 0            & -\frac{3}{5}  \\
+                          -\frac{2}{15} & -\frac{1}{3} & \frac{13}{15} \\
+                      \end{matrix}$                             \\\hline
+
+\end{longtable}
+
+\section{Eigenwerte und Eigenvektoren}
+
+\subsection{Aufgabe 1}
+
+Ist $\begin{pmatrix}
+        2 \\5
+    \end{pmatrix}$ ein Eigenvektor zu $\begin{pmatrix}
+        1 & 3 \\ 3 & 1
+    \end{pmatrix}$?
+
+\begin{align*}
+    \begin{pmatrix}
+        1 & 3 \\ 3 & 1
+    \end{pmatrix} \cdot \begin{pmatrix}
+                            2 \\ 5
+                        \end{pmatrix} = \begin{pmatrix}
+                                            17 \\ 11
+                                        \end{pmatrix} \neq \begin{pmatrix}
+                                                               2 \\ 5
+                                                           \end{pmatrix}
+\end{align*}
+
+Der Vektor ist kein Eigenvektor.
+
+\subsection{Aufgabe 2}
+
+Bestimmen Sie die Eigenwerte $\begin{pmatrix}
+        1 & 2 & 3 \\
+        4 & 5 & 6 \\
+        9 & 8 & 7
+    \end{pmatrix}$.
+
+\section{Zufallsvariablen und Verteilungen}
+
+In einer Packung seien $750$ Nägel. Davon seien $10$ defekt. Wie groß ist die
+Wahrscheinlichkeit, dass unter 5 zufällig aus der Packung gezogenen Nägeln
+genau einer defekt ist?
+
+\begin{align*}
+    X \sim H(750, 10, 5)             \\
+    X = \text{Anzahl defekter nägel} \\
+    P(X = 1) = \frac{\begin{pmatrix}
+                             10 \\ 1
+                         \end{pmatrix} \cdot
+        \begin{pmatrix}
+            740 \\ 4
+        \end{pmatrix}}{\begin{pmatrix}
+                           750 \\ 5
+                       \end{pmatrix}} \approx 0.0635 = 6.35\%
+\end{align*}
+
+\subsection{Aufgabe 2}
+
+Auf einer Kirmes steht ein Glücksrad mit $20$ gleichgroßen Feldern. Die Felder
+sind mit $1$ bis $20$ durchnummeriert. Innerhalb eines Jahrzehnts wird das
+Glücksrad $2\quad 000\quad 000$ Mal gedreht. Bezeichne $X$ wie oft dabei das
+Glücksrad auf der Zahl $18$ stehengeblieben ist.
+
+Berechnen Sie
+
+$P(1000012 < X < 100130)$
+
+\begin{align*}
+    X \sim B(2000000, \frac{1}{20})                                                                 \\
+    X = \text{Anzahl der gedrehten 18er}                                                            \\
+    E(X) = 100000                                                                                   \\
+    Var(X) = 95000                                                                                  \\
+    \sigma = \sqrt{95000}                                                                           \\
+    P(1000012 < X < 100130) = P(X \leq 100130) - P(X \leq 100012)                                   \\
+    P(X \leq 100012) = P\left(\frac{X - E(X)}{\sigma} < \frac{100012 - 100000}{\sqrt{95000}}\right) \\
+    \Phi\left(\frac{100012 - 100000}{\sqrt{95000}}\right)                                           \\
+    \approx \Phi(0.04) \overset{Tabelle}{\approx} 0.51595                                           \\
+    P(X \leq 100130) = P\left(\frac{X - E(X)}{\sigma} < \frac{100130 - 100000}{\sqrt{95000}}\right) \\
+    \Phi\left(\frac{100130 - 100000}{\sqrt{95000}}\right)                                           \\
+    \approx \Phi(0.42) \overset{Tabelle}{\approx} 0.66276                                           \\
+    P(100012 < X < 100130) = 0.66276 - 0.51595 = 0.14681 \approx 14.68\%
+\end{align*}
+
+\section{Normalverteilung und z-Test}
+
+\subsection{Aufgabe 1}
+
+Malte behauptet gegenüber seiner neuen Freundin Mario, dass mindestens 10\%
+seiner Socken ein Loch haben. Als Paul nun Maltes Waschmaschine ausräumt,
+stellt sie fest, dass von den 30 Paaren Socken 4 einzelne Socken ein Loch
+haben. Kann mit einer Irrtumswahrscheinlichkeit von höchstens 5\% davon
+ausgegangen werden, dass Malte weiß, wovon er spricht?
+
+\begin{align*}
+    X \sim B(60, 0.1)                                                              \\
+    X = \text{Anzahl kaputter Socken}                                              \\
+    H_0 = X \geq 6                                                                 \\
+    H_1 = X < 6                                                                    \\
+    E(X) = 60 \cdot 0.1 = 6                                                        \\
+    Var(X) = 6 \cdot 0.9 = \frac{27}{5}                                            \\
+    \sigma = \sqrt{\frac{27}{5}}                                                   \\
+    P\left(\frac{X - E(X)}{\sigma} < \frac{S_n - E(X)}{\sigma}\right) \sim N(1, 0) \\
+    Z_{0.95} = 1.65                                                                \\
+    -1.65 < \frac{S_n - 6}{\sqrt{\frac{27}{5}}}                                    \\
+    -1.65 \cdot \sqrt{\frac{27}{5}} + 6 < S_n                                      \\
+    2.17 < S_n                                                                     \\
+    2 < S_n                                                                        \\
+\end{align*}
+
+Die Nullhypothese wird abgelehnt, wenn weniger als 3 Socken gefunden werden. Da
+jedoch 4 Socken gefunden wurden, weiß Malte wovon er spricht.
+
+\section{Quiz}
+
+Was ist eine Orthogonale Matrix, aber keine Drehmatrix?
+
+\textbf{Antwort:}
+
+$\begin{pmatrix}
+    -1 & 0 \\
+    0 & 1
+\end{pmatrix}$
+
+
+Sei $\Omega = \left\{1, 2, 3, 4, 5, 6\right\}, A = \left\{1, 2, 3\right\}$ und
+$P$ die Gleichverteilung aus $\Omega$. Gibt es eine Menge $B \subset \Omega$
+mit $B \not \subset \left\{\Omega, \emptyset\right\}$, die Stochastisch
+unabhängig zu $A$ ist?
+
+$\left\{B = \left\{4 , 5, 6\right\}\right\}$

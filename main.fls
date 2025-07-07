@@ -754,6 +754,15 @@ INPUT chapters\statistik\moodle_tasks.tex
 INPUT .\chapters\selfmade_pruefungen\selfmade_pruefung_1.tex
 INPUT .\chapters\selfmade_pruefungen\selfmade_pruefung_1.tex
 INPUT chapters\selfmade_pruefungen\selfmade_pruefung_1.tex
+INPUT .\chapters\selfmade_pruefungen\selfmade_pruefung_2.tex
+INPUT .\chapters\selfmade_pruefungen\selfmade_pruefung_2.tex
+INPUT chapters\selfmade_pruefungen\selfmade_pruefung_2.tex
+INPUT .\chapters\selfmade_pruefungen\selfmade_pruefung_3.tex
+INPUT .\chapters\selfmade_pruefungen\selfmade_pruefung_3.tex
+INPUT chapters\selfmade_pruefungen\selfmade_pruefung_3.tex
+INPUT .\chapters\selfmade_pruefungen\selfmade_pruefung_4.tex
+INPUT .\chapters\selfmade_pruefungen\selfmade_pruefung_4.tex
+INPUT chapters\selfmade_pruefungen\selfmade_pruefung_4.tex
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
