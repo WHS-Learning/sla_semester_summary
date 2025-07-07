@@ -751,6 +751,9 @@ INPUT chapters\statistik\paper_11.tex
 INPUT .\chapters\statistik\moodle_tasks.tex
 INPUT .\chapters\statistik\moodle_tasks.tex
 INPUT chapters\statistik\moodle_tasks.tex
+INPUT .\chapters\selfmade_pruefungen\selfmade_pruefung_1.tex
+INPUT .\chapters\selfmade_pruefungen\selfmade_pruefung_1.tex
+INPUT chapters\selfmade_pruefungen\selfmade_pruefung_1.tex
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out

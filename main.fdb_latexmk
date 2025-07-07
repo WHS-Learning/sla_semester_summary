@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1751738606.02191 "main.bcf" "main.bbl" "main" 1751881372.9781 0
-  "main.bcf" 1751881372 133314 482e3d1e8a309e70e56eb618f22d51f3 "pdflatex"
+["biber main"] 1751738606.02191 "main.bcf" "main.bbl" "main" 1751882975.99182 0
+  "main.bcf" 1751882975 133314 482e3d1e8a309e70e56eb618f22d51f3 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1751881365.90859 "c:/Users/EntchenEric/Documents/github/SLA_Uebzngsblaetter/main.tex" "main.pdf" "main" 1751881372.97875 0
+["pdflatex"] 1751882971.06427 "c:/Users/EntchenEric/Documents/github/SLA_Uebzngsblaetter/main.tex" "main.pdf" "main" 1751882975.99249 0
   "C:/Users/EntchenEric/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1751652401 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/EntchenEric/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcbx1095.pk" 1748776743 13580 0e5bdef823ed6786d8df8eb680cba9cc ""
   "C:/Users/EntchenEric/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1748776742 12668 a0780ce28ab6cda23ecd0718c34f6716 ""
@@ -328,7 +328,7 @@
   "assets/bonus_tests/unique_vectors.png" 1748755960 20339 c2e8bdf027398e6e01c66fb9c623eda0 ""
   "assets/bonus_tests/vector_lengths.png" 1748756246 16233 335609f6edec64ea4b7fe67ef56be4ee ""
   "assets/frontpage.png" 1751652390 495990 a161ecc9977b312bd3d73ce9b290d645 ""
-  "c:/Users/EntchenEric/Documents/github/SLA_Uebzngsblaetter/main.tex" 1751652390 3013 1f847f300a594afbd73116d08f0e0550 ""
+  "c:/Users/EntchenEric/Documents/github/SLA_Uebzngsblaetter/main.tex" 1751882963 3112 10d4fe3719f3fbddfaaf5a610d18ed70 ""
   "chapters/bonus_tests/test_1.tex" 1749995935 24505 af15164a01111f4097857d6092099bf3 ""
   "chapters/bonus_tests/test_2.tex" 1749995933 21382 5237c80149efa5212d45a299f2c711e7 ""
   "chapters/bonus_tests/test_3.tex" 1751190796 25525 ebc8480c1b528e2a1dba118b24509836 ""
@@ -345,6 +345,7 @@
   "chapters/lineare_algebra/page_7.tex" 1749995921 31721 0346e693c2af2cee2c1fc4fa440ca3f8 ""
   "chapters/lineare_algebra/page_8.tex" 1749995917 14539 36e67cd2ee87ccf6d9c0db7cded30d09 ""
   "chapters/lineare_algebra/page_9.tex" 1749995910 14277 f8e55eee7e29e445e3d18132f3fe5602 ""
+  "chapters/selfmade_pruefungen/selfmade_pruefung_1.tex" 1751882884 2236 e64d4fad6f1ff02f0b48c30b33666e94 ""
   "chapters/semester_summary/arithmetisches_mittel_median_modus.tex" 1749995859 1538 6fdb9927c5fe39f65777852811db0110 ""
   "chapters/semester_summary/basis_vektorraum.tex" 1749995860 7482 e5090bb1def08a19f5da7f8e6844fc90 ""
   "chapters/semester_summary/definitheit.tex" 1749195972 4790 0c649c492712ea499255c58f95ea653a ""
@@ -376,12 +377,12 @@
   "config/globals.tex" 1751652390 285 0d8cdcc131bdb11161b2d7978be45e54 ""
   "config/style.sty" 1748976773 1116 b6863cc1e604fa14d378ba7662771ced ""
   "copyright.tex" 1748678230 425 95963a582d464b4b93c52050afb676c4 ""
-  "main.aux" 1751881372 282777 c30df542f9b7c479996c56746c68a9ae "pdflatex"
+  "main.aux" 1751882975 289452 e77ef413d9bd6ad92b3f1c05b3c338d8 "pdflatex"
   "main.bbl" 1751709912 486 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.out" 1751881372 45243 db89e3e8a565ae631790318a227b3f59 "pdflatex"
-  "main.run.xml" 1751881372 2427 d1bfcd6d722f5bf4e724fdcb22d9bbf2 "pdflatex"
-  "main.tex" 1751652390 3013 1f847f300a594afbd73116d08f0e0550 ""
-  "main.toc" 1751881372 29877 aeba820987b1bd601c7df90c63a72fc8 "pdflatex"
+  "main.out" 1751882975 46904 75df76421cfea255ab21e75fd7e4159a "pdflatex"
+  "main.run.xml" 1751882975 2427 d1bfcd6d722f5bf4e724fdcb22d9bbf2 "pdflatex"
+  "main.tex" 1751882963 3112 10d4fe3719f3fbddfaaf5a610d18ed70 ""
+  "main.toc" 1751882975 30797 cb40a15c6f4591c45b16e899fd3f750a "pdflatex"
   "titlepage.tex" 1748685883 1845 d7ad900603673c9d6970d6c37a0ecea7 ""
   (generated)
   "main.aux"
